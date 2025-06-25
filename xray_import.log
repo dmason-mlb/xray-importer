@@ -1,0 +1,121 @@
+2025-06-25 14:04:12,785 - ERROR - Missing JIRA_EMAIL or ATLASSIAN_TOKEN environment variables
+2025-06-25 14:04:26,731 - INFO - Processing file: news_surface_cleaned.csv
+2025-06-25 14:04:26,735 - INFO - Converted 204 tests from news_surface_cleaned.csv
+2025-06-25 14:04:26,735 - INFO - Dry run mode - skipping actual import
+2025-06-25 14:04:26,735 - INFO - 
+==================================================
+2025-06-25 14:04:26,735 - INFO - IMPORT SUMMARY
+2025-06-25 14:04:26,735 - INFO - ==================================================
+2025-06-25 14:04:26,735 - INFO - Total tests processed: 204
+2025-06-25 14:04:26,735 - INFO - Successfully imported: 0
+2025-06-25 14:04:26,735 - INFO - Failed to import: 0
+2025-06-25 14:04:26,735 - INFO - Total batches: 0
+2025-06-25 14:04:26,735 - INFO - Success rate: 0.0%
+2025-06-25 14:04:26,735 - INFO - ==================================================
+2025-06-25 14:06:36,458 - INFO - Processing file: news_surface_cleaned.csv
+2025-06-25 14:06:36,462 - INFO - Converted 204 tests from news_surface_cleaned.csv
+2025-06-25 14:06:36,462 - INFO - Dry run mode - skipping actual import
+2025-06-25 14:06:36,462 - INFO - 
+==================================================
+2025-06-25 14:06:36,462 - INFO - IMPORT SUMMARY
+2025-06-25 14:06:36,462 - INFO - ==================================================
+2025-06-25 14:06:36,462 - INFO - Total tests processed: 204
+2025-06-25 14:06:36,462 - INFO - Successfully imported: 0
+2025-06-25 14:06:36,462 - INFO - Failed to import: 0
+2025-06-25 14:06:36,462 - INFO - Total batches: 0
+2025-06-25 14:06:36,462 - INFO - Success rate: 0.0%
+2025-06-25 14:06:36,462 - INFO - ==================================================
+2025-06-25 14:07:46,763 - INFO - Processing file: news_surface_cleaned.csv
+2025-06-25 14:07:46,767 - INFO - Converted 204 tests from news_surface_cleaned.csv
+2025-06-25 14:07:46,767 - INFO - Importing batch 1/1 (204 tests)
+2025-06-25 14:07:47,013 - ERROR - Batch 1 failed: 404 - <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 14:07:47,014 - INFO - Processing file: mlbapp_cleaned.csv
+2025-06-25 14:07:47,030 - INFO - Converted 584 tests from mlbapp_cleaned.csv
+2025-06-25 14:07:47,030 - INFO - Importing batch 1/1 (584 tests)
+2025-06-25 14:07:47,298 - ERROR - Batch 1 failed: 404 - <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 14:07:47,299 - INFO - Processing file: home_surface_cleaned.csv
+2025-06-25 14:07:47,307 - INFO - Converted 627 tests from home_surface_cleaned.csv
+2025-06-25 14:07:47,307 - INFO - Importing batch 1/1 (627 tests)
+2025-06-25 14:07:47,595 - ERROR - Batch 1 failed: 404 - <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 14:07:47,598 - INFO - 
+==================================================
+2025-06-25 14:07:47,598 - INFO - IMPORT SUMMARY
+2025-06-25 14:07:47,598 - INFO - ==================================================
+2025-06-25 14:07:47,598 - INFO - Total tests processed: 1415
+2025-06-25 14:07:47,598 - INFO - Successfully imported: 0
+2025-06-25 14:07:47,599 - INFO - Failed to import: 1415
+2025-06-25 14:07:47,599 - INFO - Total batches: 3
+2025-06-25 14:07:47,599 - INFO - Success rate: 0.0%
+2025-06-25 14:07:47,599 - INFO - ==================================================
+2025-06-25 14:16:58,314 - INFO - Processing file: test_small.csv
+2025-06-25 14:16:58,316 - INFO - Converted 3 tests from test_small.csv
+2025-06-25 14:16:58,316 - INFO - Importing batch 1/1 (3 tests)
+2025-06-25 14:16:58,662 - ERROR - Failed to create test 'Articles should open from any new content preview': 400 - {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 14:16:58,945 - ERROR - Failed to create test 'Videos should open from any new content preview': 400 - {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 14:16:59,273 - ERROR - Failed to create test 'VSM content should open from any new content preview': 400 - {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 14:16:59,273 - INFO - Batch 1 completed: 0 success, 3 failed
+2025-06-25 14:16:59,273 - ERROR - Stopping import due to batch failure
+2025-06-25 14:16:59,273 - INFO - 
+==================================================
+2025-06-25 14:16:59,274 - INFO - IMPORT SUMMARY
+2025-06-25 14:16:59,274 - INFO - ==================================================
+2025-06-25 14:16:59,274 - INFO - Total tests processed: 3
+2025-06-25 14:16:59,274 - INFO - Successfully imported: 0
+2025-06-25 14:16:59,274 - INFO - Failed to import: 3
+2025-06-25 14:16:59,274 - INFO - Total batches: 1
+2025-06-25 14:16:59,274 - INFO - Success rate: 0.0%
+2025-06-25 14:16:59,275 - INFO - ==================================================

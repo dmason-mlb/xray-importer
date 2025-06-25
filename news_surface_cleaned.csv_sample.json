@@ -1,0 +1,92 @@
+[
+  {
+    "testType": "Manual",
+    "fields": {
+      "project": {
+        "key": "MLBAPP"
+      },
+      "summary": "Articles should open from any new content preview",
+      "description": "**Steps:**\nArticles should open from any new content preview using the same Manual suite as any article in the mixed feed",
+      "priority": {
+        "name": "Medium"
+      },
+      "labels": [
+        "imported-from-csv",
+        "testrails-migration"
+      ]
+    },
+    "testRepositoryPath": "/MLBAPP Test Repository/News Surface"
+  },
+  {
+    "testType": "Manual",
+    "fields": {
+      "project": {
+        "key": "MLBAPP"
+      },
+      "summary": "Videos should open from any new content preview",
+      "description": "**Steps:**\nVideos should open from any new content preview using the same Manual suite as the mixed feed",
+      "priority": {
+        "name": "Medium"
+      },
+      "labels": [
+        "imported-from-csv",
+        "testrails-migration"
+      ]
+    },
+    "testRepositoryPath": "/MLBAPP Test Repository/News Surface"
+  },
+  {
+    "testType": "Manual",
+    "fields": {
+      "project": {
+        "key": "MLBAPP"
+      },
+      "summary": "VSM content should open from any new content preview",
+      "description": "**Steps:**\nVSM content should open from any new content preview using the same Manual suite as the mixed feed.  This should include the special case scenarios such as opening game stories in native chrome.",
+      "priority": {
+        "name": "Medium"
+      },
+      "labels": [
+        "imported-from-csv",
+        "testrails-migration"
+      ]
+    },
+    "testRepositoryPath": "/MLBAPP Test Repository/News Surface"
+  },
+  {
+    "testType": "Manual",
+    "fields": {
+      "project": {
+        "key": "MLBAPP"
+      },
+      "summary": "Short content should open from any new content preview",
+      "description": "**Steps:**\nShort content should open from any new content preview using the same Manual suite as the mixed feed.",
+      "priority": {
+        "name": "Medium"
+      },
+      "labels": [
+        "imported-from-csv",
+        "testrails-migration"
+      ]
+    },
+    "testRepositoryPath": "/MLBAPP Test Repository/News Surface"
+  },
+  {
+    "testType": "Manual",
+    "fields": {
+      "project": {
+        "key": "MLBAPP"
+      },
+      "summary": "All stories should follow the same Manual suite as the mixed feed",
+      "description": "**Steps:**\nAll stories should follow the same Manual suite as the mixed feed.  Changes to the URL mapping as being specified for groups should follow the same pattern present for home where grouped stories are opened (this functionality is not in today but should be picked up by the newer modules).",
+      "priority": {
+        "name": "Medium"
+      },
+      "labels": [
+        "imported-from-csv",
+        "testrails-migration"
+      ]
+    },
+    "testRepositoryPath": "/MLBAPP Test Repository/News Surface"
+  }
+]
