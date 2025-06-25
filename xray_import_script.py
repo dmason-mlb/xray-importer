@@ -183,12 +183,11 @@ class XrayImporter:
         
         for i, test in enumerate(tests):
             try:
-                # Create test as JIRA issue with Test issue type
-                # Try common XRAY Test issue type IDs
+                # Create test as JIRA issue with Xray Test issue type
                 issue_data = {
                     'fields': {
                         'project': {'key': PROJECT_KEY},
-                        'issuetype': {'id': '10101'},  # Common ID for Test issue type in XRAY
+                        'issuetype': {'id': '16824'},  # Xray Test issue type ID for MLBAPP
                         'summary': test['fields']['summary'],
                         'description': test['fields']['description'],
                         'priority': test['fields']['priority'],
