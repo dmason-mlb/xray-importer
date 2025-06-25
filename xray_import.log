@@ -119,3 +119,66 @@
 2025-06-25 14:16:59,274 - INFO - Total batches: 1
 2025-06-25 14:16:59,274 - INFO - Success rate: 0.0%
 2025-06-25 14:16:59,275 - INFO - ==================================================
+2025-06-25 14:20:27,907 - INFO - Processing file: test_small.csv
+2025-06-25 14:20:27,909 - INFO - Converted 3 tests from test_small.csv
+2025-06-25 14:20:27,909 - INFO - Importing batch 1/1 (3 tests)
+2025-06-25 14:20:31,423 - INFO - Batch 1 completed: 3 success, 0 failed
+2025-06-25 14:20:31,423 - INFO - 
+==================================================
+2025-06-25 14:20:31,423 - INFO - IMPORT SUMMARY
+2025-06-25 14:20:31,427 - INFO - ==================================================
+2025-06-25 14:20:31,427 - INFO - Total tests processed: 3
+2025-06-25 14:20:31,427 - INFO - Successfully imported: 3
+2025-06-25 14:20:31,427 - INFO - Failed to import: 0
+2025-06-25 14:20:31,427 - INFO - Total batches: 1
+2025-06-25 14:20:31,427 - INFO - Success rate: 100.0%
+2025-06-25 14:20:31,427 - INFO - ==================================================
+2025-06-25 14:29:17,563 - INFO - Processing file: news_surface_cleaned.csv
+2025-06-25 14:29:17,567 - INFO - Converted 204 tests from news_surface_cleaned.csv
+2025-06-25 14:29:17,568 - INFO - Importing batch 1/1 (204 tests)
+2025-06-25 14:29:26,645 - ERROR - Failed to create test 'surfaceCollection call fails w/ analytics': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:29:27,580 - INFO - Progress: 10/204 tests in batch 1
+2025-06-25 14:29:38,859 - INFO - Progress: 20/204 tests in batch 1
+2025-06-25 14:30:05,198 - ERROR - Error creating test: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-06-25 14:30:07,406 - INFO - Progress: 30/204 tests in batch 1
+2025-06-25 14:30:12,538 - ERROR - Failed to create test 'Displaying Timestamps and contributors when "ReplaceTimeStampWithAuthorDuration" is set': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:30:15,066 - ERROR - Failed to create test 'Displaying Only Timestamp when "ReplaceTimeStampWithAuthorDuration" not set': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:30:17,214 - INFO - Progress: 40/204 tests in batch 1
+2025-06-25 14:30:22,154 - ERROR - Failed to create test 'Accepting Only Videos and Articles as Content Options - deprecated': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:30:22,440 - ERROR - Failed to create test 'Small, Medium, Large Style setting': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:30:27,934 - INFO - Progress: 50/204 tests in batch 1
+2025-06-25 14:30:39,223 - INFO - Progress: 60/204 tests in batch 1
+2025-06-25 14:30:50,765 - INFO - Progress: 70/204 tests in batch 1
+2025-06-25 14:31:03,249 - INFO - Progress: 80/204 tests in batch 1
+2025-06-25 14:31:16,859 - INFO - Progress: 90/204 tests in batch 1
+2025-06-25 14:31:28,321 - INFO - Progress: 100/204 tests in batch 1
+2025-06-25 14:31:39,971 - INFO - Progress: 110/204 tests in batch 1
+2025-06-25 14:31:50,699 - INFO - Progress: 120/204 tests in batch 1
+2025-06-25 14:32:02,513 - INFO - Progress: 130/204 tests in batch 1
+2025-06-25 14:32:09,071 - ERROR - Failed to create test 'Accepting Only tap stories as Content Options': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:09,329 - ERROR - Failed to create test 'Displaying Stories in a Stack Format': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:12,618 - ERROR - Failed to create test 'Accepting Only tap stories as Content Options': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:19,474 - ERROR - Failed to create test 'Accepting Only tap stories as Content Options': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:23,875 - INFO - Progress: 150/204 tests in batch 1
+2025-06-25 14:32:30,047 - ERROR - Failed to create test 'Accepting Only VSM as Content Options': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:34,393 - INFO - Progress: 160/204 tests in batch 1
+2025-06-25 14:32:37,231 - ERROR - Failed to create test 'Bilingual - Topic Collection Screen': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:37,512 - ERROR - Failed to create test 'Bilingual - Language Switch Behavior': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:37,813 - ERROR - Failed to create test 'Bilingual -  Persisting Pill Preferences Between Languages': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:38,048 - ERROR - Failed to create test 'Bilingual - Persisting Pill Preferences Between Cycles': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:38,338 - ERROR - Failed to create test 'Bilingual - Feature Flag': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:38,593 - ERROR - Failed to create test 'Bilingual - Tapping Content': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:38,897 - ERROR - Failed to create test 'Bilingual - Default selected language': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:39,214 - ERROR - Failed to create test 'Module Display Configuration': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:39,488 - ERROR - Failed to create test 'Surface Collection: Midfield: Pinned surfaces': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:39,735 - ERROR - Failed to create test 'Pinned Surfaces Display First': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:40,037 - ERROR - Failed to create test 'Build UI of screen (empty state)': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:40,330 - ERROR - Failed to create test 'Build UI of screen (selected state)': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:40,632 - ERROR - Failed to create test 'Sort pills based on selection': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:40,895 - ERROR - Failed to create test 'Tapping filter button launches this screen': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:41,181 - ERROR - Failed to create test 'Deselect Logic': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:41,453 - ERROR - Failed to create test 'Pinned Surfaces Do not display in preferred topic list': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:43,783 - INFO - Progress: 180/204 tests in batch 1
+2025-06-25 14:32:45,412 - ERROR - Failed to create test '6-12 Tap Stories in List': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:45,684 - ERROR - Failed to create test 'Truncate the list to the lower multiple of the module': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}
+2025-06-25 14:32:45,967 - ERROR - Failed to create test 'More than 12 or Less than 6 Tap Stories in List': 400 - {"errorMessages":[],"errors":{"customfield_23269":"Field 'customfield_23269' cannot be set. It is not on the appropriate screen, or unknown."}}

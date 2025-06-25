@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-XRAY Test Import Script for MLBAPP Project
-Imports test cases from CSV files to JIRA XRAY using REST API
+Enhanced XRAY Test Import Script for MLBAPP Project
+Imports test cases from CSV files to JIRA XRAY using REST API for test creation
+and GraphQL API for test steps
 """
 
 import csv
@@ -20,6 +21,7 @@ import logging
 JIRA_BASE_URL = os.environ.get('JIRA_BASE_URL', 'https://your-domain.atlassian.net')
 JIRA_EMAIL = os.environ.get('JIRA_EMAIL', '')
 JIRA_TOKEN = os.environ.get('ATLASSIAN_TOKEN', '')
+XRAY_GRAPHQL_URL = 'https://xray.cloud.getxray.app/api/v2/graphql'
 PROJECT_KEY = 'MLBAPP'
 BATCH_SIZE = 900  # Stay under 1000 limit with buffer
 RATE_LIMIT_DELAY = 2  # Seconds between batches
@@ -29,7 +31,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('xray_import.log'),
+        logging.FileHandler('xray_import_with_steps.log'),
         logging.StreamHandler(sys.stdout)
     ]
 )
@@ -38,6 +40,8 @@ logger = logging.getLogger(__name__)
 class XrayImporter:
     def __init__(self, base_url: str, email: str, token: str):
         self.base_url = base_url
+        self.email = email
+        self.token = token
         self.session = requests.Session()
         self.session.auth = HTTPBasicAuth(email, token)
         self.session.headers.update({
@@ -48,8 +52,22 @@ class XrayImporter:
             'total': 0,
             'success': 0,
             'failed': 0,
-            'batches': 0
+            'batches': 0,
+            'steps_added': 0
         }
+        # Get XRAY API token
+        self.xray_token = self.get_xray_token()
+    
+    def get_xray_token(self):
+        """Get XRAY Cloud API token using JIRA credentials"""
+        try:
+            # XRAY Cloud uses the same auth as JIRA Cloud
+            # The GraphQL endpoint uses Bearer token auth
+            logger.info("Using JIRA credentials for XRAY GraphQL API")
+            return None  # We'll use basic auth directly
+        except Exception as e:
+            logger.error(f"Error getting XRAY token: {str(e)}")
+            return None
     
     def convert_csv_to_xray_test(self, row: Dict[str, str]) -> Dict[str, Any]:
         """Convert CSV row to XRAY test format"""
@@ -74,35 +92,17 @@ class XrayImporter:
         if row.get('Section Description'):
             description_parts.append(f"**Section Description:**\n{row['Section Description']}")
         
-        # Format test steps more clearly
-        test_steps_info = []
-        
-        # Check for separated steps format
-        if row.get('Steps Separated (Step)') and row.get('Steps Separated (Expected Result)'):
-            description_parts.append("**Test Steps:**")
-            step_actions = row['Steps Separated (Step)'].split('\n')
-            expected_results = row['Steps Separated (Expected Result)'].split('\n')
-            
-            for i, (action, result) in enumerate(zip(step_actions, expected_results), 1):
-                if action.strip():
-                    test_steps_info.append(f"\n**Step {i}:**")
-                    test_steps_info.append(f"Action: {action.strip()}")
-                    if result.strip():
-                        test_steps_info.append(f"Expected Result: {result.strip()}")
-            
-            description_parts.extend(test_steps_info)
-        
-        # Fallback to regular steps field
-        elif row.get('Steps'):
-            description_parts.append(f"**Test Steps:**\n{row['Steps']}")
-        
-        # Add expected result if not already included
+        # Add expected result if not in steps
         if row.get('Expected Result') and not row.get('Steps Separated (Expected Result)'):
             description_parts.append(f"**Expected Result:**\n{row['Expected Result']}")
         
         # Add references if available
         if row.get('References'):
             description_parts.append(f"**References:** {row['References']}")
+        
+        # Note about test steps
+        if row.get('Steps') or row.get('Steps Separated (Step)'):
+            description_parts.append("\n*Note: Test steps will be added after test creation*")
         
         description = '\n\n'.join(description_parts) if description_parts else ''
         
@@ -126,10 +126,8 @@ class XrayImporter:
         if row.get('References'):
             test['fields']['comment'] = f"Original References: {row['References']}"
         
-        # Process test steps
-        steps = self.parse_test_steps(row)
-        if steps:
-            test['testSteps'] = steps
+        # Process test steps for later addition
+        test['_steps'] = self.parse_test_steps(row)
         
         # Add Test Repository path based on Section
         if row.get('Section'):
@@ -149,9 +147,9 @@ class XrayImporter:
             for i, (step, result) in enumerate(zip(step_parts, result_parts)):
                 if step.strip():
                     steps.append({
-                        'index': i + 1,
                         'action': step.strip(),
-                        'expectedResult': result.strip() if result.strip() else ''
+                        'result': result.strip() if result.strip() else '',
+                        'data': ''
                     })
         
         # Fallback to regular Steps field
@@ -173,10 +171,18 @@ class XrayImporter:
                 
                 if action:
                     steps.append({
-                        'index': i + 1,
                         'action': action,
-                        'expectedResult': expected
+                        'result': expected,
+                        'data': ''
                     })
+        
+        # If no steps parsed but we have Steps field, create single step
+        elif row.get('Steps'):
+            steps.append({
+                'action': row['Steps'].strip(),
+                'result': row.get('Expected Result', '').strip(),
+                'data': ''
+            })
         
         return steps
     
@@ -204,16 +210,84 @@ class XrayImporter:
             return f"{base}/{'/'.join(clean_parts[1:])}"
         return base
     
+    def add_test_steps_graphql(self, issue_key: str, steps: List[Dict[str, str]]) -> bool:
+        """Add test steps to an XRAY test using GraphQL API"""
+        if not steps:
+            return True
+        
+        try:
+            # Build GraphQL mutation for adding test steps
+            steps_input = []
+            for i, step in enumerate(steps):
+                steps_input.append({
+                    'action': step.get('action', ''),
+                    'result': step.get('result', ''),
+                    'data': step.get('data', '')
+                })
+            
+            mutation = """
+            mutation AddTestSteps($issueId: String!, $steps: [StepInput!]!) {
+                addTestSteps(issueId: $issueId, steps: $steps) {
+                    warnings
+                    addedSteps
+                }
+            }
+            """
+            
+            variables = {
+                'issueId': issue_key,
+                'steps': steps_input
+            }
+            
+            # Make GraphQL request
+            headers = {
+                'Authorization': f'Basic {self._get_basic_auth()}',
+                'Content-Type': 'application/json'
+            }
+            
+            response = requests.post(
+                XRAY_GRAPHQL_URL,
+                json={'query': mutation, 'variables': variables},
+                headers=headers
+            )
+            
+            if response.status_code == 200:
+                result = response.json()
+                if 'errors' in result:
+                    logger.error(f"GraphQL errors for {issue_key}: {result['errors']}")
+                    return False
+                else:
+                    logger.debug(f"Added {len(steps)} steps to {issue_key}")
+                    self.import_stats['steps_added'] += len(steps)
+                    return True
+            else:
+                logger.error(f"Failed to add steps to {issue_key}: {response.status_code} - {response.text}")
+                return False
+                
+        except Exception as e:
+            logger.error(f"Error adding test steps to {issue_key}: {str(e)}")
+            return False
+    
+    def _get_basic_auth(self):
+        """Get base64 encoded basic auth string"""
+        import base64
+        credentials = f"{self.email}:{self.token}"
+        return base64.b64encode(credentials.encode()).decode()
+    
     def import_batch(self, tests: List[Dict[str, Any]], batch_num: int, total_batches: int) -> bool:
         """Import a batch of tests via XRAY API"""
         logger.info(f"Importing batch {batch_num}/{total_batches} ({len(tests)} tests)")
         
-        # First, let's try to create tests individually using JIRA API with Test issue type
+        # First, create tests using JIRA API
         success_count = 0
         failed_count = 0
+        created_tests = []
         
         for i, test in enumerate(tests):
             try:
+                # Extract steps before creating issue
+                steps = test.pop('_steps', [])
+                
                 # Create test as JIRA issue with Xray Test issue type
                 issue_data = {
                     'fields': {
@@ -230,10 +304,6 @@ class XrayImporter:
                 if 'customfield_23269' in test['fields']:
                     issue_data['fields']['customfield_23269'] = test['fields']['customfield_23269']
                 
-                # For XRAY Cloud, we need to add test type and steps as custom fields
-                # Test Type field (this might be a custom field ID specific to your instance)
-                # We'll need to find the correct custom field IDs for XRAY fields
-                
                 # Create issue via JIRA API
                 url = f"{self.base_url}/rest/api/2/issue"
                 response = self.session.post(url, json=issue_data)
@@ -241,10 +311,7 @@ class XrayImporter:
                 if response.status_code in [200, 201]:
                     success_count += 1
                     issue_key = response.json().get('key')
-                    
-                    # Now add test steps if available
-                    if 'testSteps' in test and test['testSteps'] and issue_key:
-                        self.add_test_steps(issue_key, test['testSteps'])
+                    created_tests.append((issue_key, steps))
                     
                     if (i + 1) % 10 == 0:
                         logger.info(f"Progress: {i + 1}/{len(tests)} tests in batch {batch_num}")
@@ -258,20 +325,19 @@ class XrayImporter:
                 failed_count += 1
                 logger.error(f"Error creating test: {str(e)}")
         
-        logger.info(f"Batch {batch_num} completed: {success_count} success, {failed_count} failed")
+        # Now add test steps to created tests
+        logger.info(f"Adding test steps to {len(created_tests)} tests...")
+        steps_success = 0
+        for issue_key, steps in created_tests:
+            if steps and self.add_test_steps_graphql(issue_key, steps):
+                steps_success += 1
+            time.sleep(0.1)  # Small delay between GraphQL calls
+        
+        logger.info(f"Batch {batch_num} completed: {success_count} tests created, {steps_success} with steps added")
         self.import_stats['success'] += success_count
         self.import_stats['failed'] += failed_count
         
         return failed_count == 0
-    
-    def add_test_steps(self, issue_key: str, steps: List[Dict[str, Any]]):
-        """Add test steps to an XRAY test issue"""
-        try:
-            # For XRAY Cloud, test steps are typically managed through GraphQL API
-            # or custom fields. For now, we'll add them to the description
-            logger.debug(f"Test steps would be added to {issue_key}")
-        except Exception as e:
-            logger.error(f"Error adding test steps to {issue_key}: {str(e)}")
     
     def process_csv_file(self, filepath: str, dry_run: bool = False):
         """Process and import tests from a CSV file"""
@@ -328,11 +394,12 @@ class XrayImporter:
         logger.info(f"Successfully imported: {self.import_stats['success']}")
         logger.info(f"Failed to import: {self.import_stats['failed']}")
         logger.info(f"Total batches: {self.import_stats['batches']}")
+        logger.info(f"Test steps added: {self.import_stats['steps_added']}")
         logger.info(f"Success rate: {(self.import_stats['success']/self.import_stats['total']*100):.1f}%")
         logger.info("="*50)
 
 def main():
-    parser = argparse.ArgumentParser(description='Import test cases to XRAY')
+    parser = argparse.ArgumentParser(description='Import test cases to XRAY with test steps')
     parser.add_argument('files', nargs='+', help='CSV files to import')
     parser.add_argument('--dry-run', action='store_true', help='Convert but do not import')
     parser.add_argument('--continue-on-error', action='store_true', help='Continue if batch fails')
