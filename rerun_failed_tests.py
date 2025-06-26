@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-XRAY Test Import Script for MLBAPP Project
-Imports test cases from CSV files to JIRA XRAY using REST API
+Re-run failed test imports from previous import attempt
+This script will read the import log and retry failed tests without the problematic custom field
 """
 
 import csv
@@ -9,8 +9,9 @@ import json
 import os
 import sys
 import time
+import re
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Set
 import requests
 from requests.auth import HTTPBasicAuth
 import argparse
@@ -29,13 +30,13 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('xray_import.log'),
+        logging.FileHandler('xray_rerun_failed.log'),
         logging.StreamHandler(sys.stdout)
     ]
 )
 logger = logging.getLogger(__name__)
 
-class XrayImporter:
+class FailedTestImporter:
     def __init__(self, base_url: str, email: str, token: str):
         self.base_url = base_url
         self.session = requests.Session()
@@ -48,11 +49,82 @@ class XrayImporter:
             'total': 0,
             'success': 0,
             'failed': 0,
-            'batches': 0
+            'batches': 0,
+            'skipped': 0
         }
+        self.failed_tests = []
+        self.successful_tests = set()
+    
+    def parse_import_log(self, log_file: str):
+        """Parse the import log to identify failed tests"""
+        logger.info(f"Parsing import log: {log_file}")
+        
+        with open(log_file, 'r') as f:
+            for line in f:
+                # Look for successful test creations
+                if "Successfully imported:" in line:
+                    # Extract the success count
+                    match = re.search(r'Successfully imported: (\d+)', line)
+                    if match:
+                        logger.info(f"Previous run had {match.group(1)} successful imports")
+                
+                # Look for failed test entries
+                if "Failed to create test" in line:
+                    # Extract test title
+                    match = re.search(r"Failed to create test '([^']+)'", line)
+                    if match:
+                        test_title = match.group(1)
+                        self.failed_tests.append(test_title)
+                
+                # Look for successful issue creation
+                if "created successfully" in line or "Progress:" in line:
+                    # These indicate successful tests, but we'll rely on searching JIRA
+                    pass
+        
+        logger.info(f"Found {len(self.failed_tests)} failed test titles from log")
+    
+    def get_existing_tests(self):
+        """Query JIRA to get all existing test issues in MLBAPP"""
+        logger.info("Querying JIRA for existing tests...")
+        
+        all_tests = []
+        start_at = 0
+        max_results = 100
+        
+        while True:
+            jql = f'project = {PROJECT_KEY} AND issuetype = "Xray Test" AND labels = "imported-from-csv"'
+            url = f"{self.base_url}/rest/api/2/search"
+            params = {
+                'jql': jql,
+                'startAt': start_at,
+                'maxResults': max_results,
+                'fields': 'summary'
+            }
+            
+            response = self.session.get(url, params=params)
+            if response.status_code == 200:
+                data = response.json()
+                issues = data.get('issues', [])
+                
+                for issue in issues:
+                    summary = issue['fields']['summary']
+                    self.successful_tests.add(summary)
+                
+                all_tests.extend(issues)
+                
+                if len(issues) < max_results:
+                    break
+                
+                start_at += max_results
+            else:
+                logger.error(f"Failed to query JIRA: {response.status_code}")
+                break
+        
+        logger.info(f"Found {len(self.successful_tests)} existing tests in MLBAPP")
+        return all_tests
     
     def convert_csv_to_xray_test(self, row: Dict[str, str]) -> Dict[str, Any]:
-        """Convert CSV row to XRAY test format"""
+        """Convert CSV row to XRAY test format (without problematic custom field)"""
         
         # Map priority
         priority_map = {
@@ -114,71 +186,17 @@ class XrayImporter:
                 'summary': row.get('Title', ''),
                 'description': description,
                 'priority': {'name': priority},
-                'labels': ['imported-from-csv', 'testrails-migration']
+                'labels': ['imported-from-csv', 'testrails-migration', 'rerun-import']
             }
         }
         
-        # Add custom fields if available
-        if row.get('Preconditions'):
-            test['fields']['customfield_23269'] = row['Preconditions']
-        
-        # Add references as comment
-        if row.get('References'):
-            test['fields']['comment'] = f"Original References: {row['References']}"
-        
-        # Process test steps
-        steps = self.parse_test_steps(row)
-        if steps:
-            test['testSteps'] = steps
+        # NOTE: We're NOT adding customfield_23269 anymore as it was causing failures
         
         # Add Test Repository path based on Section
         if row.get('Section'):
             test['testRepositoryPath'] = self.build_repository_path(row['Section'])
         
         return test
-    
-    def parse_test_steps(self, row: Dict[str, str]) -> List[Dict[str, str]]:
-        """Parse test steps from CSV format"""
-        steps = []
-        
-        # Try Steps Separated format first
-        if row.get('Steps Separated (Step)') and row.get('Steps Separated (Expected Result)'):
-            step_parts = row['Steps Separated (Step)'].split('\n')
-            result_parts = row['Steps Separated (Expected Result)'].split('\n')
-            
-            for i, (step, result) in enumerate(zip(step_parts, result_parts)):
-                if step.strip():
-                    steps.append({
-                        'index': i + 1,
-                        'action': step.strip(),
-                        'expectedResult': result.strip() if result.strip() else ''
-                    })
-        
-        # Fallback to regular Steps field
-        elif row.get('Steps'):
-            step_text = row['Steps']
-            # Simple parsing - split by numbered lines
-            import re
-            step_pattern = re.compile(r'(\d+)\.\s*(.*?)(?=\d+\.|$)', re.DOTALL)
-            matches = step_pattern.findall(step_text)
-            
-            for i, (num, content) in enumerate(matches):
-                if 'Expected Result:' in content:
-                    parts = content.split('Expected Result:', 1)
-                    action = parts[0].strip()
-                    expected = parts[1].strip() if len(parts) > 1 else ''
-                else:
-                    action = content.strip()
-                    expected = ''
-                
-                if action:
-                    steps.append({
-                        'index': i + 1,
-                        'action': action,
-                        'expectedResult': expected
-                    })
-        
-        return steps
     
     def build_repository_path(self, section: str) -> str:
         """Build Test Repository path from section string"""
@@ -208,7 +226,6 @@ class XrayImporter:
         """Import a batch of tests via XRAY API"""
         logger.info(f"Importing batch {batch_num}/{total_batches} ({len(tests)} tests)")
         
-        # First, let's try to create tests individually using JIRA API with Test issue type
         success_count = 0
         failed_count = 0
         
@@ -226,15 +243,6 @@ class XrayImporter:
                     }
                 }
                 
-                # Add custom fields if present
-                # Commented out - field not available on screen
-                # if 'customfield_23269' in test['fields']:
-                #     issue_data['fields']['customfield_23269'] = test['fields']['customfield_23269']
-                
-                # For XRAY Cloud, we need to add test type and steps as custom fields
-                # Test Type field (this might be a custom field ID specific to your instance)
-                # We'll need to find the correct custom field IDs for XRAY fields
-                
                 # Create issue via JIRA API
                 url = f"{self.base_url}/rest/api/2/issue"
                 response = self.session.post(url, json=issue_data)
@@ -242,10 +250,7 @@ class XrayImporter:
                 if response.status_code in [200, 201]:
                     success_count += 1
                     issue_key = response.json().get('key')
-                    
-                    # Now add test steps if available
-                    if 'testSteps' in test and test['testSteps'] and issue_key:
-                        self.add_test_steps(issue_key, test['testSteps'])
+                    logger.info(f"Created test: {issue_key} - {test['fields']['summary']}")
                     
                     if (i + 1) % 10 == 0:
                         logger.info(f"Progress: {i + 1}/{len(tests)} tests in batch {batch_num}")
@@ -265,47 +270,56 @@ class XrayImporter:
         
         return failed_count == 0
     
-    def add_test_steps(self, issue_key: str, steps: List[Dict[str, Any]]):
-        """Add test steps to an XRAY test issue"""
-        try:
-            # For XRAY Cloud, test steps are typically managed through GraphQL API
-            # or custom fields. For now, we'll add them to the description
-            logger.debug(f"Test steps would be added to {issue_key}")
-        except Exception as e:
-            logger.error(f"Error adding test steps to {issue_key}: {str(e)}")
-    
-    def process_csv_file(self, filepath: str, dry_run: bool = False):
-        """Process and import tests from a CSV file"""
-        logger.info(f"Processing file: {filepath}")
+    def process_csv_files(self, filepaths: List[str], dry_run: bool = False):
+        """Process CSV files and import only failed tests"""
         
-        tests = []
+        # First, get existing tests from JIRA
+        self.get_existing_tests()
         
-        # Read and convert CSV with ISO-8859-1 encoding
-        with open(filepath, 'r', encoding='iso-8859-1') as csvfile:
-            reader = csv.DictReader(csvfile)
+        all_tests_to_import = []
+        
+        for filepath in filepaths:
+            logger.info(f"Processing file: {filepath}")
             
-            for row in reader:
-                try:
-                    test = self.convert_csv_to_xray_test(row)
-                    tests.append(test)
-                    self.import_stats['total'] += 1
-                except Exception as e:
-                    logger.error(f"Error converting row {row.get('ID', 'unknown')}: {str(e)}")
+            if not os.path.exists(filepath):
+                logger.error(f"File not found: {filepath}")
+                continue
+            
+            # Read and convert CSV with ISO-8859-1 encoding
+            with open(filepath, 'r', encoding='iso-8859-1') as csvfile:
+                reader = csv.DictReader(csvfile)
+                
+                for row in reader:
+                    try:
+                        test_title = row.get('Title', '')
+                        
+                        # Skip if already imported successfully
+                        if test_title in self.successful_tests:
+                            self.import_stats['skipped'] += 1
+                            continue
+                        
+                        # Convert and add to import list
+                        test = self.convert_csv_to_xray_test(row)
+                        all_tests_to_import.append(test)
+                        self.import_stats['total'] += 1
+                        
+                    except Exception as e:
+                        logger.error(f"Error converting row {row.get('ID', 'unknown')}: {str(e)}")
         
-        logger.info(f"Converted {len(tests)} tests from {filepath}")
+        logger.info(f"Found {len(all_tests_to_import)} tests to import (skipped {self.import_stats['skipped']} already imported)")
         
         if dry_run:
             logger.info("Dry run mode - skipping actual import")
             # Save sample for review
-            with open(f"{filepath}_sample.json", 'w') as f:
-                json.dump(tests[:5], f, indent=2)
+            with open("failed_tests_sample.json", 'w') as f:
+                json.dump(all_tests_to_import[:5], f, indent=2)
             return
         
         # Import in batches
-        total_batches = (len(tests) + BATCH_SIZE - 1) // BATCH_SIZE
+        total_batches = (len(all_tests_to_import) + BATCH_SIZE - 1) // BATCH_SIZE
         
-        for i in range(0, len(tests), BATCH_SIZE):
-            batch = tests[i:i + BATCH_SIZE]
+        for i in range(0, len(all_tests_to_import), BATCH_SIZE):
+            batch = all_tests_to_import[i:i + BATCH_SIZE]
             batch_num = (i // BATCH_SIZE) + 1
             self.import_stats['batches'] += 1
             
@@ -323,18 +337,21 @@ class XrayImporter:
     def print_summary(self):
         """Print import summary statistics"""
         logger.info("\n" + "="*50)
-        logger.info("IMPORT SUMMARY")
+        logger.info("RERUN IMPORT SUMMARY")
         logger.info("="*50)
-        logger.info(f"Total tests processed: {self.import_stats['total']}")
+        logger.info(f"Total tests to process: {self.import_stats['total']}")
+        logger.info(f"Already imported (skipped): {self.import_stats['skipped']}")
         logger.info(f"Successfully imported: {self.import_stats['success']}")
         logger.info(f"Failed to import: {self.import_stats['failed']}")
         logger.info(f"Total batches: {self.import_stats['batches']}")
-        logger.info(f"Success rate: {(self.import_stats['success']/self.import_stats['total']*100):.1f}%")
+        if self.import_stats['total'] > 0:
+            logger.info(f"Success rate: {(self.import_stats['success']/self.import_stats['total']*100):.1f}%")
         logger.info("="*50)
 
 def main():
-    parser = argparse.ArgumentParser(description='Import test cases to XRAY')
+    parser = argparse.ArgumentParser(description='Re-import failed test cases to XRAY')
     parser.add_argument('files', nargs='+', help='CSV files to import')
+    parser.add_argument('--log-file', default='xray_import.log', help='Previous import log file to analyze')
     parser.add_argument('--dry-run', action='store_true', help='Convert but do not import')
     parser.add_argument('--continue-on-error', action='store_true', help='Continue if batch fails')
     parser.add_argument('--batch-size', type=int, default=900, help='Tests per batch (max 1000)')
@@ -352,20 +369,14 @@ def main():
     BATCH_SIZE = min(args.batch_size, 1000)
     
     # Create importer
-    importer = XrayImporter(JIRA_BASE_URL, JIRA_EMAIL, JIRA_TOKEN)
+    importer = FailedTestImporter(JIRA_BASE_URL, JIRA_EMAIL, JIRA_TOKEN)
     
-    # Process each file
-    for filepath in args.files:
-        if not os.path.exists(filepath):
-            logger.error(f"File not found: {filepath}")
-            continue
-        
-        try:
-            importer.process_csv_file(filepath, args.dry_run)
-        except Exception as e:
-            logger.error(f"Failed to process {filepath}: {str(e)}")
-            if not args.continue_on_error:
-                break
+    # Parse previous log if provided
+    if os.path.exists(args.log_file):
+        importer.parse_import_log(args.log_file)
+    
+    # Process CSV files
+    importer.process_csv_files(args.files, args.dry_run)
     
     # Print summary
     importer.print_summary()

@@ -1,0 +1,1021 @@
+2025-06-25 22:44:12,701 - INFO - Starting XRAY Test Set creation from labels
+2025-06-25 22:44:12,701 - INFO - JIRA URL: https://baseball.atlassian.net
+2025-06-25 22:44:12,701 - INFO - Project: MLBAPP
+2025-06-25 22:44:13,229 - INFO - Found Test Set issue type: 17097
+2025-06-25 22:44:13,230 - INFO - Fetching organizational labels...
+2025-06-25 22:44:19,273 - INFO - Found 25 unique organizational labels
+2025-06-25 22:44:19,274 - INFO - 
+Creating Test Sets for 25 labels...
+2025-06-25 22:44:19,274 - INFO - ============================================================
+2025-06-25 22:44:19,274 - INFO - 
+Processing: surface-home (608 tests)
+2025-06-25 22:44:19,274 - INFO - [DRY RUN] Would create Test Set: Home Surface Tests
+2025-06-25 22:44:19,275 - INFO - 
+Processing: surface-core (556 tests)
+2025-06-25 22:44:19,275 - INFO - [DRY RUN] Would create Test Set: Core Surface Tests
+2025-06-25 22:44:19,275 - INFO - 
+Processing: surface-news (243 tests)
+2025-06-25 22:44:19,276 - INFO - [DRY RUN] Would create Test Set: News Surface Tests
+2025-06-25 22:44:19,276 - INFO - 
+Processing: feature-stories (185 tests)
+2025-06-25 22:44:19,276 - INFO - [DRY RUN] Would create Test Set: Stories Feature Tests
+2025-06-25 22:44:19,276 - INFO - 
+Processing: feature-video (157 tests)
+2025-06-25 22:44:19,277 - INFO - [DRY RUN] Would create Test Set: Video Feature Tests
+2025-06-25 22:44:19,277 - INFO - 
+Processing: feature-configuration (138 tests)
+2025-06-25 22:44:19,277 - INFO - [DRY RUN] Would create Test Set: Configuration Feature Tests
+2025-06-25 22:44:19,277 - INFO - 
+Processing: feature-analytics (96 tests)
+2025-06-25 22:44:19,278 - INFO - [DRY RUN] Would create Test Set: Analytics Feature Tests
+2025-06-25 22:44:19,278 - INFO - 
+Processing: feature-player (96 tests)
+2025-06-25 22:44:19,278 - INFO - [DRY RUN] Would create Test Set: Player Feature Tests
+2025-06-25 22:44:19,279 - INFO - 
+Processing: feature-authentication (64 tests)
+2025-06-25 22:44:19,279 - INFO - [DRY RUN] Would create Test Set: Authentication Feature Tests
+2025-06-25 22:44:19,279 - INFO - 
+Processing: feature-notifications (45 tests)
+2025-06-25 22:44:19,279 - INFO - [DRY RUN] Would create Test Set: Notifications Feature Tests
+2025-06-25 22:44:19,279 - INFO - 
+Processing: feature-localization (40 tests)
+2025-06-25 22:44:19,279 - INFO - [DRY RUN] Would create Test Set: Localization Feature Tests
+2025-06-25 22:44:19,279 - INFO - 
+Processing: feature-mixed-feed (37 tests)
+2025-06-25 22:44:19,279 - INFO - [DRY RUN] Would create Test Set: Mixed Feed Feature Tests
+2025-06-25 22:44:19,279 - INFO - 
+Processing: feature-headline-stack (34 tests)
+2025-06-25 22:44:19,279 - INFO - [DRY RUN] Would create Test Set: Headline Stack Feature Tests
+2025-06-25 22:44:19,279 - INFO - 
+Processing: feature-accessibility (34 tests)
+2025-06-25 22:44:19,279 - INFO - [DRY RUN] Would create Test Set: Accessibility Feature Tests
+2025-06-25 22:44:19,279 - INFO - 
+Processing: feature-team-snapshot (34 tests)
+2025-06-25 22:44:19,279 - INFO - [DRY RUN] Would create Test Set: Team Snapshot Feature Tests
+2025-06-25 22:44:19,279 - INFO - 
+Processing: feature-scoreboard (33 tests)
+2025-06-25 22:44:19,279 - INFO - [DRY RUN] Would create Test Set: Scoreboard Feature Tests
+2025-06-25 22:44:19,279 - INFO - 
+Processing: feature-schedule (28 tests)
+2025-06-25 22:44:19,279 - INFO - [DRY RUN] Would create Test Set: Schedule Feature Tests
+2025-06-25 22:44:19,280 - INFO - 
+Processing: feature-standings (24 tests)
+2025-06-25 22:44:19,280 - INFO - [DRY RUN] Would create Test Set: Standings Feature Tests
+2025-06-25 22:44:19,280 - INFO - 
+Processing: feature-settings (23 tests)
+2025-06-25 22:44:19,280 - INFO - [DRY RUN] Would create Test Set: Settings Feature Tests
+2025-06-25 22:44:19,280 - INFO - 
+Processing: feature-carousel (23 tests)
+2025-06-25 22:44:19,280 - INFO - [DRY RUN] Would create Test Set: Carousel Feature Tests
+2025-06-25 22:44:19,280 - INFO - 
+Processing: feature-advertising (15 tests)
+2025-06-25 22:44:19,280 - INFO - [DRY RUN] Would create Test Set: Advertising Feature Tests
+2025-06-25 22:44:19,280 - INFO - 
+Processing: feature-onboarding (14 tests)
+2025-06-25 22:44:19,280 - INFO - [DRY RUN] Would create Test Set: Onboarding Feature Tests
+2025-06-25 22:44:19,280 - INFO - 
+Processing: feature-live-activities (13 tests)
+2025-06-25 22:44:19,280 - INFO - [DRY RUN] Would create Test Set: Live Activities Feature Tests
+2025-06-25 22:44:19,280 - INFO - 
+Processing: feature-gameday (8 tests)
+2025-06-25 22:44:19,280 - INFO - [DRY RUN] Would create Test Set: Gameday Feature Tests
+2025-06-25 22:44:19,280 - INFO - 
+Processing: feature-performance (6 tests)
+2025-06-25 22:44:19,280 - INFO - [DRY RUN] Would create Test Set: Performance Feature Tests
+2025-06-25 22:44:19,280 - INFO - 
+============================================================
+2025-06-25 22:44:19,280 - INFO - TEST SET CREATION SUMMARY
+2025-06-25 22:44:19,280 - INFO - ============================================================
+2025-06-25 22:44:19,281 - INFO - Total organizational labels: 25
+2025-06-25 22:44:19,281 - INFO - Test Sets created: 25
+2025-06-25 22:44:19,281 - INFO - Test Sets skipped (existing): 0
+2025-06-25 22:44:19,281 - INFO - Test Sets failed: 0
+2025-06-25 22:44:19,281 - INFO - ============================================================
+2025-06-25 22:44:39,285 - INFO - Starting XRAY Test Set creation from labels
+2025-06-25 22:44:39,286 - INFO - JIRA URL: https://baseball.atlassian.net
+2025-06-25 22:44:39,286 - INFO - Project: MLBAPP
+2025-06-25 22:44:39,684 - INFO - Found Test Set issue type: 17097
+2025-06-25 22:44:39,684 - INFO - Fetching organizational labels...
+2025-06-25 22:44:45,423 - INFO - Found 25 unique organizational labels
+2025-06-25 22:44:45,426 - INFO - 
+Creating Test Sets for 25 labels...
+2025-06-25 22:44:45,427 - INFO - ============================================================
+2025-06-25 22:44:45,427 - INFO - 
+Processing: surface-home (608 tests)
+2025-06-25 22:44:46,080 - ERROR - Failed to create Test Set for surface-home: 400
+2025-06-25 22:44:46,080 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:46,586 - INFO - 
+Processing: surface-core (556 tests)
+2025-06-25 22:44:47,313 - ERROR - Failed to create Test Set for surface-core: 400
+2025-06-25 22:44:47,313 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:47,819 - INFO - 
+Processing: surface-news (243 tests)
+2025-06-25 22:44:48,390 - ERROR - Failed to create Test Set for surface-news: 400
+2025-06-25 22:44:48,391 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:48,896 - INFO - 
+Processing: feature-stories (185 tests)
+2025-06-25 22:44:49,476 - ERROR - Failed to create Test Set for feature-stories: 400
+2025-06-25 22:44:49,476 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:49,982 - INFO - 
+Processing: feature-video (157 tests)
+2025-06-25 22:44:50,661 - ERROR - Failed to create Test Set for feature-video: 400
+2025-06-25 22:44:50,661 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:51,166 - INFO - 
+Processing: feature-configuration (138 tests)
+2025-06-25 22:44:51,702 - ERROR - Failed to create Test Set for feature-configuration: 400
+2025-06-25 22:44:51,702 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:52,207 - INFO - 
+Processing: feature-analytics (96 tests)
+2025-06-25 22:44:52,756 - ERROR - Failed to create Test Set for feature-analytics: 400
+2025-06-25 22:44:52,756 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:53,258 - INFO - 
+Processing: feature-player (96 tests)
+2025-06-25 22:44:53,812 - ERROR - Failed to create Test Set for feature-player: 400
+2025-06-25 22:44:53,812 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:54,314 - INFO - 
+Processing: feature-authentication (64 tests)
+2025-06-25 22:44:54,902 - ERROR - Failed to create Test Set for feature-authentication: 400
+2025-06-25 22:44:54,903 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:55,405 - INFO - 
+Processing: feature-notifications (45 tests)
+2025-06-25 22:44:56,087 - ERROR - Failed to create Test Set for feature-notifications: 400
+2025-06-25 22:44:56,087 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:56,591 - INFO - 
+Processing: feature-localization (40 tests)
+2025-06-25 22:44:57,267 - ERROR - Failed to create Test Set for feature-localization: 400
+2025-06-25 22:44:57,268 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:57,771 - INFO - 
+Processing: feature-mixed-feed (37 tests)
+2025-06-25 22:44:58,378 - ERROR - Failed to create Test Set for feature-mixed-feed: 400
+2025-06-25 22:44:58,378 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:58,881 - INFO - 
+Processing: feature-headline-stack (34 tests)
+2025-06-25 22:44:59,467 - ERROR - Failed to create Test Set for feature-headline-stack: 400
+2025-06-25 22:44:59,467 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:44:59,973 - INFO - 
+Processing: feature-accessibility (34 tests)
+2025-06-25 22:45:00,615 - ERROR - Failed to create Test Set for feature-accessibility: 400
+2025-06-25 22:45:00,615 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:01,118 - INFO - 
+Processing: feature-team-snapshot (34 tests)
+2025-06-25 22:45:01,673 - ERROR - Failed to create Test Set for feature-team-snapshot: 400
+2025-06-25 22:45:01,674 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:02,176 - INFO - 
+Processing: feature-scoreboard (33 tests)
+2025-06-25 22:45:02,764 - ERROR - Failed to create Test Set for feature-scoreboard: 400
+2025-06-25 22:45:02,765 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:03,268 - INFO - 
+Processing: feature-schedule (28 tests)
+2025-06-25 22:45:03,942 - ERROR - Failed to create Test Set for feature-schedule: 400
+2025-06-25 22:45:03,943 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:04,447 - INFO - 
+Processing: feature-standings (24 tests)
+2025-06-25 22:45:05,184 - ERROR - Failed to create Test Set for feature-standings: 400
+2025-06-25 22:45:05,184 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:05,687 - INFO - 
+Processing: feature-settings (23 tests)
+2025-06-25 22:45:06,627 - ERROR - Failed to create Test Set for feature-settings: 400
+2025-06-25 22:45:06,628 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:07,132 - INFO - 
+Processing: feature-carousel (23 tests)
+2025-06-25 22:45:08,038 - ERROR - Failed to create Test Set for feature-carousel: 400
+2025-06-25 22:45:08,040 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:08,546 - INFO - 
+Processing: feature-advertising (15 tests)
+2025-06-25 22:45:09,130 - ERROR - Failed to create Test Set for feature-advertising: 400
+2025-06-25 22:45:09,130 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:09,632 - INFO - 
+Processing: feature-onboarding (14 tests)
+2025-06-25 22:45:10,334 - ERROR - Failed to create Test Set for feature-onboarding: 400
+2025-06-25 22:45:10,334 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:10,840 - INFO - 
+Processing: feature-live-activities (13 tests)
+2025-06-25 22:45:11,702 - ERROR - Failed to create Test Set for feature-live-activities: 400
+2025-06-25 22:45:11,702 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:12,208 - INFO - 
+Processing: feature-gameday (8 tests)
+2025-06-25 22:45:12,834 - ERROR - Failed to create Test Set for feature-gameday: 400
+2025-06-25 22:45:12,835 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:13,337 - INFO - 
+Processing: feature-performance (6 tests)
+2025-06-25 22:45:14,037 - ERROR - Failed to create Test Set for feature-performance: 400
+2025-06-25 22:45:14,038 - ERROR - Response: {"errorMessages":[],"errors":{"issuetype":"The issue type selected is invalid."}}
+2025-06-25 22:45:14,542 - INFO - 
+============================================================
+2025-06-25 22:45:14,542 - INFO - TEST SET CREATION SUMMARY
+2025-06-25 22:45:14,542 - INFO - ============================================================
+2025-06-25 22:45:14,542 - INFO - Total organizational labels: 25
+2025-06-25 22:45:14,542 - INFO - Test Sets created: 0
+2025-06-25 22:45:14,542 - INFO - Test Sets skipped (existing): 0
+2025-06-25 22:45:14,542 - INFO - Test Sets failed: 25
+2025-06-25 22:45:14,542 - INFO - ============================================================
+2025-06-25 22:45:14,542 - INFO - 
+✅ Test Set creation complete!
+2025-06-25 22:45:14,542 - INFO - 
+You can now:
+2025-06-25 22:45:14,542 - INFO - 1. View Test Sets in XRAY Test Repository
+2025-06-25 22:45:14,542 - INFO - 2. Execute tests by Test Set
+2025-06-25 22:45:14,542 - INFO - 3. Create Test Plans from Test Sets
+2025-06-25 22:45:14,542 - INFO - 4. Track test coverage by surface/feature
+2025-06-25 22:55:51,767 - INFO - Starting XRAY Test Set creation from labels
+2025-06-25 22:55:51,767 - INFO - JIRA URL: https://baseball.atlassian.net
+2025-06-25 22:55:51,767 - INFO - Project: MLBAPP
+2025-06-25 22:55:52,138 - INFO - Found Test Set issue type: 16825
+2025-06-25 22:55:52,138 - INFO - Fetching organizational labels...
+2025-06-25 22:55:57,632 - INFO - Found 25 unique organizational labels
+2025-06-25 22:55:57,633 - INFO - 
+Creating Test Sets for 25 labels...
+2025-06-25 22:55:57,633 - INFO - ============================================================
+2025-06-25 22:55:57,633 - INFO - 
+Processing: surface-home (608 tests)
+2025-06-25 22:55:57,634 - INFO - [DRY RUN] Would create Test Set: Home Surface Tests
+2025-06-25 22:55:57,634 - INFO - 
+Processing: surface-core (556 tests)
+2025-06-25 22:55:57,634 - INFO - [DRY RUN] Would create Test Set: Core Surface Tests
+2025-06-25 22:55:57,634 - INFO - 
+Processing: surface-news (243 tests)
+2025-06-25 22:55:57,634 - INFO - [DRY RUN] Would create Test Set: News Surface Tests
+2025-06-25 22:55:57,634 - INFO - 
+Processing: feature-stories (185 tests)
+2025-06-25 22:55:57,634 - INFO - [DRY RUN] Would create Test Set: Stories Feature Tests
+2025-06-25 22:55:57,634 - INFO - 
+Processing: feature-video (157 tests)
+2025-06-25 22:55:57,634 - INFO - [DRY RUN] Would create Test Set: Video Feature Tests
+2025-06-25 22:55:57,634 - INFO - 
+Processing: feature-configuration (138 tests)
+2025-06-25 22:55:57,634 - INFO - [DRY RUN] Would create Test Set: Configuration Feature Tests
+2025-06-25 22:55:57,634 - INFO - 
+Processing: feature-analytics (96 tests)
+2025-06-25 22:55:57,634 - INFO - [DRY RUN] Would create Test Set: Analytics Feature Tests
+2025-06-25 22:55:57,634 - INFO - 
+Processing: feature-player (96 tests)
+2025-06-25 22:55:57,635 - INFO - [DRY RUN] Would create Test Set: Player Feature Tests
+2025-06-25 22:55:57,635 - INFO - 
+Processing: feature-authentication (64 tests)
+2025-06-25 22:55:57,635 - INFO - [DRY RUN] Would create Test Set: Authentication Feature Tests
+2025-06-25 22:55:57,635 - INFO - 
+Processing: feature-notifications (45 tests)
+2025-06-25 22:55:57,635 - INFO - [DRY RUN] Would create Test Set: Notifications Feature Tests
+2025-06-25 22:55:57,635 - INFO - 
+Processing: feature-localization (40 tests)
+2025-06-25 22:55:57,635 - INFO - [DRY RUN] Would create Test Set: Localization Feature Tests
+2025-06-25 22:55:57,635 - INFO - 
+Processing: feature-mixed-feed (37 tests)
+2025-06-25 22:55:57,635 - INFO - [DRY RUN] Would create Test Set: Mixed Feed Feature Tests
+2025-06-25 22:55:57,635 - INFO - 
+Processing: feature-headline-stack (34 tests)
+2025-06-25 22:55:57,635 - INFO - [DRY RUN] Would create Test Set: Headline Stack Feature Tests
+2025-06-25 22:55:57,635 - INFO - 
+Processing: feature-accessibility (34 tests)
+2025-06-25 22:55:57,635 - INFO - [DRY RUN] Would create Test Set: Accessibility Feature Tests
+2025-06-25 22:55:57,635 - INFO - 
+Processing: feature-team-snapshot (34 tests)
+2025-06-25 22:55:57,635 - INFO - [DRY RUN] Would create Test Set: Team Snapshot Feature Tests
+2025-06-25 22:55:57,635 - INFO - 
+Processing: feature-scoreboard (33 tests)
+2025-06-25 22:55:57,635 - INFO - [DRY RUN] Would create Test Set: Scoreboard Feature Tests
+2025-06-25 22:55:57,635 - INFO - 
+Processing: feature-schedule (28 tests)
+2025-06-25 22:55:57,636 - INFO - [DRY RUN] Would create Test Set: Schedule Feature Tests
+2025-06-25 22:55:57,636 - INFO - 
+Processing: feature-standings (24 tests)
+2025-06-25 22:55:57,636 - INFO - [DRY RUN] Would create Test Set: Standings Feature Tests
+2025-06-25 22:55:57,636 - INFO - 
+Processing: feature-settings (23 tests)
+2025-06-25 22:55:57,636 - INFO - [DRY RUN] Would create Test Set: Settings Feature Tests
+2025-06-25 22:55:57,636 - INFO - 
+Processing: feature-carousel (23 tests)
+2025-06-25 22:55:57,636 - INFO - [DRY RUN] Would create Test Set: Carousel Feature Tests
+2025-06-25 22:55:57,636 - INFO - 
+Processing: feature-advertising (15 tests)
+2025-06-25 22:55:57,636 - INFO - [DRY RUN] Would create Test Set: Advertising Feature Tests
+2025-06-25 22:55:57,636 - INFO - 
+Processing: feature-onboarding (14 tests)
+2025-06-25 22:55:57,636 - INFO - [DRY RUN] Would create Test Set: Onboarding Feature Tests
+2025-06-25 22:55:57,636 - INFO - 
+Processing: feature-live-activities (13 tests)
+2025-06-25 22:55:57,636 - INFO - [DRY RUN] Would create Test Set: Live Activities Feature Tests
+2025-06-25 22:55:57,636 - INFO - 
+Processing: feature-gameday (8 tests)
+2025-06-25 22:55:57,636 - INFO - [DRY RUN] Would create Test Set: Gameday Feature Tests
+2025-06-25 22:55:57,636 - INFO - 
+Processing: feature-performance (6 tests)
+2025-06-25 22:55:57,636 - INFO - [DRY RUN] Would create Test Set: Performance Feature Tests
+2025-06-25 22:55:57,636 - INFO - 
+============================================================
+2025-06-25 22:55:57,636 - INFO - TEST SET CREATION SUMMARY
+2025-06-25 22:55:57,636 - INFO - ============================================================
+2025-06-25 22:55:57,636 - INFO - Total organizational labels: 25
+2025-06-25 22:55:57,637 - INFO - Test Sets created: 25
+2025-06-25 22:55:57,637 - INFO - Test Sets skipped (existing): 0
+2025-06-25 22:55:57,637 - INFO - Test Sets failed: 0
+2025-06-25 22:55:57,637 - INFO - ============================================================
+2025-06-25 22:56:16,825 - INFO - Starting XRAY Test Set creation from labels
+2025-06-25 22:56:16,825 - INFO - JIRA URL: https://baseball.atlassian.net
+2025-06-25 22:56:16,825 - INFO - Project: MLBAPP
+2025-06-25 22:56:17,209 - INFO - Found Test Set issue type: 16825
+2025-06-25 22:56:17,210 - INFO - Fetching organizational labels...
+2025-06-25 22:56:22,727 - INFO - Found 25 unique organizational labels
+2025-06-25 22:56:22,729 - INFO - 
+Creating Test Sets for 25 labels...
+2025-06-25 22:56:22,730 - INFO - ============================================================
+2025-06-25 22:56:22,730 - INFO - 
+Processing: surface-home (608 tests)
+2025-06-25 22:56:24,119 - INFO - ✓ Created Test Set: MLBAPP-5178 - Home Surface Tests
+2025-06-25 22:56:24,119 - INFO - Adding tests with label 'surface-home' to Test Set MLBAPP-5178...
+2025-06-25 22:56:26,519 - INFO - Found 608 tests to add to Test Set
+2025-06-25 22:56:26,663 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:26,663 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:26,665 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:27,170 - INFO - 
+Processing: surface-core (556 tests)
+2025-06-25 22:56:28,498 - INFO - ✓ Created Test Set: MLBAPP-5179 - Core Surface Tests
+2025-06-25 22:56:28,499 - INFO - Adding tests with label 'surface-core' to Test Set MLBAPP-5179...
+2025-06-25 22:56:30,618 - INFO - Found 556 tests to add to Test Set
+2025-06-25 22:56:30,755 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:30,761 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:30,762 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:31,264 - INFO - 
+Processing: surface-news (243 tests)
+2025-06-25 22:56:32,447 - INFO - ✓ Created Test Set: MLBAPP-5180 - News Surface Tests
+2025-06-25 22:56:32,448 - INFO - Adding tests with label 'surface-news' to Test Set MLBAPP-5180...
+2025-06-25 22:56:33,633 - INFO - Found 243 tests to add to Test Set
+2025-06-25 22:56:33,779 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:33,780 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:33,780 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:34,285 - INFO - 
+Processing: feature-stories (185 tests)
+2025-06-25 22:56:35,530 - INFO - ✓ Created Test Set: MLBAPP-5181 - Stories Feature Tests
+2025-06-25 22:56:35,531 - INFO - Adding tests with label 'feature-stories' to Test Set MLBAPP-5181...
+2025-06-25 22:56:36,363 - INFO - Found 185 tests to add to Test Set
+2025-06-25 22:56:36,515 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:36,515 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:36,516 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:37,021 - INFO - 
+Processing: feature-video (157 tests)
+2025-06-25 22:56:38,307 - INFO - ✓ Created Test Set: MLBAPP-5182 - Video Feature Tests
+2025-06-25 22:56:38,307 - INFO - Adding tests with label 'feature-video' to Test Set MLBAPP-5182...
+2025-06-25 22:56:38,979 - INFO - Found 157 tests to add to Test Set
+2025-06-25 22:56:39,118 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:39,118 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:39,119 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:39,624 - INFO - 
+Processing: feature-configuration (138 tests)
+2025-06-25 22:56:40,916 - INFO - ✓ Created Test Set: MLBAPP-5183 - Configuration Feature Tests
+2025-06-25 22:56:40,916 - INFO - Adding tests with label 'feature-configuration' to Test Set MLBAPP-5183...
+2025-06-25 22:56:41,602 - INFO - Found 138 tests to add to Test Set
+2025-06-25 22:56:41,749 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:41,749 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:41,750 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:42,254 - INFO - 
+Processing: feature-analytics (96 tests)
+2025-06-25 22:56:43,527 - INFO - ✓ Created Test Set: MLBAPP-5184 - Analytics Feature Tests
+2025-06-25 22:56:43,529 - INFO - Adding tests with label 'feature-analytics' to Test Set MLBAPP-5184...
+2025-06-25 22:56:43,960 - INFO - Found 96 tests to add to Test Set
+2025-06-25 22:56:44,101 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:44,102 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:44,103 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:44,607 - INFO - 
+Processing: feature-player (96 tests)
+2025-06-25 22:56:45,801 - INFO - ✓ Created Test Set: MLBAPP-5185 - Player Feature Tests
+2025-06-25 22:56:45,801 - INFO - Adding tests with label 'feature-player' to Test Set MLBAPP-5185...
+2025-06-25 22:56:46,118 - INFO - Found 96 tests to add to Test Set
+2025-06-25 22:56:46,310 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:46,310 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:46,310 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:46,816 - INFO - 
+Processing: feature-authentication (64 tests)
+2025-06-25 22:56:48,111 - INFO - ✓ Created Test Set: MLBAPP-5186 - Authentication Feature Tests
+2025-06-25 22:56:48,112 - INFO - Adding tests with label 'feature-authentication' to Test Set MLBAPP-5186...
+2025-06-25 22:56:48,474 - INFO - Found 64 tests to add to Test Set
+2025-06-25 22:56:48,612 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:48,612 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:48,613 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:49,115 - INFO - 
+Processing: feature-notifications (45 tests)
+2025-06-25 22:56:50,520 - INFO - ✓ Created Test Set: MLBAPP-5187 - Notifications Feature Tests
+2025-06-25 22:56:50,520 - INFO - Adding tests with label 'feature-notifications' to Test Set MLBAPP-5187...
+2025-06-25 22:56:50,844 - INFO - Found 45 tests to add to Test Set
+2025-06-25 22:56:51,043 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:51,043 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:51,043 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:51,549 - INFO - 
+Processing: feature-localization (40 tests)
+2025-06-25 22:56:52,613 - INFO - ✓ Created Test Set: MLBAPP-5188 - Localization Feature Tests
+2025-06-25 22:56:52,613 - INFO - Adding tests with label 'feature-localization' to Test Set MLBAPP-5188...
+2025-06-25 22:56:52,970 - INFO - Found 40 tests to add to Test Set
+2025-06-25 22:56:53,135 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:53,136 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:53,137 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:53,643 - INFO - 
+Processing: feature-mixed-feed (37 tests)
+2025-06-25 22:56:54,760 - INFO - ✓ Created Test Set: MLBAPP-5189 - Mixed Feed Feature Tests
+2025-06-25 22:56:54,761 - INFO - Adding tests with label 'feature-mixed-feed' to Test Set MLBAPP-5189...
+2025-06-25 22:56:55,078 - INFO - Found 37 tests to add to Test Set
+2025-06-25 22:56:55,229 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:55,230 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:55,230 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:55,734 - INFO - 
+Processing: feature-headline-stack (34 tests)
+2025-06-25 22:56:57,076 - INFO - ✓ Created Test Set: MLBAPP-5190 - Headline Stack Feature Tests
+2025-06-25 22:56:57,077 - INFO - Adding tests with label 'feature-headline-stack' to Test Set MLBAPP-5190...
+2025-06-25 22:56:57,487 - INFO - Found 34 tests to add to Test Set
+2025-06-25 22:56:57,629 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:57,631 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:57,632 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:56:58,138 - INFO - 
+Processing: feature-accessibility (34 tests)
+2025-06-25 22:56:59,269 - INFO - ✓ Created Test Set: MLBAPP-5191 - Accessibility Feature Tests
+2025-06-25 22:56:59,270 - INFO - Adding tests with label 'feature-accessibility' to Test Set MLBAPP-5191...
+2025-06-25 22:56:59,576 - INFO - Found 34 tests to add to Test Set
+2025-06-25 22:56:59,714 - ERROR -   Failed to add tests: 404
+2025-06-25 22:56:59,714 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:56:59,715 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:00,221 - INFO - 
+Processing: feature-team-snapshot (34 tests)
+2025-06-25 22:57:01,340 - INFO - ✓ Created Test Set: MLBAPP-5192 - Team Snapshot Feature Tests
+2025-06-25 22:57:01,340 - INFO - Adding tests with label 'feature-team-snapshot' to Test Set MLBAPP-5192...
+2025-06-25 22:57:01,687 - INFO - Found 34 tests to add to Test Set
+2025-06-25 22:57:01,829 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:01,830 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:01,830 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:02,332 - INFO - 
+Processing: feature-scoreboard (33 tests)
+2025-06-25 22:57:03,477 - INFO - ✓ Created Test Set: MLBAPP-5193 - Scoreboard Feature Tests
+2025-06-25 22:57:03,477 - INFO - Adding tests with label 'feature-scoreboard' to Test Set MLBAPP-5193...
+2025-06-25 22:57:03,827 - INFO - Found 33 tests to add to Test Set
+2025-06-25 22:57:03,973 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:03,974 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:03,975 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:04,478 - INFO - 
+Processing: feature-schedule (28 tests)
+2025-06-25 22:57:05,716 - INFO - ✓ Created Test Set: MLBAPP-5194 - Schedule Feature Tests
+2025-06-25 22:57:05,717 - INFO - Adding tests with label 'feature-schedule' to Test Set MLBAPP-5194...
+2025-06-25 22:57:06,013 - INFO - Found 28 tests to add to Test Set
+2025-06-25 22:57:06,237 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:06,237 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:06,238 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:06,743 - INFO - 
+Processing: feature-standings (24 tests)
+2025-06-25 22:57:07,929 - INFO - ✓ Created Test Set: MLBAPP-5195 - Standings Feature Tests
+2025-06-25 22:57:07,929 - INFO - Adding tests with label 'feature-standings' to Test Set MLBAPP-5195...
+2025-06-25 22:57:08,239 - INFO - Found 24 tests to add to Test Set
+2025-06-25 22:57:08,387 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:08,387 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:08,388 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:08,893 - INFO - 
+Processing: feature-settings (23 tests)
+2025-06-25 22:57:10,170 - INFO - ✓ Created Test Set: MLBAPP-5196 - Settings Feature Tests
+2025-06-25 22:57:10,171 - INFO - Adding tests with label 'feature-settings' to Test Set MLBAPP-5196...
+2025-06-25 22:57:10,449 - INFO - Found 23 tests to add to Test Set
+2025-06-25 22:57:10,604 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:10,605 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:10,605 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:11,109 - INFO - 
+Processing: feature-carousel (23 tests)
+2025-06-25 22:57:12,594 - INFO - ✓ Created Test Set: MLBAPP-5197 - Carousel Feature Tests
+2025-06-25 22:57:12,594 - INFO - Adding tests with label 'feature-carousel' to Test Set MLBAPP-5197...
+2025-06-25 22:57:12,943 - INFO - Found 23 tests to add to Test Set
+2025-06-25 22:57:13,094 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:13,094 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:13,095 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:13,599 - INFO - 
+Processing: feature-advertising (15 tests)
+2025-06-25 22:57:14,739 - INFO - ✓ Created Test Set: MLBAPP-5198 - Advertising Feature Tests
+2025-06-25 22:57:14,740 - INFO - Adding tests with label 'feature-advertising' to Test Set MLBAPP-5198...
+2025-06-25 22:57:14,999 - INFO - Found 15 tests to add to Test Set
+2025-06-25 22:57:15,161 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:15,161 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:15,161 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:15,665 - INFO - 
+Processing: feature-onboarding (14 tests)
+2025-06-25 22:57:16,920 - INFO - ✓ Created Test Set: MLBAPP-5199 - Onboarding Feature Tests
+2025-06-25 22:57:16,921 - INFO - Adding tests with label 'feature-onboarding' to Test Set MLBAPP-5199...
+2025-06-25 22:57:17,251 - INFO - Found 14 tests to add to Test Set
+2025-06-25 22:57:17,439 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:17,439 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:17,440 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:17,945 - INFO - 
+Processing: feature-live-activities (13 tests)
+2025-06-25 22:57:19,217 - INFO - ✓ Created Test Set: MLBAPP-5200 - Live Activities Feature Tests
+2025-06-25 22:57:19,220 - INFO - Adding tests with label 'feature-live-activities' to Test Set MLBAPP-5200...
+2025-06-25 22:57:19,505 - INFO - Found 13 tests to add to Test Set
+2025-06-25 22:57:19,656 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:19,656 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:19,657 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:20,159 - INFO - 
+Processing: feature-gameday (8 tests)
+2025-06-25 22:57:21,444 - INFO - ✓ Created Test Set: MLBAPP-5201 - Gameday Feature Tests
+2025-06-25 22:57:21,445 - INFO - Adding tests with label 'feature-gameday' to Test Set MLBAPP-5201...
+2025-06-25 22:57:21,755 - INFO - Found 8 tests to add to Test Set
+2025-06-25 22:57:21,967 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:21,967 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:21,968 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:22,473 - INFO - 
+Processing: feature-performance (6 tests)
+2025-06-25 22:57:23,560 - INFO - ✓ Created Test Set: MLBAPP-5202 - Performance Feature Tests
+2025-06-25 22:57:23,561 - INFO - Adding tests with label 'feature-performance' to Test Set MLBAPP-5202...
+2025-06-25 22:57:23,899 - INFO - Found 6 tests to add to Test Set
+2025-06-25 22:57:24,064 - ERROR -   Failed to add tests: 404
+2025-06-25 22:57:24,065 - ERROR -   Response: <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Oops, you&#39;ve found a dead link. - JIRA</title><link type='text/css' rel='stylesheet' href='/static-assets/metal-all.css' media='all'><script src='/static-assets/metal-all.js'></script><meta name="decorator" content="none" /></head><body class=" error-page error404"><script type="text/javascript">document.body.className += " js-enabled";</script><div id="page"><header id="header" role="banner"></header><!-- #header --><section id="content" role="main"><div class="aui-page-panel"><div class="aui-page-panel-inner"><section class="aui-page-panel-content lowerContent"><div id="error-state"><span class="error-type"></span><h1>Oops, you&#39;ve found a dead link.</h1><ul><li>Go back to the <a href="javascript:window.history.back()">previous page</a></li><li>Go to the <a href="/secure/MyJiraHome.jspa">Home Page</a></li></ul></div></section><!-- .aui-page-panel-content --></div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel --></section><!-- #content --><footer id="footer" role="contentinfo"><section class="footer-body">
+
+
+<ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+
+                                    
+                        
+        <span id="footer-build-information">(v1001.0.0-SNAPSHOT#100285-<span title='e2e3f38099261bb500217a742ea82f5528ab8db0' data-commit-id='e2e3f38099261bb500217a742ea82f5528ab8db0}'>Rev:e2e3f38</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" href="/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+                        <a id="footer-report-problem-link" href="/secure/CreateIssue!default.jspa">Report a problem</a>
+    </li>
+</ul>
+<div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div></section></footer><!-- #footer --></div><!-- #page --></body></html>
+2025-06-25 22:57:24,066 - WARNING -   Created Test Set but failed to add all tests
+2025-06-25 22:57:24,571 - INFO - 
+============================================================
+2025-06-25 22:57:24,571 - INFO - TEST SET CREATION SUMMARY
+2025-06-25 22:57:24,572 - INFO - ============================================================
+2025-06-25 22:57:24,572 - INFO - Total organizational labels: 25
+2025-06-25 22:57:24,572 - INFO - Test Sets created: 25
+2025-06-25 22:57:24,572 - INFO - Test Sets skipped (existing): 0
+2025-06-25 22:57:24,572 - INFO - Test Sets failed: 0
+2025-06-25 22:57:24,574 - INFO - 
+============================================================
+2025-06-25 22:57:24,575 - INFO - CREATED TEST SETS
+2025-06-25 22:57:24,575 - INFO - ============================================================
+2025-06-25 22:57:24,575 - INFO - 
+Surface Test Sets:
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5179: Core Surface Tests (556 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5178: Home Surface Tests (608 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5180: News Surface Tests (243 tests)
+2025-06-25 22:57:24,575 - INFO - 
+Feature Test Sets:
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5191: Accessibility Feature Tests (34 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5198: Advertising Feature Tests (15 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5184: Analytics Feature Tests (96 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5186: Authentication Feature Tests (64 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5197: Carousel Feature Tests (23 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5183: Configuration Feature Tests (138 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5201: Gameday Feature Tests (8 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5190: Headline Stack Feature Tests (34 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5200: Live Activities Feature Tests (13 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5188: Localization Feature Tests (40 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5189: Mixed Feed Feature Tests (37 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5187: Notifications Feature Tests (45 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5199: Onboarding Feature Tests (14 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5202: Performance Feature Tests (6 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5185: Player Feature Tests (96 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5194: Schedule Feature Tests (28 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5193: Scoreboard Feature Tests (33 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5196: Settings Feature Tests (23 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5195: Standings Feature Tests (24 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5181: Stories Feature Tests (185 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5192: Team Snapshot Feature Tests (34 tests)
+2025-06-25 22:57:24,575 - INFO -   MLBAPP-5182: Video Feature Tests (157 tests)
+2025-06-25 22:57:24,575 - INFO - ============================================================
+2025-06-25 22:57:24,575 - INFO - 
+✅ Test Set creation complete!
+2025-06-25 22:57:24,575 - INFO - 
+You can now:
+2025-06-25 22:57:24,575 - INFO - 1. View Test Sets in XRAY Test Repository
+2025-06-25 22:57:24,575 - INFO - 2. Execute tests by Test Set
+2025-06-25 22:57:24,575 - INFO - 3. Create Test Plans from Test Sets
+2025-06-25 22:57:24,575 - INFO - 4. Track test coverage by surface/feature
