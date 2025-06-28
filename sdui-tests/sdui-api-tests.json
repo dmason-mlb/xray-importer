@@ -1,0 +1,252 @@
+[
+  {
+    "summary": "API-001: Get Browse Menu - Default Configuration",
+    "description": "Status: 200, Valid JSON structure, Contains screens array, Default sections present",
+    "folder": "Browse Menu/Core Navigation",
+    "labels": ["browse-menu", "api", "critical", "smoke", "navigation"],
+    "priority": "High",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Send GET request to /api/browse/v1?slug=BrowseMenu2.0&lang=en",
+        "result": "API returns response"
+      },
+      {
+        "action": "Validate response status code",
+        "result": "Status code is 200"
+      },
+      {
+        "action": "Validate JSON structure",
+        "result": "Valid JSON structure with screens array and default sections present"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "slug=BrowseMenu2.0&lang=en"
+  },
+  {
+    "summary": "API-002: Get Browse Menu - All User States",
+    "description": "Different content per state, personalization applied, correct sections visible",
+    "folder": "Browse Menu/Personalization",
+    "labels": ["browse-menu", "api", "critical", "personalization"],
+    "priority": "High",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Test not logged in state",
+        "result": "Returns content for not logged in users"
+      },
+      {
+        "action": "Test logged in no team state",
+        "result": "Returns content for logged in users without team"
+      },
+      {
+        "action": "Test logged in with team state",
+        "result": "Returns personalized content for users with favorite team"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "slug=BrowseMenu2.0&lang=en&favTeamId (when applicable)"
+  },
+  {
+    "summary": "API-003: Invalid Slug Parameter",
+    "description": "Status: 400 or default content, error message or fallback, no crash/500 error",
+    "folder": "Browse Menu/Core Navigation",
+    "labels": ["browse-menu", "api", "medium", "regression"],
+    "priority": "Medium",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Test missing slug parameter",
+        "result": "Returns 400 or default content"
+      },
+      {
+        "action": "Test invalid slug parameter",
+        "result": "Returns error message or fallback content"
+      },
+      {
+        "action": "Test empty slug parameter",
+        "result": "No crash or 500 error"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "Missing slug, invalid slug, empty slug"
+  },
+  {
+    "summary": "API-004: English Language Support",
+    "description": "All text in English, URLs contain /en/, proper content returned",
+    "folder": "Browse Menu/Content Display",
+    "labels": ["browse-menu", "api", "critical", "localization"],
+    "priority": "High",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Send request with lang=en parameter",
+        "result": "Response contains English content"
+      },
+      {
+        "action": "Validate text content language",
+        "result": "All text is in English"
+      },
+      {
+        "action": "Validate URL structure",
+        "result": "URLs contain /en/ path"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "slug=BrowseMenu2.0&lang=en"
+  },
+  {
+    "summary": "API-005: Spanish Language Support",
+    "description": "UI text in Spanish, URLs contain /es/, Spanish content returned",
+    "folder": "Browse Menu/Content Display",
+    "labels": ["browse-menu", "api", "critical", "localization"],
+    "priority": "High",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Send request with lang=es parameter",
+        "result": "Response contains Spanish content"
+      },
+      {
+        "action": "Validate text content language",
+        "result": "UI text is in Spanish"
+      },
+      {
+        "action": "Validate URL structure",
+        "result": "URLs contain /es/ path"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "slug=BrowseMenu2.0&lang=es"
+  },
+  {
+    "summary": "API-001: Get Team Page - Valid Team",
+    "description": "Status: 200, Valid JSON structure, Contains sections array, Team info present",
+    "folder": "Team Page/Product Links",
+    "labels": ["team-page", "api", "critical", "cross-platform"],
+    "priority": "High",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Send GET request to /api/teamPage/v1?teamId=147&lang=en",
+        "result": "API returns response"
+      },
+      {
+        "action": "Validate response status code",
+        "result": "Status code is 200"
+      },
+      {
+        "action": "Validate JSON structure and content",
+        "result": "Valid JSON structure with sections array and team info present"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "teamId=147&lang=en"
+  },
+  {
+    "summary": "API-002: Get Team Page - All Teams",
+    "description": "All teams return 200, valid content for each, no null responses",
+    "folder": "Team Page/Product Links",
+    "labels": ["team-page", "api", "critical", "cross-platform", "regression"],
+    "priority": "High",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Test all 30 team IDs (108-159)",
+        "result": "All teams return status 200"
+      },
+      {
+        "action": "Validate content for each team",
+        "result": "Valid content returned for each team"
+      },
+      {
+        "action": "Check for null responses",
+        "result": "No null responses"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "All 30 team IDs (108-159)"
+  },
+  {
+    "summary": "API-003: Invalid Team ID",
+    "description": "Status: 400 or 404, error message present, no crash/500 error",
+    "folder": "Team Page/Product Links",
+    "labels": ["team-page", "api", "medium", "cross-platform"],
+    "priority": "Medium",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Test with teamId=999",
+        "result": "Returns 400 or 404 status"
+      },
+      {
+        "action": "Test with teamId=0",
+        "result": "Error message present"
+      },
+      {
+        "action": "Test with teamId=-1 and teamId=abc",
+        "result": "No crash or 500 error"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "teamId=999, teamId=0, teamId=-1, teamId=abc, Missing teamId"
+  },
+  {
+    "summary": "API-GD-001: Valid Game Request",
+    "description": "Valid response for gameday endpoint with proper game data",
+    "folder": "Gameday/Core Navigation",
+    "labels": ["gameday", "api", "critical", "cross-platform"],
+    "priority": "High",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Send GET request to /api/gameday/v1 with valid parameters",
+        "result": "API returns response"
+      },
+      {
+        "action": "Validate response status code",
+        "result": "Status code is 200"
+      },
+      {
+        "action": "Validate game data structure",
+        "result": "Valid JSON structure with proper game data"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "slug, gamepk, game_tab, game_view, lang, mc parameters"
+  },
+  {
+    "summary": "API-SC-001: Get Scoreboard - Default Request",
+    "description": "Valid scoreboard response with game data and proper structure",
+    "folder": "Scoreboard/Core Navigation",
+    "labels": ["scoreboard", "api", "critical", "cross-platform"],
+    "priority": "High",
+    "testType": "Automated",
+    "platforms": ["iOS", "Android"],
+    "steps": [
+      {
+        "action": "Send GET request to /api/scores/v1",
+        "result": "API returns response"
+      },
+      {
+        "action": "Validate response status code",
+        "result": "Status code is 200"
+      },
+      {
+        "action": "Validate scoreboard data structure",
+        "result": "Valid JSON structure with game data and proper scoreboard structure"
+      }
+    ],
+    "issueLinks": [],
+    "testData": "Default scoreboard parameters"
+  }
+]
