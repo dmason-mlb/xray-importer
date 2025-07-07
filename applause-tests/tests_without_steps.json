@@ -1,0 +1,25 @@
+{
+  "data": {
+    "getExpandedTests": {
+      "total": 1,
+      "results": [
+        {
+          "issueId": "1146268",
+          "jira": {
+            "key": "MLBMOB-2205",
+            "summary": "Applause tvOS Test Plan - 2025.10.0"
+          },
+          "folder": {
+            "name": "tvOS Applause",
+            "path": "/Applause Regression/tvOS Applause"
+          },
+          "steps": [],
+          "preconditions": {
+            "total": 0,
+            "results": []
+          }
+        }
+      ]
+    }
+  }
+}
