@@ -1,0 +1,1132 @@
+{
+  "total": 77,
+  "tests": [
+    {
+      "issueId": "1153134",
+      "jira": {
+        "key": "MLBMOB-2443",
+        "summary": "Main page - impression tracking",
+        "description": "GIVEN a TicketMerchandisingModule on a Surface"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154473",
+            "projectId": "26420",
+            "definition": "GIVEN a TicketMerchandisingModule on a Surface"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1153119",
+      "jira": {
+        "key": "MLBMOB-2441",
+        "summary": "MLB.tv - module stops playing after removal",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1153118",
+      "jira": {
+        "key": "MLBMOB-2440",
+        "summary": "MLB.tv - module should stop playing after removal",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1152729",
+      "jira": {
+        "key": "MLBMOB-2435",
+        "summary": "MLB.tv - Live Mode FGOTD Support",
+        "description": "GIVEN user is on the home surface"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154474",
+            "projectId": "26420",
+            "definition": "GIVEN user is on the home surface"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1152728",
+      "jira": {
+        "key": "MLBMOB-2434",
+        "summary": "MLB.tv - Live Mode FGOTD Support",
+        "description": "GIVEN user is on the home surface"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154475",
+            "projectId": "26420",
+            "definition": "GIVEN user is on the home surface"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1147414",
+      "jira": {
+        "key": "MLBMOB-2232",
+        "summary": "It should show favorite team news",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1147413",
+      "jira": {
+        "key": "MLBMOB-2231",
+        "summary": "Users should be able to open a news item",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1147412",
+      "jira": {
+        "key": "MLBMOB-2230",
+        "summary": "It should show latest news as default tab",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1147411",
+      "jira": {
+        "key": "MLBMOB-2229",
+        "summary": "Deep-links Tests should open scoreboard screen when using deeplink",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1147410",
+      "jira": {
+        "key": "MLBMOB-2228",
+        "summary": "Deep-links Tests should open watch screen when using deeplink",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1146268",
+      "jira": {
+        "key": "MLBMOB-2205",
+        "summary": "Applause tvOS Test Plan - 2025.10.0",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1134644",
+      "jira": {
+        "key": "MLBMOB-1981",
+        "summary": "Box Score Validation",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1134642",
+      "jira": {
+        "key": "MLBMOB-1979",
+        "summary": "Matchup View Data Updating",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1133197",
+      "jira": {
+        "key": "MLBMOB-1841",
+        "summary": "tvOS MASN Ad Hoc Test",
+        "description": "ASTREAM ad hoc test for MASN on tvOS RC 2025.9.0.20504\n\n+Important Info:+\n\nmasn@gmail.com (no location override)\nmasnims@gmail.com (In Market)\nmasnoom@gmail.com (Out of Market)\t       \nmasnintl@gmail.com (International)\t       \n\nPassword for all: *Password4MASN*\n\nDM5tv6@gmail.com (ALL RSN) / PasswordDM5\n\n----\n\n*Baltimore Orioles*\n\nMASN_DTC Orioles\n\nMASN_110\n\n*Washington Nationals*\n\nMASN_DTC Nationals\n\nMASN_120\n\n----"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132305",
+      "jira": {
+        "key": "MLBMOB-1790",
+        "summary": "Live Game Launch",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132304",
+      "jira": {
+        "key": "MLBMOB-1789",
+        "summary": "Archive Launch",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132275",
+      "jira": {
+        "key": "MLBMOB-1761",
+        "summary": "Day without Games",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132127",
+      "jira": {
+        "key": "MLBMOB-1622",
+        "summary": "Picture-In-Picture",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132104",
+      "jira": {
+        "key": "MLBMOB-1609",
+        "summary": "All-Star Game",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132046",
+      "jira": {
+        "key": "MLBMOB-1567",
+        "summary": "Exec Users",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132045",
+      "jira": {
+        "key": "MLBMOB-1566",
+        "summary": "Anon Users",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132044",
+      "jira": {
+        "key": "MLBMOB-1565",
+        "summary": "TV Yearly",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132043",
+      "jira": {
+        "key": "MLBMOB-1564",
+        "summary": "TV Monthly",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132042",
+      "jira": {
+        "key": "MLBMOB-1563",
+        "summary": "Single-Team Users",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132041",
+      "jira": {
+        "key": "MLBMOB-1562",
+        "summary": "Free Users",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132039",
+      "jira": {
+        "key": "MLBMOB-1560",
+        "summary": "Entitled",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1127064",
+      "jira": {
+        "key": "MLBMOB-1235",
+        "summary": "Casting -> Stop Casting behavior",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154476",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127063",
+      "jira": {
+        "key": "MLBMOB-1234",
+        "summary": "Casting -> Select Closed Captioning",
+        "description": "GIVEN a user casting from the MLB"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154477",
+            "projectId": "26420",
+            "definition": "GIVEN a user casting from the MLB"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127062",
+      "jira": {
+        "key": "MLBMOB-1233",
+        "summary": "Mobile: Put device in sleep mode while casting",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154478",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127061",
+      "jira": {
+        "key": "MLBMOB-1232",
+        "summary": "Mobile: Background the app while casting",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154479",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127060",
+      "jira": {
+        "key": "MLBMOB-1231",
+        "summary": "Mobile: Casting notification controls",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154480",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127059",
+      "jira": {
+        "key": "MLBMOB-1230",
+        "summary": "Mobile: Casting controls",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154481",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127057",
+      "jira": {
+        "key": "MLBMOB-1228",
+        "summary": "SLIVE: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\n\r\n"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154482",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127056",
+      "jira": {
+        "key": "MLBMOB-1227",
+        "summary": "FLIVE: Start a stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\n\r\n"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154483",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127055",
+      "jira": {
+        "key": "MLBMOB-1226",
+        "summary": "VOD/SVOD: While casting Game content switch to VOD/SVOD stream",
+        "description": "GIVEN an entitled user\r\nAND cast session is playing SVOD content"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154484",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND cast session is playing SVOD content"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127054",
+      "jira": {
+        "key": "MLBMOB-1225",
+        "summary": "SVOD: Attempt to cast when unentitled",
+        "description": "GIVEN an un-entitled user (not logged in / free account)\r\nAND cast session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154485",
+            "projectId": "26420",
+            "definition": "GIVEN an un-entitled user (not logged in / free account)\nAND cast session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127053",
+      "jira": {
+        "key": "MLBMOB-1224",
+        "summary": "SVOD: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND no casting session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154486",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no casting session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127052",
+      "jira": {
+        "key": "MLBMOB-1223",
+        "summary": "SVOD: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154487",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127051",
+      "jira": {
+        "key": "MLBMOB-1222",
+        "summary": "VOD: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND casting session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154488",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND casting session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127050",
+      "jira": {
+        "key": "MLBMOB-1221",
+        "summary": "VOD: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\nAND no casting session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154489",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no casting session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127047",
+      "jira": {
+        "key": "MLBMOB-1218",
+        "summary": "Game: While casting content switch to Game stream",
+        "description": "GIVEN an entitled user\r\nAND VOD/SVOD content is already streaming"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154490",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND VOD/SVOD content is already streaming"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127046",
+      "jira": {
+        "key": "MLBMOB-1217",
+        "summary": "Game: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND casting session exists\r\n"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154491",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND casting session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127045",
+      "jira": {
+        "key": "MLBMOB-1216",
+        "summary": "Game: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\nAND no cast session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154492",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no cast session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1126875",
+      "jira": {
+        "key": "MLBMOB-1215",
+        "summary": "Playback with Ads Disabled",
+        "description": "GIVEN\r\n\r\n+ Note: The audio EPG player does not utilize the DAI playback URL and does fallback to the fastly/media-cdn URL\r\n\r\nAND\r\n\r\n+ The user is logged into an account with VIDEO_ADS_DISABLED\r\n\r\nAccount: adsDisabled@gmail.com/PasswordDM5\r\n\r\nOR\r\n\r\n+ The user locally maps \"adsEnabled\": false for the media gateway return in Proxy"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154493",
+            "projectId": "26420",
+            "definition": "GIVEN"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1125484",
+      "jira": {
+        "key": "MLBMOB-1200",
+        "summary": "More than 3 tap stories",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125481",
+      "jira": {
+        "key": "MLBMOB-1197",
+        "summary": "Less than 4 articles",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125480",
+      "jira": {
+        "key": "MLBMOB-1196",
+        "summary": "Exploring a Category in More Depth",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125218",
+      "jira": {
+        "key": "MLBMOB-937",
+        "summary": "NL - No duplication of team names?",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125217",
+      "jira": {
+        "key": "MLBMOB-936",
+        "summary": "NL - New York Black yankees do not overlap with New York Cubans",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125216",
+      "jira": {
+        "key": "MLBMOB-935",
+        "summary": "NL - teams with same name different city",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125211",
+      "jira": {
+        "key": "MLBMOB-930",
+        "summary": "Reset password on device running MLB App",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125210",
+      "jira": {
+        "key": "MLBMOB-929",
+        "summary": "Readme - Important note for iOS",
+        "description": "Note: When testing passwordless login on iOS, it is important that the MLB App is installed without being connected through an HTTPS proxy, ex. Charles or the magic link may go to Safari and fail rather than going to the MLB App as expected."
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125209",
+      "jira": {
+        "key": "MLBMOB-928",
+        "summary": "Gesture reduction functionallity",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125196",
+      "jira": {
+        "key": "MLBMOB-915",
+        "summary": "track events",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125195",
+      "jira": {
+        "key": "MLBMOB-914",
+        "summary": "VSM content navigation",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125194",
+      "jira": {
+        "key": "MLBMOB-913",
+        "summary": "TC05 - Gameday video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125193",
+      "jira": {
+        "key": "MLBMOB-912",
+        "summary": "TC04 - Scores page video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125192",
+      "jira": {
+        "key": "MLBMOB-911",
+        "summary": "TC03 - Team page video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125191",
+      "jira": {
+        "key": "MLBMOB-910",
+        "summary": "TC02 - Home tab video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125188",
+      "jira": {
+        "key": "MLBMOB-907",
+        "summary": "TC45 - Spring training tab config",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125187",
+      "jira": {
+        "key": "MLBMOB-906",
+        "summary": "TC34 - Next Game is displayed",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125103",
+      "jira": {
+        "key": "MLBMOB-822",
+        "summary": "TC15 - Settings deeplink",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125102",
+      "jira": {
+        "key": "MLBMOB-821",
+        "summary": "TC12 - Splash Screen - No internet connection Warm Launch",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124874",
+      "jira": {
+        "key": "MLBMOB-675",
+        "summary": "NL - No duplication of team names?",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124873",
+      "jira": {
+        "key": "MLBMOB-674",
+        "summary": "NL - New York Black yankees do not overlap with New York Cubans",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124872",
+      "jira": {
+        "key": "MLBMOB-673",
+        "summary": "NL - teams with same name different city",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124867",
+      "jira": {
+        "key": "MLBMOB-668",
+        "summary": "Reset password on device running MLB App",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124866",
+      "jira": {
+        "key": "MLBMOB-667",
+        "summary": "Readme - Important note for iOS",
+        "description": "Note: When testing passwordless login on iOS, it is important that the MLB App is installed without being connected through an HTTPS proxy, ex. Charles or the magic link may go to Safari and fail rather than going to the MLB App as expected."
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124865",
+      "jira": {
+        "key": "MLBMOB-666",
+        "summary": "Gesture reduction functionallity",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124852",
+      "jira": {
+        "key": "MLBMOB-653",
+        "summary": "track events",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124851",
+      "jira": {
+        "key": "MLBMOB-652",
+        "summary": "VSM content navigation",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124849",
+      "jira": {
+        "key": "MLBMOB-651",
+        "summary": "TC05 - Gameday video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124848",
+      "jira": {
+        "key": "MLBMOB-650",
+        "summary": "TC04 - Scores page video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124847",
+      "jira": {
+        "key": "MLBMOB-649",
+        "summary": "TC03 - Team page video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124846",
+      "jira": {
+        "key": "MLBMOB-648",
+        "summary": "TC02 - Home tab video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124843",
+      "jira": {
+        "key": "MLBMOB-645",
+        "summary": "TC45 - Spring training tab config",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124842",
+      "jira": {
+        "key": "MLBMOB-644",
+        "summary": "TC34 - Next Game is displayed",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    }
+  ]
+}

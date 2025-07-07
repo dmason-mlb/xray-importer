@@ -1,0 +1,1383 @@
+{
+  "total_tests_to_update": 101,
+  "tests_with_steps": 28,
+  "tests_with_preconditions_only": 73,
+  "updates": [
+    {
+      "issueId": "1152675",
+      "key": "MLBMOB-2432",
+      "summary": "Audio behavior with PIP",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user is playing a Game and the game\nAND the user puts that game into PiP"
+        }
+      ],
+      "steps": [
+        {
+          "action": "N/A: No WHEN/IF statement in description",
+          "result": "THEN any autoplaying video on the home surface should be muted (ex. Live mode play",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1152483",
+      "key": "MLBMOB-2430",
+      "summary": "POTG - notification automatically added for followed team",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user is going through Onboarding\nAND the user has selected a followed team"
+        }
+      ],
+      "steps": [
+        {
+          "action": "IF they get to the notification page and opt-into Game notifications for their followed team",
+          "result": "THEN POTG will be added as part of the default Game package and be defaulted to on",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1152482",
+      "key": "MLBMOB-2429",
+      "summary": "POTG -  notification automatically added for favorite team",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user is going through Onboarding\nAND the user has selected a favorite team"
+        }
+      ],
+      "steps": [
+        {
+          "action": "IF they get to the notification page and opt-into Game notifications for their favorite team",
+          "result": "THEN POTG will be added as part of the default Game package and be defaulted to on",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1145807",
+      "key": "MLBMOB-2203",
+      "summary": "Scores: Default Day - Users East of EST",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a use of the MLB App"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the device local time is set between 12:01AM -> 5:59 AM CET\nAND the MLB App is restarted",
+          "result": "THEN  the Scores tab should show the previous day\u2019s games",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1145806",
+      "key": "MLBMOB-2202",
+      "summary": "Scores: Default Day - Users West of EST",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user of the MLB app"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the device local time is set between 9:01PM - 11:59PM PST\nAND the MLB App is restarted",
+          "result": "THEN the Scores tab should show the current day\u2019s games",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143871",
+      "key": "MLBMOB-2179",
+      "summary": "Filed Pass - Pass both players and teams for changes to both",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN that I have followed new teams and players"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the app sends a post request to update my settings",
+          "result": "THEN both teams and players should be passed",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143869",
+      "key": "MLBMOB-2178",
+      "summary": "Field Pass - Only pass teams for changes to followed teams",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN that I have followed new teams\nAND I have not followed new players"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the app sends a post request to update my settings",
+          "result": "THEN only teams should be passed",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143867",
+      "key": "MLBMOB-2177",
+      "summary": "Field Pass - Only pass players for changes to followed players",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN that I have followed new players\nAND I have not followed new teams"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the app sends a post request to update my settings",
+          "result": "THEN only players should be passed",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143831",
+      "key": "MLBMOB-2176",
+      "summary": "Headline Stack - Story and Video Icons",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a video or tap story in the headline stack"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the module is loaded",
+          "result": "THEN a Video or Story icon will display under the headline text\nAND the  text part of the icon (Story, Video) will be localized (Cronica, Video in Spanish)",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143830",
+      "key": "MLBMOB-2175",
+      "summary": "Headline Stack - Layout",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user on the Home Surface"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the Headline Stack section is viewed",
+          "result": "THEN the module displays with a header if set\nAND it will be a vertically scrollable list\nAND the articles display with team, league, player or WBC spot per display rules if spot are not hidden\nAND the articles display with headline",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143828",
+      "key": "MLBMOB-2174",
+      "summary": "Headline Stack - Header Text",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a Headline Stack module"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the headerText is filled in Contentful",
+          "result": "THEN that value appears atop the headline stack\nAND the value should be localized to support Spanish",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143827",
+      "key": "MLBMOB-2173",
+      "summary": "Headline Stack - tapping content - Analytics",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user on the Headline Stack"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN a content item is tapped (Article, Video, VSM, Short)",
+          "result": "THEN the following tracking dimensions will be sent: (values will differ):\nAND if it's an article\nAND if it's VSM content\nAND if it's Short content\nAND if it's a video",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143819",
+      "key": "MLBMOB-2172",
+      "summary": "Headline Stack - Spots - Minor League Baseball",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a content piece (Article, Video, VSM Content)"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the content is tagged with minor-league-baseball\nAND is not tagged with a single team or world baseball classic tag",
+          "result": "THEN render the MiLB spot next to the headline",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143817",
+      "key": "MLBMOB-2171",
+      "summary": "Headline Stack - Spots WBC logo",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN an article in the Headline Stack"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the article contains the tag world-baseball-classic",
+          "result": "THEN the associated spot should be the WBC spot\nAND it will take priority over showing a team or player spot",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1143435",
+      "key": "MLBMOB-2170",
+      "summary": "Main Page - Scroll Depth Analytics",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user on the Home tab"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the user exits the MLB App or leaves the surface",
+          "result": "THEN fire a trackAction with the maximum depth achieved by the user in that session\nAND it should send the path to Home and append \"Max Scroll Depth\" as the name\nAND \u201cpoints\u201d should be sent in the context data with a value that reflects the depth",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1139849",
+      "key": "MLBMOB-2169",
+      "summary": "Jewel - Duplicate Live Activities are not triggered with Push to Start and Manual Flow",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has auto-track enabled for their favorite team\nAND the user has a device with OS >= 17.2\nAND the user is on the scoreboard"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the user\u2019s favorite team or All-Star game is playing\nAND the user has manually triggered a Live Activity for their favorite team or All-Star game\nWHEN the game enters Warmup state",
+          "result": "THEN they will NOT receive a duplicate Live Activity via Push to Start",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1139847",
+      "key": "MLBMOB-2168",
+      "summary": "Jewel - Default Track Button State for Users with OS < 17.2 (Not Push to Start eligible, legacy Live Activity Autotrack eligible)",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has auto-track enabled\nAND the user has a device with OS < 17.2\nAND the user is on the scoreboard"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the user\u2019s favorite team or All-Star game is playing",
+          "result": "THEN the user is presented the track button for live activities beginning 4.5 hours before game start time\nAND the track button is defaulted to selected",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1139845",
+      "key": "MLBMOB-2167",
+      "summary": "Jewel - Default Track Button State for Users with OS >= 17.2 (Push to Start Eligible)",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has auto-track enabled for their favorite team\nAND the user has a device with OS >= 17.2\nAND the user is on the scoreboard"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the user\u2019s favorite team or All-Star game is playing",
+          "result": "THEN the user is presented the track button for live activities beginning 4.5 hours before game start time\nAND the track button is defaulted to disabled",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1139844",
+      "key": "MLBMOB-2166",
+      "summary": "Jewel - Display Track Button on Scoreboard for Favorite Team Game",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user is on the scoreboard\nAND they have a favorite team set"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN there is a favorite team game scheduled for the current date",
+          "result": "THEN the user is presented the track button for live activities for the favorite team game (will begin showing 4.5 hours before game start time)",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1139842",
+      "key": "MLBMOB-2165",
+      "summary": "Jewel - Display Track Button on Scoreboard for All Star Game",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user is on the scoreboard\nAND they do or do not have a favorite team set"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the All-Star game is scheduled for the current date",
+          "result": "THEN the user is presented the track button for live activities for all star game (will begin showing 4.5 hours before game start time)",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1135488",
+      "key": "MLBMOB-2109",
+      "summary": "GDM - Jewel event live, no favorite team set",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN that I have added a jewel event to a layout mapping"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the event is live\nAND I do not have a favorite team set",
+          "result": "THEN I should see live mode\nAND I should see gameday mini or mlb.tv for the jewel event based on eligibility\nAND I should see jewel event branding in gameday mini",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1134209",
+      "key": "MLBMOB-1852",
+      "summary": "GDM - Multiple Jewel events defined in layout mapping",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [],
+      "steps": [
+        {
+          "action": "WHEN that there are multiple jewel events in a layout mapping",
+          "result": "THEN the other Jewel event test cases will apply but to all events",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1134206",
+      "key": "MLBMOB-1851",
+      "summary": "GDM - Jewel event live with favorite team participating",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN that I have added a jewel event to a layout mapping"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the event is live\nAND my favorite is also live\nAND my favorite team is playing in the jewel event",
+          "result": "THEN I should see live mode\nAND I should see gameday mini or mlb.tv for my favorite team based on eligibility\nAND I should see any jewel event branding in gameday mini",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1134201",
+      "key": "MLBMOB-1850",
+      "summary": "GDM - Jewel event and favorite team game live",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN that I have added a jewel event to a layout mapping"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the event is live\nAND my favorite is also live\nAND My favorite team is not playing in the jewel event",
+          "result": "THEN I should see live mode AND I should see gameday mini or mlb.tv for my favorite team based on eligibility\nAND I should not see any jewel event branding in gameday mini",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1134195",
+      "key": "MLBMOB-1849",
+      "summary": "GDM - Jewel Event live, favorite team game not live",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN that I have added a jewel event to a layout mapping"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the event is live\nAND my favorite team is not live",
+          "result": "THEN I should see live mode\nAND I should get gameday mini for that event based on eligibility\nAND I should see any jewel event branding in gameday mini",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1134194",
+      "key": "MLBMOB-1848",
+      "summary": "GDM - Jewel Event and Favorite team game not live",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN that I have added a jewel event to a layout mapping"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN the event is not live\nAND my favorite team is not live",
+          "result": "THEN I should not see live mode",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1127229",
+      "key": "MLBMOB-1246",
+      "summary": "Swap Timestamp with Author",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user is on the home tab"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN a ContentCarousel module is on the feed\nAND there is a value configured in Contentful for replaceTimestampWithAuthorAfterDuration",
+          "result": "THEN the timestamp of an article in the carousel will be replaced with the author after the number of hours specified in the config",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1127228",
+      "key": "MLBMOB-1245",
+      "summary": "Display Carousel Content with Timestamp",
+      "update_type": "steps_and_preconditions",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user is on the home tab"
+        }
+      ],
+      "steps": [
+        {
+          "action": "WHEN a ContentCarousel module is on the feed",
+          "result": "THEN the timestamp for when the piece of article or video content being displayed was published will be visible",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "issueId": "1153134",
+      "key": "MLBMOB-2443",
+      "summary": "Main page - impression tracking",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN a TicketMerchandisingModule on a Surface"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1152729",
+      "key": "MLBMOB-2435",
+      "summary": "MLB.tv - Live Mode FGOTD Support",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN user is on the home surface"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1152728",
+      "key": "MLBMOB-2434",
+      "summary": "MLB.tv - Live Mode FGOTD Support",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN user is on the home surface"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127064",
+      "key": "MLBMOB-1235",
+      "summary": "Casting -> Stop Casting behavior",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127063",
+      "key": "MLBMOB-1234",
+      "summary": "Casting -> Select Closed Captioning",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user casting from the MLB"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127062",
+      "key": "MLBMOB-1233",
+      "summary": "Mobile: Put device in sleep mode while casting",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127061",
+      "key": "MLBMOB-1232",
+      "summary": "Mobile: Background the app while casting",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127060",
+      "key": "MLBMOB-1231",
+      "summary": "Mobile: Casting notification controls",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127059",
+      "key": "MLBMOB-1230",
+      "summary": "Mobile: Casting controls",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127057",
+      "key": "MLBMOB-1228",
+      "summary": "SLIVE: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127056",
+      "key": "MLBMOB-1227",
+      "summary": "FLIVE: Start a stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127055",
+      "key": "MLBMOB-1226",
+      "summary": "VOD/SVOD: While casting Game content switch to VOD/SVOD stream",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND cast session is playing SVOD content"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127054",
+      "key": "MLBMOB-1225",
+      "summary": "SVOD: Attempt to cast when unentitled",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an un-entitled user (not logged in / free account)\nAND cast session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127053",
+      "key": "MLBMOB-1224",
+      "summary": "SVOD: Start cast session then play content",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND no casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127052",
+      "key": "MLBMOB-1223",
+      "summary": "SVOD: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127051",
+      "key": "MLBMOB-1222",
+      "summary": "VOD: Start cast session then play content",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127050",
+      "key": "MLBMOB-1221",
+      "summary": "VOD: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND no casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127047",
+      "key": "MLBMOB-1218",
+      "summary": "Game: While casting content switch to Game stream",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND VOD/SVOD content is already streaming"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127046",
+      "key": "MLBMOB-1217",
+      "summary": "Game: Start cast session then play content",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1127045",
+      "key": "MLBMOB-1216",
+      "summary": "Game: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND no cast session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1126875",
+      "key": "MLBMOB-1215",
+      "summary": "Playback with Ads Disabled",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124610",
+      "key": "MLBMOB-487",
+      "summary": "GMM - Display",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN a live game"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124392",
+      "key": "MLBMOB-274",
+      "summary": "Casting -> Stop Casting behavior",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124391",
+      "key": "MLBMOB-273",
+      "summary": "Casting -> Select Closed Captioning",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user casting from the MLB"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124390",
+      "key": "MLBMOB-272",
+      "summary": "Mobile: Put device in sleep mode while casting",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124389",
+      "key": "MLBMOB-271",
+      "summary": "Mobile: Background the app while casting",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124388",
+      "key": "MLBMOB-270",
+      "summary": "Mobile: Casting notification controls",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124387",
+      "key": "MLBMOB-269",
+      "summary": "Mobile: Casting controls",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124385",
+      "key": "MLBMOB-267",
+      "summary": "SLIVE: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124384",
+      "key": "MLBMOB-266",
+      "summary": "FLIVE: Start a stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124383",
+      "key": "MLBMOB-265",
+      "summary": "VOD/SVOD: While casting Game content switch to VOD/SVOD stream",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND cast session is playing SVOD content"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124381",
+      "key": "MLBMOB-264",
+      "summary": "SVOD: Attempt to cast when unentitled",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an un-entitled user (not logged in / free account)\nAND cast session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124380",
+      "key": "MLBMOB-263",
+      "summary": "SVOD: Start cast session then play content",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND no casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124379",
+      "key": "MLBMOB-262",
+      "summary": "SVOD: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124378",
+      "key": "MLBMOB-261",
+      "summary": "VOD: Start cast session then play content",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124377",
+      "key": "MLBMOB-260",
+      "summary": "VOD: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND no casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124376",
+      "key": "MLBMOB-259",
+      "summary": "Game: Cast a complete Archive Game",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124375",
+      "key": "MLBMOB-258",
+      "summary": "Game: Cast a complete Live Game",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124374",
+      "key": "MLBMOB-257",
+      "summary": "Game: While casting content switch to Game stream",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND VOD/SVOD content is already streaming"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124373",
+      "key": "MLBMOB-256",
+      "summary": "Game: Start cast session then play content",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124372",
+      "key": "MLBMOB-255",
+      "summary": "Game: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND no cast session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124371",
+      "key": "MLBMOB-254",
+      "summary": "Casting -> Stop Casting behavior",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124370",
+      "key": "MLBMOB-253",
+      "summary": "Casting -> Select Closed Captioning",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user casting from the MLB"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124369",
+      "key": "MLBMOB-252",
+      "summary": "Mobile: Put device in sleep mode while casting",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124368",
+      "key": "MLBMOB-251",
+      "summary": "Mobile: Background the app while casting",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124367",
+      "key": "MLBMOB-250",
+      "summary": "Mobile: Casting notification controls",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124366",
+      "key": "MLBMOB-249",
+      "summary": "Mobile: Casting controls",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an existing cast session exists\nAND media is playing"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124364",
+      "key": "MLBMOB-247",
+      "summary": "SLIVE: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124363",
+      "key": "MLBMOB-246",
+      "summary": "FLIVE: Start a stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124362",
+      "key": "MLBMOB-245",
+      "summary": "VOD/SVOD: While casting Game content switch to VOD/SVOD stream",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND cast session is playing SVOD content"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124361",
+      "key": "MLBMOB-244",
+      "summary": "SVOD: Attempt to cast when unentitled",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an un-entitled user (not logged in / free account)\nAND cast session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124360",
+      "key": "MLBMOB-243",
+      "summary": "SVOD: Start cast session then play content",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND no casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124359",
+      "key": "MLBMOB-242",
+      "summary": "SVOD: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124358",
+      "key": "MLBMOB-241",
+      "summary": "VOD: Start cast session then play content",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124357",
+      "key": "MLBMOB-240",
+      "summary": "VOD: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND no casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124356",
+      "key": "MLBMOB-239",
+      "summary": "Game: Cast a complete Archive Game",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124355",
+      "key": "MLBMOB-238",
+      "summary": "Game: Cast a complete Live Game",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124354",
+      "key": "MLBMOB-237",
+      "summary": "Game: While casting content switch to Game stream",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND VOD/SVOD content is already streaming"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124353",
+      "key": "MLBMOB-236",
+      "summary": "Game: Start cast session then play content",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND casting session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124352",
+      "key": "MLBMOB-235",
+      "summary": "Game: Start stream on mobile then cast it",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND no cast session exists"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124341",
+      "key": "MLBMOB-226",
+      "summary": "Previously logged in and completed auth flow",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN a user is logged into the app with their MLB.com uername\nAND they have previously completed the MVPD auth flow"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124337",
+      "key": "MLBMOB-223",
+      "summary": "Previously purchased features are available once user enters the app",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has previously made an At Bat/MLB.TV purchase\nAND the user initially launched the app"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124336",
+      "key": "MLBMOB-222",
+      "summary": "User is shown a toast identifying that a subscription has been detected and features are now restored",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has previously made an At Bat/MLB.TV purchase\nAND the user initially launched the app"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124335",
+      "key": "MLBMOB-221",
+      "summary": "User who has previously made a purchase is NOT shown the paywall after auto linking occurs after initial launch",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has previously made an At Bat/MLB.TV purchase"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124334",
+      "key": "MLBMOB-220",
+      "summary": "Purchase is linked if user has made a purchase in Device A and launched app initially in device B",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has previously made in app purchases in device A\nAND the user has initially launches the app on device B"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124333",
+      "key": "MLBMOB-219",
+      "summary": "Purchase is linked if user has made a subscribe and install purchase directly from Google Play",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has previously made the subscribe and install purchase directly from Google Play Store\nAND the user has initially launches the app"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124332",
+      "key": "MLBMOB-218",
+      "summary": "Purchase is not restored if user has not made any previous purchase",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has NOT previously made in app purchases\nAND the user has initially launches the app"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124331",
+      "key": "MLBMOB-217",
+      "summary": "Purchase is restored automatically upon initial launch of app if google account has previous purchase",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has previously made in app purchases\nAND the user has initially launches the app"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124330",
+      "key": "MLBMOB-216",
+      "summary": "App searches for Purchase upon initial launch of the app",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN the user has initially launched the app"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124317",
+      "key": "MLBMOB-203",
+      "summary": "PiP for entitled user",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN MLB app installed on device\nAND user is logged in the app\nAND user is on Watch tab\nAND user is entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124279",
+      "key": "MLBMOB-177",
+      "summary": "No feeds Error message",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124278",
+      "key": "MLBMOB-176",
+      "summary": "Block media source",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND the media source (ie tv-fast.mlb.com/* AND/OR tv-gmc.mlb.com/*) is blocked (to simulate a failure)"
+        }
+      ],
+      "steps": []
+    },
+    {
+      "issueId": "1124277",
+      "key": "MLBMOB-175",
+      "summary": "Block media-gateway",
+      "update_type": "preconditions_only",
+      "preconditions": [
+        {
+          "definition": "GIVEN an entitled user\nAND the media-gateway endpoint is blocked (to simulate a failure)"
+        }
+      ],
+      "steps": []
+    }
+  ]
+}

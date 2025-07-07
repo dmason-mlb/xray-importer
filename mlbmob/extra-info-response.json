@@ -1,0 +1,3876 @@
+{
+    "data": {
+        "getExpandedTests": {
+            "total": 77,
+            "start": 0,
+            "limit": 100,
+            "results": [
+                {
+                    "issueId": "1153134",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154473",
+                                "projectId": "26420",
+                                "definition": "GIVEN a TicketMerchandisingModule on a Surface",
+                                "jira": {
+                                    "key": "MLBMOB-2575",
+                                    "summary": "GIVEN a TicketMerchandisingModule on a Surface",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:33:52.389Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2443",
+                        "summary": "Main page - impression tracking",
+                        "description": "GIVEN a TicketMerchandisingModule on a Surface"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1153119",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2441",
+                        "summary": "MLB.tv - module stops playing after removal",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1153118",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2440",
+                        "summary": "MLB.tv - module should stop playing after removal",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1152729",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154474",
+                                "projectId": "26420",
+                                "definition": "GIVEN user is on the home surface",
+                                "jira": {
+                                    "key": "MLBMOB-2576",
+                                    "summary": "GIVEN user is on the home surface",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:33:56.770Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2435",
+                        "summary": "MLB.tv - Live Mode FGOTD Support",
+                        "description": "GIVEN user is on the home surface"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1152728",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154475",
+                                "projectId": "26420",
+                                "definition": "GIVEN user is on the home surface",
+                                "jira": {
+                                    "key": "MLBMOB-2577",
+                                    "summary": "GIVEN user is on the home surface",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:01.143Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2434",
+                        "summary": "MLB.tv - Live Mode FGOTD Support",
+                        "description": "GIVEN user is on the home surface"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1147414",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147330",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2213",
+                                    "summary": "MLB App Android automation E2E",
+                                    "description": "This test plan covers comprehensive automated testing of the MLB mobile application on Android devices, validating critical user journeys from app launch to core feature completion. The automation suite tests key functionalities including user authentication, user registration, live game streaming, score updates, team/player statistics, and news feed navigation. Tests are implemented using Appium and WebDriverIO, executed in Sauce Labs using both emulators and real devices across multiple Android versions to ensure consistent user experience. The E2E scenarios simulate real user workflows such as checking game schedules, following favorite teams/players, and accessing archived game content, with validation points for UI responsiveness, data accuracy, and integration with MLB's backend services.\r\nThe test plan includes both positive and negative test cases, performance benchmarks for critical paths, and regression testing for major app updates during baseball season."
+                                },
+                                "lastModified": "2025-06-25T05:04:23.347Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2232",
+                        "summary": "It should show favorite team news",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "PASSED",
+                        "description": "The test run has passed",
+                        "final": true,
+                        "color": "#95C160"
+                    }
+                },
+                {
+                    "issueId": "1147413",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147330",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2213",
+                                    "summary": "MLB App Android automation E2E",
+                                    "description": "This test plan covers comprehensive automated testing of the MLB mobile application on Android devices, validating critical user journeys from app launch to core feature completion. The automation suite tests key functionalities including user authentication, user registration, live game streaming, score updates, team/player statistics, and news feed navigation. Tests are implemented using Appium and WebDriverIO, executed in Sauce Labs using both emulators and real devices across multiple Android versions to ensure consistent user experience. The E2E scenarios simulate real user workflows such as checking game schedules, following favorite teams/players, and accessing archived game content, with validation points for UI responsiveness, data accuracy, and integration with MLB's backend services.\r\nThe test plan includes both positive and negative test cases, performance benchmarks for critical paths, and regression testing for major app updates during baseball season."
+                                },
+                                "lastModified": "2025-06-25T05:04:23.347Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2231",
+                        "summary": "Users should be able to open a news item",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "PASSED",
+                        "description": "The test run has passed",
+                        "final": true,
+                        "color": "#95C160"
+                    }
+                },
+                {
+                    "issueId": "1147412",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147330",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2213",
+                                    "summary": "MLB App Android automation E2E",
+                                    "description": "This test plan covers comprehensive automated testing of the MLB mobile application on Android devices, validating critical user journeys from app launch to core feature completion. The automation suite tests key functionalities including user authentication, user registration, live game streaming, score updates, team/player statistics, and news feed navigation. Tests are implemented using Appium and WebDriverIO, executed in Sauce Labs using both emulators and real devices across multiple Android versions to ensure consistent user experience. The E2E scenarios simulate real user workflows such as checking game schedules, following favorite teams/players, and accessing archived game content, with validation points for UI responsiveness, data accuracy, and integration with MLB's backend services.\r\nThe test plan includes both positive and negative test cases, performance benchmarks for critical paths, and regression testing for major app updates during baseball season."
+                                },
+                                "lastModified": "2025-06-25T05:04:23.347Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2230",
+                        "summary": "It should show latest news as default tab",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "PASSED",
+                        "description": "The test run has passed",
+                        "final": true,
+                        "color": "#95C160"
+                    }
+                },
+                {
+                    "issueId": "1147411",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147330",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2213",
+                                    "summary": "MLB App Android automation E2E",
+                                    "description": "This test plan covers comprehensive automated testing of the MLB mobile application on Android devices, validating critical user journeys from app launch to core feature completion. The automation suite tests key functionalities including user authentication, user registration, live game streaming, score updates, team/player statistics, and news feed navigation. Tests are implemented using Appium and WebDriverIO, executed in Sauce Labs using both emulators and real devices across multiple Android versions to ensure consistent user experience. The E2E scenarios simulate real user workflows such as checking game schedules, following favorite teams/players, and accessing archived game content, with validation points for UI responsiveness, data accuracy, and integration with MLB's backend services.\r\nThe test plan includes both positive and negative test cases, performance benchmarks for critical paths, and regression testing for major app updates during baseball season."
+                                },
+                                "lastModified": "2025-06-25T05:04:23.347Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2229",
+                        "summary": "Deep-links Tests should open scoreboard screen when using deeplink",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "PASSED",
+                        "description": "The test run has passed",
+                        "final": true,
+                        "color": "#95C160"
+                    }
+                },
+                {
+                    "issueId": "1147410",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Test Repository",
+                        "path": "/"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147330",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2213",
+                                    "summary": "MLB App Android automation E2E",
+                                    "description": "This test plan covers comprehensive automated testing of the MLB mobile application on Android devices, validating critical user journeys from app launch to core feature completion. The automation suite tests key functionalities including user authentication, user registration, live game streaming, score updates, team/player statistics, and news feed navigation. Tests are implemented using Appium and WebDriverIO, executed in Sauce Labs using both emulators and real devices across multiple Android versions to ensure consistent user experience. The E2E scenarios simulate real user workflows such as checking game schedules, following favorite teams/players, and accessing archived game content, with validation points for UI responsiveness, data accuracy, and integration with MLB's backend services.\r\nThe test plan includes both positive and negative test cases, performance benchmarks for critical paths, and regression testing for major app updates during baseball season."
+                                },
+                                "lastModified": "2025-06-25T05:04:23.347Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-2228",
+                        "summary": "Deep-links Tests should open watch screen when using deeplink",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "FAILED",
+                        "description": "The test run has failed",
+                        "final": true,
+                        "color": "#D45D52"
+                    }
+                },
+                {
+                    "issueId": "1134644",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Media Player Stats View",
+                        "path": "/iOS Streaming/Media Player Stats View"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1981",
+                        "summary": "Box Score Validation",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1134642",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Media Player Stats View",
+                        "path": "/iOS Streaming/Media Player Stats View"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1979",
+                        "summary": "Matchup View Data Updating",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1133197",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Regional Sport Networks",
+                        "path": "/tvOS Streaming/Regional Sport Networks"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1841",
+                        "summary": "tvOS MASN Ad Hoc Test",
+                        "description": "ASTREAM ad hoc test for MASN on tvOS RC 2025.9.0.20504\n\n+Important Info:+\n\nmasn@gmail.com (no location override)\nmasnims@gmail.com (In Market)\nmasnoom@gmail.com (Out of Market)\t       \nmasnintl@gmail.com (International)\t       \n\nPassword for all: *Password4MASN*\n\nDM5tv6@gmail.com (ALL RSN) / PasswordDM5\n\n----\n\n*Baltimore Orioles*\n\nMASN_DTC Orioles\n\nMASN_110\n\n*Washington Nationals*\n\nMASN_DTC Nationals\n\nMASN_120\n\n----"
+                    },
+                    "status": {
+                        "name": "PASSED",
+                        "description": "The test run has passed",
+                        "final": true,
+                        "color": "#95C160"
+                    }
+                },
+                {
+                    "issueId": "1132305",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Tabs (Home, Games, Settings)",
+                        "path": "/tvOS Streaming/Tabs (Home, Games, Settings)"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1790",
+                        "summary": "Live Game Launch",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "PASSED",
+                        "description": "The test run has passed",
+                        "final": true,
+                        "color": "#95C160"
+                    }
+                },
+                {
+                    "issueId": "1132304",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Tabs (Home, Games, Settings)",
+                        "path": "/tvOS Streaming/Tabs (Home, Games, Settings)"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1789",
+                        "summary": "Archive Launch",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "PASSED",
+                        "description": "The test run has passed",
+                        "final": true,
+                        "color": "#95C160"
+                    }
+                },
+                {
+                    "issueId": "1132275",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Tabs (Home, Games, Settings)",
+                        "path": "/tvOS Streaming/Tabs (Home, Games, Settings)"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1761",
+                        "summary": "Day without Games",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1132127",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Media Player",
+                        "path": "/tvOS Streaming/Media Player"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1622",
+                        "summary": "Picture-In-Picture",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "PASSED",
+                        "description": "The test run has passed",
+                        "final": true,
+                        "color": "#95C160"
+                    }
+                },
+                {
+                    "issueId": "1132104",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Game Tiles (Scoreboard)",
+                        "path": "/tvOS Streaming/Game Tiles (Scoreboard)"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1609",
+                        "summary": "All-Star Game",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1132046",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Entitlements",
+                        "path": "/tvOS Streaming/Entitlements"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1567",
+                        "summary": "Exec Users",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1132045",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Entitlements",
+                        "path": "/tvOS Streaming/Entitlements"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1566",
+                        "summary": "Anon Users",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1132044",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Entitlements",
+                        "path": "/tvOS Streaming/Entitlements"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1565",
+                        "summary": "TV Yearly",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1132043",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Entitlements",
+                        "path": "/tvOS Streaming/Entitlements"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1564",
+                        "summary": "TV Monthly",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1132042",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Entitlements",
+                        "path": "/tvOS Streaming/Entitlements"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1563",
+                        "summary": "Single-Team Users",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1132041",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Entitlements",
+                        "path": "/tvOS Streaming/Entitlements"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1562",
+                        "summary": "Free Users",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1132039",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Entitlements",
+                        "path": "/tvOS Streaming/Entitlements"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1120420",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-93",
+                                    "summary": "tvOS Test Set - Applause ",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-02T21:17:10.867Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1132419",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-1838",
+                                    "summary": "Applause Test Plan - 2025.9.0",
+                                    "description": "RC1 - 2025.9.0.20504"
+                                },
+                                "lastModified": "2025-06-02T21:13:15.457Z"
+                            }
+                        ],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1560",
+                        "summary": "Entitled",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127064",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154476",
+                                "projectId": "26420",
+                                "definition": "GIVEN an existing cast session exists\nAND media is playing",
+                                "jira": {
+                                    "key": "MLBMOB-2578",
+                                    "summary": "GIVEN an existing cast session exists",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:05.465Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1235",
+                        "summary": "Casting -> Stop Casting behavior",
+                        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127063",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154477",
+                                "projectId": "26420",
+                                "definition": "GIVEN a user casting from the MLB",
+                                "jira": {
+                                    "key": "MLBMOB-2579",
+                                    "summary": "GIVEN a user casting from the MLB",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:09.712Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1234",
+                        "summary": "Casting -> Select Closed Captioning",
+                        "description": "GIVEN a user casting from the MLB"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127062",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154478",
+                                "projectId": "26420",
+                                "definition": "GIVEN an existing cast session exists\nAND media is playing",
+                                "jira": {
+                                    "key": "MLBMOB-2580",
+                                    "summary": "GIVEN an existing cast session exists",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:13.956Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1233",
+                        "summary": "Mobile: Put device in sleep mode while casting",
+                        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127061",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154479",
+                                "projectId": "26420",
+                                "definition": "GIVEN an existing cast session exists\nAND media is playing",
+                                "jira": {
+                                    "key": "MLBMOB-2581",
+                                    "summary": "GIVEN an existing cast session exists",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:18.311Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1232",
+                        "summary": "Mobile: Background the app while casting",
+                        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127060",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154480",
+                                "projectId": "26420",
+                                "definition": "GIVEN an existing cast session exists\nAND media is playing",
+                                "jira": {
+                                    "key": "MLBMOB-2582",
+                                    "summary": "GIVEN an existing cast session exists",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:22.693Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1231",
+                        "summary": "Mobile: Casting notification controls",
+                        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127059",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154481",
+                                "projectId": "26420",
+                                "definition": "GIVEN an existing cast session exists\nAND media is playing",
+                                "jira": {
+                                    "key": "MLBMOB-2583",
+                                    "summary": "GIVEN an existing cast session exists",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:27.205Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1230",
+                        "summary": "Mobile: Casting controls",
+                        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127057",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154482",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user",
+                                "jira": {
+                                    "key": "MLBMOB-2584",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:31.384Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1228",
+                        "summary": "SLIVE: Start stream on mobile then cast it",
+                        "description": "GIVEN an entitled user\r\n\r\n"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127056",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154483",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user",
+                                "jira": {
+                                    "key": "MLBMOB-2585",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:36.000Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1227",
+                        "summary": "FLIVE: Start a stream on mobile then cast it",
+                        "description": "GIVEN an entitled user\r\n\r\n"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127055",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154484",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user\nAND cast session is playing SVOD content",
+                                "jira": {
+                                    "key": "MLBMOB-2586",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:40.197Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1226",
+                        "summary": "VOD/SVOD: While casting Game content switch to VOD/SVOD stream",
+                        "description": "GIVEN an entitled user\r\nAND cast session is playing SVOD content"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127054",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154485",
+                                "projectId": "26420",
+                                "definition": "GIVEN an un-entitled user (not logged in / free account)\nAND cast session exists",
+                                "jira": {
+                                    "key": "MLBMOB-2587",
+                                    "summary": "GIVEN an un-entitled user (not logged in / free account)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:44.496Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1225",
+                        "summary": "SVOD: Attempt to cast when unentitled",
+                        "description": "GIVEN an un-entitled user (not logged in / free account)\r\nAND cast session exists"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127053",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154486",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user\nAND no casting session exists",
+                                "jira": {
+                                    "key": "MLBMOB-2588",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:48.997Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1224",
+                        "summary": "SVOD: Start cast session then play content",
+                        "description": "GIVEN an entitled user\r\nAND no casting session exists"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127052",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154487",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user",
+                                "jira": {
+                                    "key": "MLBMOB-2589",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:53.399Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1223",
+                        "summary": "SVOD: Start stream on mobile then cast it",
+                        "description": "GIVEN an entitled user"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127051",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154488",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user\nAND casting session exists",
+                                "jira": {
+                                    "key": "MLBMOB-2590",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:34:57.878Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1222",
+                        "summary": "VOD: Start cast session then play content",
+                        "description": "GIVEN an entitled user\r\nAND casting session exists"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127050",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154489",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user\nAND no casting session exists",
+                                "jira": {
+                                    "key": "MLBMOB-2591",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:35:02.401Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1221",
+                        "summary": "VOD: Start stream on mobile then cast it",
+                        "description": "GIVEN an entitled user\r\nAND no casting session exists"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127047",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154490",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user\nAND VOD/SVOD content is already streaming",
+                                "jira": {
+                                    "key": "MLBMOB-2592",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:35:07.478Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1218",
+                        "summary": "Game: While casting content switch to Game stream",
+                        "description": "GIVEN an entitled user\r\nAND VOD/SVOD content is already streaming"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127046",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154491",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user\nAND casting session exists",
+                                "jira": {
+                                    "key": "MLBMOB-2593",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:35:11.954Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1217",
+                        "summary": "Game: Start cast session then play content",
+                        "description": "GIVEN an entitled user\r\nAND casting session exists\r\n"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1127045",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Chromecast",
+                        "path": "/iOS Streaming/Chromecast"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154492",
+                                "projectId": "26420",
+                                "definition": "GIVEN an entitled user\nAND no cast session exists",
+                                "jira": {
+                                    "key": "MLBMOB-2594",
+                                    "summary": "GIVEN an entitled user",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:35:16.314Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1216",
+                        "summary": "Game: Start stream on mobile then cast it",
+                        "description": "GIVEN an entitled user\r\nAND no cast session exists"
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1126875",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "API Testing",
+                        "path": "/iOS Streaming/API Testing"
+                    },
+                    "preconditions": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1154493",
+                                "projectId": "26420",
+                                "definition": "GIVEN",
+                                "jira": {
+                                    "key": "MLBMOB-2595",
+                                    "summary": "GIVEN",
+                                    "description": null
+                                },
+                                "lastModified": "2025-07-07T06:35:20.688Z"
+                            }
+                        ]
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1215",
+                        "summary": "Playback with Ads Disabled",
+                        "description": "GIVEN\r\n\r\n+ Note: The audio EPG player does not utilize the DAI playback URL and does fallback to the fastly/media-cdn URL\r\n\r\nAND\r\n\r\n+ The user is logged into an account with VIDEO_ADS_DISABLED\r\n\r\nAccount: adsDisabled@gmail.com/PasswordDM5\r\n\r\nOR\r\n\r\n+ The user locally maps \"adsEnabled\": false for the media gateway return in Proxy"
+                    },
+                    "status": {
+                        "name": "PASSED",
+                        "description": "The test run has passed",
+                        "final": true,
+                        "color": "#95C160"
+                    }
+                },
+                {
+                    "issueId": "1125484",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Tap  story",
+                        "path": "/News Surface/Tap  story"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1200",
+                        "summary": "More than 3 tap stories",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125481",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "secondary large",
+                        "path": "/News Surface/secondary large"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1197",
+                        "summary": "Less than 4 articles",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125480",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "carousel",
+                        "path": "/News Surface/carousel"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-1196",
+                        "summary": "Exploring a Category in More Depth",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125218",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Stats - Negro League",
+                        "path": "/MLBAPP/Stats - Negro League"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-937",
+                        "summary": "NL - No duplication of team names?",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125217",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Stats - Negro League",
+                        "path": "/MLBAPP/Stats - Negro League"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-936",
+                        "summary": "NL - New York Black yankees do not overlap with New York Cubans",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125216",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Stats - Negro League",
+                        "path": "/MLBAPP/Stats - Negro League"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-935",
+                        "summary": "NL - teams with same name different city",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125211",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Passwordless Login",
+                        "path": "/MLBAPP/Passwordless Login"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-930",
+                        "summary": "Reset password on device running MLB App",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125210",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Passwordless Login",
+                        "path": "/MLBAPP/Passwordless Login"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-929",
+                        "summary": "Readme - Important note for iOS",
+                        "description": "Note: When testing passwordless login on iOS, it is important that the MLB App is installed without being connected through an HTTPS proxy, ex. Charles or the magic link may go to Safari and fail rather than going to the MLB App as expected."
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125209",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Accessibility Features",
+                        "path": "/MLBAPP/Accessibility Features"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-928",
+                        "summary": "Gesture reduction functionallity",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125196",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "News rebuild",
+                        "path": "/MLBAPP/News rebuild"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-915",
+                        "summary": "track events",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125195",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "News rebuild",
+                        "path": "/MLBAPP/News rebuild"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-914",
+                        "summary": "VSM content navigation",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125194",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "video context",
+                        "path": "/MLBAPP/video context"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-913",
+                        "summary": "TC05 - Gameday video context",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125193",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "video context",
+                        "path": "/MLBAPP/video context"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-912",
+                        "summary": "TC04 - Scores page video context",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125192",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "video context",
+                        "path": "/MLBAPP/video context"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-911",
+                        "summary": "TC03 - Team page video context",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125191",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "video context",
+                        "path": "/MLBAPP/video context"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-910",
+                        "summary": "TC02 - Home tab video context",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125188",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "standings",
+                        "path": "/MLBAPP/standings"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-907",
+                        "summary": "TC45 - Spring training tab config",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125187",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "standings",
+                        "path": "/MLBAPP/standings"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-906",
+                        "summary": "TC34 - Next Game is displayed",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125103",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Deeplinks",
+                        "path": "/MLBAPP/Deeplinks"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-822",
+                        "summary": "TC15 - Settings deeplink",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1125102",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "Splash Screen",
+                        "path": "/MLBAPP/Splash Screen"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-821",
+                        "summary": "TC12 - Splash Screen - No internet connection Warm Launch",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124874",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-675",
+                        "summary": "NL - No duplication of team names?",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124873",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-674",
+                        "summary": "NL - New York Black yankees do not overlap with New York Cubans",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124872",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-673",
+                        "summary": "NL - teams with same name different city",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124867",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-668",
+                        "summary": "Reset password on device running MLB App",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124866",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-667",
+                        "summary": "Readme - Important note for iOS",
+                        "description": "Note: When testing passwordless login on iOS, it is important that the MLB App is installed without being connected through an HTTPS proxy, ex. Charles or the magic link may go to Safari and fail rather than going to the MLB App as expected."
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124865",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-666",
+                        "summary": "Gesture reduction functionallity",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124852",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-653",
+                        "summary": "track events",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124851",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-652",
+                        "summary": "VSM content navigation",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124849",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-651",
+                        "summary": "TC05 - Gameday video context",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124848",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-650",
+                        "summary": "TC04 - Scores page video context",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124847",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-649",
+                        "summary": "TC03 - Team page video context",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124846",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-648",
+                        "summary": "TC02 - Home tab video context",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124843",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-645",
+                        "summary": "TC45 - Spring training tab config",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                },
+                {
+                    "issueId": "1124842",
+                    "versionId": 1,
+                    "projectId": "26420",
+                    "folder": {
+                        "name": "MLBAPP",
+                        "path": "/MLBAPP"
+                    },
+                    "preconditions": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": []
+                    },
+                    "testSets": {
+                        "total": 1,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [
+                            {
+                                "issueId": "1147353",
+                                "projectId": "26420",
+                                "jira": {
+                                    "key": "MLBMOB-2214",
+                                    "summary": "Applause Regression Run (MLBAPP) (iOS/Android)",
+                                    "description": null
+                                },
+                                "lastModified": "2025-06-24T21:10:33.853Z"
+                            }
+                        ]
+                    },
+                    "testPlans": {
+                        "total": 0,
+                        "start": 0,
+                        "limit": 100,
+                        "results": [],
+                        "warnings": null
+                    },
+                    "jira": {
+                        "key": "MLBMOB-644",
+                        "summary": "TC34 - Next Game is displayed",
+                        "description": null
+                    },
+                    "status": {
+                        "name": "TO DO",
+                        "description": "The test run has not started",
+                        "final": false,
+                        "color": "#A2A6AE"
+                    }
+                }
+            ]
+        }
+    }
+}
