@@ -205,7 +205,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "query GetTestsByLabel(\n  $jql: String!,\n  $limit: Int\n) {\n  getTests(\n    jql: $jql,\n    limit: $limit\n  ) {\n    total\n    results {\n      issueId\n      projectId\n      testType {\n        name\n      }\n      folder {\n        path\n      }\n      jira(fields: [\"key\", \"summary\", \"labels\", \"priority\", \"status\"])\n    }\n  }\n}",
+                "query": "query GetTestsByLabel(\n  $jql: String,\n  $limit: Int\n) {\n  getTests(\n    jql: $jql,\n    limit: $limit\n  ) {\n    total\n    results {\n      issueId\n      projectId\n      testType {\n        name\n      }\n      folder {\n        path\n      }\n      jira(fields: [\"key\", \"summary\", \"labels\", \"priority\", \"status\"])\n    }\n  }\n}",
                 "variables": "{\n  \"jql\": \"project = FRAMED AND issuetype = Test AND labels = '@smoke'\",\n  \"limit\": 100,\n  \"jira_project_key\": \"FRAMED\"\n}"
               }
             },
@@ -328,7 +328,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "query GetUnfiledTests(\n  $jql: String!,\n  $limit: Int\n) {\n  getTests(\n    jql: $jql,\n    limit: $limit\n  ) {\n    total\n    results {\n      issueId\n      projectId\n      folder {\n        path\n      }\n      jira(fields: [\"key\", \"summary\", \"labels\", \"created\"])\n    }\n  }\n}",
+                "query": "query GetUnfiledTests(\n  $jql: String,\n  $limit: Int\n) {\n  getTests(\n    jql: $jql,\n    limit: $limit\n  ) {\n    total\n    results {\n      issueId\n      projectId\n      folder {\n        path\n      }\n      jira(fields: [\"key\", \"summary\", \"labels\", \"created\"])\n    }\n  }\n}",
                 "variables": "{\n  \"jql\": \"project = FRAMED AND issuetype = Test\",\n  \"limit\": 100,\n  \"jira_project_key\": \"FRAMED\"\n}"
               }
             },
@@ -368,12 +368,12 @@
                   "function printFolderTree(folder, indent = '') {",
                   "    if (!folder) return;",
                   "    ",
-                  "    console.log(`${indent}📁 ${folder.name} (${folder.testsCount} tests)`);",
+                  "    console.log(`${indent}\ud83d\udcc1 ${folder.name} (${folder.testsCount} tests)`);",
                   "    ",
                   "    if (folder.folders && folder.folders.length > 0) {",
                   "        folder.folders.forEach(subfolder => {",
                   "            // Would need separate query for each subfolder",
-                  "            console.log(`${indent}  └─ ${subfolder}`);",
+                  "            console.log(`${indent}  \u2514\u2500 ${subfolder}`);",
                   "        });",
                   "    }",
                   "}",
@@ -396,7 +396,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "query GetFolderStructure($projectId: String!, $path: String!) {\n  getFolder(projectId: $projectId, path: $path) {\n    name\n    path\n    testsCount\n    preconditionsCount\n    folders\n    tests(limit: 5) {\n      total\n      results {\n        issueId\n        projectId\n        jira(fields: [\"key\", \"summary\"])\n      }\n    }\n  }\n}",
+                "query": "query GetFolderStructure(\n  $projectId: String!,\n  $path: String!\n) {\n  getFolder(projectId: $projectId, path: $path) {\n    name\n    path\n    testsCount\n    preconditionsCount\n    folders\n    tests(limit: 5) {\n      total\n      results {\n        issueId\n        projectId\n        jira(fields: [\"key\", \"summary\"])\n      }\n    }\n  }\n}",
                 "variables": "{\n  \"projectId\": \"10000\",\n  \"path\": \"/\",\n  \"jira_project_id\": \"10000\"\n}"
               }
             },
@@ -459,7 +459,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation UpdateTestLabels(\n  $issueId: String!,\n  $labels: [String!]!\n) {\n  updateTest(\n    issueId: $issueId,\n    jira: {\n      update: {\n        labels: [\n          { set: $labels }\n        ]\n      }\n    }\n  ) {\n    test {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"summary\", \"labels\"])\n    }\n    warnings\n  }\n}",
+                "query": "mutation UpdateTestLabels(\n  $issueId: String!,\n  $labels: [String]\n) {\n  updateTest(\n    issueId: $issueId,\n    jira: {\n      update: {\n        labels: [\n          { set: $labels }\n        ]\n      }\n    }\n  ) {\n    test {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"summary\", \"labels\"])\n    }\n    warnings\n  }\n}",
                 "variables": "{\n  \"issueId\": \"12345\",\n  \"labels\": [\n    \"@team-page\",\n    \"@functional\",\n    \"@smoke\",\n    \"@critical\",\n    \"@ios\",\n    \"@android\"\n  ]\n}"
               }
             },
@@ -516,7 +516,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation AddLabelsToTest(\n  $issueId: String!,\n  $labelsToAdd: [String!]!\n) {\n  updateTest(\n    issueId: $issueId,\n    jira: {\n      update: {\n        labels: [\n          { add: $labelsToAdd[0] },\n          { add: $labelsToAdd[1] }\n        ]\n      }\n    }\n  ) {\n    test {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"labels\"])\n    }\n  }\n}",
+                "query": "mutation AddLabelsToTest(\n  $issueId: String!,\n  $labelsToAdd: [String]\n) {\n  updateTest(\n    issueId: $issueId,\n    jira: {\n      update: {\n        labels: [\n          { add: $labelsToAdd[0] },\n          { add: $labelsToAdd[1] }\n        ]\n      }\n    }\n  ) {\n    test {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"labels\"])\n    }\n  }\n}",
                 "variables": "{\n  \"issueId\": \"12345\",\n  \"labelsToAdd\": [\"@regression\", \"@nightly\"]\n}"
               }
             },
@@ -571,7 +571,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation UpdateTestDescription(\n  $issueId: String!,\n  $summary: String!,\n  $description: String!\n) {\n  updateTest(\n    issueId: $issueId,\n    jira: {\n      fields: {\n        summary: $summary,\n        description: $description\n      }\n    }\n  ) {\n    test {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"summary\", \"description\"])\n    }\n    warnings\n  }\n}",
+                "query": "mutation UpdateTestDescription(\n  $issueId: String!,\n  $summary: String,\n  $description: String\n) {\n  updateTest(\n    issueId: $issueId,\n    jira: {\n      fields: {\n        summary: $summary,\n        description: $description\n      }\n    }\n  ) {\n    test {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"summary\", \"description\"])\n    }\n    warnings\n  }\n}",
                 "variables": "{\n  \"issueId\": \"12345\",\n  \"summary\": \"TC-001: Team Selection via Drawer - Updated\",\n  \"description\": \"**Purpose**: Verify that users can successfully select a different team from the team drawer.\\n\\n**Prerequisites**:\\n- User is logged in\\n- App is on latest version\\n- Network connection is stable\\n\\n**Test Data**:\\n- Current team: Yankees\\n- Target team: Red Sox\\n\\n**Expected Behavior**:\\n- Team drawer opens smoothly\\n- All 30 MLB teams are displayed\\n- Team selection updates the entire page\\n- Selected team persists across app restarts\"\n}"
               }
             },
@@ -798,8 +798,8 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation AddPreconditionsToTest(\n  $issueId: String!,\n  $preconditionIds: [String!]!\n) {\n  addPreconditionsToTest(\n    issueId: $issueId,\n    preconditionIds: $preconditionIds\n  ) {\n    addedPreconditions\n    warning\n  }\n}",
-                "variables": "{\n  \"issueId\": \"12345\",\n  \"preconditionIds\": [\"54321\"]\n}"
+                "query": "mutation AddPreconditionsToTest(\n  $issueId: String!,\n  $preconditionIssueIds: [String!]\n) {\n  addPreconditionsToTest(\n    issueId: $issueId,\n    preconditionIds: $preconditionIssueIds\n  ) {\n    addedPreconditions\n    warning\n  }\n}",
+                "variables": "{\n  \"issueId\": \"12345\",\n  \"preconditionIssueIds\": [\n    \"54321\"\n  ]\n}"
               }
             },
             "url": {
@@ -854,7 +854,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation UpdateTestPriority(\n  $issueId: String!,\n  $priority: String!\n) {\n  updateTest(\n    issueId: $issueId,\n    jira: {\n      fields: {\n        priority: { name: $priority }\n      }\n    }\n  ) {\n    test {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"summary\", \"priority\"])\n    }\n  }\n}",
+                "query": "mutation UpdateTestPriority(\n  $issueId: String!,\n  $priority: String\n) {\n  updateTest(\n    issueId: $issueId,\n    jira: {\n      fields: {\n        priority: { name: $priority }\n      }\n    }\n  ) {\n    test {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"summary\", \"priority\"])\n    }\n  }\n}",
                 "variables": "{\n  \"issueId\": \"12345\",\n  \"priority\": \"Critical\"\n}"
               }
             },
@@ -976,7 +976,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation CreateFolder($projectId: String!, $path: String!, $testIssueIds: [String]) {\n  createFolder(projectId: $projectId, path: $path, testIssueIds: $testIssueIds) {\n    folder {\n      name\n      path\n      testsCount\n      preconditionsCount\n      issuesCount\n    }\n    warnings\n  }\n}",
+                "query": "mutation CreateFolder(\n  $projectId: String,\n  $path: String!,\n  $testIssueIds: [String]\n) {\n  createFolder(projectId: $projectId, path: $path, testIssueIds: $testIssueIds) {\n    folder {\n      name\n      path\n      testsCount\n      preconditionsCount\n      issuesCount\n    }\n    warnings\n  }\n}",
                 "variables": "{\n  \"projectId\": \"10000\",\n  \"path\": \"/Team Page/Core Navigation\",\n  \"jira_project_id\": \"10000\"\n}"
               }
             },
@@ -1103,7 +1103,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "query GetFolder($projectId: String!, $path: String!) {\n  getFolder(projectId: $projectId, path: $path) {\n    name\n    path\n    testsCount\n    folders\n    tests {\n      total\n      results {\n        issueId\n        projectId\n        jira(fields: [\"key\", \"summary\", \"labels\"])\n      }\n    }\n  }\n}",
+                "query": "query GetFolder(\n  $projectId: String!,\n  $path: String!\n) {\n  getFolder(projectId: $projectId, path: $path) {\n    name\n    path\n    testsCount\n    folders\n    tests {\n      total\n      results {\n        issueId\n        projectId\n        jira(fields: [\"key\", \"summary\", \"labels\"])\n      }\n    }\n  }\n}",
                 "variables": "{\n  \"projectId\": \"10000\",\n  \"path\": \"/Team Page\",\n  \"jira_project_id\": \"10000\"\n}"
               }
             },
@@ -1161,7 +1161,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation AddTestsToFolder($projectId: String!, $path: String!, $testIssueIds: [String!]!) {\n  addTestsToFolder(projectId: $projectId, path: $path, testIssueIds: $testIssueIds) {\n    folder {\n      name\n      path\n      testsCount\n    }\n    warnings\n  }\n}",
+                "query": "mutation AddTestsToFolder(\n  $projectId: String!,\n  $path: String!,\n  $testIssueIds: [String]\n) {\n  addTestsToFolder(projectId: $projectId, path: $path, testIssueIds: $testIssueIds) {\n    folder {\n      name\n      path\n      testsCount\n    }\n    warnings\n  }\n}",
                 "variables": "{\n  \"projectId\": \"10000\",\n  \"path\": \"/Team Page/Core Navigation\",\n  \"testIssueIds\": [\"FRAMED-1001\", \"FRAMED-1002\", \"FRAMED-1003\"],\n  \"jira_project_id\": \"10000\"\n}"
               }
             },
@@ -1229,7 +1229,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation CreateManualTest(\n  $jira: JSON!,\n  $testType: UpdateTestTypeInput,\n  $steps: [CreateStepInput!],\n  $folderPath: String\n) {\n  createTest(\n    jira: $jira,\n    testType: $testType,\n    steps: $steps,\n    folderPath: $folderPath\n  ) {\n    test {\n      issueId\n      projectId\n      testType { name }\n      steps {\n        id\n        action\n        data\n        result\n      }\n      folder { path }\n      jira(fields: [\"key\", \"labels\", \"priority\", \"summary\"])\n    }\n    warnings\n  }\n}",
+                "query": "mutation CreateManualTest(\n  $jira: JSON!,\n  $testType: UpdateTestTypeInput,\n  $steps: [CreateStepInput],\n  $folderPath: String\n) {\n  createTest(\n    jira: $jira,\n    testType: $testType,\n    steps: $steps,\n    folderPath: $folderPath\n  ) {\n    test {\n      issueId\n      projectId\n      testType { name }\n      steps {\n        id\n        action\n        data\n        result\n      }\n      folder { path }\n      jira(fields: [\"key\", \"labels\", \"priority\", \"summary\"])\n    }\n    warnings\n  }\n}",
                 "variables": "{\n  \"jira\": {\n    \"fields\": {\n      \"project\": { \"key\": \"FRAMED\" },\n      \"summary\": \"TC-001: Team Selection via Drawer\",\n      \"description\": \"Verify that users can successfully select a different team from the team drawer.\",\n      \"issuetype\": { \"name\": \"Test\" },\n      \"labels\": [\n        \"@team-page\",\n        \"@functional\",\n        \"@critical\",\n        \"@smoke\",\n        \"@navigation\",\n        \"@ios\",\n        \"@android\"\n      ],\n      \"priority\": { \"name\": \"High\" },\n      \"components\": [{ \"name\": \"Team Page\" }]\n    }\n  },\n  \"testType\": { \"name\": \"Manual\" },\n  \"steps\": [\n    {\n      \"action\": \"Navigate to Team Page\",\n      \"data\": \"App is open and user is logged in\",\n      \"result\": \"Team Page is displayed with current team information\"\n    },\n    {\n      \"action\": \"Tap on the team selector dropdown\",\n      \"data\": \"Current team: Yankees\",\n      \"result\": \"Team drawer opens smoothly with all 30 MLB teams displayed\"\n    },\n    {\n      \"action\": \"Select a different team from the list\",\n      \"data\": \"Select: Red Sox\",\n      \"result\": \"Team page updates with Red Sox content and header shows new team\"\n    }\n  ],\n  \"folderPath\": \"/Team Page/Core Navigation\",\n  \"jira_project_key\": \"FRAMED\",\n  \"jira_project_id\": \"10000\"\n}"
               }
             },
@@ -1342,7 +1342,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "query GetTestDetails($issueId: String!) {\n  getTest(issueId: $issueId) {\n    issueId\n    projectId\n    testType {\n      name\n      kind\n    }\n    steps {\n      id\n      action\n      data\n      result\n    }\n    folder {\n      name\n      path\n    }\n    testSets {\n      total\n      results {\n        issueId\n        jira(fields: [\"key\", \"summary\"])\n      }\n    }\n    preconditions {\n      total\n      results {\n        issueId\n        jira(fields: [\"key\", \"summary\"])\n      }\n    }\n    jira(fields: [\"key\", \"summary\", \"labels\", \"priority\", \"status\", \"assignee\", \"components\"])\n  }\n}",
+                "query": "query GetTestDetails(\n  $issueId: String!\n) {\n  getTest(issueId: $issueId) {\n    issueId\n    projectId\n    testType {\n      name\n      kind\n    }\n    steps {\n      id\n      action\n      data\n      result\n    }\n    folder {\n      name\n      path\n    }\n    testSets {\n      total\n      results {\n        issueId\n        jira(fields: [\"key\", \"summary\"])\n      }\n    }\n    preconditions {\n      total\n      results {\n        issueId\n        jira(fields: [\"key\", \"summary\"])\n      }\n    }\n    jira(fields: [\"key\", \"summary\", \"labels\", \"priority\", \"status\", \"assignee\", \"components\"])\n  }\n}",
                 "variables": "{\n  \"issueId\": \"{{last_test_id}}\"\n}"
               }
             },
@@ -1408,7 +1408,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation CreateTestSet($jira: JSON!, $testIssueIds: [String]) {\n  createTestSet(jira: $jira, testIssueIds: $testIssueIds) {\n    testSet {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"summary\"])\n    }\n    warnings\n  }\n}",
+                "query": "mutation CreateTestSet(\n  $jira: JSON!,\n  $testIssueIds: [String]\n) {\n  createTestSet(jira: $jira, testIssueIds: $testIssueIds) {\n    testSet {\n      issueId\n      projectId\n      jira(fields: [\"key\", \"summary\"])\n    }\n    warnings\n  }\n}",
                 "variables": "{\n  \"jira\": {\n    \"fields\": {\n      \"project\": { \"key\": \"FRAMED\" },\n      \"summary\": \"SDUI-Smoke-Tests/Team-Page-Smoke\",\n      \"description\": \"Smoke test suite for Team Page functionality. Contains 12 critical tests that must pass before any release.\",\n      \"issuetype\": { \"name\": \"Test Set\" }\n    }\n  },\n  \"testIssueIds\": [],\n  \"jira_project_key\": \"FRAMED\",\n  \"jira_project_id\": \"10000\"\n}"
               }
             },
@@ -1469,7 +1469,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "mutation AddTestsToTestSet($issueId: String!, $testIssueIds: [String!]!) {\n  addTestsToTestSet(issueId: $issueId, testIssueIds: $testIssueIds) {\n    addedTests\n    warning\n  }\n}",
+                "query": "mutation AddTestsToTestSet(\n  $issueId: String!,\n  $testIssueIds: [String!]\n) {\n  addTestsToTestSet(issueId: $issueId, testIssueIds: $testIssueIds) {\n    addedTests\n    warning\n  }\n}",
                 "variables": "{\n  \"issueId\": \"{{last_test_set_id}}\",\n  \"testIssueIds\": [\n    \"{{last_test_id}}\"\n  ]\n}"
               }
             },
@@ -1533,7 +1533,7 @@
             "body": {
               "mode": "graphql",
               "graphql": {
-                "query": "query GetTestSetDetails($issueId: String!) {\n  getTestSet(issueId: $issueId) {\n    issueId\n    projectId\n    tests(limit: 100) {\n      total\n      results {\n        issueId\n        projectId\n        jira(fields: [\"key\", \"summary\", \"labels\", \"priority\"])\n      }\n    }\n    jira(fields: [\"key\", \"summary\", \"description\", \"status\"])\n  }\n}",
+                "query": "query GetTestSetDetails(\n  $issueId: String!\n) {\n  getTestSet(issueId: $issueId) {\n    issueId\n    projectId\n    tests(limit: 100) {\n      total\n      results {\n        issueId\n        projectId\n        jira(fields: [\"key\", \"summary\", \"labels\", \"priority\"])\n      }\n    }\n    jira(fields: [\"key\", \"summary\", \"description\", \"status\"])\n  }\n}",
                 "variables": "{\n  \"issueId\": \"{{last_test_set_id}}\"\n}"
               }
             },
