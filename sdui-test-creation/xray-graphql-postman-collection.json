@@ -1,0 +1,985 @@
+{
+  "info": {
+    "name": "XRAY GraphQL API - Test Creation & Organization",
+    "description": "Complete collection for creating and organizing tests in XRAY using GraphQL API. This collection includes authentication, folder management, test creation, and test set operations.\n\n## Prerequisites\n\n1. **XRAY API Key**: Create an API Key in XRAY Global Settings\n2. **Environment Variables**: Set up the following in Postman:\n   - `xray_client_id`: Your XRAY Client ID\n   - `xray_client_secret`: Your XRAY Client Secret\n   - `jira_project_key`: Your JIRA project key (e.g., MLB)\n   - `jira_project_id`: Your JIRA project ID (e.g., 10000)\n   - `xray_token`: Will be automatically set after authentication\n\n## Usage\n\n1. Run the **Authenticate** request first\n2. The token will be automatically saved to environment\n3. All subsequent requests will use this token\n4. Token expires after ~24 hours\n\n## Documentation\n\nFor detailed documentation, see the included requests and their descriptions.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": "1.0.0"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{xray_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Check if token exists",
+          "if (!pm.environment.get('xray_token')) {",
+          "    console.log('No token found. Please run the Authenticate request first.');",
+          "}"
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Authenticate",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "// Parse response and save token",
+                  "const token = pm.response.text().replace(/\"/g, '');",
+                  "",
+                  "if (token) {",
+                  "    pm.environment.set('xray_token', token);",
+                  "    console.log('Token saved to environment');",
+                  "    ",
+                  "    // Set token expiry (23 hours from now)",
+                  "    const expiry = new Date();",
+                  "    expiry.setHours(expiry.getHours() + 23);",
+                  "    pm.environment.set('xray_token_expiry', expiry.toISOString());",
+                  "}",
+                  "",
+                  "pm.test('Authentication successful', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(token).to.be.a('string');",
+                  "    pm.expect(token.length).to.be.above(100);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"client_id\": \"{{xray_client_id}}\",\n  \"client_secret\": \"{{xray_client_secret}}\"\n}"
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/authenticate",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "authenticate"
+              ]
+            },
+            "description": "Authenticates with XRAY API and returns a JWT token.\n\n**Required Environment Variables:**\n- `xray_client_id`: Your XRAY Client ID\n- `xray_client_secret`: Your XRAY Client Secret\n\n**Response:**\n- 200 OK: Returns JWT token (automatically saved to environment)\n- 400 Bad Request: Invalid credentials format\n- 401 Unauthorized: Invalid credentials or expired license\n\n**Token Expiry:** ~24 hours"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Folder Management",
+      "item": [
+        {
+          "name": "Create Folder",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Folder created successfully', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    pm.expect(jsonData.data.createFolder).to.exist;",
+                  "});",
+                  "",
+                  "if (jsonData.data && jsonData.data.createFolder) {",
+                  "    const folder = jsonData.data.createFolder.folder;",
+                  "    console.log('Folder created:', folder.path);",
+                  "    ",
+                  "    if (jsonData.data.createFolder.warnings) {",
+                  "        console.warn('Warnings:', jsonData.data.createFolder.warnings);",
+                  "    }",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation CreateFolder($projectId: String!, $path: String!, $testIssueIds: [String]) {\n  createFolder(projectId: $projectId, path: $path, testIssueIds: $testIssueIds) {\n    folder {\n      name\n      path\n      testsCount\n      preconditionsCount\n      issuesCount\n    }\n    warnings\n  }\n}",
+                "variables": "{\n  \"projectId\": \"{{jira_project_id}}\",\n  \"path\": \"/Team Page/Core Navigation\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Creates a folder in the test repository.\n\n**Variables:**\n- `projectId` (required): JIRA project ID\n- `path` (required): Folder path (e.g., \"/Feature/Component\")\n- `testIssueIds` (optional): Array of test IDs to add to folder\n\n**Notes:**\n- Folders are created hierarchically\n- Parent folders are created automatically\n- Use forward slashes for path separation"
+          }
+        },
+        {
+          "name": "Create Folder Structure (Batch)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('All folders created', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "});",
+                  "",
+                  "// Count successful folders",
+                  "let successCount = 0;",
+                  "let errorCount = 0;",
+                  "",
+                  "Object.keys(jsonData.data).forEach(key => {",
+                  "    if (jsonData.data[key] && jsonData.data[key].folder) {",
+                  "        successCount++;",
+                  "    } else {",
+                  "        errorCount++;",
+                  "    }",
+                  "});",
+                  "",
+                  "console.log(`Created ${successCount} folders successfully`);",
+                  "if (errorCount > 0) {",
+                  "    console.warn(`Failed to create ${errorCount} folders`);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation CreateFolderStructure($projectId: String!) {\n  # Browse Menu folders\n  browseMenu: createFolder(projectId: $projectId, path: \"/Browse Menu\") {\n    folder { path }\n  }\n  browseMenuNav: createFolder(projectId: $projectId, path: \"/Browse Menu/Core Navigation\") {\n    folder { path }\n  }\n  browseMenuContent: createFolder(projectId: $projectId, path: \"/Browse Menu/Content Display\") {\n    folder { path }\n  }\n  browseMenuJewel: createFolder(projectId: $projectId, path: \"/Browse Menu/Jewel Events\") {\n    folder { path }\n  }\n  browseMenuGameStates: createFolder(projectId: $projectId, path: \"/Browse Menu/Game States\") {\n    folder { path }\n  }\n  \n  # Team Page folders\n  teamPage: createFolder(projectId: $projectId, path: \"/Team Page\") {\n    folder { path }\n  }\n  teamPageDate: createFolder(projectId: $projectId, path: \"/Team Page/Date Bar\") {\n    folder { path }\n  }\n  teamPageMatchup: createFolder(projectId: $projectId, path: \"/Team Page/Matchup Display\") {\n    folder { path }\n  }\n  teamPageJewel: createFolder(projectId: $projectId, path: \"/Team Page/Jewel Events\") {\n    folder { path }\n  }\n  \n  # Jewel Event subfolders\n  openingDay: createFolder(projectId: $projectId, path: \"/Team Page/Jewel Events/Opening Day\") {\n    folder { path }\n  }\n  allStar: createFolder(projectId: $projectId, path: \"/Team Page/Jewel Events/All-Star Week\") {\n    folder { path }\n  }\n  postseason: createFolder(projectId: $projectId, path: \"/Team Page/Jewel Events/Postseason\") {\n    folder { path }\n  }\n}",
+                "variables": "{\n  \"projectId\": \"{{jira_project_id}}\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Creates multiple folders in a single request using GraphQL aliases.\n\n**Benefits:**\n- Single API call for multiple operations\n- Atomic operation (all succeed or fail together)\n- Better performance than individual calls\n\n**Note:** Modify the query to include your specific folder structure."
+          }
+        },
+        {
+          "name": "Get Folder Info",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Folder retrieved successfully', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    pm.expect(jsonData.data.getFolder).to.exist;",
+                  "});",
+                  "",
+                  "if (jsonData.data && jsonData.data.getFolder) {",
+                  "    const folder = jsonData.data.getFolder;",
+                  "    console.log('Folder:', folder.path);",
+                  "    console.log('Tests count:', folder.testsCount);",
+                  "    console.log('Sub-folders:', folder.folders);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query GetFolder($projectId: String!, $path: String!) {\n  getFolder(projectId: $projectId, path: $path) {\n    name\n    path\n    testsCount\n    folders\n    tests {\n      total\n      results {\n        issueId\n        jira(fields: [\"key\", \"summary\", \"labels\"])\n      }\n    }\n  }\n}",
+                "variables": "{\n  \"projectId\": \"{{jira_project_id}}\",\n  \"path\": \"/Team Page\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Retrieves folder information including sub-folders and tests.\n\n**Variables:**\n- `projectId`: JIRA project ID\n- `path`: Folder path to query\n\n**Returns:**\n- Folder metadata\n- Sub-folder list\n- Tests contained in folder"
+          }
+        },
+        {
+          "name": "Add Tests to Folder",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Tests added to folder', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    pm.expect(jsonData.data.addTestsToFolder).to.exist;",
+                  "});",
+                  "",
+                  "if (jsonData.data && jsonData.data.addTestsToFolder) {",
+                  "    const folder = jsonData.data.addTestsToFolder.folder;",
+                  "    console.log('Updated folder:', folder.path);",
+                  "    console.log('Total tests:', folder.testsCount);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation AddTestsToFolder($projectId: String!, $path: String!, $testIssueIds: [String!]!) {\n  addTestsToFolder(projectId: $projectId, path: $path, testIssueIds: $testIssueIds) {\n    folder {\n      name\n      path\n      testsCount\n    }\n    warnings\n  }\n}",
+                "variables": "{\n  \"projectId\": \"{{jira_project_id}}\",\n  \"path\": \"/Team Page/Core Navigation\",\n  \"testIssueIds\": [\"MLB-1001\", \"MLB-1002\", \"MLB-1003\"]\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Adds existing tests to a folder.\n\n**Variables:**\n- `projectId`: JIRA project ID\n- `path`: Target folder path\n- `testIssueIds`: Array of test issue IDs\n\n**Notes:**\n- Tests must exist before adding to folder\n- Tests can be in multiple folders"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Test Creation",
+      "item": [
+        {
+          "name": "Create Manual Test",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Test created successfully', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    pm.expect(jsonData.data.createTest).to.exist;",
+                  "});",
+                  "",
+                  "if (jsonData.data && jsonData.data.createTest) {",
+                  "    const test = jsonData.data.createTest.test;",
+                  "    console.log('Test created:', test.jira.key);",
+                  "    console.log('Test ID:', test.issueId);",
+                  "    console.log('Labels:', test.jira.labels);",
+                  "    ",
+                  "    // Save test ID for later use",
+                  "    pm.environment.set('last_test_id', test.issueId);",
+                  "    pm.environment.set('last_test_key', test.jira.key);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation CreateManualTest(\n  $jira: JSON!,\n  $testType: UpdateTestTypeInput,\n  $steps: [CreateStepInput!],\n  $folderPath: String\n) {\n  createTest(\n    jira: $jira,\n    testType: $testType,\n    steps: $steps,\n    folderPath: $folderPath\n  ) {\n    test {\n      issueId\n      testType { name }\n      steps {\n        id\n        action\n        data\n        result\n      }\n      folder { path }\n      jira(fields: [\"key\", \"labels\", \"priority\", \"summary\"])\n    }\n    warnings\n  }\n}",
+                "variables": "{\n  \"jira\": {\n    \"fields\": {\n      \"project\": { \"key\": \"{{jira_project_key}}\" },\n      \"summary\": \"TC-001: Team Selection via Drawer\",\n      \"description\": \"Verify that users can successfully select a different team from the team drawer.\",\n      \"issuetype\": { \"name\": \"Test\" },\n      \"labels\": [\n        \"@team-page\",\n        \"@functional\",\n        \"@critical\",\n        \"@smoke\",\n        \"@navigation\",\n        \"@ios\",\n        \"@android\"\n      ],\n      \"priority\": { \"name\": \"High\" },\n      \"components\": [{ \"name\": \"Team Page\" }]\n    }\n  },\n  \"testType\": { \"name\": \"Manual\" },\n  \"steps\": [\n    {\n      \"action\": \"Navigate to Team Page\",\n      \"data\": \"App is open and user is logged in\",\n      \"result\": \"Team Page is displayed with current team information\"\n    },\n    {\n      \"action\": \"Tap on the team selector dropdown\",\n      \"data\": \"Current team: Yankees\",\n      \"result\": \"Team drawer opens smoothly with all 30 MLB teams displayed\"\n    },\n    {\n      \"action\": \"Select a different team from the list\",\n      \"data\": \"Select: Red Sox\",\n      \"result\": \"Team page updates with Red Sox content and header shows new team\"\n    }\n  ],\n  \"folderPath\": \"/Team Page/Core Navigation\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Creates a manual test with steps.\n\n**JIRA Fields:**\n- `project`: Project key or ID\n- `summary`: Test title (max 255 chars)\n- `description`: Detailed description\n- `issuetype`: Must be \"Test\"\n- `labels`: Array of tags\n- `priority`: High/Medium/Low/Critical\n- `components`: Must exist in project\n\n**Test Fields:**\n- `testType`: \"Manual\" for step-based tests\n- `steps`: Array of test steps\n- `folderPath`: Repository location\n\n**Label Convention:**\n- Feature: @team-page, @browse-menu, etc.\n- Type: @functional, @api, @e2e\n- Platform: @ios, @android, @ipad\n- Priority: @critical, @high, @medium, @low\n- Execution: @smoke, @regression, @nightly"
+          }
+        },
+        {
+          "name": "Create Generic Test",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Generic test created', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    pm.expect(jsonData.data.createTest).to.exist;",
+                  "    pm.expect(jsonData.data.createTest.test.testType.name).to.equal('Generic');",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation CreateGenericTest(\n  $jira: JSON!,\n  $testType: UpdateTestTypeInput,\n  $unstructured: String,\n  $folderPath: String\n) {\n  createTest(\n    jira: $jira,\n    testType: $testType,\n    unstructured: $unstructured,\n    folderPath: $folderPath\n  ) {\n    test {\n      issueId\n      testType { name }\n      unstructured\n      folder { path }\n      jira(fields: [\"key\", \"labels\"])\n    }\n    warnings\n  }\n}",
+                "variables": "{\n  \"jira\": {\n    \"fields\": {\n      \"project\": { \"key\": \"{{jira_project_key}}\" },\n      \"summary\": \"API-001: Verify team roster endpoint\",\n      \"description\": \"Test the /api/v1/teams/{teamId}/roster endpoint\",\n      \"issuetype\": { \"name\": \"Test\" },\n      \"labels\": [\n        \"@team-page\",\n        \"@api\",\n        \"@smoke\"\n      ],\n      \"priority\": { \"name\": \"High\" }\n    }\n  },\n  \"testType\": { \"name\": \"Generic\" },\n  \"unstructured\": \"1. Send GET request to /api/v1/teams/NYY/roster\\n2. Verify response status is 200\\n3. Validate response schema\\n4. Check that all required fields are present\\n5. Verify player count matches expected roster size\",\n  \"folderPath\": \"/Team Page/API Tests\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Creates a generic/exploratory test without structured steps.\n\n**Use Cases:**\n- API tests\n- Exploratory tests\n- Performance tests\n- Tests that don't fit step format\n\n**Fields:**\n- `unstructured`: Free-form test content\n- Other fields same as manual test"
+          }
+        },
+        {
+          "name": "Create Jewel Event Test",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Jewel event test created', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    ",
+                  "    if (jsonData.data.createTest) {",
+                  "        const labels = jsonData.data.createTest.test.jira.labels;",
+                  "        pm.expect(labels).to.include('@jewel-event');",
+                  "        pm.expect(labels).to.include('@opening-day');",
+                  "    }",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation CreateJewelEventTest(\n  $jira: JSON!,\n  $testType: UpdateTestTypeInput,\n  $steps: [CreateStepInput!],\n  $folderPath: String,\n  $preconditionIssueIds: [String]\n) {\n  createTest(\n    jira: $jira,\n    testType: $testType,\n    steps: $steps,\n    folderPath: $folderPath,\n    preconditionIssueIds: $preconditionIssueIds\n  ) {\n    test {\n      issueId\n      testType { name }\n      steps {\n        action\n        data\n        result\n      }\n      folder { path }\n      preconditions {\n        total\n      }\n      jira(fields: [\"key\", \"labels\", \"priority\"])\n    }\n    warnings\n  }\n}",
+                "variables": "{\n  \"jira\": {\n    \"fields\": {\n      \"project\": { \"key\": \"{{jira_project_key}}\" },\n      \"summary\": \"TC-022: Opening Day Content Display\",\n      \"description\": \"Verify Opening Day branding and content displays correctly on Team Page during the Opening Day period.\",\n      \"issuetype\": { \"name\": \"Test\" },\n      \"labels\": [\n        \"@team-page\",\n        \"@functional\",\n        \"@critical\",\n        \"@jewel-event\",\n        \"@opening-day\",\n        \"@ios\",\n        \"@android\",\n        \"@requires-live-game\"\n      ],\n      \"priority\": { \"name\": \"Critical\" },\n      \"components\": [\n        { \"name\": \"Team Page\" },\n        { \"name\": \"Jewel Events\" }\n      ]\n    }\n  },\n  \"testType\": { \"name\": \"Manual\" },\n  \"steps\": [\n    {\n      \"action\": \"Navigate to Team Page on Opening Day\",\n      \"data\": \"Date: Opening Day (April 1st)\\nDevice: iOS/Android\\nUser: Logged in\",\n      \"result\": \"Team Page loads successfully with standard content\"\n    },\n    {\n      \"action\": \"Check MIG section for special branding\",\n      \"data\": \"Look for Opening Day graphics and badges\",\n      \"result\": \"Opening Day branding displays prominently in MIG section\"\n    },\n    {\n      \"action\": \"Verify content sections for Opening Day content\",\n      \"data\": \"Check all carousels and article sections\",\n      \"result\": \"Special Opening Day content is featured in top positions\"\n    },\n    {\n      \"action\": \"Check for special badges or indicators\",\n      \"data\": \"Look for OD badges on game cards\",\n      \"result\": \"Opening Day badges display on relevant games\"\n    },\n    {\n      \"action\": \"Verify links to Opening Day promotions\",\n      \"data\": \"Tap on promotional content\",\n      \"result\": \"Links navigate to correct Opening Day landing pages\"\n    }\n  ],\n  \"folderPath\": \"/Team Page/Jewel Events/Opening Day\",\n  \"preconditionIssueIds\": []\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Creates a test for special events (Jewel Events).\n\n**Jewel Event Labels:**\n- @jewel-event (base tag)\n- @opening-day\n- @all-star\n- @postseason\n- @world-series\n- @spring-training\n- @international\n\n**Special Considerations:**\n- May require specific dates\n- Often have preconditions\n- Higher priority during events\n- Cross-feature impact"
+          }
+        },
+        {
+          "name": "Get Test Details",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Test retrieved successfully', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    pm.expect(jsonData.data.getTest).to.exist;",
+                  "});",
+                  "",
+                  "if (jsonData.data && jsonData.data.getTest) {",
+                  "    const test = jsonData.data.getTest;",
+                  "    console.log('Test Key:', test.jira.key);",
+                  "    console.log('Test Type:', test.testType.name);",
+                  "    console.log('Folder:', test.folder ? test.folder.path : 'Not in folder');",
+                  "    console.log('Test Sets:', test.testSets.total);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query GetTestDetails($issueId: String!) {\n  getTest(issueId: $issueId) {\n    issueId\n    testType {\n      name\n      kind\n    }\n    steps {\n      id\n      action\n      data\n      result\n    }\n    folder {\n      name\n      path\n    }\n    testSets {\n      total\n      results {\n        issueId\n        jira(fields: [\"key\", \"summary\"])\n      }\n    }\n    preconditions {\n      total\n      results {\n        issueId\n        jira(fields: [\"key\", \"summary\"])\n      }\n    }\n    jira(fields: [\"key\", \"summary\", \"labels\", \"priority\", \"status\", \"assignee\", \"components\"])\n  }\n}",
+                "variables": "{\n  \"issueId\": \"{{last_test_id}}\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Retrieves complete test information.\n\n**Variables:**\n- `issueId`: Test issue ID (e.g., \"12345\")\n\n**Returns:**\n- Test type and steps\n- Folder location\n- Associated test sets\n- Preconditions\n- All JIRA fields"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Test Set Management",
+      "item": [
+        {
+          "name": "Create Test Set",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Test set created successfully', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    pm.expect(jsonData.data.createTestSet).to.exist;",
+                  "});",
+                  "",
+                  "if (jsonData.data && jsonData.data.createTestSet) {",
+                  "    const testSet = jsonData.data.createTestSet.testSet;",
+                  "    console.log('Test Set created:', testSet.jira.key);",
+                  "    ",
+                  "    // Save for later use",
+                  "    pm.environment.set('last_test_set_id', testSet.issueId);",
+                  "    pm.environment.set('last_test_set_key', testSet.jira.key);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation CreateTestSet($jira: JSON!, $testIssueIds: [String]) {\n  createTestSet(jira: $jira, testIssueIds: $testIssueIds) {\n    testSet {\n      issueId\n      jira(fields: [\"key\", \"summary\"])\n    }\n    warnings\n  }\n}",
+                "variables": "{\n  \"jira\": {\n    \"fields\": {\n      \"project\": { \"key\": \"{{jira_project_key}}\" },\n      \"summary\": \"SDUI-Smoke-Tests/Team-Page-Smoke\",\n      \"description\": \"Smoke test suite for Team Page functionality. Contains 12 critical tests that must pass before any release.\",\n      \"issuetype\": { \"name\": \"Test Set\" }\n    }\n  },\n  \"testIssueIds\": []\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Creates a test set for organizing tests.\n\n**Test Set Types:**\n1. **Smoke Tests**: Critical path validation\n2. **Regression**: Full feature coverage\n3. **Platform**: iOS/Android specific\n4. **Jewel Events**: Event-specific tests\n5. **Game States**: State-based testing\n\n**Naming Convention:**\n`<Category>/<Feature>-<Type>`\n\nExamples:\n- SDUI-Smoke-Tests/Team-Page-Smoke\n- Platform-Sets/iOS-Only-Tests\n- Jewel-Event-Sets/Opening-Day-Suite"
+          }
+        },
+        {
+          "name": "Add Tests to Test Set",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Tests added to test set', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    pm.expect(jsonData.data.addTestsToTestSet).to.exist;",
+                  "});",
+                  "",
+                  "if (jsonData.data && jsonData.data.addTestsToTestSet) {",
+                  "    const result = jsonData.data.addTestsToTestSet;",
+                  "    console.log('Tests added:', result.addedTests);",
+                  "    ",
+                  "    if (result.warning) {",
+                  "        console.warn('Warning:', result.warning);",
+                  "    }",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation AddTestsToTestSet($issueId: String!, $testIssueIds: [String!]!) {\n  addTestsToTestSet(issueId: $issueId, testIssueIds: $testIssueIds) {\n    addedTests\n    warning\n  }\n}",
+                "variables": "{\n  \"issueId\": \"{{last_test_set_id}}\",\n  \"testIssueIds\": [\n    \"{{last_test_id}}\"\n  ]\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Adds tests to an existing test set.\n\n**Variables:**\n- `issueId`: Test Set issue ID\n- `testIssueIds`: Array of test IDs to add\n\n**Notes:**\n- Tests can belong to multiple sets\n- Use for cross-cutting organization\n- Maximum ~500 tests per set recommended"
+          }
+        },
+        {
+          "name": "Create Multiple Test Sets (Batch)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('All test sets created', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "});",
+                  "",
+                  "// Count created test sets",
+                  "let created = 0;",
+                  "Object.keys(jsonData.data).forEach(key => {",
+                  "    if (jsonData.data[key] && jsonData.data[key].testSet) {",
+                  "        created++;",
+                  "        console.log(`Created: ${jsonData.data[key].testSet.jira.key}`);",
+                  "    }",
+                  "});",
+                  "",
+                  "console.log(`Total test sets created: ${created}`);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation CreateTestSets($projectKey: String!) {\n  # Smoke Test Sets\n  smokeBrowseMenu: createTestSet(\n    jira: {\n      fields: {\n        project: { key: $projectKey },\n        summary: \"SDUI-Smoke-Tests/Browse-Menu-Smoke\",\n        description: \"Smoke test suite for Browse Menu - 15 critical tests\",\n        issuetype: { name: \"Test Set\" }\n      }\n    }\n  ) {\n    testSet {\n      issueId\n      jira(fields: [\"key\"])\n    }\n  }\n  \n  smokeTeamPage: createTestSet(\n    jira: {\n      fields: {\n        project: { key: $projectKey },\n        summary: \"SDUI-Smoke-Tests/Team-Page-Smoke\",\n        description: \"Smoke test suite for Team Page - 12 critical tests\",\n        issuetype: { name: \"Test Set\" }\n      }\n    }\n  ) {\n    testSet {\n      issueId\n      jira(fields: [\"key\"])\n    }\n  }\n  \n  # Platform Sets\n  iosOnly: createTestSet(\n    jira: {\n      fields: {\n        project: { key: $projectKey },\n        summary: \"Platform-Sets/iOS-Only-Tests\",\n        description: \"Tests specific to iOS platform\",\n        issuetype: { name: \"Test Set\" }\n      }\n    }\n  ) {\n    testSet {\n      issueId\n      jira(fields: [\"key\"])\n    }\n  }\n  \n  # Jewel Event Sets\n  openingDay: createTestSet(\n    jira: {\n      fields: {\n        project: { key: $projectKey },\n        summary: \"Jewel-Event-Sets/Opening-Day-Suite\",\n        description: \"Complete test suite for Opening Day functionality - 15 tests\",\n        issuetype: { name: \"Test Set\" }\n      }\n    }\n  ) {\n    testSet {\n      issueId\n      jira(fields: [\"key\"])\n    }\n  }\n}",
+                "variables": "{\n  \"projectKey\": \"{{jira_project_key}}\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Creates multiple test sets in one request.\n\nThis example creates:\n- Smoke test sets\n- Platform-specific sets\n- Jewel event sets\n\nModify the query to match your test set structure."
+          }
+        },
+        {
+          "name": "Get Test Set Details",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Test set retrieved', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "    pm.expect(jsonData.data.getTestSet).to.exist;",
+                  "});",
+                  "",
+                  "if (jsonData.data && jsonData.data.getTestSet) {",
+                  "    const testSet = jsonData.data.getTestSet;",
+                  "    console.log('Test Set:', testSet.jira.key);",
+                  "    console.log('Total tests:', testSet.tests.total);",
+                  "    ",
+                  "    if (testSet.tests.results) {",
+                  "        testSet.tests.results.forEach(test => {",
+                  "            console.log(`- ${test.jira.key}: ${test.jira.summary}`);",
+                  "        });",
+                  "    }",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query GetTestSetDetails($issueId: String!) {\n  getTestSet(issueId: $issueId) {\n    issueId\n    tests(limit: 100) {\n      total\n      results {\n        issueId\n        jira(fields: [\"key\", \"summary\", \"labels\", \"priority\"])\n      }\n    }\n    jira(fields: [\"key\", \"summary\", \"description\", \"status\"])\n  }\n}",
+                "variables": "{\n  \"issueId\": \"{{last_test_set_id}}\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Retrieves test set information including all tests.\n\n**Returns:**\n- Test set metadata\n- List of all tests in set\n- Test details (key, summary, labels)\n- Total test count"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Batch Operations",
+      "item": [
+        {
+          "name": "Import Multiple Tests",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Multiple tests created', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "});",
+                  "",
+                  "// Collect created test IDs",
+                  "const testIds = [];",
+                  "const testKeys = [];",
+                  "",
+                  "Object.keys(jsonData.data).forEach(key => {",
+                  "    if (jsonData.data[key] && jsonData.data[key].test) {",
+                  "        const test = jsonData.data[key].test;",
+                  "        testIds.push(test.issueId);",
+                  "        testKeys.push(test.jira.key);",
+                  "        console.log(`Created: ${test.jira.key} - ${test.jira.summary}`);",
+                  "    }",
+                  "});",
+                  "",
+                  "// Save for test set creation",
+                  "pm.environment.set('batch_test_ids', JSON.stringify(testIds));",
+                  "pm.environment.set('batch_test_keys', JSON.stringify(testKeys));",
+                  "",
+                  "console.log(`Total tests created: ${testIds.length}`);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation ImportMultipleTests($projectKey: String!) {\n  test1: createTest(\n    jira: {\n      fields: {\n        project: { key: $projectKey },\n        summary: \"TC-010: Verify team roster display\",\n        issuetype: { name: \"Test\" },\n        labels: [\"@team-page\", \"@functional\", \"@smoke\", \"@ios\", \"@android\"],\n        priority: { name: \"High\" }\n      }\n    },\n    testType: { name: \"Manual\" },\n    steps: [\n      {\n        action: \"Navigate to Team Page\",\n        result: \"Team page loads\"\n      },\n      {\n        action: \"Scroll to roster section\",\n        result: \"Full roster is displayed with player images\"\n      }\n    ],\n    folderPath: \"/Team Page/Content Display\"\n  ) {\n    test {\n      issueId\n      jira(fields: [\"key\", \"summary\"])\n    }\n  }\n  \n  test2: createTest(\n    jira: {\n      fields: {\n        project: { key: $projectKey },\n        summary: \"TC-011: Verify game state transitions\",\n        issuetype: { name: \"Test\" },\n        labels: [\"@team-page\", \"@functional\", \"@game-state\", \"@state-transition\"],\n        priority: { name: \"Critical\" }\n      }\n    },\n    testType: { name: \"Manual\" },\n    steps: [\n      {\n        action: \"Monitor game in preview state\",\n        result: \"Preview state displays correctly\"\n      },\n      {\n        action: \"Wait for game to start\",\n        result: \"Transitions to live state smoothly\"\n      }\n    ],\n    folderPath: \"/Team Page/Game States\"\n  ) {\n    test {\n      issueId\n      jira(fields: [\"key\", \"summary\"])\n    }\n  }\n  \n  test3: createTest(\n    jira: {\n      fields: {\n        project: { key: $projectKey },\n        summary: \"TC-012: Verify All-Star voting integration\",\n        issuetype: { name: \"Test\" },\n        labels: [\"@team-page\", \"@functional\", \"@jewel-event\", \"@all-star\"],\n        priority: { name: \"High\" }\n      }\n    },\n    testType: { name: \"Manual\" },\n    steps: [\n      {\n        action: \"Navigate to Team Page during All-Star voting\",\n        result: \"Voting links are visible\"\n      },\n      {\n        action: \"Click on voting link\",\n        result: \"Navigates to All-Star voting page\"\n      }\n    ],\n    folderPath: \"/Team Page/Jewel Events/All-Star Week\"\n  ) {\n    test {\n      issueId\n      jira(fields: [\"key\", \"summary\"])\n    }\n  }\n}",
+                "variables": "{\n  \"projectKey\": \"{{jira_project_key}}\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Creates multiple tests in a single request using aliases.\n\n**Benefits:**\n- Reduced API calls\n- Better performance\n- Atomic operations\n\n**Best Practices:**\n- Batch 5-10 tests per request\n- Use meaningful aliases\n- Save IDs for subsequent operations"
+          }
+        },
+        {
+          "name": "Complete Test Import Flow",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const jsonData = pm.response.json();",
+                  "",
+                  "pm.test('Complete flow executed', function () {",
+                  "    pm.response.to.have.status(200);",
+                  "    pm.expect(jsonData.data).to.exist;",
+                  "});",
+                  "",
+                  "// Summary",
+                  "console.log('Import Summary:');",
+                  "console.log('- Folder created');",
+                  "console.log('- Test created');",
+                  "console.log('- Test added to folder');",
+                  "console.log('- Test set created');",
+                  "console.log('- Test added to test set');"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation CompleteTestImportFlow(\n  $projectId: String!,\n  $projectKey: String!,\n  $folderPath: String!,\n  $testSummary: String!,\n  $testSetName: String!\n) {\n  # 1. Create folder\n  createFolder: createFolder(\n    projectId: $projectId,\n    path: $folderPath\n  ) {\n    folder {\n      path\n    }\n  }\n  \n  # 2. Create test\n  createTest: createTest(\n    jira: {\n      fields: {\n        project: { key: $projectKey },\n        summary: $testSummary,\n        issuetype: { name: \"Test\" },\n        labels: [\"@import-example\", \"@functional\"]\n      }\n    },\n    testType: { name: \"Manual\" },\n    steps: [\n      {\n        action: \"Example step\",\n        result: \"Expected result\"\n      }\n    ],\n    folderPath: $folderPath\n  ) {\n    test {\n      issueId\n      jira(fields: [\"key\"])\n    }\n  }\n  \n  # 3. Create test set\n  createTestSet: createTestSet(\n    jira: {\n      fields: {\n        project: { key: $projectKey },\n        summary: $testSetName,\n        description: \"Example test set\",\n        issuetype: { name: \"Test Set\" }\n      }\n    }\n  ) {\n    testSet {\n      issueId\n      jira(fields: [\"key\"])\n    }\n  }\n}",
+                "variables": "{\n  \"projectId\": \"{{jira_project_id}}\",\n  \"projectKey\": \"{{jira_project_key}}\",\n  \"folderPath\": \"/Import Examples/Batch Import\",\n  \"testSummary\": \"TC-999: Example batch import test\",\n  \"testSetName\": \"Example-Import-Set\"\n}"
+              }
+            },
+            "url": {
+              "raw": "https://xray.cloud.getxray.app/api/v2/graphql",
+              "protocol": "https",
+              "host": [
+                "xray",
+                "cloud",
+                "getxray",
+                "app"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "graphql"
+              ]
+            },
+            "description": "Demonstrates a complete test import flow in one request:\n\n1. Creates folder structure\n2. Creates test with steps\n3. Adds test to folder (automatic)\n4. Creates test set\n5. Would need separate call to add test to set\n\nThis pattern can be extended for bulk imports."
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://xray.cloud.getxray.app/api/v2",
+      "type": "string"
+    }
+  ]
+}
