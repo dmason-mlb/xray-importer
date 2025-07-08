@@ -1,3 +1,4 @@
 .DS_Store
 
 import_data/testrail_data.db
+xray-filtering-and-modding/.env
