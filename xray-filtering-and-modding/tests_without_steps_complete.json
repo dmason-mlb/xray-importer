@@ -1,0 +1,4131 @@
+{
+  "project_id": "26420",
+  "total": 136,
+  "tests": [
+    {
+      "issueId": "1153134",
+      "jira": {
+        "key": "MLBMOB-2443",
+        "summary": "Main page - impression tracking",
+        "description": "GIVEN a TicketMerchandisingModule on a Surface"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154473",
+            "projectId": "26420",
+            "definition": "GIVEN a TicketMerchandisingModule on a Surface"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1153119",
+      "jira": {
+        "key": "MLBMOB-2441",
+        "summary": "MLB.tv - module stops playing after removal",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1153118",
+      "jira": {
+        "key": "MLBMOB-2440",
+        "summary": "MLB.tv - module should stop playing after removal",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1152729",
+      "jira": {
+        "key": "MLBMOB-2435",
+        "summary": "MLB.tv - Live Mode FGOTD Support",
+        "description": "GIVEN user is on the home surface"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154474",
+            "projectId": "26420",
+            "definition": "GIVEN user is on the home surface"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1152728",
+      "jira": {
+        "key": "MLBMOB-2434",
+        "summary": "MLB.tv - Live Mode FGOTD Support",
+        "description": "GIVEN user is on the home surface"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154475",
+            "projectId": "26420",
+            "definition": "GIVEN user is on the home surface"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1147414",
+      "jira": {
+        "key": "MLBMOB-2232",
+        "summary": "It should show favorite team news",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1147413",
+      "jira": {
+        "key": "MLBMOB-2231",
+        "summary": "Users should be able to open a news item",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1147412",
+      "jira": {
+        "key": "MLBMOB-2230",
+        "summary": "It should show latest news as default tab",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1147411",
+      "jira": {
+        "key": "MLBMOB-2229",
+        "summary": "Deep-links Tests should open scoreboard screen when using deeplink",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1147410",
+      "jira": {
+        "key": "MLBMOB-2228",
+        "summary": "Deep-links Tests should open watch screen when using deeplink",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1146268",
+      "jira": {
+        "key": "MLBMOB-2205",
+        "summary": "Applause tvOS Test Plan - 2025.10.0",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1134644",
+      "jira": {
+        "key": "MLBMOB-1981",
+        "summary": "Box Score Validation",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1134642",
+      "jira": {
+        "key": "MLBMOB-1979",
+        "summary": "Matchup View Data Updating",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1133197",
+      "jira": {
+        "key": "MLBMOB-1841",
+        "summary": "tvOS MASN Ad Hoc Test",
+        "description": "ASTREAM ad hoc test for MASN on tvOS RC 2025.9.0.20504\n\n+Important Info:+\n\nmasn@gmail.com (no location override)\nmasnims@gmail.com (In Market)\nmasnoom@gmail.com (Out of Market)\t       \nmasnintl@gmail.com (International)\t       \n\nPassword for all: *Password4MASN*\n\nDM5tv6@gmail.com (ALL RSN) / PasswordDM5\n\n----\n\n*Baltimore Orioles*\n\nMASN_DTC Orioles\n\nMASN_110\n\n*Washington Nationals*\n\nMASN_DTC Nationals\n\nMASN_120\n\n----"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132305",
+      "jira": {
+        "key": "MLBMOB-1790",
+        "summary": "Live Game Launch",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132304",
+      "jira": {
+        "key": "MLBMOB-1789",
+        "summary": "Archive Launch",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132275",
+      "jira": {
+        "key": "MLBMOB-1761",
+        "summary": "Day without Games",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132127",
+      "jira": {
+        "key": "MLBMOB-1622",
+        "summary": "Picture-In-Picture",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132104",
+      "jira": {
+        "key": "MLBMOB-1609",
+        "summary": "All-Star Game",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132046",
+      "jira": {
+        "key": "MLBMOB-1567",
+        "summary": "Exec Users",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132045",
+      "jira": {
+        "key": "MLBMOB-1566",
+        "summary": "Anon Users",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132044",
+      "jira": {
+        "key": "MLBMOB-1565",
+        "summary": "TV Yearly",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132043",
+      "jira": {
+        "key": "MLBMOB-1564",
+        "summary": "TV Monthly",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132042",
+      "jira": {
+        "key": "MLBMOB-1563",
+        "summary": "Single-Team Users",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132041",
+      "jira": {
+        "key": "MLBMOB-1562",
+        "summary": "Free Users",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1132039",
+      "jira": {
+        "key": "MLBMOB-1560",
+        "summary": "Entitled",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1127064",
+      "jira": {
+        "key": "MLBMOB-1235",
+        "summary": "Casting -> Stop Casting behavior",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154476",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127063",
+      "jira": {
+        "key": "MLBMOB-1234",
+        "summary": "Casting -> Select Closed Captioning",
+        "description": "GIVEN a user casting from the MLB"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154477",
+            "projectId": "26420",
+            "definition": "GIVEN a user casting from the MLB"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127062",
+      "jira": {
+        "key": "MLBMOB-1233",
+        "summary": "Mobile: Put device in sleep mode while casting",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154478",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127061",
+      "jira": {
+        "key": "MLBMOB-1232",
+        "summary": "Mobile: Background the app while casting",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154479",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127060",
+      "jira": {
+        "key": "MLBMOB-1231",
+        "summary": "Mobile: Casting notification controls",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154480",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127059",
+      "jira": {
+        "key": "MLBMOB-1230",
+        "summary": "Mobile: Casting controls",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154481",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127057",
+      "jira": {
+        "key": "MLBMOB-1228",
+        "summary": "SLIVE: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\n\r\n"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154482",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127056",
+      "jira": {
+        "key": "MLBMOB-1227",
+        "summary": "FLIVE: Start a stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\n\r\n"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154483",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127055",
+      "jira": {
+        "key": "MLBMOB-1226",
+        "summary": "VOD/SVOD: While casting Game content switch to VOD/SVOD stream",
+        "description": "GIVEN an entitled user\r\nAND cast session is playing SVOD content"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154484",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND cast session is playing SVOD content"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127054",
+      "jira": {
+        "key": "MLBMOB-1225",
+        "summary": "SVOD: Attempt to cast when unentitled",
+        "description": "GIVEN an un-entitled user (not logged in / free account)\r\nAND cast session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154485",
+            "projectId": "26420",
+            "definition": "GIVEN an un-entitled user (not logged in / free account)\nAND cast session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127053",
+      "jira": {
+        "key": "MLBMOB-1224",
+        "summary": "SVOD: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND no casting session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154486",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no casting session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127052",
+      "jira": {
+        "key": "MLBMOB-1223",
+        "summary": "SVOD: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154487",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127051",
+      "jira": {
+        "key": "MLBMOB-1222",
+        "summary": "VOD: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND casting session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154488",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND casting session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127050",
+      "jira": {
+        "key": "MLBMOB-1221",
+        "summary": "VOD: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\nAND no casting session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154489",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no casting session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127047",
+      "jira": {
+        "key": "MLBMOB-1218",
+        "summary": "Game: While casting content switch to Game stream",
+        "description": "GIVEN an entitled user\r\nAND VOD/SVOD content is already streaming"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154490",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND VOD/SVOD content is already streaming"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127046",
+      "jira": {
+        "key": "MLBMOB-1217",
+        "summary": "Game: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND casting session exists\r\n"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154491",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND casting session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1127045",
+      "jira": {
+        "key": "MLBMOB-1216",
+        "summary": "Game: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\nAND no cast session exists"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154492",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no cast session exists"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1126875",
+      "jira": {
+        "key": "MLBMOB-1215",
+        "summary": "Playback with Ads Disabled",
+        "description": "GIVEN\r\n\r\n+ Note: The audio EPG player does not utilize the DAI playback URL and does fallback to the fastly/media-cdn URL\r\n\r\nAND\r\n\r\n+ The user is logged into an account with VIDEO_ADS_DISABLED\r\n\r\nAccount: adsDisabled@gmail.com/PasswordDM5\r\n\r\nOR\r\n\r\n+ The user locally maps \"adsEnabled\": false for the media gateway return in Proxy"
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154493",
+            "projectId": "26420",
+            "definition": "GIVEN"
+          }
+        ]
+      }
+    },
+    {
+      "issueId": "1125484",
+      "jira": {
+        "key": "MLBMOB-1200",
+        "summary": "More than 3 tap stories",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125481",
+      "jira": {
+        "key": "MLBMOB-1197",
+        "summary": "Less than 4 articles",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125480",
+      "jira": {
+        "key": "MLBMOB-1196",
+        "summary": "Exploring a Category in More Depth",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125218",
+      "jira": {
+        "key": "MLBMOB-937",
+        "summary": "NL - No duplication of team names?",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125217",
+      "jira": {
+        "key": "MLBMOB-936",
+        "summary": "NL - New York Black yankees do not overlap with New York Cubans",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125216",
+      "jira": {
+        "key": "MLBMOB-935",
+        "summary": "NL - teams with same name different city",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125211",
+      "jira": {
+        "key": "MLBMOB-930",
+        "summary": "Reset password on device running MLB App",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125210",
+      "jira": {
+        "key": "MLBMOB-929",
+        "summary": "Readme - Important note for iOS",
+        "description": "Note: When testing passwordless login on iOS, it is important that the MLB App is installed without being connected through an HTTPS proxy, ex. Charles or the magic link may go to Safari and fail rather than going to the MLB App as expected."
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125209",
+      "jira": {
+        "key": "MLBMOB-928",
+        "summary": "Gesture reduction functionallity",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125196",
+      "jira": {
+        "key": "MLBMOB-915",
+        "summary": "track events",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125195",
+      "jira": {
+        "key": "MLBMOB-914",
+        "summary": "VSM content navigation",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125194",
+      "jira": {
+        "key": "MLBMOB-913",
+        "summary": "TC05 - Gameday video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125193",
+      "jira": {
+        "key": "MLBMOB-912",
+        "summary": "TC04 - Scores page video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125192",
+      "jira": {
+        "key": "MLBMOB-911",
+        "summary": "TC03 - Team page video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125191",
+      "jira": {
+        "key": "MLBMOB-910",
+        "summary": "TC02 - Home tab video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125188",
+      "jira": {
+        "key": "MLBMOB-907",
+        "summary": "TC45 - Spring training tab config",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125187",
+      "jira": {
+        "key": "MLBMOB-906",
+        "summary": "TC34 - Next Game is displayed",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125103",
+      "jira": {
+        "key": "MLBMOB-822",
+        "summary": "TC15 - Settings deeplink",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1125102",
+      "jira": {
+        "key": "MLBMOB-821",
+        "summary": "TC12 - Splash Screen - No internet connection Warm Launch",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124874",
+      "jira": {
+        "key": "MLBMOB-675",
+        "summary": "NL - No duplication of team names?",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124873",
+      "jira": {
+        "key": "MLBMOB-674",
+        "summary": "NL - New York Black yankees do not overlap with New York Cubans",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124872",
+      "jira": {
+        "key": "MLBMOB-673",
+        "summary": "NL - teams with same name different city",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124867",
+      "jira": {
+        "key": "MLBMOB-668",
+        "summary": "Reset password on device running MLB App",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124866",
+      "jira": {
+        "key": "MLBMOB-667",
+        "summary": "Readme - Important note for iOS",
+        "description": "Note: When testing passwordless login on iOS, it is important that the MLB App is installed without being connected through an HTTPS proxy, ex. Charles or the magic link may go to Safari and fail rather than going to the MLB App as expected."
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124865",
+      "jira": {
+        "key": "MLBMOB-666",
+        "summary": "Gesture reduction functionallity",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124852",
+      "jira": {
+        "key": "MLBMOB-653",
+        "summary": "track events",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124851",
+      "jira": {
+        "key": "MLBMOB-652",
+        "summary": "VSM content navigation",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124849",
+      "jira": {
+        "key": "MLBMOB-651",
+        "summary": "TC05 - Gameday video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124848",
+      "jira": {
+        "key": "MLBMOB-650",
+        "summary": "TC04 - Scores page video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124847",
+      "jira": {
+        "key": "MLBMOB-649",
+        "summary": "TC03 - Team page video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124846",
+      "jira": {
+        "key": "MLBMOB-648",
+        "summary": "TC02 - Home tab video context",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124843",
+      "jira": {
+        "key": "MLBMOB-645",
+        "summary": "TC45 - Spring training tab config",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124842",
+      "jira": {
+        "key": "MLBMOB-644",
+        "summary": "TC34 - Next Game is displayed",
+        "description": null
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      }
+    },
+    {
+      "issueId": "1124757",
+      "jira": {
+        "key": "MLBMOB-560",
+        "summary": "TC15 - Settings deeplink",
+        "description": null,
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "MLBAPP",
+        "path": "/MLBAPP"
+      }
+    },
+    {
+      "issueId": "1124756",
+      "jira": {
+        "key": "MLBMOB-559",
+        "summary": "TC12 - Splash Screen - No internet connection Warm Launch",
+        "description": null,
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "MLBAPP",
+        "path": "/MLBAPP"
+      }
+    },
+    {
+      "issueId": "1124610",
+      "jira": {
+        "key": "MLBMOB-487",
+        "summary": "GMM - Display",
+        "description": "GIVEN a live game",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154494",
+            "projectId": "26420",
+            "definition": "GIVEN a live game",
+            "jira": {
+              "key": "MLBMOB-2596",
+              "summary": "GIVEN a live game"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Gameday Mini",
+        "path": "/Home Surface/Gameday Mini"
+      }
+    },
+    {
+      "issueId": "1124567",
+      "jira": {
+        "key": "MLBMOB-444",
+        "summary": "Game Matchup in different statuses of the game in Spanish",
+        "description": null,
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Team Snapshot",
+        "path": "/Home Surface/Team Snapshot"
+      }
+    },
+    {
+      "issueId": "1124566",
+      "jira": {
+        "key": "MLBMOB-443",
+        "summary": "Scheduled, Live & Final games will announce dates, time and score in Spanish",
+        "description": null,
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Team Snapshot",
+        "path": "/Home Surface/Team Snapshot"
+      }
+    },
+    {
+      "issueId": "1124392",
+      "jira": {
+        "key": "MLBMOB-274",
+        "summary": "Casting -> Stop Casting behavior",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154495",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2597",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124391",
+      "jira": {
+        "key": "MLBMOB-273",
+        "summary": "Casting -> Select Closed Captioning",
+        "description": "GIVEN a user casting from the MLB",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154496",
+            "projectId": "26420",
+            "definition": "GIVEN a user casting from the MLB",
+            "jira": {
+              "key": "MLBMOB-2598",
+              "summary": "GIVEN a user casting from the MLB"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124390",
+      "jira": {
+        "key": "MLBMOB-272",
+        "summary": "Mobile: Put device in sleep mode while casting",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154497",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2599",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124389",
+      "jira": {
+        "key": "MLBMOB-271",
+        "summary": "Mobile: Background the app while casting",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154498",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2600",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124388",
+      "jira": {
+        "key": "MLBMOB-270",
+        "summary": "Mobile: Casting notification controls",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154499",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2601",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124387",
+      "jira": {
+        "key": "MLBMOB-269",
+        "summary": "Mobile: Casting controls",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154500",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2602",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124385",
+      "jira": {
+        "key": "MLBMOB-267",
+        "summary": "SLIVE: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\n\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154501",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2603",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124384",
+      "jira": {
+        "key": "MLBMOB-266",
+        "summary": "FLIVE: Start a stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\n\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154502",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2604",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124383",
+      "jira": {
+        "key": "MLBMOB-265",
+        "summary": "VOD/SVOD: While casting Game content switch to VOD/SVOD stream",
+        "description": "GIVEN an entitled user\r\nAND cast session is playing SVOD content",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154503",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND cast session is playing SVOD content",
+            "jira": {
+              "key": "MLBMOB-2605",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124381",
+      "jira": {
+        "key": "MLBMOB-264",
+        "summary": "SVOD: Attempt to cast when unentitled",
+        "description": "GIVEN an un-entitled user (not logged in / free account)\r\nAND cast session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154504",
+            "projectId": "26420",
+            "definition": "GIVEN an un-entitled user (not logged in / free account)\nAND cast session exists",
+            "jira": {
+              "key": "MLBMOB-2606",
+              "summary": "GIVEN an un-entitled user (not logged in / free account)"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124380",
+      "jira": {
+        "key": "MLBMOB-263",
+        "summary": "SVOD: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND no casting session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154505",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no casting session exists",
+            "jira": {
+              "key": "MLBMOB-2607",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124379",
+      "jira": {
+        "key": "MLBMOB-262",
+        "summary": "SVOD: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154506",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2608",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124378",
+      "jira": {
+        "key": "MLBMOB-261",
+        "summary": "VOD: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND casting session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154507",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND casting session exists",
+            "jira": {
+              "key": "MLBMOB-2609",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124377",
+      "jira": {
+        "key": "MLBMOB-260",
+        "summary": "VOD: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\nAND no casting session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154508",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no casting session exists",
+            "jira": {
+              "key": "MLBMOB-2610",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124376",
+      "jira": {
+        "key": "MLBMOB-259",
+        "summary": "Game: Cast a complete Archive Game",
+        "description": "GIVEN an entitled user",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154509",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2611",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124375",
+      "jira": {
+        "key": "MLBMOB-258",
+        "summary": "Game: Cast a complete Live Game",
+        "description": "GIVEN an entitled user",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154510",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2612",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124374",
+      "jira": {
+        "key": "MLBMOB-257",
+        "summary": "Game: While casting content switch to Game stream",
+        "description": "GIVEN an entitled user\r\nAND VOD/SVOD content is already streaming",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154511",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND VOD/SVOD content is already streaming",
+            "jira": {
+              "key": "MLBMOB-2613",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124373",
+      "jira": {
+        "key": "MLBMOB-256",
+        "summary": "Game: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND casting session exists\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154512",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND casting session exists",
+            "jira": {
+              "key": "MLBMOB-2614",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124372",
+      "jira": {
+        "key": "MLBMOB-255",
+        "summary": "Game: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\nAND no cast session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154513",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no cast session exists",
+            "jira": {
+              "key": "MLBMOB-2615",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124371",
+      "jira": {
+        "key": "MLBMOB-254",
+        "summary": "Casting -> Stop Casting behavior",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154514",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2616",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124370",
+      "jira": {
+        "key": "MLBMOB-253",
+        "summary": "Casting -> Select Closed Captioning",
+        "description": "GIVEN a user casting from the MLB",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154515",
+            "projectId": "26420",
+            "definition": "GIVEN a user casting from the MLB",
+            "jira": {
+              "key": "MLBMOB-2617",
+              "summary": "GIVEN a user casting from the MLB"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124369",
+      "jira": {
+        "key": "MLBMOB-252",
+        "summary": "Mobile: Put device in sleep mode while casting",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154516",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2618",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124368",
+      "jira": {
+        "key": "MLBMOB-251",
+        "summary": "Mobile: Background the app while casting",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154517",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2619",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124367",
+      "jira": {
+        "key": "MLBMOB-250",
+        "summary": "Mobile: Casting notification controls",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154518",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2620",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124366",
+      "jira": {
+        "key": "MLBMOB-249",
+        "summary": "Mobile: Casting controls",
+        "description": "GIVEN an existing cast session exists\r\nAND media is playing",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154519",
+            "projectId": "26420",
+            "definition": "GIVEN an existing cast session exists\nAND media is playing",
+            "jira": {
+              "key": "MLBMOB-2621",
+              "summary": "GIVEN an existing cast session exists"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124364",
+      "jira": {
+        "key": "MLBMOB-247",
+        "summary": "SLIVE: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\n\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154520",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2622",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124363",
+      "jira": {
+        "key": "MLBMOB-246",
+        "summary": "FLIVE: Start a stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\n\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154521",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2623",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124362",
+      "jira": {
+        "key": "MLBMOB-245",
+        "summary": "VOD/SVOD: While casting Game content switch to VOD/SVOD stream",
+        "description": "GIVEN an entitled user\r\nAND cast session is playing SVOD content",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154522",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND cast session is playing SVOD content",
+            "jira": {
+              "key": "MLBMOB-2624",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124361",
+      "jira": {
+        "key": "MLBMOB-244",
+        "summary": "SVOD: Attempt to cast when unentitled",
+        "description": "GIVEN an un-entitled user (not logged in / free account)\r\nAND cast session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154523",
+            "projectId": "26420",
+            "definition": "GIVEN an un-entitled user (not logged in / free account)\nAND cast session exists",
+            "jira": {
+              "key": "MLBMOB-2625",
+              "summary": "GIVEN an un-entitled user (not logged in / free account)"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124360",
+      "jira": {
+        "key": "MLBMOB-243",
+        "summary": "SVOD: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND no casting session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154524",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no casting session exists",
+            "jira": {
+              "key": "MLBMOB-2626",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124359",
+      "jira": {
+        "key": "MLBMOB-242",
+        "summary": "SVOD: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154525",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2627",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124358",
+      "jira": {
+        "key": "MLBMOB-241",
+        "summary": "VOD: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND casting session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154526",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND casting session exists",
+            "jira": {
+              "key": "MLBMOB-2628",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124357",
+      "jira": {
+        "key": "MLBMOB-240",
+        "summary": "VOD: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\nAND no casting session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154527",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no casting session exists",
+            "jira": {
+              "key": "MLBMOB-2629",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124356",
+      "jira": {
+        "key": "MLBMOB-239",
+        "summary": "Game: Cast a complete Archive Game",
+        "description": "GIVEN an entitled user",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154528",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2630",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124355",
+      "jira": {
+        "key": "MLBMOB-238",
+        "summary": "Game: Cast a complete Live Game",
+        "description": "GIVEN an entitled user",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154529",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2631",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124354",
+      "jira": {
+        "key": "MLBMOB-237",
+        "summary": "Game: While casting content switch to Game stream",
+        "description": "GIVEN an entitled user\r\nAND VOD/SVOD content is already streaming",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154530",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND VOD/SVOD content is already streaming",
+            "jira": {
+              "key": "MLBMOB-2632",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124353",
+      "jira": {
+        "key": "MLBMOB-236",
+        "summary": "Game: Start cast session then play content",
+        "description": "GIVEN an entitled user\r\nAND casting session exists\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154531",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND casting session exists",
+            "jira": {
+              "key": "MLBMOB-2633",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124352",
+      "jira": {
+        "key": "MLBMOB-235",
+        "summary": "Game: Start stream on mobile then cast it",
+        "description": "GIVEN an entitled user\r\nAND no cast session exists",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154532",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND no cast session exists",
+            "jira": {
+              "key": "MLBMOB-2634",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124351",
+      "jira": {
+        "key": "MLBMOB-234",
+        "summary": "Error handling",
+        "description": null,
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124350",
+      "jira": {
+        "key": "MLBMOB-233",
+        "summary": "Validate reporting of Chomecast to Conviva",
+        "description": null,
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124349",
+      "jira": {
+        "key": "MLBMOB-232",
+        "summary": "Validate reporting of Chromecast to Datadog",
+        "description": null,
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 0,
+        "results": []
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Chromecast",
+        "path": "/Android Streaming/Chromecast"
+      }
+    },
+    {
+      "issueId": "1124341",
+      "jira": {
+        "key": "MLBMOB-226",
+        "summary": "Previously logged in and completed auth flow",
+        "description": "GIVEN a user is logged into the app with their MLB.com uername\r\nAND they have previously completed the MVPD auth flow",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154533",
+            "projectId": "26420",
+            "definition": "GIVEN a user is logged into the app with their MLB.com uername\nAND they have previously completed the MVPD auth flow",
+            "jira": {
+              "key": "MLBMOB-2635",
+              "summary": "GIVEN a user is logged into the app with their MLB.com uername"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "MLB Network",
+        "path": "/Android Streaming/MLB Network"
+      }
+    },
+    {
+      "issueId": "1124337",
+      "jira": {
+        "key": "MLBMOB-223",
+        "summary": "Previously purchased features are available once user enters the app",
+        "description": "GIVEN the user has previously made an At Bat/MLB.TV purchase\r\nAND the user initially launched the app\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154534",
+            "projectId": "26420",
+            "definition": "GIVEN the user has previously made an At Bat/MLB.TV purchase\nAND the user initially launched the app",
+            "jira": {
+              "key": "MLBMOB-2636",
+              "summary": "GIVEN the user has previously made an At Bat/MLB.TV purchase"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "IAP",
+        "path": "/Android Streaming/IAP"
+      }
+    },
+    {
+      "issueId": "1124336",
+      "jira": {
+        "key": "MLBMOB-222",
+        "summary": "User is shown a toast identifying that a subscription has been detected and features are now restored",
+        "description": "GIVEN the user has previously made an At Bat/MLB.TV purchase\r\nAND the user initially launched the app\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154535",
+            "projectId": "26420",
+            "definition": "GIVEN the user has previously made an At Bat/MLB.TV purchase\nAND the user initially launched the app",
+            "jira": {
+              "key": "MLBMOB-2637",
+              "summary": "GIVEN the user has previously made an At Bat/MLB.TV purchase"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "IAP",
+        "path": "/Android Streaming/IAP"
+      }
+    },
+    {
+      "issueId": "1124335",
+      "jira": {
+        "key": "MLBMOB-221",
+        "summary": "User who has previously made a purchase is NOT shown the paywall after auto linking occurs after initial launch",
+        "description": "GIVEN the user has previously made an At Bat/MLB.TV purchase\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154536",
+            "projectId": "26420",
+            "definition": "GIVEN the user has previously made an At Bat/MLB.TV purchase",
+            "jira": {
+              "key": "MLBMOB-2638",
+              "summary": "GIVEN the user has previously made an At Bat/MLB.TV purchase"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "IAP",
+        "path": "/Android Streaming/IAP"
+      }
+    },
+    {
+      "issueId": "1124334",
+      "jira": {
+        "key": "MLBMOB-220",
+        "summary": "Purchase is linked if user has made a purchase in Device A and launched app initially in device B",
+        "description": "GIVEN the user has previously made in app purchases in device A\r\nAND the user has initially launches the app on device B\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154537",
+            "projectId": "26420",
+            "definition": "GIVEN the user has previously made in app purchases in device A\nAND the user has initially launches the app on device B",
+            "jira": {
+              "key": "MLBMOB-2639",
+              "summary": "GIVEN the user has previously made in app purchases in device A"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "IAP",
+        "path": "/Android Streaming/IAP"
+      }
+    },
+    {
+      "issueId": "1124333",
+      "jira": {
+        "key": "MLBMOB-219",
+        "summary": "Purchase is linked if user has made a subscribe and install purchase directly from Google Play",
+        "description": "GIVEN the user has previously made the subscribe and install purchase directly from Google Play Store\r\nAND the user has initially launches the app\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154538",
+            "projectId": "26420",
+            "definition": "GIVEN the user has previously made the subscribe and install purchase directly from Google Play Store\nAND the user has initially launches the app",
+            "jira": {
+              "key": "MLBMOB-2640",
+              "summary": "GIVEN the user has previously made the subscribe and install purchase directly from Google Play Stor"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "IAP",
+        "path": "/Android Streaming/IAP"
+      }
+    },
+    {
+      "issueId": "1124332",
+      "jira": {
+        "key": "MLBMOB-218",
+        "summary": "Purchase is not restored if user has not made any previous purchase",
+        "description": "GIVEN the user has NOT previously made in app purchases\r\nAND the user has initially launches the app\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154539",
+            "projectId": "26420",
+            "definition": "GIVEN the user has NOT previously made in app purchases\nAND the user has initially launches the app",
+            "jira": {
+              "key": "MLBMOB-2641",
+              "summary": "GIVEN the user has NOT previously made in app purchases"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "IAP",
+        "path": "/Android Streaming/IAP"
+      }
+    },
+    {
+      "issueId": "1124331",
+      "jira": {
+        "key": "MLBMOB-217",
+        "summary": "Purchase is restored automatically upon initial launch of app if google account has previous purchase",
+        "description": "GIVEN the user has previously made in app purchases\r\nAND the user has initially launches the app\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154540",
+            "projectId": "26420",
+            "definition": "GIVEN the user has previously made in app purchases\nAND the user has initially launches the app",
+            "jira": {
+              "key": "MLBMOB-2642",
+              "summary": "GIVEN the user has previously made in app purchases"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "IAP",
+        "path": "/Android Streaming/IAP"
+      }
+    },
+    {
+      "issueId": "1124330",
+      "jira": {
+        "key": "MLBMOB-216",
+        "summary": "App searches for Purchase upon initial launch of the app",
+        "description": "GIVEN the user has initially launched the app\r\n",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154541",
+            "projectId": "26420",
+            "definition": "GIVEN the user has initially launched the app",
+            "jira": {
+              "key": "MLBMOB-2643",
+              "summary": "GIVEN the user has initially launched the app"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "IAP",
+        "path": "/Android Streaming/IAP"
+      }
+    },
+    {
+      "issueId": "1124317",
+      "jira": {
+        "key": "MLBMOB-203",
+        "summary": "PiP for entitled user",
+        "description": "GIVEN MLB app installed on device\r\nAND user is logged in the app\r\nAND user is on Watch tab\r\nAND user is entitled user",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154542",
+            "projectId": "26420",
+            "definition": "GIVEN MLB app installed on device\nAND user is logged in the app\nAND user is on Watch tab\nAND user is entitled user",
+            "jira": {
+              "key": "MLBMOB-2644",
+              "summary": "GIVEN MLB app installed on device"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "Watch Tab",
+        "path": "/Android Streaming/Watch Tab"
+      }
+    },
+    {
+      "issueId": "1124279",
+      "jira": {
+        "key": "MLBMOB-177",
+        "summary": "No feeds Error message",
+        "description": "GIVEN an entitled user",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154543",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user",
+            "jira": {
+              "key": "MLBMOB-2645",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "API Testing",
+        "path": "/iOS Streaming/API Testing"
+      }
+    },
+    {
+      "issueId": "1124278",
+      "jira": {
+        "key": "MLBMOB-176",
+        "summary": "Block media source",
+        "description": "GIVEN an entitled user\nAND the media source (ie tv-fast.mlb.com/* AND/OR tv-gmc.mlb.com/*) is blocked (to simulate a failure)",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154544",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND the media source (ie tv-fast.mlb.com/* AND/OR tv-gmc.mlb.com/*) is blocked (to simulate a failure)",
+            "jira": {
+              "key": "MLBMOB-2646",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "API Testing",
+        "path": "/iOS Streaming/API Testing"
+      }
+    },
+    {
+      "issueId": "1124277",
+      "jira": {
+        "key": "MLBMOB-175",
+        "summary": "Block media-gateway",
+        "description": "GIVEN an entitled user\nAND the media-gateway endpoint is blocked (to simulate a failure)",
+        "priority": {
+          "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+          "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+          "name": "None",
+          "id": "10000"
+        },
+        "labels": [],
+        "status": {
+          "self": "https://baseball.atlassian.net/rest/api/2/status/20313",
+          "description": "",
+          "iconUrl": "https://baseball.atlassian.net/",
+          "name": "To Do",
+          "id": "20313",
+          "statusCategory": {
+            "self": "https://baseball.atlassian.net/rest/api/2/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        }
+      },
+      "steps": [],
+      "preconditions": {
+        "total": 1,
+        "results": [
+          {
+            "issueId": "1154545",
+            "projectId": "26420",
+            "definition": "GIVEN an entitled user\nAND the media-gateway endpoint is blocked (to simulate a failure)",
+            "jira": {
+              "key": "MLBMOB-2647",
+              "summary": "GIVEN an entitled user"
+            }
+          }
+        ]
+      },
+      "testType": {
+        "name": "Manual",
+        "kind": "Steps"
+      },
+      "folder": {
+        "name": "API Testing",
+        "path": "/iOS Streaming/API Testing"
+      }
+    }
+  ]
+}

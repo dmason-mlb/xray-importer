@@ -1,0 +1,2711 @@
+{
+  "test_set": "MLBMOB-2651",
+  "test_set_summary": "Applause Apple Streaming Regression Test Set",
+  "total_tests": 386,
+  "test_keys": [
+    "MLBMOB-1981",
+    "MLBMOB-1980",
+    "MLBMOB-1979",
+    "MLBMOB-1978",
+    "MLBMOB-1977",
+    "MLBMOB-1976",
+    "MLBMOB-1975",
+    "MLBMOB-1974",
+    "MLBMOB-1973",
+    "MLBMOB-1972",
+    "MLBMOB-1971",
+    "MLBMOB-1970",
+    "MLBMOB-2030",
+    "MLBMOB-2029",
+    "MLBMOB-2028",
+    "MLBMOB-2027",
+    "MLBMOB-2026",
+    "MLBMOB-2025",
+    "MLBMOB-2024",
+    "MLBMOB-2023",
+    "MLBMOB-2022",
+    "MLBMOB-2021",
+    "MLBMOB-2020",
+    "MLBMOB-2019",
+    "MLBMOB-2018",
+    "MLBMOB-2017",
+    "MLBMOB-2016",
+    "MLBMOB-2427",
+    "MLBMOB-2426",
+    "MLBMOB-2425",
+    "MLBMOB-2424",
+    "MLBMOB-2423",
+    "MLBMOB-2422",
+    "MLBMOB-2421",
+    "MLBMOB-2420",
+    "MLBMOB-2419",
+    "MLBMOB-2418",
+    "MLBMOB-2417",
+    "MLBMOB-2416",
+    "MLBMOB-2415",
+    "MLBMOB-2414",
+    "MLBMOB-2413",
+    "MLBMOB-2412",
+    "MLBMOB-2411",
+    "MLBMOB-2410",
+    "MLBMOB-2409",
+    "MLBMOB-2408",
+    "MLBMOB-2407",
+    "MLBMOB-2406",
+    "MLBMOB-2405",
+    "MLBMOB-2404",
+    "MLBMOB-2403",
+    "MLBMOB-2402",
+    "MLBMOB-2401",
+    "MLBMOB-2400",
+    "MLBMOB-2399",
+    "MLBMOB-2398",
+    "MLBMOB-2397",
+    "MLBMOB-2396",
+    "MLBMOB-2395",
+    "MLBMOB-2394",
+    "MLBMOB-2393",
+    "MLBMOB-2392",
+    "MLBMOB-2391",
+    "MLBMOB-2390",
+    "MLBMOB-2389",
+    "MLBMOB-2388",
+    "MLBMOB-2387",
+    "MLBMOB-2386",
+    "MLBMOB-2385",
+    "MLBMOB-2384",
+    "MLBMOB-2383",
+    "MLBMOB-2382",
+    "MLBMOB-2381",
+    "MLBMOB-2380",
+    "MLBMOB-2379",
+    "MLBMOB-2378",
+    "MLBMOB-2377",
+    "MLBMOB-2376",
+    "MLBMOB-2375",
+    "MLBMOB-2374",
+    "MLBMOB-2373",
+    "MLBMOB-2372",
+    "MLBMOB-2371",
+    "MLBMOB-2370",
+    "MLBMOB-2369",
+    "MLBMOB-2368",
+    "MLBMOB-2367",
+    "MLBMOB-2366",
+    "MLBMOB-2365",
+    "MLBMOB-2364",
+    "MLBMOB-2363",
+    "MLBMOB-2362",
+    "MLBMOB-2361",
+    "MLBMOB-2360",
+    "MLBMOB-2359",
+    "MLBMOB-2358",
+    "MLBMOB-2357",
+    "MLBMOB-2356",
+    "MLBMOB-2355",
+    "MLBMOB-2354",
+    "MLBMOB-2353",
+    "MLBMOB-2352",
+    "MLBMOB-2351",
+    "MLBMOB-2350",
+    "MLBMOB-2349",
+    "MLBMOB-2348",
+    "MLBMOB-2347",
+    "MLBMOB-2346",
+    "MLBMOB-2345",
+    "MLBMOB-2344",
+    "MLBMOB-2343",
+    "MLBMOB-2342",
+    "MLBMOB-2341",
+    "MLBMOB-2340",
+    "MLBMOB-2339",
+    "MLBMOB-2338",
+    "MLBMOB-2337",
+    "MLBMOB-2336",
+    "MLBMOB-2335",
+    "MLBMOB-2334",
+    "MLBMOB-2333",
+    "MLBMOB-2332",
+    "MLBMOB-2331",
+    "MLBMOB-2330",
+    "MLBMOB-2329",
+    "MLBMOB-2328",
+    "MLBMOB-2327",
+    "MLBMOB-2326",
+    "MLBMOB-2325",
+    "MLBMOB-2324",
+    "MLBMOB-2323",
+    "MLBMOB-2322",
+    "MLBMOB-2321",
+    "MLBMOB-2320",
+    "MLBMOB-2319",
+    "MLBMOB-2318",
+    "MLBMOB-2317",
+    "MLBMOB-2316",
+    "MLBMOB-2315",
+    "MLBMOB-2314",
+    "MLBMOB-2313",
+    "MLBMOB-2312",
+    "MLBMOB-2311",
+    "MLBMOB-2310",
+    "MLBMOB-2309",
+    "MLBMOB-2308",
+    "MLBMOB-2307",
+    "MLBMOB-2306",
+    "MLBMOB-2305",
+    "MLBMOB-2304",
+    "MLBMOB-2303",
+    "MLBMOB-2302",
+    "MLBMOB-2301",
+    "MLBMOB-2300",
+    "MLBMOB-2299",
+    "MLBMOB-2298",
+    "MLBMOB-2297",
+    "MLBMOB-2296",
+    "MLBMOB-2295",
+    "MLBMOB-2294",
+    "MLBMOB-2293",
+    "MLBMOB-2292",
+    "MLBMOB-2291",
+    "MLBMOB-2290",
+    "MLBMOB-2289",
+    "MLBMOB-2288",
+    "MLBMOB-2287",
+    "MLBMOB-2286",
+    "MLBMOB-2285",
+    "MLBMOB-2284",
+    "MLBMOB-2283",
+    "MLBMOB-2282",
+    "MLBMOB-2281",
+    "MLBMOB-2280",
+    "MLBMOB-2279",
+    "MLBMOB-2278",
+    "MLBMOB-2277",
+    "MLBMOB-2276",
+    "MLBMOB-2275",
+    "MLBMOB-2274",
+    "MLBMOB-2273",
+    "MLBMOB-2272",
+    "MLBMOB-2271",
+    "MLBMOB-2270",
+    "MLBMOB-2269",
+    "MLBMOB-2268",
+    "MLBMOB-2267",
+    "MLBMOB-2266",
+    "MLBMOB-2265",
+    "MLBMOB-2264",
+    "MLBMOB-2263",
+    "MLBMOB-2262",
+    "MLBMOB-2261",
+    "MLBMOB-2260",
+    "MLBMOB-2259",
+    "MLBMOB-2258",
+    "MLBMOB-2257",
+    "MLBMOB-2256",
+    "MLBMOB-2255",
+    "MLBMOB-2254",
+    "MLBMOB-2253",
+    "MLBMOB-2252",
+    "MLBMOB-2251",
+    "MLBMOB-2250",
+    "MLBMOB-2249",
+    "MLBMOB-2248",
+    "MLBMOB-2247",
+    "MLBMOB-2246",
+    "MLBMOB-2245",
+    "MLBMOB-2244",
+    "MLBMOB-2243",
+    "MLBMOB-2242",
+    "MLBMOB-2241",
+    "MLBMOB-2240",
+    "MLBMOB-2239",
+    "MLBMOB-2238",
+    "MLBMOB-2237",
+    "MLBMOB-2236",
+    "MLBMOB-1944",
+    "MLBMOB-1931",
+    "MLBMOB-1930",
+    "MLBMOB-1929",
+    "MLBMOB-1928",
+    "MLBMOB-1927",
+    "MLBMOB-1926",
+    "MLBMOB-1925",
+    "MLBMOB-1924",
+    "MLBMOB-1923",
+    "MLBMOB-1922",
+    "MLBMOB-1921",
+    "MLBMOB-1920",
+    "MLBMOB-1919",
+    "MLBMOB-1918",
+    "MLBMOB-1917",
+    "MLBMOB-1916",
+    "MLBMOB-1915",
+    "MLBMOB-1914",
+    "MLBMOB-1913",
+    "MLBMOB-1912",
+    "MLBMOB-1911",
+    "MLBMOB-1910",
+    "MLBMOB-1909",
+    "MLBMOB-1908",
+    "MLBMOB-1907",
+    "MLBMOB-1906",
+    "MLBMOB-1905",
+    "MLBMOB-1904",
+    "MLBMOB-1903",
+    "MLBMOB-1902",
+    "MLBMOB-1901",
+    "MLBMOB-1900",
+    "MLBMOB-1899",
+    "MLBMOB-1898",
+    "MLBMOB-1897",
+    "MLBMOB-1896",
+    "MLBMOB-1895",
+    "MLBMOB-1894",
+    "MLBMOB-1893",
+    "MLBMOB-1892",
+    "MLBMOB-1891",
+    "MLBMOB-1890",
+    "MLBMOB-1889",
+    "MLBMOB-1888",
+    "MLBMOB-1887",
+    "MLBMOB-1886",
+    "MLBMOB-1885",
+    "MLBMOB-1884",
+    "MLBMOB-1883",
+    "MLBMOB-1882",
+    "MLBMOB-1881",
+    "MLBMOB-1880",
+    "MLBMOB-1879",
+    "MLBMOB-1878",
+    "MLBMOB-1877",
+    "MLBMOB-1876",
+    "MLBMOB-1875",
+    "MLBMOB-1874",
+    "MLBMOB-1873",
+    "MLBMOB-1872",
+    "MLBMOB-1871",
+    "MLBMOB-1870",
+    "MLBMOB-1869",
+    "MLBMOB-1868",
+    "MLBMOB-1867",
+    "MLBMOB-1866",
+    "MLBMOB-1865",
+    "MLBMOB-1864",
+    "MLBMOB-1863",
+    "MLBMOB-1862",
+    "MLBMOB-1861",
+    "MLBMOB-1860",
+    "MLBMOB-1859",
+    "MLBMOB-1858",
+    "MLBMOB-1857",
+    "MLBMOB-1856",
+    "MLBMOB-2043",
+    "MLBMOB-2042",
+    "MLBMOB-2041",
+    "MLBMOB-2040",
+    "MLBMOB-2039",
+    "MLBMOB-2038",
+    "MLBMOB-2037",
+    "MLBMOB-2036",
+    "MLBMOB-2035",
+    "MLBMOB-2034",
+    "MLBMOB-2033",
+    "MLBMOB-2032",
+    "MLBMOB-2031",
+    "MLBMOB-1969",
+    "MLBMOB-1968",
+    "MLBMOB-1967",
+    "MLBMOB-1966",
+    "MLBMOB-2015",
+    "MLBMOB-2014",
+    "MLBMOB-2013",
+    "MLBMOB-2012",
+    "MLBMOB-2011",
+    "MLBMOB-788",
+    "MLBMOB-787",
+    "MLBMOB-786",
+    "MLBMOB-785",
+    "MLBMOB-784",
+    "MLBMOB-783",
+    "MLBMOB-782",
+    "MLBMOB-781",
+    "MLBMOB-780",
+    "MLBMOB-779",
+    "MLBMOB-778",
+    "MLBMOB-776",
+    "MLBMOB-775",
+    "MLBMOB-774",
+    "MLBMOB-773",
+    "MLBMOB-772",
+    "MLBMOB-771",
+    "MLBMOB-770",
+    "MLBMOB-769",
+    "MLBMOB-768",
+    "MLBMOB-767",
+    "MLBMOB-766",
+    "MLBMOB-765",
+    "MLBMOB-764",
+    "MLBMOB-762",
+    "MLBMOB-761",
+    "MLBMOB-760",
+    "MLBMOB-759",
+    "MLBMOB-758",
+    "MLBMOB-757",
+    "MLBMOB-755",
+    "MLBMOB-753",
+    "MLBMOB-752",
+    "MLBMOB-747",
+    "MLBMOB-746",
+    "MLBMOB-745",
+    "MLBMOB-744",
+    "MLBMOB-743",
+    "MLBMOB-742",
+    "MLBMOB-741",
+    "MLBMOB-740",
+    "MLBMOB-739",
+    "MLBMOB-738",
+    "MLBMOB-737",
+    "MLBMOB-736",
+    "MLBMOB-710",
+    "MLBMOB-703",
+    "MLBMOB-701",
+    "MLBMOB-2195",
+    "MLBMOB-2194",
+    "MLBMOB-2193",
+    "MLBMOB-2192",
+    "MLBMOB-2191",
+    "MLBMOB-2190",
+    "MLBMOB-2189",
+    "MLBMOB-2188",
+    "MLBMOB-2055",
+    "MLBMOB-2054",
+    "MLBMOB-2053",
+    "MLBMOB-2052",
+    "MLBMOB-2051",
+    "MLBMOB-2050",
+    "MLBMOB-2049",
+    "MLBMOB-2048",
+    "MLBMOB-2047",
+    "MLBMOB-2046",
+    "MLBMOB-2045",
+    "MLBMOB-2044"
+  ],
+  "tests": [
+    {
+      "key": "MLBMOB-1981",
+      "summary": "Media Player - Batting Box Score Validation",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1980",
+      "summary": "Teams Header View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1979",
+      "summary": "Matchup View Data Updating",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1978",
+      "summary": "Matchup View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1977",
+      "summary": "Linescore View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1976",
+      "summary": "Game Data View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1975",
+      "summary": "Pitching View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1974",
+      "summary": "Fielding View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1973",
+      "summary": "Baserunning View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1972",
+      "summary": "Batting Results View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1971",
+      "summary": "Batters View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1970",
+      "summary": "TeamPicker View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2030",
+      "summary": "Watch Tab RSN- unentitled",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2029",
+      "summary": "Watch Tab RSN Segment",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2028",
+      "summary": "SNY RSN Hero Refresh",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2027",
+      "summary": "RSN DAI & Ancillary Player Functionality",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2026",
+      "summary": "RSN Video Player Experience",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2025",
+      "summary": "RSN Hero Tile",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2024",
+      "summary": "RSN Carousels",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2023",
+      "summary": "Watch Tab RSN Segment",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2022",
+      "summary": "Watch Tab RSN- unentitled",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2021",
+      "summary": "SNLA RSN Hero Refresh",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2020",
+      "summary": "RSN DAI & Ancillary Player Functionality",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2019",
+      "summary": "RSN Video Player Experience",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2018",
+      "summary": "RSN Hero Tile",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2017",
+      "summary": "RSN Carousels",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2016",
+      "summary": "Watch Tab RSN Segment",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2427",
+      "summary": "Games Without Alternate Spanish Broadcasts",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2426",
+      "summary": "Spanish Broadcasts",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2425",
+      "summary": "Playback of National Feed",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2424",
+      "summary": "Matchup without a pregame or postgame",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2423",
+      "summary": "Matchup with two Pregames/Postgames",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2422",
+      "summary": "Matchup with one Pregame/Postgame",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2421",
+      "summary": "Playback of National Feed",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2420",
+      "summary": "Playback of Multiple Followed Teams",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2419",
+      "summary": "Playback of Followed Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2418",
+      "summary": "Playback of Favorited Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2417",
+      "summary": "Ad Volume",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2416",
+      "summary": "Return To Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2415",
+      "summary": "Ad Drops",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2414",
+      "summary": "Device To Sleep",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2413",
+      "summary": "Background App",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2412",
+      "summary": "Audio Player Controls",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2411",
+      "summary": "Feed Switching",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2410",
+      "summary": "Successful Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2409",
+      "summary": "Audio EPG Button",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2408",
+      "summary": "Audacy Hide Scrubber",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2407",
+      "summary": "Audacy Config Flag",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2406",
+      "summary": "Audacy Call Sign",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2405",
+      "summary": "Audacy Stream Request",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2404",
+      "summary": "Single Team User",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2403",
+      "summary": "TV-Entitled User",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2402",
+      "summary": "Audio-Entitled User",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2401",
+      "summary": "Logging in from Audio Paywall",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2400",
+      "summary": "Lite User",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2399",
+      "summary": "Device Goes to Sleep",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2398",
+      "summary": "Lock Screen - Resume from Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2397",
+      "summary": "Lock Screen - Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2396",
+      "summary": "Lock Screen - Back 30",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2395",
+      "summary": "Lock Screen - Forward 30",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2394",
+      "summary": "Lock Screen Content",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2393",
+      "summary": "Lock Screen",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2392",
+      "summary": "Backgrounding App",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2391",
+      "summary": "Feed Button Formatting",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2390",
+      "summary": "Video Autoplay During Audio Playback - Tapping Video",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2389",
+      "summary": "Video Autoplay During Audio Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2388",
+      "summary": "Launching MLB Audio During Playback of Other App's Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2387",
+      "summary": "Launching Another App's Audio During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2386",
+      "summary": "Resuming from Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2385",
+      "summary": "Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2384",
+      "summary": "Back 10",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2383",
+      "summary": "Forward 10",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2382",
+      "summary": "Scrubber Bar",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2381",
+      "summary": "Deep Link Logic -  Device in Spanish",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2380",
+      "summary": "Deep Link Logic - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2379",
+      "summary": "Deep Link Logic - \"Followed Team\" Setting - Away Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2378",
+      "summary": "Deep Link Logic - \"Followed Team\" Setting - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2377",
+      "summary": "Deep Link Logic - \"Favorite Team\" Setting - Away Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2376",
+      "summary": "Deep Link Logic - \"Favorite Team\" Setting - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2375",
+      "summary": "Forward/Backward Date Arrows",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2374",
+      "summary": "Date Picker - Selecting New Date",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2373",
+      "summary": "Date Picker",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2372",
+      "summary": "Switching Feeds - Different Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2371",
+      "summary": "Switching Feeds - Same Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2370",
+      "summary": "Display when User Changes Dates During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2369",
+      "summary": "Current Feed Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2368",
+      "summary": "Streaming - Wifi",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2367",
+      "summary": "Game Matchup Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2366",
+      "summary": "Game State Display - Less than 9 innings",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2365",
+      "summary": "Game State Display - More than 9 innings",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2364",
+      "summary": "Game State Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2363",
+      "summary": "Archive Label",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2362",
+      "summary": "Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2361",
+      "summary": "Device Goes to Sleep",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2360",
+      "summary": "Lock Screen - Resume from Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2359",
+      "summary": "Lock Screen - Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2358",
+      "summary": "Lock Screen - Back 30",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2357",
+      "summary": "Lock Screen - Forward 30",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2356",
+      "summary": "Lock Screen Content",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2355",
+      "summary": "Lock Screen",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2354",
+      "summary": "Backgrounding App",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2353",
+      "summary": "Feed Button Formatting",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2352",
+      "summary": "Text Message During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2351",
+      "summary": "Phone Call During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2350",
+      "summary": "Video Autoplay During Audio Playback - Tapping Video",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2349",
+      "summary": "Video Autoplay During Audio Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2348",
+      "summary": "Launching MLB Audio During Playback of Other App's Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2347",
+      "summary": "Launching Another App's Audio During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2346",
+      "summary": "Resuming from Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2345",
+      "summary": "Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2344",
+      "summary": "Back 10",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2343",
+      "summary": "Forward 10",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2342",
+      "summary": "Scrubber Bar",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2341",
+      "summary": "Deep Link Logic -  Device in Spanish",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2340",
+      "summary": "Deep Link Logic - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2339",
+      "summary": "Deep Link Logic - \"Followed Team\" Setting - Away Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2338",
+      "summary": "Deep Link Logic - \"Followed Team\" Setting - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2337",
+      "summary": "Deep Link Logic - \"Favorite Team\" Setting - Away Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2336",
+      "summary": "Deep Link Logic - \"Favorite Team\" Setting - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2335",
+      "summary": "Forward/Backward Date Arrows",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2334",
+      "summary": "Date Picker - Selecting New Date",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2333",
+      "summary": "Date Picker",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2332",
+      "summary": "Switching Feeds - Different Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2331",
+      "summary": "Switching Feeds - Same Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2330",
+      "summary": "Display when User Changes Dates During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2329",
+      "summary": "Current Feed Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2328",
+      "summary": "Streaming - Wifi",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2327",
+      "summary": "Streaming - Cellular",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2326",
+      "summary": "Game Matchup Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2325",
+      "summary": "Game State Display - Less than 9 innings",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2324",
+      "summary": "Game State Display - More than 9 innings",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2323",
+      "summary": "Game State Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2322",
+      "summary": "Archive Label",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2321",
+      "summary": "Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2320",
+      "summary": "Device Goes to Sleep",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2319",
+      "summary": "Lock Screen - Resume from Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2318",
+      "summary": "Lock Screen - Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2317",
+      "summary": "Lock Screen - Back 30",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2316",
+      "summary": "Lock Screen - Forward 30",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2315",
+      "summary": "Lock Screen Content",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2314",
+      "summary": "Lock Screen",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2313",
+      "summary": "Backgrounding App",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2312",
+      "summary": "Feed Button Formatting",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2311",
+      "summary": "Video Autoplay During Audio Playback > Team Page - Tapping Video",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2310",
+      "summary": "Video Autoplay During Audio Playback - Team Page",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2309",
+      "summary": "Video Autoplay During Audio Playback > News Articles - Tapping Video",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2308",
+      "summary": "Video Autoplay During Audio Playback > News Articles",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2307",
+      "summary": "Launching MLB Audio During Playback of Other App's Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2306",
+      "summary": "Launching Another App's Audio During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2305",
+      "summary": "Resuming from Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2304",
+      "summary": "Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2303",
+      "summary": "Back 10",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2302",
+      "summary": "Forward 10 - Scrubbed Back",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2301",
+      "summary": "Forward 10 - Live Point",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2300",
+      "summary": "Scrubber Bar - Live Button",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2299",
+      "summary": "Scrubber Bar",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2298",
+      "summary": "Deep Link Logic -  Device in Spanish",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2297",
+      "summary": "Deep Link Logic - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2296",
+      "summary": "Deep Link Logic - \"Followed Team\" Setting - Away Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2295",
+      "summary": "Deep Link Logic - \"Followed Team\" Setting - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2294",
+      "summary": "Deep Link Logic - \"Favorite Team\" Setting - Away Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2293",
+      "summary": "Deep Link Logic - \"Favorite Team\" Setting - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2292",
+      "summary": "Forward/Backward Date Arrows",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2291",
+      "summary": "Date Picker - Selecting New Date",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2290",
+      "summary": "Date Picker",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2289",
+      "summary": "Switching Feeds - Different Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2288",
+      "summary": "Switching Feeds - Same Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2287",
+      "summary": "Display when User Changes Dates During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2286",
+      "summary": "Current Feed Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2285",
+      "summary": "Streaming - Wifi",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2284",
+      "summary": "Game Matchup Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2283",
+      "summary": "Game State Display - Bot Inning",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2282",
+      "summary": "Game State Display - Top Inning",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2281",
+      "summary": "Game State Display - Game Time",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2280",
+      "summary": "Game State Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2279",
+      "summary": "Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2278",
+      "summary": "Device Goes to Sleep",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2277",
+      "summary": "Lock Screen - Resume from Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2276",
+      "summary": "Lock Screen - Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2275",
+      "summary": "Lock Screen - Back 30",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2274",
+      "summary": "Lock Screen - Forward 30",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2273",
+      "summary": "Lock Screen Content",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2272",
+      "summary": "Lock Screen",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2271",
+      "summary": "Backgrounding App",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2270",
+      "summary": "Feed Button Formatting",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2269",
+      "summary": "Video Autoplay During Audio Playback > Team Page - Tapping Video",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2268",
+      "summary": "Video Autoplay During Audio Playback - Team Page",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2267",
+      "summary": "Video Autoplay During Audio Playback > News Articles - Tapping Video",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2266",
+      "summary": "Video Autoplay During Audio Playback > News Articles",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2265",
+      "summary": "Launching MLB Audio During Playback of Other App's Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2264",
+      "summary": "Launching Another App's Audio During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2263",
+      "summary": "Resuming from Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2262",
+      "summary": "Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2261",
+      "summary": "Back 10",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2260",
+      "summary": "Forward 10 - Scrubbed Back",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2259",
+      "summary": "Forward 10 - Live Point",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2258",
+      "summary": "Scrubber Bar - Live Button",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2257",
+      "summary": "Scrubber Bar",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2256",
+      "summary": "Deep Link Logic -  Device in Spanish",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2255",
+      "summary": "Deep Link Logic - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2254",
+      "summary": "Deep Link Logic - \"Followed Team\" Setting - Away Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2253",
+      "summary": "Deep Link Logic - \"Followed Team\" Setting - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2252",
+      "summary": "Deep Link Logic - \"Favorite Team\" Setting - Away Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2251",
+      "summary": "Deep Link Logic - \"Favorite Team\" Setting - Home Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2250",
+      "summary": "Forward/Backward Date Arrows",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2249",
+      "summary": "Date Picker - Selecting New Date",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2248",
+      "summary": "Date Picker",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2247",
+      "summary": "Switching Feeds - Different Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2246",
+      "summary": "Switching Feeds - Same Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2245",
+      "summary": "Display when User Changes Dates During Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2244",
+      "summary": "Current Feed Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2243",
+      "summary": "Streaming - Cellular",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2242",
+      "summary": "Streaming - Wifi",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2241",
+      "summary": "Game Matchup Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2240",
+      "summary": "Game State Display - Bot Inning",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2239",
+      "summary": "Game State Display - Top Inning",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2238",
+      "summary": "Game State Display - Game Time",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2237",
+      "summary": "Game State Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2236",
+      "summary": "Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1944",
+      "summary": "Audio Only - Log In to Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1931",
+      "summary": "Unentitled User",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1930",
+      "summary": "No Share Button",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1929",
+      "summary": "Supported Content",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1928",
+      "summary": "No Videos Being Returned",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1927",
+      "summary": "Placement of Watch Live",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1926",
+      "summary": "Playlist View - Subsequent Video Launch",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1925",
+      "summary": "Videos - Banner Ad",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1924",
+      "summary": "Videos - Team Page",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1923",
+      "summary": "Summary (Scoring Tab) - Team Page",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1922",
+      "summary": "Live",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1921",
+      "summary": "Wrap Video - Scoreboard",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1920",
+      "summary": "Wrap Video - Team Page",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1919",
+      "summary": "Midroll Ads",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1918",
+      "summary": "Inline Ad",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1917",
+      "summary": "Playlist View - Subsequent Video Launch",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1916",
+      "summary": "Playlist View - Initial launch",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1915",
+      "summary": "Banner Ad",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1914",
+      "summary": "Banner Ad",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1913",
+      "summary": "Banner Ad",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1912",
+      "summary": "Preroll Ad - Tapping Video",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1911",
+      "summary": "Preroll Ad - See All",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1910",
+      "summary": "Inline Ad",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1909",
+      "summary": "Banner Ad",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1908",
+      "summary": "Carousel Content Clicks - Analytics",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1907",
+      "summary": "Carousel  Scrolls - Analytics",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1906",
+      "summary": "Video time and date",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1905",
+      "summary": "Top video one is the most popular on the playlist",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1904",
+      "summary": "Tapping on a video thumbnail",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1903",
+      "summary": "Home Feed - Video Carousel Snap to place",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1902",
+      "summary": "Home Feed - Video Carousel swiping side to side",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1901",
+      "summary": "Home Feed - Video Carousel thumbnail",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1900",
+      "summary": "Home Feed - My Highlights",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1899",
+      "summary": "Team Filter",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1898",
+      "summary": "Single Team Users - Ads",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1897",
+      "summary": "MLBAUDIO Users - Ads",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1896",
+      "summary": "MLBALL (Anonymous) Users - Ads",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1895",
+      "summary": "MLBALL Users - Ads",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1894",
+      "summary": "Free/Logged-in Users - Ads",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1893",
+      "summary": "Free/Not Logged-in Users - Ads",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1892",
+      "summary": "Dark/Light Mode Support",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1891",
+      "summary": "Localization (Spanish ES)",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1890",
+      "summary": "Share Functionality Within Article",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1889",
+      "summary": "Offline/Airplane Mode and Refresh Button",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1888",
+      "summary": "Loading indicator (Low connectivity)",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1887",
+      "summary": "Scroll Indicator",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1886",
+      "summary": "Player Card - X button",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1885",
+      "summary": "Player Card - Push Notification",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1884",
+      "summary": "\"Done\" Button  Functionality - Push Notifications",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1883",
+      "summary": "Invalid URLs in newsreader",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1882",
+      "summary": "Returning to News Index via Edge Swiping (Stacking Articles)",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1881",
+      "summary": "Edge Swiping",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1880",
+      "summary": "Article Title Header - News",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1879",
+      "summary": "Loading Indicator",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1878",
+      "summary": "Webview Articles",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1877",
+      "summary": "HomeFeed - Accessibility attributes support for VoiceOver",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1876",
+      "summary": "HomeFeed - Top Highlights Videos Carousel - Preroll ad support",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1875",
+      "summary": "HomeFeed - Top Highlights - Video Autoplay",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1874",
+      "summary": "HomeFeed - Videos Autoplay on mute",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1873",
+      "summary": "Home Feed - MLB + all 30 teams",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1872",
+      "summary": "See all in news feed",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1871",
+      "summary": "See all in video carousel feed",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1870",
+      "summary": "Light/Dark Mode support",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1869",
+      "summary": "Accessibility attributes support for VoiceOver",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1868",
+      "summary": "Analytics tracking support for each interaction",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1867",
+      "summary": "Localization support for ES",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1866",
+      "summary": "Preroll ad support",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1865",
+      "summary": "Duration of the video will be displayed in a bubble on the video thumbnail",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1864",
+      "summary": "See All\u201d button will display all videos in the index in the playlist view",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1863",
+      "summary": "Current video that was clicked will play at the top followed by the videos in the index listed below in the playlist view",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1862",
+      "summary": "Tapping on a video will clickthrough into the video playlist view",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1861",
+      "summary": "Autoplay video when the video is in focus, and start autoplay of first video in the carousel, and video will be muted",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1860",
+      "summary": "Each video should snap to place when swiped",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1859",
+      "summary": "Side to side horizontal swiping takes you from video to video",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1858",
+      "summary": "Display the video title below the thumbnail",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1857",
+      "summary": "Most Popular Highlights Carousel of videos",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1856",
+      "summary": "Home Feed - Video Carousel all 30 teams",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2043",
+      "summary": "MLB.TV Single Team Package - Archived Games",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2042",
+      "summary": "MLB.TV Single Team Package - Free Game of the Day",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2041",
+      "summary": "MLB.TV Single Team Package - National Blackout",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2040",
+      "summary": "MLB.TV Single Team Package - Local (In-market) Blackout",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2039",
+      "summary": "MLB.TV Single Team Package - Gameday Highlights tab",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2038",
+      "summary": "MLB.TV Single Team Package - Launching Non-entitled Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2037",
+      "summary": "MLB.TV Single Team Package - MLB.TV OTTSB Switch Feeds",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2036",
+      "summary": "MLB.TV Single Team Package - MLB.TV Home Feed",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2035",
+      "summary": "MLB.TV Single Team Package - MLB.TV Away Feed",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2034",
+      "summary": "MLB.TV Single Team Package - Gameday Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2033",
+      "summary": "MLB.TV Single Team Package - Upsell Banner on EPG",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2032",
+      "summary": "MLB.TV Single Team Package - Ads",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2031",
+      "summary": "MLB.TV Single Team Package - Initial Login",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1969",
+      "summary": "Starting Point",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1968",
+      "summary": "Autoplay Disabled",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1967",
+      "summary": "Autoplay",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-1966",
+      "summary": "Embedded View",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2015",
+      "summary": "Single Team Users",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2014",
+      "summary": "MLBALL",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2013",
+      "summary": "Archived Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2012",
+      "summary": "Canadian User",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2011",
+      "summary": "MVPD Flow to Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-788",
+      "summary": "Hide Scores Enabled - Archived Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-787",
+      "summary": "Hide Scores Enabled - Live Game",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-786",
+      "summary": "Single-Team International User Postseason Launch",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-785",
+      "summary": "Video Player Alternate Feed Launch",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-784",
+      "summary": "Single-Team Launch Non-Entitled",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-783",
+      "summary": "Single-Team Launch",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-782",
+      "summary": "Non-Entitled",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-781",
+      "summary": "Default Feed",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-780",
+      "summary": "Device Language - Spanish",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-779",
+      "summary": "Followed Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-778",
+      "summary": "Favorited Team",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-776",
+      "summary": "Audio Feed Picker - Spanish user",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-775",
+      "summary": "Audio Feed Picker - Done Button",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-774",
+      "summary": "Audio Feed Picker - New Feed Options",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-773",
+      "summary": "Audio Feed Picker - New Feed",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-772",
+      "summary": "Audio Feed Picker - Switching Audio (Video)",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-771",
+      "summary": "Audio Feed Picker - Switching Audio (Radio)",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-770",
+      "summary": "Audio Feed Picker - Current Audio",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-769",
+      "summary": "Audio Feed Picker Display",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-768",
+      "summary": "TV Button - Landscape",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-767",
+      "summary": "TV Button - Portrait",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-766",
+      "summary": "National Video Feed",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-765",
+      "summary": "Audio Feeds",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-764",
+      "summary": "Video Feeds",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-762",
+      "summary": "Minimize Video Player",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-761",
+      "summary": "Maximize Video Player",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-760",
+      "summary": "Play/Pause",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-759",
+      "summary": "10-Sec RW and FF",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-758",
+      "summary": "Advertisements",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-757",
+      "summary": "Video Playback with Ads Disabled",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-755",
+      "summary": "Exiting Player",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-753",
+      "summary": "Jump To Live",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-752",
+      "summary": "Loading Indicator",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-747",
+      "summary": "Device Settings CC On, App Settings CC Off",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-746",
+      "summary": "Closed Captioning Off From App Settings",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-745",
+      "summary": "Closed Captioning Enabled From App Settings",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-744",
+      "summary": "Closed Captioning On/Off",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-743",
+      "summary": "Successful Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-742",
+      "summary": "Video Launch",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-741",
+      "summary": "User Receives a Text",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-740",
+      "summary": "User Receives Call",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-739",
+      "summary": "Cellular Connection",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-738",
+      "summary": "WiFi Connection",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-737",
+      "summary": "Upgrading from Past Build",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-736",
+      "summary": "Fresh Install",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-710",
+      "summary": "Picture-in-Picture",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-703",
+      "summary": "Debug overlay & Session ID in GAM",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-701",
+      "summary": "Device rotation",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2195",
+      "summary": "MiLB Preview Tile - Validate Duration",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2194",
+      "summary": "MiLB Live Game - Validate LIVE Tag",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2193",
+      "summary": "MiLB Video Player: Validate Player Controls For LIVE content",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2192",
+      "summary": "MiLB Live - Validate SLIVE Playback",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2191",
+      "summary": "MiLB Content Tile - Validate Images",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2190",
+      "summary": "MiLB Content Carousel - Validate Copy and Metadata",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2189",
+      "summary": "MiLB Preview - VOD successfully Launches",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2188",
+      "summary": "MiLB Carousel Displays On Home Page",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2055",
+      "summary": "Audio Player Launch - Team Page",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2054",
+      "summary": "MLB.TV Button",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2053",
+      "summary": "(New) iPad Video User Scrolls Past First 5 Videos",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2052",
+      "summary": "(New) iPad Video Auto Roll",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2051",
+      "summary": "(New) iPad - Embedded playback of Videos and User Rotates Device",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2050",
+      "summary": "(New) iPad - Rest of Videos Load",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2049",
+      "summary": "(New) iPad - Top 5 Videos Load",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2048",
+      "summary": "(New) iPad - Embedded playback of Videos",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2047",
+      "summary": "(New) iPhone Video User Scrolls Past First 5 Videos",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2046",
+      "summary": "(New) iPhone - Rest of Videos Load",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2045",
+      "summary": "(New) iPhone - Top 5 Videos Load",
+      "status": "To Do",
+      "labels": []
+    },
+    {
+      "key": "MLBMOB-2044",
+      "summary": "(New) iPhone - Embedded playback of Videos",
+      "status": "To Do",
+      "labels": []
+    }
+  ]
+}

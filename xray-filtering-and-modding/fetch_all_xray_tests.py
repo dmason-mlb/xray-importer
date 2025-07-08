@@ -364,6 +364,11 @@ class XrayTestFetcher:
         # If resuming, load existing data
         if start_position > 0:
             self._load_existing_results()
+            # We need to re-add the processed issue IDs from loaded tests
+            for test in self.tests_with_steps:
+                self.processed_issue_ids.add(test.get('issueId'))
+            for test in self.tests_without_steps:
+                self.processed_issue_ids.add(test.get('issueId'))
         else:
             # Process first batch if starting fresh
             results = first_response['data']['getExpandedTests']['results']
