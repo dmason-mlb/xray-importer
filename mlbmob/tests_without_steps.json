@@ -1,5 +1,5 @@
 {
-  "total": 77,
+  "total": 76,
   "tests": [
     {
       "issueId": "1153134",
@@ -141,19 +141,6 @@
       "jira": {
         "key": "MLBMOB-2228",
         "summary": "Deep-links Tests should open watch screen when using deeplink",
-        "description": null
-      },
-      "steps": [],
-      "preconditions": {
-        "total": 0,
-        "results": []
-      }
-    },
-    {
-      "issueId": "1146268",
-      "jira": {
-        "key": "MLBMOB-2205",
-        "summary": "Applause tvOS Test Plan - 2025.10.0",
         "description": null
       },
       "steps": [],
