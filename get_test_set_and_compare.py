@@ -6,10 +6,17 @@ Get tests in MLBMOB-2651 test set and compare with Confluence doc 4932862074
 import os
 import requests
 import json
+from dotenv import load_dotenv
 
-# Set XRAY credentials
-XRAY_CLIENT = "6F50E2F905F54387AE31CFD9C912BFB0"
-XRAY_SECRET = "7182cbb2529baf5cb0f71854f5b0e71692683c92ee6c8e5ce6fbbdde478dfc14"
+# Load environment variables from .env file
+load_dotenv()
+
+# Get XRAY credentials from environment variables
+XRAY_CLIENT = os.getenv('XRAY_CLIENT_ID')
+XRAY_SECRET = os.getenv('XRAY_CLIENT_SECRET')
+
+if not XRAY_CLIENT or not XRAY_SECRET:
+    raise ValueError("XRAY_CLIENT_ID and XRAY_CLIENT_SECRET must be set in environment variables or .env file")
 
 # Get authentication token
 auth_url = 'https://xray.cloud.getxray.app/api/v2/authenticate'
