@@ -1,0 +1,20 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Upload reports that might contain API responses
+upload_report.json
+
+# Any backup files
+*.bak
+*.backup
+
+# Temporary files
+*.tmp
+*.temp
+
+# API tokens or credentials
+*token*
+*credential*
+*secret*

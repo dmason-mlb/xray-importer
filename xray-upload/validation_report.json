@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "total_tests": 38,
+    "valid_tests": 16,
+    "tests_with_warnings": 22,
+    "tests_with_errors": 0,
+    "total_errors": 0,
+    "total_warnings": 2
+  },
+  "errors": [],
+  "warnings": [
+    "Test 17 (Screen Reader Support): Labels with special characters: android-(talkback), ios-(voiceover)",
+    "Test 17 (Screen Reader Support): No platform label found (ios, android, ipad)"
+  ],
+  "is_valid": true
+}
