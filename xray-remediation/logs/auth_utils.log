@@ -1,0 +1,17 @@
+2025-07-16 21:25:46,244 - INFO - Successfully obtained Xray authentication token
+2025-07-16 21:25:54,413 - INFO - Successfully obtained Xray authentication token
+2025-07-16 21:25:55,154 - ERROR - GraphQL request failed: 400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql
+2025-07-16 21:25:55,154 - ERROR - Failed to create backup: 400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql
+2025-07-16 21:26:20,591 - INFO - Successfully obtained Xray authentication token
+2025-07-16 21:26:22,395 - ERROR - GraphQL request failed: 400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql
+2025-07-16 21:27:44,645 - INFO - Successfully obtained Xray authentication token
+2025-07-16 21:27:45,497 - ERROR - GraphQL request failed: 400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql
+2025-07-16 21:28:07,121 - INFO - Successfully obtained Xray authentication token
+2025-07-16 21:29:19,511 - INFO - Successfully obtained Xray authentication token
+2025-07-16 21:29:20,841 - ERROR - GraphQL request failed: 400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql
+2025-07-16 21:30:14,091 - INFO - Successfully obtained Xray authentication token
+2025-07-16 21:30:14,894 - ERROR - GraphQL request failed: 400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql
+2025-07-16 21:31:46,101 - INFO - Successfully obtained Xray authentication token
+2025-07-16 21:31:46,975 - ERROR - GraphQL request failed: 400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql
+2025-07-16 21:36:00,642 - INFO - Successfully obtained Xray authentication token
+2025-07-16 21:36:01,609 - ERROR - GraphQL request failed: 400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql

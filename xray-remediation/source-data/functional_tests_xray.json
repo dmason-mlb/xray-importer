@@ -1,0 +1,1775 @@
+{
+  "info": {
+    "project": "FRAMED",
+    "summary": "Functional Test Cases - Team Page",
+    "description": "Manual functional test cases for Team Page UI and user interactions extracted from Confluence",
+    "user": "douglas.mason@mlb.com",
+    "revision": "8",
+    "startDate": "2025-07-17T00:00:00Z",
+    "finishDate": "2025-07-17T23:59:59Z",
+    "testPlanKey": ""
+  },
+  "tests": [
+    {
+      "testInfo": {
+        "summary": "TC-001",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android\nTest Data: Test with all 30 teams",
+        "labels": [
+          "TC-001: Team Selection via Drawer",
+          "team-page",
+          "android",
+          "navigation",
+          "critical",
+          "ios",
+          "functional",
+          "smoke",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Tap on the team selector dropdown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team drawer opens smoothly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All 30 MLB teams are displayed",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Select a different team from the list &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Selected team's page loads with correct content &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team name updates in the header",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "User has the app installed and opened"
+        ]
+      },
+      "testId": "TC-001: Team Selection via Drawer"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-002",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1005",
+        "labels": [
+          "team-page",
+          "android",
+          "navigation",
+          "medium",
+          "ios",
+          "functional",
+          "team_page",
+          "manual",
+          "TC-002: Team Selection with Special Characters"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Select Arizona Diamondbacks from team selector &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team name displays correctly without cutoff &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Dropdown arrow remains visible",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "App is on Team Page"
+        ]
+      },
+      "testId": "TC-002: Team Selection with Special Characters"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-003",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "requires-live-game",
+          "game-state",
+          "team-page",
+          "live-state",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "TC-003: MIG Display During Live Game",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to team with live game",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Observe MIG section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Live game card displays current score &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game status shows &quot;LIVE&quot;",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Check game score updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Score updates in real-time",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Verify broadcast information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Broadcast details are visible",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Selected team has a live game"
+        ]
+      },
+      "testId": "TC-003: MIG Display During Live Game"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-004",
+        "description": "Folder: Team Page/Date Bar\nPlatforms: iOS, Android",
+        "labels": [
+          "team-page",
+          "android",
+          "navigation",
+          "TC-004: MIG Calendar Navigation",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "date-bar",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "View MIG section",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Swipe left/right on calendar bar &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Calendar scrolls smoothly",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Tap on different game dates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Selected date highlights &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game card updates to show selected game",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-004: MIG Calendar Navigation"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-005",
+        "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1200, FRAMED-1222",
+        "labels": [
+          "jewel-event",
+          "all-star",
+          "team-page",
+          "android",
+          "TC-005: Home Run Derby Display",
+          "medium",
+          "ios",
+          "functional",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to team page during HRD period",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; HRD displays with &quot;HRD&quot; text and start time &nbsp;&nbsp;&nbsp;&nbsp;&rarr; HRD logo shows when active &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Where to watch details visible",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "HRD is scheduled"
+        ]
+      },
+      "testId": "TC-005: Home Run Derby Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-006",
+        "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android",
+        "labels": [
+          "team-page",
+          "android",
+          "TC-006: Article Carousel Navigation",
+          "navigation",
+          "content-display",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Scroll to Top Stories section",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Swipe through articles &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Carousel scrolls smoothly",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Tap on an article &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Article opens correctly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Images load properly",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-006: Article Carousel Navigation"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-007",
+        "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android",
+        "labels": [
+          "team-page",
+          "TC-007: Video Content Playback",
+          "android",
+          "content-display",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Scroll to video carousel",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Tap on a video &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Video player opens",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify playback controls &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Playback starts (if autoplay enabled) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Controls are accessible",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-007: Video Content Playback"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-008",
+        "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-871",
+        "labels": [
+          "team-page",
+          "android",
+          "content-display",
+          "medium",
+          "ios",
+          "functional",
+          "TC-008: Editorial Module Display",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check Top Stories section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Editorial feed displays (iOS) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Carousel displays (Android) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Content is team-specific",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-008: Editorial Module Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-009",
+        "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1107, FRAMED-1117",
+        "labels": [
+          "team-page",
+          "android",
+          "localization",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "TC-009: Spanish Language Support",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Open Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check all text elements &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All UI text in Spanish",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Tap on articles &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Articles load in Spanish",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check ticketing links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Links work correctly",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Device language set to Spanish"
+        ]
+      },
+      "testId": "TC-009: Spanish Language Support"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-010",
+        "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1176",
+        "labels": [
+          "team-page",
+          "TC-010: Japanese Language Support",
+          "android",
+          "localization",
+          "medium",
+          "ios",
+          "functional",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Open Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Verify MIG displays Japanese &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Content displays in Japanese",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Check all sections &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper character rendering &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct API calls with lang=ja",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Device language set to Japanese"
+        ]
+      },
+      "testId": "TC-010: Japanese Language Support"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-011",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+        "labels": [
+          "team-page",
+          "android",
+          "navigation",
+          "TC-011: Deep Link Navigation",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Close app",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Open team page deep link &nbsp;&nbsp;&nbsp;&nbsp;&rarr; App opens to correct team",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify correct team loads &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All sections load properly",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-011: Deep Link Navigation"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-012",
+        "description": "Folder: Team Page/Product Links\nPlatforms: iOS, Android\nRelated Issues: FRAMED-642",
+        "labels": [
+          "team-page",
+          "android",
+          "navigation",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "TC-012: Schedule Navigation",
+          "team_page",
+          "product-links",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Scroll to Team Info section",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Tap &quot;2025 Schedule&quot; &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Native schedule view opens",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Tap &quot;2024 Schedule &amp; Results&quot; &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct year displays",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-012: Schedule Navigation"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-013",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+        "labels": [
+          "TC-013: Page Load Performance",
+          "performance",
+          "team-page",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "smoke",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Force close app",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Open app and navigate to Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Measure load time &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Page loads within 3 seconds &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No visible lag or stuttering &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Images load progressively",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-013: Page Load Performance"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-014",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+        "labels": [
+          "performance",
+          "team-page",
+          "android",
+          "navigation",
+          "medium",
+          "ios",
+          "functional",
+          "team_page",
+          "TC-014: Team Switching Performance",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Switch between 5 different teams &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Each switch completes &lt; 2 seconds",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Monitor performance &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Previous team data clears &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No memory leaks",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-014: Team Switching Performance"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-015",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+        "labels": [
+          "TC-015: Offline Behavior",
+          "team-page",
+          "android",
+          "regression",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Enable airplane mode",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Open Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Appropriate error messages",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Try various actions &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Cached content displays if available &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No crashes",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-015: Offline Behavior"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-016",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android\nRelated Issues: FRAMED-728",
+        "labels": [
+          "team-page",
+          "android",
+          "regression",
+          "medium",
+          "ios",
+          "functional",
+          "TC-016: Invalid Team Data",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Athletics team page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Page loads without errors &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All modules display correctly",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-016: Invalid Team Data"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-017",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS (VoiceOver), Android (TalkBack)",
+        "labels": [
+          "team-page",
+          "android",
+          "accessibility",
+          "critical",
+          "ios",
+          "functional",
+          "talkback",
+          "high",
+          "voiceover",
+          "team_page",
+          "TC-017: Screen Reader Support",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Enable screen reader",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Navigate through Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All elements properly labeled",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Test all interactive elements &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Navigation order logical &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Actions announced correctly",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-017: Screen Reader Support"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-018",
+        "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android",
+        "labels": [
+          "TC-018: Dynamic Type Support",
+          "team-page",
+          "android",
+          "accessibility",
+          "medium",
+          "ios",
+          "functional",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Set device to largest text size",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Open Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Text scales appropriately",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Check all text elements &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No text truncation &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Layout remains functional",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-018: Dynamic Type Support"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-019",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+        "labels": [
+          "TC-019: Feature Parity Check",
+          "team-page",
+          "android",
+          "critical",
+          "cross-platform",
+          "functional",
+          "ios",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Open same team on both platforms",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Compare all sections &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Same sections present",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Test same actions &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Similar visual appearance &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Consistent behavior",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-019: Feature Parity Check"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-020",
+        "description": "Folder: Team Page/Matchup Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1078",
+        "labels": [
+          "ipad",
+          "team-page",
+          "matchup-display",
+          "android",
+          "TC-020: iPad MIG Layout",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Open Team Page on iPad",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG carousel &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Consistent card heights",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify card heights &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper spacing &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No layout issues",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-020: iPad MIG Layout"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-021",
+        "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+        "labels": [
+          "team-page",
+          "analytics",
+          "android",
+          "medium",
+          "ios",
+          "functional",
+          "TC-021: Event Tracking",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Open Charles Proxy",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Perform various actions &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Page view tracked",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify analytics calls &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Interactions logged &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct parameters sent",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-021: Event Tracking"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-022",
+        "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+        "labels": [
+          "jewel-event",
+          "TC-022: Opening Day Content Display",
+          "team-page",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "opening-day",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page on Opening Day",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG section for special branding &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Opening Day branding displays in MIG",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify content sections for Opening Day content &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special Opening Day content in carousels",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check for special badges or indicators &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Appropriate badges/styling applied &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Links to Opening Day promotions work",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Testing during Opening Day period"
+        ]
+      },
+      "testId": "TC-022: Opening Day Content Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-023",
+        "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+        "labels": [
+          "jewel-event",
+          "all-star",
+          "team-page",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "TC-023: All-Star Game Team Page Updates",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to any team page during All-Star break",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All-Star Game promotion visible",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify AL/NL All-Star team selections &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team's All-Star selections highlighted",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check for All-Star voting links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Voting links functional (if active) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special All-Star content in carousels",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Testing during All-Star period"
+        ]
+      },
+      "testId": "TC-023: All-Star Game Team Page Updates"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-024",
+        "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+        "labels": [
+          "jewel-event",
+          "team-page",
+          "TC-024: Postseason Team Page Display",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "postseason",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to playoff team's page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG for playoff games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Playoff games prominently displayed",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify playoff series information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Series status clearly shown",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check for elimination/advancement updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Next game information accurate &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Playoff-specific content in carousels",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Team qualified for postseason"
+        ]
+      },
+      "testId": "TC-024: Postseason Team Page Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-025",
+        "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+        "labels": [
+          "jewel-event",
+          "TC-025: World Series Team Page",
+          "team-page",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "world-series",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to World Series team page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Verify World Series branding &nbsp;&nbsp;&nbsp;&nbsp;&rarr; World Series branding prominent",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Check game information accuracy &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Series status and game info correct",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Test ticket/viewing links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special World Series content featured &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All links functional",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Team in World Series"
+        ]
+      },
+      "testId": "TC-025: World Series Team Page"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-026",
+        "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+        "labels": [
+          "jewel-event",
+          "team-page",
+          "spring-training",
+          "android",
+          "TC-026: Spring Training Team Page",
+          "medium",
+          "ios",
+          "functional",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page during ST",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG for ST games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; ST badge displays on games",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify split squad handling &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Split squad games clearly marked",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check venue information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct ST venue information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Roster updates reflected",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Spring Training period active"
+        ]
+      },
+      "testId": "TC-026: Spring Training Team Page"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-027",
+        "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+        "labels": [
+          "TC-027: International Series Team Display",
+          "jewel-event",
+          "international",
+          "team-page",
+          "android",
+          "medium",
+          "ios",
+          "functional",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to participating team page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG for international games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; International Series branding visible",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify special event branding &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct venue (London/Tokyo/etc)",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check timezone handling &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper timezone conversion &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special event content featured",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Team playing in International Series"
+        ]
+      },
+      "testId": "TC-027: International Series Team Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-028",
+        "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+        "labels": [
+          "jewel-event",
+          "team-page",
+          "android",
+          "medium",
+          "ios",
+          "functional",
+          "TC-028: Multiple Jewel Events Display",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "During All-Star week with HRD",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check Team Page MIG &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Both HRD and ASG display correctly",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify both events shown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Clear differentiation between events",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Test navigation between events &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Navigation works properly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No UI conflicts or overlaps",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Multiple jewel events active"
+        ]
+      },
+      "testId": "TC-028: Multiple Jewel Events Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-029",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "TC-029: Warmup State Display",
+          "game-state",
+          "preview-state",
+          "team-page",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page during warmup",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Warmup&quot; status clearly shown",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify countdown timer &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Countdown to first pitch displays",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check product links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No score shown yet &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Appropriate product links available",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Team has game in warmup state"
+        ]
+      },
+      "testId": "TC-029: Warmup State Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-030",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "game-state",
+          "delayed-state",
+          "team-page",
+          "TC-030: Rain Delay Handling",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page during delay",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG status display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Delayed&quot; status prominent",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify delay reason shown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Delay reason displayed",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Monitor for updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Current score preserved &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Updates when game resumes",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Game in rain delay"
+        ]
+      },
+      "testId": "TC-030: Rain Delay Handling"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-031",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "game-state",
+          "TC-031: Suspended Game With Resume Date",
+          "team-page",
+          "suspended-state",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check suspended game display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Suspended&quot; status clear",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify resume information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Resume date/time displayed",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check both original and resume dates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Score at suspension shown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Links to both game dates work",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Suspended game with scheduled resume"
+        ]
+      },
+      "testId": "TC-031: Suspended Game With Resume Date"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-032",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "TC-032: Manager Challenge State",
+          "game-state",
+          "team-page",
+          "live-state",
+          "android",
+          "medium",
+          "ios",
+          "functional",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate during manager challenge",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check MIG display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Challenge indicator visible",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify challenge indicator &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game paused status shown",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Monitor resolution &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Updates after decision &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Seamless return to play",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Live game with active challenge"
+        ]
+      },
+      "testId": "TC-032: Manager Challenge State"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-033",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "game-state",
+          "final-state",
+          "team-page",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "TC-033: Postponed Game Rescheduling",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check postponed game display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Postponed&quot; clearly shown",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify postponement reason &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Reason displayed (Rain, etc.)",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check for makeup date &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Makeup date if scheduled &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Ticket exchange info if available",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Recently postponed game"
+        ]
+      },
+      "testId": "TC-033: Postponed Game Rescheduling"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-034",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "game-state",
+          "final-state",
+          "team-page",
+          "android",
+          "ios",
+          "functional",
+          "TC-034: Forfeit Game Display",
+          "team_page",
+          "low",
+          "manual"
+        ],
+        "priority": "Low",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check forfeit game display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Forfeit&quot; status displayed",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify official score (9-0) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Official 9-0 score shown",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Check forfeit reason &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Forfeit reason provided &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Historical context available",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Forfeit game (rare)"
+        ]
+      },
+      "testId": "TC-034: Forfeit Game Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-035",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "TC-035: Game State Transition Timing",
+          "game-state",
+          "team-page",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "state-transition",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Monitor preview game approaching start &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Smooth state transitions",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Observe transition to warmup &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No stuck states",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Watch warmup to live transition &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Timely updates (&lt; 30s)",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Monitor final out to final state &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No data inconsistencies",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-035: Game State Transition Timing"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-036",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "game-state",
+          "team-page",
+          "android",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "TC-036: Double Header Game State Display",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check both games display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Both games clearly separated",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify different states &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game 1/Game 2 indicators",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Test switching between games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Independent state tracking &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper time display for each",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Team playing doubleheader"
+        ]
+      },
+      "testId": "TC-036: Double Header Game State Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-037",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "game-state",
+          "TC-037: Extra Innings State Display",
+          "team-page",
+          "live-state",
+          "android",
+          "medium",
+          "ios",
+          "functional",
+          "team_page",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check inning display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Extra inning number shown",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify free runner indicators &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Free runner rule applied",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Monitor score updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper score tracking &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No display issues with 10+ innings",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Game in extra innings"
+        ]
+      },
+      "testId": "TC-037: Extra Innings State Display"
+    },
+    {
+      "testInfo": {
+        "summary": "TC-038",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "game-state",
+          "team-page",
+          "android",
+          "TC-038: Game State Error Recovery",
+          "regression",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "team_page",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Force app to background during live game",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Wait 5 minutes",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Return to Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Current game state loads",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Verify correct state displays &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No stuck on old state &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Score updates properly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Smooth recovery process",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": []
+      },
+      "testId": "TC-038: Game State Error Recovery"
+    }
+  ]
+}

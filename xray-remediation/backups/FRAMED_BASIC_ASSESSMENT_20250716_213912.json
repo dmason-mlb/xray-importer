@@ -1,0 +1,1922 @@
+{
+  "timestamp": "2025-07-16T21:39:12.404119",
+  "project": "FRAMED",
+  "raw_tests_data": {
+    "getTests": {
+      "total": 50,
+      "results": [
+        {
+          "issueId": "1158246",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1425",
+            "summary": "Comprehensive game state regression testing.",
+            "labels": [
+              "API-REG-003",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "regression",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158245",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1424",
+            "summary": "Comprehensive jewel event regression testing.",
+            "labels": [
+              "API-REG-002",
+              "api",
+              "cross_platform",
+              "high",
+              "jewel_event",
+              "regression",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158244",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1423",
+            "summary": "Verify previously fixed issues remain resolved.",
+            "labels": [
+              "API-REG-001",
+              "api",
+              "cross_platform",
+              "high",
+              "regression",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158243",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1422",
+            "summary": "Verify game state metadata completeness.",
+            "labels": [
+              "API-DATA-005",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158242",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1421",
+            "summary": "Verify jewel event metadata accuracy.",
+            "labels": [
+              "API-DATA-004",
+              "api",
+              "cross_platform",
+              "high",
+              "jewel_event",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158241",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1420",
+            "summary": "Verify date/time format consistency.",
+            "labels": [
+              "API-DATA-003",
+              "api",
+              "cross_platform",
+              "high",
+              "localization",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158240",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1419",
+            "summary": "Verify image URLs are valid and secure.",
+            "labels": [
+              "API-DATA-002",
+              "api",
+              "cross_platform",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158239",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1418",
+            "summary": "Verify section ID format compliance.",
+            "labels": [
+              "API-DATA-001",
+              "api",
+              "cross_platform",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158238",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1417",
+            "summary": "Verify handling when Stats API is unavailable.",
+            "labels": [
+              "API-ERR-004",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158237",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1416",
+            "summary": "Verify fallback behavior when event service fails.",
+            "labels": [
+              "API-ERR-003",
+              "api",
+              "cross_platform",
+              "high",
+              "jewel_event",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158236",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1415",
+            "summary": "Verify handling of malformed requests.",
+            "labels": [
+              "API-ERR-002",
+              "api",
+              "cross_platform",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158235",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1414",
+            "summary": "Verify graceful handling of upstream service failures.",
+            "labels": [
+              "API-ERR-001",
+              "api",
+              "cross_platform",
+              "high",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158234",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1413",
+            "summary": "Verify input validation and sanitization.",
+            "labels": [
+              "API-SEC-002",
+              "api",
+              "cross_platform",
+              "high",
+              "parametrize",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158233",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1412",
+            "summary": "Verify public access is allowed without authentication.",
+            "labels": [
+              "API-SEC-001",
+              "api",
+              "cross_platform",
+              "low",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158232",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1411",
+            "summary": "Verify game state data source integration.",
+            "labels": [
+              "API-INT-004",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "integration",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158231",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1410",
+            "summary": "Verify jewel event data source integration.",
+            "labels": [
+              "API-INT-003",
+              "api",
+              "cross_platform",
+              "high",
+              "integration",
+              "jewel_event",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158230",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1409",
+            "summary": "Verify data freshness and updates.",
+            "labels": [
+              "API-INT-002",
+              "api",
+              "cross_platform",
+              "high",
+              "integration",
+              "live_state",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158229",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1408",
+            "summary": "Verify integration with upstream services.",
+            "labels": [
+              "API-INT-001",
+              "api",
+              "cross_platform",
+              "high",
+              "integration",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158228",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1407",
+            "summary": "Verify handling of multiple games in different states.",
+            "labels": [
+              "API-GS-010",
+              "api",
+              "cross_platform",
+              "game_state",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158227",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1406",
+            "summary": "Monitor state transitions and caching.",
+            "labels": [
+              "API-GS-009",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "performance",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158226",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1405",
+            "summary": "Verify postponed game state handling.",
+            "labels": [
+              "API-GS-008",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158225",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1404",
+            "summary": "Verify final game state handling.",
+            "labels": [
+              "API-GS-007",
+              "api",
+              "cross_platform",
+              "final_state",
+              "game_state",
+              "high",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158224",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1403",
+            "summary": "Verify suspended game state handling.",
+            "labels": [
+              "API-GS-006",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "suspended_state",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158223",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1402",
+            "summary": "Verify manager challenge state handling.",
+            "labels": [
+              "API-GS-005",
+              "api",
+              "cross_platform",
+              "game_state",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158222",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1401",
+            "summary": "Verify delayed game state handling.",
+            "labels": [
+              "API-GS-004",
+              "api",
+              "cross_platform",
+              "delayed_state",
+              "game_state",
+              "high",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158221",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1400",
+            "summary": "Verify live game state handling.",
+            "labels": [
+              "API-GS-003",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "live_state",
+              "requires_live_game",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158220",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1399",
+            "summary": "Verify warmup state game handling.",
+            "labels": [
+              "API-GS-002",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158219",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1398",
+            "summary": "Verify preview state game handling.",
+            "labels": [
+              "API-GS-001",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "preview_state",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158215",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1397",
+            "summary": "Verify offseason configuration and content.",
+            "labels": [
+              "API-011",
+              "api",
+              "cross_platform",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158214",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1396",
+            "summary": "Verify hide scores feature functionality.",
+            "labels": [
+              "API-010",
+              "api",
+              "cross_platform",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158213",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1395",
+            "summary": "Verify MIG carousel section structure and navigation.",
+            "labels": [
+              "API-009",
+              "api",
+              "cross_platform",
+              "medium",
+              "navigation",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158212",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1394",
+            "summary": "Verify MIG section behavior when no games are available.",
+            "labels": [
+              "API-008",
+              "api",
+              "cross_platform",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158211",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1393",
+            "summary": "Verify MIG section content for live games.",
+            "labels": [
+              "API-007",
+              "api",
+              "cross_platform",
+              "high",
+              "live_state",
+              "requires_live_game",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158210",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1392",
+            "summary": "Verify Japanese language support.",
+            "labels": [
+              "API-006",
+              "api",
+              "cross_platform",
+              "localization",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158209",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1391",
+            "summary": "Verify Spanish language support.",
+            "labels": [
+              "API-005",
+              "api",
+              "cross_platform",
+              "high",
+              "localization",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158208",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1390",
+            "summary": "Verify English language support.",
+            "labels": [
+              "API-004",
+              "api",
+              "cross_platform",
+              "high",
+              "localization",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158207",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1389",
+            "summary": "Verify that the API handles missing team IDs appropriately.",
+            "labels": [
+              "API-003",
+              "api",
+              "cross_platform",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158206",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1388",
+            "summary": "Verify that the API handles invalid team IDs appropriately.",
+            "labels": [
+              "API-003",
+              "api",
+              "cross_platform",
+              "medium",
+              "parametrize",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158205",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1387",
+            "summary": "Verify that all 30 teams return valid content.",
+            "labels": [
+              "API-002",
+              "api",
+              "critical",
+              "cross_platform",
+              "regression",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158204",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1386",
+            "summary": "Verify performance during live game state changes.",
+            "labels": [
+              "API-PERF-005",
+              "api",
+              "cross_platform",
+              "game_state",
+              "high",
+              "live_state",
+              "performance",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158201",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1385",
+            "summary": "Verify performance during jewel event periods.",
+            "labels": [
+              "API-PERF-004",
+              "api",
+              "cross_platform",
+              "high",
+              "jewel_event",
+              "opening_day",
+              "performance",
+              "postseason",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158199",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1384",
+            "summary": "Verify cache performance and headers.",
+            "labels": [
+              "API-PERF-003",
+              "api",
+              "cross_platform",
+              "medium",
+              "performance",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158196",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1383",
+            "summary": "Verify API handles concurrent requests properly.",
+            "labels": [
+              "API-PERF-002",
+              "api",
+              "cross_platform",
+              "high",
+              "performance",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158191",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1382",
+            "summary": "Verify International Series game handling.",
+            "labels": [
+              "API-JE-006",
+              "api",
+              "cross_platform",
+              "international",
+              "jewel_event",
+              "medium",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158188",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1381",
+            "summary": "Verify Spring Training game display.",
+            "labels": [
+              "API-JE-005",
+              "api",
+              "cross_platform",
+              "jewel_event",
+              "medium",
+              "spring_training",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158185",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1380",
+            "summary": "Verify World Series content and branding.",
+            "labels": [
+              "API-JE-004",
+              "api",
+              "cross_platform",
+              "high",
+              "jewel_event",
+              "team_page",
+              "world_series"
+            ]
+          }
+        },
+        {
+          "issueId": "1158183",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1379",
+            "summary": "Verify All-Star Game content in MIG section.",
+            "labels": [
+              "API-JE-002",
+              "all_star",
+              "api",
+              "cross_platform",
+              "high",
+              "jewel_event",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158180",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1378",
+            "summary": "Verify Opening Day special content.",
+            "labels": [
+              "API-JE-001",
+              "api",
+              "cross_platform",
+              "high",
+              "jewel_event",
+              "opening_day",
+              "team_page"
+            ]
+          }
+        },
+        {
+          "issueId": "1158119",
+          "testType": {
+            "name": "Generic"
+          },
+          "jira": {
+            "key": "FRAMED-1335",
+            "summary": "Test Connection Verification",
+            "labels": [
+              "api-test",
+              "connection-test"
+            ]
+          }
+        },
+        {
+          "issueId": "1149173",
+          "testType": {
+            "name": "Manual"
+          },
+          "jira": {
+            "key": "FRAMED-1294",
+            "summary": "Test Test",
+            "labels": []
+          }
+        }
+      ]
+    }
+  },
+  "raw_preconditions_data": {
+    "getPreconditions": {
+      "total": 42,
+      "results": [
+        {
+          "issueId": "1158177",
+          "jira": {
+            "key": "FRAMED-1377",
+            "summary": "Team Page Navigation"
+          }
+        },
+        {
+          "issueId": "1158175",
+          "jira": {
+            "key": "FRAMED-1376",
+            "summary": "MLB App Setup"
+          }
+        },
+        {
+          "issueId": "1158174",
+          "jira": {
+            "key": "FRAMED-1375",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158172",
+          "jira": {
+            "key": "FRAMED-1374",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158170",
+          "jira": {
+            "key": "FRAMED-1373",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158169",
+          "jira": {
+            "key": "FRAMED-1372",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158167",
+          "jira": {
+            "key": "FRAMED-1371",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158165",
+          "jira": {
+            "key": "FRAMED-1370",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158163",
+          "jira": {
+            "key": "FRAMED-1369",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158162",
+          "jira": {
+            "key": "FRAMED-1368",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158160",
+          "jira": {
+            "key": "FRAMED-1367",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158158",
+          "jira": {
+            "key": "FRAMED-1366",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158156",
+          "jira": {
+            "key": "FRAMED-1365",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158154",
+          "jira": {
+            "key": "FRAMED-1364",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158153",
+          "jira": {
+            "key": "FRAMED-1363",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158151",
+          "jira": {
+            "key": "FRAMED-1362",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158149",
+          "jira": {
+            "key": "FRAMED-1361",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158147",
+          "jira": {
+            "key": "FRAMED-1360",
+            "summary": "Precondition for Content Display"
+          }
+        },
+        {
+          "issueId": "1158146",
+          "jira": {
+            "key": "FRAMED-1359",
+            "summary": "Precondition for Content Display"
+          }
+        },
+        {
+          "issueId": "1158144",
+          "jira": {
+            "key": "FRAMED-1358",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158142",
+          "jira": {
+            "key": "FRAMED-1357",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158140",
+          "jira": {
+            "key": "FRAMED-1356",
+            "summary": "Precondition for Core Navigation"
+          }
+        },
+        {
+          "issueId": "1158139",
+          "jira": {
+            "key": "FRAMED-1355",
+            "summary": "Precondition for Core Navigation"
+          }
+        },
+        {
+          "issueId": "1158138",
+          "jira": {
+            "key": "FRAMED-1354",
+            "summary": "Team Page Navigation"
+          }
+        },
+        {
+          "issueId": "1158137",
+          "jira": {
+            "key": "FRAMED-1353",
+            "summary": "MLB App Setup"
+          }
+        },
+        {
+          "issueId": "1158136",
+          "jira": {
+            "key": "FRAMED-1352",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158135",
+          "jira": {
+            "key": "FRAMED-1351",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158134",
+          "jira": {
+            "key": "FRAMED-1350",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158133",
+          "jira": {
+            "key": "FRAMED-1349",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158132",
+          "jira": {
+            "key": "FRAMED-1348",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158131",
+          "jira": {
+            "key": "FRAMED-1347",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158130",
+          "jira": {
+            "key": "FRAMED-1346",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158129",
+          "jira": {
+            "key": "FRAMED-1345",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158128",
+          "jira": {
+            "key": "FRAMED-1344",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158127",
+          "jira": {
+            "key": "FRAMED-1343",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158126",
+          "jira": {
+            "key": "FRAMED-1342",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158125",
+          "jira": {
+            "key": "FRAMED-1341",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158124",
+          "jira": {
+            "key": "FRAMED-1340",
+            "summary": "Precondition for Content Display"
+          }
+        },
+        {
+          "issueId": "1158123",
+          "jira": {
+            "key": "FRAMED-1339",
+            "summary": "Precondition for Jewel Events"
+          }
+        },
+        {
+          "issueId": "1158122",
+          "jira": {
+            "key": "FRAMED-1338",
+            "summary": "Precondition for Game States"
+          }
+        },
+        {
+          "issueId": "1158121",
+          "jira": {
+            "key": "FRAMED-1337",
+            "summary": "Precondition for Core Navigation"
+          }
+        },
+        {
+          "issueId": "1158120",
+          "jira": {
+            "key": "FRAMED-1336",
+            "summary": "Precondition for Core Navigation"
+          }
+        }
+      ]
+    }
+  },
+  "analysis": {
+    "summary": {
+      "total_tests": 50,
+      "total_preconditions": 42,
+      "retrieved_tests": 50,
+      "retrieved_preconditions": 42
+    },
+    "tests": {
+      "by_type": {
+        "Generic": 49,
+        "Manual": 1
+      },
+      "api_tests": [
+        {
+          "issueId": "1158246",
+          "summary": "Comprehensive game state regression testing.",
+          "labels": [
+            "API-REG-003",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "regression",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158245",
+          "summary": "Comprehensive jewel event regression testing.",
+          "labels": [
+            "API-REG-002",
+            "api",
+            "cross_platform",
+            "high",
+            "jewel_event",
+            "regression",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158244",
+          "summary": "Verify previously fixed issues remain resolved.",
+          "labels": [
+            "API-REG-001",
+            "api",
+            "cross_platform",
+            "high",
+            "regression",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158243",
+          "summary": "Verify game state metadata completeness.",
+          "labels": [
+            "API-DATA-005",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158242",
+          "summary": "Verify jewel event metadata accuracy.",
+          "labels": [
+            "API-DATA-004",
+            "api",
+            "cross_platform",
+            "high",
+            "jewel_event",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158241",
+          "summary": "Verify date/time format consistency.",
+          "labels": [
+            "API-DATA-003",
+            "api",
+            "cross_platform",
+            "high",
+            "localization",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158240",
+          "summary": "Verify image URLs are valid and secure.",
+          "labels": [
+            "API-DATA-002",
+            "api",
+            "cross_platform",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158239",
+          "summary": "Verify section ID format compliance.",
+          "labels": [
+            "API-DATA-001",
+            "api",
+            "cross_platform",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158238",
+          "summary": "Verify handling when Stats API is unavailable.",
+          "labels": [
+            "API-ERR-004",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158237",
+          "summary": "Verify fallback behavior when event service fails.",
+          "labels": [
+            "API-ERR-003",
+            "api",
+            "cross_platform",
+            "high",
+            "jewel_event",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158236",
+          "summary": "Verify handling of malformed requests.",
+          "labels": [
+            "API-ERR-002",
+            "api",
+            "cross_platform",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158235",
+          "summary": "Verify graceful handling of upstream service failures.",
+          "labels": [
+            "API-ERR-001",
+            "api",
+            "cross_platform",
+            "high",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158234",
+          "summary": "Verify input validation and sanitization.",
+          "labels": [
+            "API-SEC-002",
+            "api",
+            "cross_platform",
+            "high",
+            "parametrize",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158233",
+          "summary": "Verify public access is allowed without authentication.",
+          "labels": [
+            "API-SEC-001",
+            "api",
+            "cross_platform",
+            "low",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158232",
+          "summary": "Verify game state data source integration.",
+          "labels": [
+            "API-INT-004",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "integration",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158231",
+          "summary": "Verify jewel event data source integration.",
+          "labels": [
+            "API-INT-003",
+            "api",
+            "cross_platform",
+            "high",
+            "integration",
+            "jewel_event",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158230",
+          "summary": "Verify data freshness and updates.",
+          "labels": [
+            "API-INT-002",
+            "api",
+            "cross_platform",
+            "high",
+            "integration",
+            "live_state",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158229",
+          "summary": "Verify integration with upstream services.",
+          "labels": [
+            "API-INT-001",
+            "api",
+            "cross_platform",
+            "high",
+            "integration",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158228",
+          "summary": "Verify handling of multiple games in different states.",
+          "labels": [
+            "API-GS-010",
+            "api",
+            "cross_platform",
+            "game_state",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158227",
+          "summary": "Monitor state transitions and caching.",
+          "labels": [
+            "API-GS-009",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "performance",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158226",
+          "summary": "Verify postponed game state handling.",
+          "labels": [
+            "API-GS-008",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158225",
+          "summary": "Verify final game state handling.",
+          "labels": [
+            "API-GS-007",
+            "api",
+            "cross_platform",
+            "final_state",
+            "game_state",
+            "high",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158224",
+          "summary": "Verify suspended game state handling.",
+          "labels": [
+            "API-GS-006",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "suspended_state",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158223",
+          "summary": "Verify manager challenge state handling.",
+          "labels": [
+            "API-GS-005",
+            "api",
+            "cross_platform",
+            "game_state",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158222",
+          "summary": "Verify delayed game state handling.",
+          "labels": [
+            "API-GS-004",
+            "api",
+            "cross_platform",
+            "delayed_state",
+            "game_state",
+            "high",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158221",
+          "summary": "Verify live game state handling.",
+          "labels": [
+            "API-GS-003",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "live_state",
+            "requires_live_game",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158220",
+          "summary": "Verify warmup state game handling.",
+          "labels": [
+            "API-GS-002",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158219",
+          "summary": "Verify preview state game handling.",
+          "labels": [
+            "API-GS-001",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "preview_state",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158215",
+          "summary": "Verify offseason configuration and content.",
+          "labels": [
+            "API-011",
+            "api",
+            "cross_platform",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158214",
+          "summary": "Verify hide scores feature functionality.",
+          "labels": [
+            "API-010",
+            "api",
+            "cross_platform",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158213",
+          "summary": "Verify MIG carousel section structure and navigation.",
+          "labels": [
+            "API-009",
+            "api",
+            "cross_platform",
+            "medium",
+            "navigation",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158212",
+          "summary": "Verify MIG section behavior when no games are available.",
+          "labels": [
+            "API-008",
+            "api",
+            "cross_platform",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158211",
+          "summary": "Verify MIG section content for live games.",
+          "labels": [
+            "API-007",
+            "api",
+            "cross_platform",
+            "high",
+            "live_state",
+            "requires_live_game",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158210",
+          "summary": "Verify Japanese language support.",
+          "labels": [
+            "API-006",
+            "api",
+            "cross_platform",
+            "localization",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158209",
+          "summary": "Verify Spanish language support.",
+          "labels": [
+            "API-005",
+            "api",
+            "cross_platform",
+            "high",
+            "localization",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158208",
+          "summary": "Verify English language support.",
+          "labels": [
+            "API-004",
+            "api",
+            "cross_platform",
+            "high",
+            "localization",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158207",
+          "summary": "Verify that the API handles missing team IDs appropriately.",
+          "labels": [
+            "API-003",
+            "api",
+            "cross_platform",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158206",
+          "summary": "Verify that the API handles invalid team IDs appropriately.",
+          "labels": [
+            "API-003",
+            "api",
+            "cross_platform",
+            "medium",
+            "parametrize",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158205",
+          "summary": "Verify that all 30 teams return valid content.",
+          "labels": [
+            "API-002",
+            "api",
+            "critical",
+            "cross_platform",
+            "regression",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158204",
+          "summary": "Verify performance during live game state changes.",
+          "labels": [
+            "API-PERF-005",
+            "api",
+            "cross_platform",
+            "game_state",
+            "high",
+            "live_state",
+            "performance",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158201",
+          "summary": "Verify performance during jewel event periods.",
+          "labels": [
+            "API-PERF-004",
+            "api",
+            "cross_platform",
+            "high",
+            "jewel_event",
+            "opening_day",
+            "performance",
+            "postseason",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158199",
+          "summary": "Verify cache performance and headers.",
+          "labels": [
+            "API-PERF-003",
+            "api",
+            "cross_platform",
+            "medium",
+            "performance",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158196",
+          "summary": "Verify API handles concurrent requests properly.",
+          "labels": [
+            "API-PERF-002",
+            "api",
+            "cross_platform",
+            "high",
+            "performance",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158191",
+          "summary": "Verify International Series game handling.",
+          "labels": [
+            "API-JE-006",
+            "api",
+            "cross_platform",
+            "international",
+            "jewel_event",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158188",
+          "summary": "Verify Spring Training game display.",
+          "labels": [
+            "API-JE-005",
+            "api",
+            "cross_platform",
+            "jewel_event",
+            "medium",
+            "spring_training",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158185",
+          "summary": "Verify World Series content and branding.",
+          "labels": [
+            "API-JE-004",
+            "api",
+            "cross_platform",
+            "high",
+            "jewel_event",
+            "team_page",
+            "world_series"
+          ]
+        },
+        {
+          "issueId": "1158183",
+          "summary": "Verify All-Star Game content in MIG section.",
+          "labels": [
+            "API-JE-002",
+            "all_star",
+            "api",
+            "cross_platform",
+            "high",
+            "jewel_event",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158180",
+          "summary": "Verify Opening Day special content.",
+          "labels": [
+            "API-JE-001",
+            "api",
+            "cross_platform",
+            "high",
+            "jewel_event",
+            "opening_day",
+            "team_page"
+          ]
+        },
+        {
+          "issueId": "1158119",
+          "summary": "Test Connection Verification",
+          "labels": [
+            "api-test",
+            "connection-test"
+          ]
+        }
+      ],
+      "functional_tests": [],
+      "with_tc_labels": [],
+      "with_lowercase_labels": []
+    },
+    "labels": {
+      "all_unique": [
+        "world_series",
+        "API-REG-001",
+        "API-GS-007",
+        "API-GS-010",
+        "international",
+        "API-009",
+        "API-PERF-003",
+        "team_page",
+        "api",
+        "API-GS-001",
+        "API-010",
+        "navigation",
+        "API-GS-006",
+        "api-test",
+        "API-INT-002",
+        "API-DATA-004",
+        "API-005",
+        "suspended_state",
+        "API-GS-004",
+        "API-JE-006",
+        "API-GS-009",
+        "connection-test",
+        "all_star",
+        "API-SEC-002",
+        "API-DATA-005",
+        "final_state",
+        "delayed_state",
+        "API-ERR-004",
+        "low",
+        "API-JE-004",
+        "API-DATA-002",
+        "parametrize",
+        "API-JE-005",
+        "API-GS-003",
+        "regression",
+        "API-DATA-003",
+        "integration",
+        "API-002",
+        "API-ERR-003",
+        "API-ERR-001",
+        "live_state",
+        "postseason",
+        "jewel_event",
+        "API-INT-001",
+        "API-JE-002",
+        "localization",
+        "API-GS-002",
+        "API-JE-001",
+        "API-REG-003",
+        "API-INT-004",
+        "API-007",
+        "medium",
+        "API-006",
+        "API-004",
+        "API-008",
+        "API-SEC-001",
+        "preview_state",
+        "API-011",
+        "API-003",
+        "requires_live_game",
+        "critical",
+        "cross_platform",
+        "API-PERF-005",
+        "API-ERR-002",
+        "game_state",
+        "API-DATA-001",
+        "performance",
+        "API-GS-005",
+        "API-PERF-002",
+        "high",
+        "API-INT-003",
+        "API-GS-008",
+        "API-PERF-004",
+        "spring_training",
+        "opening_day",
+        "API-REG-002"
+      ],
+      "inappropriate_tc": [],
+      "lowercase": []
+    },
+    "issues": {
+      "standalone_preconditions": 34,
+      "tc_label_issues_sample": 0,
+      "tc_label_issues_estimated": 0,
+      "lowercase_label_issues_sample": 0,
+      "lowercase_label_issues_estimated": 0,
+      "missing_functional_tests": 38
+    }
+  }
+}

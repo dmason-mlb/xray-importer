@@ -25,9 +25,9 @@ This repository contains implementation tools, scripts, and data files for SDUI-
 - `xray_graphql_mutations_documentation.md` - Detailed mutation documentation
 
 ### Implementation Scripts
-- `fetch_all_tests.py` - Retrieve all tests from Xray
+- `xray-filtering-and-modding/fetch_all_xray_tests.py` - Retrieve all tests from Xray with comprehensive error handling
 - `update_xray_tests.py` - Bulk update test operations
-- `get_test_set_tests.py` - Test set management utilities
+- `get_all_test_set_tests.py` - Test set management utilities with pagination
 - `transform_tests.py` - Data transformation tools
 - `validate_tests.py` - Test validation utilities
 

@@ -1,0 +1,264 @@
+{
+  "Simple test count": {
+    "getTests": {
+      "total": 17239
+    }
+  },
+  "Tests in FRAMED project": {
+    "getTests": {
+      "total": 50,
+      "results": [
+        {
+          "issueId": "1158246"
+        },
+        {
+          "issueId": "1158245"
+        },
+        {
+          "issueId": "1158244"
+        },
+        {
+          "issueId": "1158243"
+        },
+        {
+          "issueId": "1158242"
+        }
+      ]
+    }
+  },
+  "Tests with issuetype": {
+    "getTests": {
+      "total": 0,
+      "results": []
+    }
+  },
+  "All tests (any project)": {
+    "getTests": {
+      "total": 17239,
+      "results": [
+        {
+          "issueId": "1158047",
+          "jira": {
+            "key": "WSTE-620",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        },
+        {
+          "issueId": "1158046",
+          "jira": {
+            "key": "WSTE-619",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        },
+        {
+          "issueId": "1158032",
+          "jira": {
+            "key": "WSTE-618",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        },
+        {
+          "issueId": "1158030",
+          "jira": {
+            "key": "WSTE-617",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        },
+        {
+          "issueId": "1158020",
+          "jira": {
+            "key": "WSTE-616",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        },
+        {
+          "issueId": "1147575",
+          "jira": {
+            "key": "WSTE-607",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        },
+        {
+          "issueId": "1147571",
+          "jira": {
+            "key": "WSTE-606",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        },
+        {
+          "issueId": "1147570",
+          "jira": {
+            "key": "WSTE-605",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        },
+        {
+          "issueId": "1147452",
+          "jira": {
+            "key": "WSTE-604",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        },
+        {
+          "issueId": "1136088",
+          "jira": {
+            "key": "WSTE-596",
+            "project": {
+              "self": "https://baseball.atlassian.net/rest/api/2/project/26484",
+              "id": "26484",
+              "key": "WSTE",
+              "name": "Webstream TE (WEBTV)",
+              "projectTypeKey": "software",
+              "simplified": true,
+              "avatarUrls": {
+                "48x48": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823",
+                "24x24": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=small",
+                "16x16": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=xsmall",
+                "32x32": "https://baseball.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/25823?size=medium"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "Preconditions in FRAMED": {
+    "getPreconditions": {
+      "total": 42,
+      "results": [
+        {
+          "issueId": "1158177"
+        },
+        {
+          "issueId": "1158175"
+        },
+        {
+          "issueId": "1158174"
+        },
+        {
+          "issueId": "1158172"
+        },
+        {
+          "issueId": "1158170"
+        }
+      ]
+    }
+  }
+}
