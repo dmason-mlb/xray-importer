@@ -1,0 +1,4116 @@
+[
+  {
+    "key": "MLBMOB-1541",
+    "summary": "Copy",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e5b6a124-d17c-4c4f-95b3-cae22ff482d8",
+        "data": "WHEN\r\n\r\n1. The user navigates down to the Contact Support option",
+        "action": "GIVEN\r\n\r\n1. The user has navigated to the Settings section",
+        "result": "THEN\r\n\r\n1. The user should observe the following copy:\r\n\r\n\"Have questions? For in-game support, please visit us on the web at mlb.tv/support.\""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1540",
+    "summary": "Copy",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "2ee6961c-04f3-4223-a56c-9ebc295ad301",
+        "data": "WHEN\r\n\r\n1. The user navigates down to the Terms of Service option",
+        "action": "GIVEN\r\n\r\n1. The user has navigated to the Settings section",
+        "result": "THEN\r\n\r\n1. The user will observe the following copy:\r\n\r\n\"For Terms of Service, please visit mlb.com/tou\r\n\r\nFor Privacy Policy, please visit mlb.com/privacy\r\n\r\nPlease visit mlb.com/do-not-sell-or-share-my-personal-data to opt out of targeted advertising and tracking.\""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1539",
+    "summary": "Messaging - Unsuccessful",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "635f90c0-a0d0-4477-b074-4907db65d164",
+        "data": "WHEN\r\n\r\n1. The user selects \"Restore Purchase\"",
+        "action": "GIVEN\r\n\r\n1. The user navigates to the Settings page\r\n\r\nAND\r\n\r\n1. The user does not have an active subscription linked to their Apple ID",
+        "result": "THEN\r\n\r\n1. The user will receive a message stating \"Restore Failed\" and \"Unable to restore existing subscription.\"\r\n\r\nAND\r\n\r\n1. Selecting \"Okay\" will navigate the user back to the settings page"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1538",
+    "summary": "Messaging - Success",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6ff8bc7e-39a8-43a6-a715-227ce8f99d62",
+        "data": "WHEN\r\n\r\n1. The user selects \"Restore Purchase\"",
+        "action": "GIVEN\r\n\r\n1. The user navigates to the Settings page\r\n\r\nAND\r\n\r\n1. The user has an active MLB.tv subscription linked to their Apple ID or linked MLB account",
+        "result": "THEN\r\n\r\n1. A message stating a Successful purchase will be displayed\r\n\r\nAND\r\n\r\n1. The copy will read, \"Success\" and \"Existing subscription has been restored.\""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1537",
+    "summary": "Favorited Team Background",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "d1daf1a9-dd5d-4002-a1bc-cf0b8ac46ebe",
+        "data": "WHEN\r\n\r\n1. Utilizing the MLB.TV page with a favorited team",
+        "action": "GIVEN\r\n\r\n1. The user has favorited a team\r\n\r\nAND\r\n\r\n1. The user selects Get MLB.TV in the settings menu",
+        "result": "THEN\r\n\r\n1. The background image will be team-specific\r\n\r\nAND\r\n\r\n1. The background will match the image from Settings"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1536",
+    "summary": "Explore Free Content",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6cd5486f-e0b9-4caa-8391-6f64cb9c5b23",
+        "data": "WHEN\r\n\r\n1. The user selects the Explore Free Content option",
+        "action": "GIVEN\r\n\r\n1. The user navigates to the Settings page\r\n\r\nAND\r\n\r\n1. The user selects the Get MLB.TV option",
+        "result": "THEN\r\n\r\n1. The user will be sent back to the Get MLB.TV option on the settings page\r\n\r\nAND\r\n\r\n1. The user can navigate the app or re-launch the Get MLB.TV page"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1535",
+    "summary": "Browse Subscriptions",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "dbb3d411-8b75-4d17-bd9f-55a93993d91c",
+        "data": "WHEN\r\n\r\n1. The user selects the Browse Subscriptions button",
+        "action": "GIVEN\r\n\r\n1. The user navigates to the Settings page\r\n\r\nAND\r\n\r\n1. The user selects the Get MLB.TV option",
+        "result": "THEN\r\n\r\n1. The user will be able to review the various streaming subscriptions offered"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1534",
+    "summary": "Page Copy",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6f819218-61ad-4e29-9e25-fa5fc00b88a5",
+        "data": "WHEN\r\n\r\n1. The Get MLB.TV page is displayed",
+        "action": "GIVEN \r\n\r\n1. The user navigates to the Settings page\r\n\r\nAND\r\n\r\n1. The user selects the Get MLB.TV option",
+        "result": "THEN\r\n\r\n1. The MLB Logo will be displayed in the top-left\r\n\r\nAND\r\n\r\n1. \"Create an MLB Account\" copy will be displayed above \"Watch the MLB.TV Free Game of the Day.\" copy\r\n\r\nAND\r\n\r\n1. \"Browse Subscriptions\" and \"Explore Free Content\" buttons will be available to select\r\n\r\nAND\r\n\r\n1. \"Blackout and other restrictions apply. Visit mlb.com/appletv to learn more.\" copy will be displayed in the bottom-center of the page"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1533",
+    "summary": "Hide Spoilers Enabled and Games Page",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e01168cb-44b6-429b-abc8-e6c89a289dae",
+        "data": "WHEN\r\n\r\n+ The user navigates to the Games page from the top navigation menu",
+        "action": "GIVEN\r\n\r\n+ The user is viewing the Settings page from the top navigation menu\r\n\r\nAND\r\n\r\n+ The user enables Hide Spoilers, displaying \"On\"",
+        "result": "THEN\r\n\r\n+  Game tiles will hide all game state information entirely by displaying \"Hide Spoilers On\" in the tile \r\n\r\nAND\r\n\r\n+ \"Live\" and \"Final\" copy will remain visible for users"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1532",
+    "summary": "Hide Spoilers Enabled and Home Page",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "7dc2b497-7a3f-464c-9b10-4189cb673a11",
+        "data": "WHEN\r\n\r\n+ The user navigates to the Home page from the top navigation menu",
+        "action": "GIVEN\r\n\r\n+ The user is viewing the Settings page from the top navigation menu\r\n\r\nAND\r\n\r\n+ The user enables Hide Spoilers, displaying \"On\"",
+        "result": "THEN\r\n\r\n+ Specific carousels such as \"Most Popular\", \"In-Season MLB Highlights\", and more will be hidden from view to avoid spoilers\r\n\r\nAND\r\n\r\n+ Scores and game states in the games carousel and Hero will be hidden as well"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1531",
+    "summary": "Hide Spoilers Off",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "cc9c1d2a-e6bf-49e8-b05b-382a085d64c9",
+        "data": "WHEN\r\n\r\n+ The Hide Spoilers option displays \"On\"\r\n\r\nAND\r\n\r\n+ The user selects the Hide Spoilers option",
+        "action": "GIVEN\r\n\r\n+ The user is viewing the Settings page from the top navigation menu",
+        "result": "THEN\r\n\r\n+ The Hide Spoilers option will now display \"Off\""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1530",
+    "summary": "Hide Spoilers Enabled",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "a253da42-254d-4acd-b4aa-7baa52352805",
+        "data": "WHEN\r\n\r\n+ \"Off\" is displayed next to Hide Spoilers \r\n\r\nAND\r\n\r\n+ The user selects the Hide Spoilers option from the list",
+        "action": "GIVEN\r\n\r\n+ The user is viewing the Settings page from the top navigation menu",
+        "result": "THEN\r\n\r\n+ Once selected, the Hide Spoilers option will now display \"On\" and be enabled"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1529",
+    "summary": "Skip Option",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "18a3b804-5601-465f-b97c-c48fed7e0d02",
+        "data": "WHEN\r\n\r\n+ Selecting Done at the bottom-right of the page",
+        "action": "GIVEN\r\n\r\n+ The user is navigating the favorited team page\r\n\r\nAND\r\n\r\n+ The user does not want to favorite any specific team by not selecting a tile",
+        "result": "THEN\r\n\r\n+ No favorited team will save and the user will see default page backgrounds\r\n\r\nAND\r\n\r\n+ Sorting logic and carousels will not display changes for a team"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1528",
+    "summary": "Selecting a Team",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "a381aca0-6b7d-4b71-86e6-4de234fb04dc",
+        "data": "WHEN\r\n\r\n+ The user selects done at the bottom-right of the page",
+        "action": "GIVEN\r\n\r\n+ The user has focused on a team tile\r\n\r\nAND\r\n\r\n+ Selects the desired team to favorite",
+        "result": "THEN\r\n\r\n+ The expected team will save as the user's favorite\r\n\r\nAND\r\n\r\n+ The Home, Games pages will respect the changes by updating favorited logic (Prioritize in carousels, sorting)\r\n\r\nAND\r\n\r\n+ Page background images will update"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1527",
+    "summary": "Leagues and Teams",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "77aa4e68-6010-4814-95f4-09489696e5af",
+        "data": "WHEN \r\n\r\n+ The user selects the Favorite Team option in the list",
+        "action": "GIVEN\r\n\r\n+ The user has navigated to the Settings page of the app",
+        "result": "THEN\r\n\r\n+ The user will be navigated to the Favorite Team selection page\r\n\r\nAND\r\n\r\n+ The labels for the American League with divisions and teams will be displayed on the left\r\n\r\nAND\r\n\r\n+ The labels for the National League with divisions and teams will be displayed on the right\r\n\r\nAND\r\n\r\n+ The correct logos will be displayed for all 30 teams"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1526",
+    "summary": "Sign In Page",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "22ce90f4-0660-41fa-b43e-d6b7776c4cad",
+        "data": "WHEN\r\n\r\n+ The user selects \"Log In\"",
+        "action": "GIVEN\r\n\r\n+ The user is logged out of the MLB app\r\n\r\nAND\r\n\r\n+ The user has navigated to the Settings page",
+        "result": "THEN\r\n\r\n+ The user can sign into their account with their apple device, manually on the tvOS app, and restore purchase."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1525",
+    "summary": "User Keeps Full Access",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "8c8f5d0a-84d6-411b-b677-88149064df00",
+        "data": "WHEN the user decides to not follow through with the account removal process",
+        "action": "GIVEN the user taps on the \"Close MLB Account\" option at the bottom of the settings page",
+        "result": "THEN the user will still have full access to the MLB tvOS app and it's features"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1524",
+    "summary": "Email Confirmation Message EN/ES",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "bde729b5-7576-46f6-bb60-9fee604cb78f",
+        "data": "WHEN the user selects \"Close MLB account\" at the bottom of the settings page",
+        "action": "GIVEN the user navigates to the settings page\r\nAND the user is signed into their account",
+        "result": "THEN the user will receive this message in EN: \u201cThe procescs to close your MLB Account has been initiated. Please check your email for more information.\u201d \r\n\r\nAND this message in ES: \u201cSe ha iniciado el proceso para cerrar su Cuenta MLB. Por favor revise su correo electr\u00f3nico para m\u00e1s informaci\u00f3n\u201d"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1523",
+    "summary": "Settings - Selecting Close MLB Account Email Messaging",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "cd5f96b9-d3d4-41b8-b625-25d51b6044aa",
+        "data": "WHEN the user selects \"Close MLB Account\" on the settings page",
+        "action": "GIVEN the user navigates to the settings page\r\nAND the user is signed into their account",
+        "result": "THEN the user will receive a message kickstarting the account removal process"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1522",
+    "summary": "Settings - Close MLB Account Option",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "c23762d1-52d7-4f6d-a24a-0aae8f384223",
+        "data": "WHEN the user views the settings options",
+        "action": "GIVEN the user navigates to the settings page\r\nAND the user is signed into their account",
+        "result": "THEN \"Close MLB Account\" will be displayed at the bottom of the page"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1521",
+    "summary": "Settings - Logged In User",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "2e6e1803-41a8-43ff-89bc-f62fde657ed5",
+        "data": "WHEN the user Logs into their account",
+        "action": "GIVEN the user navigates to the settings page",
+        "result": "THEN \"Close MLB Account\" will be displayed at the bottom of the settings page. \r\nAND the option will not be visible if the user is signed out"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1570",
+    "summary": "Sunday Night Baseball",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "2c3d2b83-8bef-4ba1-bc39-f6fe311655ba",
+        "data": "WHEN\r\n\r\n1. The user attempts to launch the Sunday Night Baseball game",
+        "action": "GIVEN\r\n\r\n1. A game is broadcasted on Sunday Night Baseball\r\n\r\nAND\r\n\r\n1. The user is logged into an account overridden to an international time zone. \r\n\r\nZones: \r\n\r\n\u201cAfrica\u201d: Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Comoros, The Republic of Congo, Cote d\u2019Ivoire, Democratic Republic of the Congo, Djibouti, Equatorial Guinea, Eritrea, Eswatini, Ethiopia, Gabon, Ghana, Guinea, Guinea Bissau, Kenya, Lesotho, Liberia, Madagascar, Malawi, Mali, Mayotte, Mozambique, Namibia, Niger, Nigeria, Reunion, Rwanda, Sao Tome & Principe, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, Sudan, Tanzania & Zanzibar, The Gambia, Togo, Uganda, Zambia and Zimbabwe\r\n\r\n\u201cCaribbean\u201d: Anguilla, Antigua and Barbuda, Aruba, Bahamas, Barbados, Belize, Bermuda, Bonaire, British Virgin Islands, Cayman Islands, Curacao, Dominica, Dominican Republic, Falkland Islands, French Guiana, Grenada, Guadeloupe, Guyana, Haiti, Jamaica, Montserrat, Martinique, Saba, St. Barthelemy, St. Eustatius, St. Kitts and Nevis, St. Lucia, St. Martin, St. Vincent and the Grenadines, Saint Maarten, Suriname, Trinidad and Tobago, and Turks and Caicos Islands\r\n\r\nMexico\r\n\r\n\u201cCentral America\u201d: Belize, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua and Panama\r\n\r\n\u201cSouth America\u201d: Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Falkland Islands, French Guiana, Guyana, Paraguay, Peru, Surinam, Uruguay and Venezuela\r\n\r\n\u201cOceania\u201d shall mean Australia, New Zealand and the Pacific Islands\r\n\r\n\u201cPacific Islands\u201d shall mean Cook Islands, Fiji, French Polynesia, Kiribati, Marshall Islands, Micronesia, Niue, Palau Islands, Samoa, Solomon Islands, Tahiti, Tokelau, Tonga and Tuvalu\r\n\r\n\u201cIreland, Netherlands, & UK\u201d: England, Netherlands, Northern Ireland, Republic of Ireland, Scotland, and Wales",
+        "result": "THEN\r\n\r\n1. A blackout message should be displayed\r\n\r\nAND\r\n\r\n1. The user does not receive playback"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1569",
+    "summary": "Apple TV",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "99ffe613-9e57-4468-9a20-f16618c0bb4e",
+        "data": "WHEN\r\n\r\n+ The user attempts to launch the stream",
+        "action": "GIVEN\r\n\r\n+ A game is broadcasted on Apple TV+ (Friday Night)\r\n\r\nAND\r\n\r\n+ The user is logged into an account overridden to an international time zone.",
+        "result": "THEN\r\n\r\n+ An Apple TV+ specific blackout message is displayed\r\n\r\nAND\r\n\r\n+ The user is unable to receive Apple TV+ playback"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1568",
+    "summary": "Blue Jays Regular Season",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "863fbe9e-4ddf-46b8-abfa-3ec1ff79bf44",
+        "data": "WHEN\r\n\r\n+ The user attempts to launch the Toronto Blue Jays game",
+        "action": "GIVEN\r\n\r\n+ The user is logged into an international account in Canada",
+        "result": "THEN\r\n\r\n+ The user will receive a blackout message"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1561",
+    "summary": "In-Market Club Team Entitlement- Not Blacked out",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "abd0b818-5bca-43a4-a638-6f17cb739dd6",
+        "data": null,
+        "action": "GIVEN\r\n\r\n+ a user with a single-team entitlement to one of the teams with in-market rights (COL, ARI, SD) \r\n\r\nAND\r\n\r\n+ the user is physically located (or spoofed to be located) in the single team's in-market location",
+        "result": null
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1559",
+    "summary": "Non-Entitled",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b0598c07-c3a9-438b-ae34-45741c3f069d",
+        "data": "WHEN\r\n\r\n+ Navigating to the game tile or watch button on the hero section for the FGOTD",
+        "action": "GIVEN\r\n\r\n+ The user is not logged into an account\r\n\r\nAND\r\n\r\n+ The user does not have a purchase linked to their Apple ID",
+        "result": "THEN\r\n\r\n+ The user will see a lock icon \r\n\r\nAND\r\n\r\n+ Cannot launch the free game"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1558",
+    "summary": "Archived FGOTD",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "998b7805-d580-4841-a9ca-662725b583f7",
+        "data": "WHEN\r\n\r\n+ Launching an archived FGOTD game from the Home or Games page",
+        "action": "GIVEN\r\n\r\n+ The user is logged into an account\r\n\r\nAND\r\n\r\n+ The account may have free, at bat, single team, mlball, executive entitlements",
+        "result": "THEN\r\n\r\n+ Playback will launch successfully"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1557",
+    "summary": "FGOTD Label",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "8fd8945c-7917-4950-9148-75e8699395ea",
+        "data": "WHEN\r\n\r\n+ Observing the game tile or hero section",
+        "action": "GIVEN \r\n\r\n+ The user has navigated to a game tile or hero section for the Free Game of the Day",
+        "result": "THEN\r\n\r\n+ The MLB.tv Free Game of the Day pill will be displayed at the bottom of the tile and under the team names in the hero image\r\n\r\nAND\r\n\r\n+ The pill will remain on past FGOTD tiles on the Games carousel and Games page"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1556",
+    "summary": "Validate playback 90 minutes after game",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b0e76019-ec32-45fa-b78a-7a3da0522d08",
+        "data": "WHEN\r\n\r\n+ The game has switched from Live to archive\r\n\r\nAND\r\n\r\n+ 90 minutes has passed \r\n\r\nAND\r\n\r\n+ The user attempts to launch the game",
+        "action": "GIVEN \r\n\r\n+ The user is blacked out from viewing a live game (with MVPD-auth required)",
+        "result": "THEN\r\n\r\n+ The game will successfully launch without an MVPD blackout message"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1555",
+    "summary": "Verify MVPD playback flow",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "13c186c2-156b-4f89-a6c1-30edcf81d6f9",
+        "data": "WHEN\r\n\r\n+ Attempting to launch content that requires an MVPD authentication (with MVPD pill)",
+        "action": "GIVEN\r\n\r\n+ The user does not have any MVPD entitlements linked to their account",
+        "result": "THEN\r\n\r\n+ The user will see the MVPD messaging prompt\r\n\r\nAND\r\n\r\n+ The copy will display copy on how to link their MLB.tv account to their TV provider"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1554",
+    "summary": "Verify Single-team Playback",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "d90ed582-5c6a-43f4-890d-a281086548f8",
+        "data": "WHEN\r\n\r\n+ Navigating to a live or archived game that includes their single-team credentials",
+        "action": "GIVEN\r\n\r\n+ The user has signed into a single-team user account",
+        "result": "THEN\r\n\r\n+ The user will receive successful playback of the broadcast for their single-team associated with their entitlements"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1553",
+    "summary": "Verify Yearly Playback",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "084de25b-57d6-40a8-9013-619a1ba4f517",
+        "data": "WHEN\r\n\r\n+ The user attempts to launch a live game that is not blacked out nationally or locally\r\n\r\nOR\r\n\r\n+ The user attempts to launch an archived game",
+        "action": "GIVEN\r\n\r\n+ The user has logged into an account with a yearly MLB.tv subscription",
+        "result": "THEN\r\n\r\n+ The user should receive successful playback in both scenarios"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1552",
+    "summary": "Verify Monthly Playback",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "1c68b2f9-177f-4536-b59a-27dee0553e19",
+        "data": "WHEN\r\n\r\n+ The user attempts to launch a live game that is not blacked out nationally or locally\r\n\r\nOR\r\n\r\n+ The user attempts to launch an archived game",
+        "action": "GIVEN\r\n\r\n+ The user has logged into an account with a monthly MLB.tv subscription",
+        "result": "THEN\r\n\r\n+ The user should receive successful playback in both scenarios"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1551",
+    "summary": "Executive Playback",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "652467a1-92db-4fcb-9e0c-3dc941be2ef1",
+        "data": "WHEN\r\n\r\n+ The user attempts to launch a game that is broadcasted in a blackout area\r\n\r\nOR \r\n\r\n+ The user attempts to launch a game that normally requires signing into an MVPD provider",
+        "action": "GIVEN \r\n\r\n+ The user is signed into their MLB app with an executive account (No blackouts, No MVPD required)",
+        "result": "THEN\r\n\r\n+ The user is able is receive playback without being blocked by a blackout message or MVPD sign-in modal."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1550",
+    "summary": "Lock Icon on Subscriber Content",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "a22282fb-815d-4209-89d7-a9fb7a1faf18",
+        "data": "WHEN\r\n\r\n+ The user observes a game tile or hero image for a live or archived game\r\n\r\nAND\r\n\r\n+ The user attempts to launch the content",
+        "action": "GIVEN\r\n\r\n+ A user is signed-in without entitlements",
+        "result": "THEN\r\n\r\n+ A lock icon is displayed on the game tile or hero\r\n\r\nAND\r\n\r\n+ The paywall is displayed after the user selects the content"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1549",
+    "summary": "Free Playback of VOD",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "354cf7fa-47df-4fe2-ae0d-9f9722fbc3b2",
+        "data": "WHEN\r\n\r\n+ The user attempts to launch VOD content within the app \r\n\r\nEx: Game Highlights",
+        "action": "GIVEN\r\n\r\n+ The user is signed into an account without any credentials",
+        "result": "THEN\r\n\r\n+ Playback is successful"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1578",
+    "summary": "Entitled User",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "ad4238f5-9bd3-4842-aef4-c172b899f20d",
+        "data": "WHEN\r\n\r\n+ The user launches a broadcast option from the feed selector once a game tile is selected",
+        "action": "GIVEN \r\n\r\n+ An entitled MLB.TV user has navigated to the feed picker for a live or archived game\r\n\r\nAND\r\n\r\n+ The user is not blacked out of viewing the game",
+        "result": "THEN\r\n\r\n+ Playback will begin from the live point (If user selects Watch Live from the feed picker)\r\n\r\nOR\r\n\r\n+ Playback will begin at the last watched point of the stream (If the user selects Resume from the feed picker)\r\n\r\nOR\r\n\r\n+ Playback will begin from the beginning of the stream (If the user selects Watch From The Beginning from the feed picker)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1577",
+    "summary": "Game Recap Launch",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "500acc38-af61-469d-806e-7371ef64f8b7",
+        "data": "WHEN\r\n\r\n+ The user selects the Game Recap option",
+        "action": "GIVEN\r\n\r\n+ An entitled or free user has navigated to the feed select menu by tapping on a game tile for an archived game",
+        "result": "THEN\r\n\r\n+ The game recap VOD will begin playback from the beginning\r\n\r\nAND\r\n\r\n+ The user is able to utilize player controls"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1576",
+    "summary": "Condensed Game Launch",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "23988ca0-b8c1-4e79-afb8-4ac4845ef5cc",
+        "data": "WHEN\r\n\r\n+ The Condensed Game option is launched (VOD)",
+        "action": "GIVEN\r\n\r\n+ An entitled or free user navigates to the feed picker menu when selecting a game tile for an archived game",
+        "result": "THEN\r\n\r\n+ A compact highlight VOD will begin playback from the start of the game\r\n\r\nAND\r\n\r\n+ The user is able to utilize player controls"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1575",
+    "summary": "Game in Preview State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "ba896442-7641-453a-92c4-c5c2af44030b",
+        "data": "WHEN\r\n\r\n+ The user selects the game tile from the Hero, Today on MLB.tv Carousel, and Games page",
+        "action": "GIVEN\r\n\r\n+ An entitled user views a game tile in the preview state (Broadcasts are not available yet)",
+        "result": "THEN\r\n\r\n+ A modal with broadcast options is displayed\r\n\r\nAND\r\n\r\n+ The broadcasts are not selectable/User cannot launch"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1574",
+    "summary": "Blackout Pill",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "0ef44424-1fea-4d2f-a12d-63f5e7a4f05d",
+        "data": "WHEN\r\n\r\nThe user selects the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN\r\n\r\nThe user is signed into an entitled account while in a location with a local, national, or international blackout",
+        "result": "THEN \r\n\r\nThe user will observe the blackout message stating the game is unavailable in their area"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1573",
+    "summary": "MVPD Pill",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "bedb34d9-c04a-484c-b0d3-f99d1869133c",
+        "data": "WHEN\r\n\r\nThe user selects the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN\r\n\r\nThe user is signed into an account that is not a free account (At Bat, Single Team, MLB All, Single Team + MLB.tv)\r\n\r\nAND \r\n\r\nA stream is available that requires the user to link their account and authenticate through MVPD",
+        "result": "THEN \r\n\r\nAn MVPD Required pill is displayed"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1572",
+    "summary": "Lock Icon",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "c95839fd-1bff-4c45-869e-621516629c57",
+        "data": "WHEN\r\n\r\n+ The user selects the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN \r\n\r\n+ The user is signed into an account that is not entitled to view one or both broadcast feeds",
+        "result": "THEN\r\n\r\n+ The lock icon will display on the broadcast option button that the user is unable to launch"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1571",
+    "summary": "Single team - In Market",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "58328c73-c11c-424c-bfac-7cad195469eb",
+        "data": "WHEN\r\n\r\n+ The user selects a game tile of a game in which their entitled single team is involved",
+        "action": "GIVEN\r\n\r\n+ A user with a single team in-market entitlement\r\nAND the user is physically located in the in-market region",
+        "result": "THEN\r\n\r\n+ The in-market feed should be selectable\r\n\r\nAND\r\n\r\n+ The in-market feed should be playable\r\n\r\n\r\nAND\r\n\r\n+ The other team's feed should have a lock icon"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1591",
+    "summary": "Confirm all remote gestures work as expected while in Gameday mode",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6a5e94cd-ece6-46e3-915d-a288547aeeaa",
+        "data": "WHEN\r\n\r\n+ The user is pressing and selecting the video player in Gameday mode by utilizing their remote's gestures",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app\r\n\r\nAND\r\n\r\n+ The user is utilizing Gameday mode",
+        "result": "THEN\r\n\r\n+ The buttons will work as expected"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1590",
+    "summary": "Confirm Details, Games, and Broadcast options DO NOT appear once in Gameday mode",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "3afc7299-f4b0-421e-90d3-beb909122ea8",
+        "data": "WHEN\r\n\r\n+ The user views the full video player experience",
+        "action": "GIVEN\r\n\r\n+ The user is utilizing Gameday mode",
+        "result": "THEN\r\n\r\n+ The user will NOT be able to utilize a drop-down option that includes Details, Games, and Broadcast options"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1589",
+    "summary": "Confirm innings markers will NOT appear on timeline once in Gameday mode",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "2f0d81dd-7fc1-4ea8-9fa7-d9471d861eeb",
+        "data": "WHEN\r\n\r\n+ The user views the timeline of the video player",
+        "action": "GIVEN\r\n\r\n+ The user is utilizing Gameday mode",
+        "result": "THEN\r\n\r\n+ The inning markers will NOT be displayed unless the user exits out of Gameday mode"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1588",
+    "summary": "Confirm Picture-in-Picture quick action button is NOT available",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "4d6b543d-1e0d-46ed-8e43-b93ec6fc55bf",
+        "data": "WHEN\r\n\r\n+ The user views the player controls",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app\r\n\r\nAND \r\n\r\n+ The user is utilizing Gameday mode",
+        "result": "THEN\r\n\r\n+ The PiP quick action button is NOT available\r\nAND only CC and Exit Gameday can be utilized"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1587",
+    "summary": "Confirm Closed Captions and Exit Gameday quick action buttons are available",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "86ac8d7d-4a14-484c-bc92-3a4334c5884c",
+        "data": "WHEN\r\n\r\n+ The user is viewing the player controls on the video player",
+        "action": "GIVEN \r\n\r\n+ The user has launched a game from their tvOS app\r\n\r\nAND\r\n\r\n+ The user is utilizing Gameday mode",
+        "result": "THEN \r\n\r\n+ The only quick action buttons that are available to be selected are Closed Captions (Enabled/Disabled) and Exit Gameday."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1586",
+    "summary": "User returns to full-screen when selecting the Exit Gameday quick action button",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6ecfb052-c573-4731-9443-6f2e320da84a",
+        "data": "WHEN\r\n\r\n+ The user taps the Exit Gameday quick action button on the video player",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app\r\n\r\nAND\r\n\r\n+ The user is utilizing Gameday mode\r\n\r\nAND \r\n\r\n+ The user has video controls up",
+        "result": "THEN\r\n\r\n+ The video will return to full-screen mode"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1585",
+    "summary": "Menu/Back button returns user to video player when controls are enabled",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "1a0d50f4-f6b7-4fc9-8f0b-82d9130beb1b",
+        "data": "WHEN\r\n\r\n+ The user is utilizing player controls on the video player (Gameday cannot be in focus)\r\n\r\nAND\r\n\r\n+ The user presses the Menu/Back button on their remote",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app\r\n\r\nAND \r\n\r\n+ The user is utilizing Gameday mode",
+        "result": "THEN\r\n\r\n+ The player controls will disappear\r\n\r\nAND \r\n\r\n+ Pressing the Menu/Back button again will return video back to full-screen"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1584",
+    "summary": "Video returns to fullscreen when pressing Menu/Back button",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "f8822993-e424-474d-b97b-5a04b8b73da3",
+        "data": "WHEN\r\n\r\n+ The user presses the Menu/Back button on their Apple TV remote (or phone application)",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app\r\n\r\nAND \r\n\r\n+ The user is utilizing Gameday mode",
+        "result": "THEN\r\n\r\n+ The user will exit Gameday mode and return to full-screen playback of the game"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1583",
+    "summary": "Confirm only five most recent plays display in carousel below video player",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "cc889677-9864-46c7-9adb-49526c8fdbb3",
+        "data": "WHEN\r\n\r\n+ The user navigates to the Gameday mode option on the video player AND views the recent plays carousel below the video player",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app",
+        "result": "THEN\r\n\r\n+ The user will only see the five most recent plays available to watch"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1582",
+    "summary": "Video player in focus when Gameday is active",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "21ad7928-4fe5-42e6-aca5-8650bb59af65",
+        "data": "WHEN\r\n\r\n+ The user navigates to the Gameday mode option on the video player",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app",
+        "result": "THEN \r\n\r\n+ Only the video player will be in focus when Gameday mode is active"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1581",
+    "summary": "Metadata is view only and cannot be in focus",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "643b7cd1-c074-4e71-ad78-076fe17a51f1",
+        "data": "WHEN \r\n\r\n+ The user navigates to the Gameday mode option on the video player",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app",
+        "result": "THEN\r\n\r\n+ The user can confirm that the metadata displayed cannot be in focus. The user can only view this copy on the Gameday option."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1580",
+    "summary": "Transport controls are available in player",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "99bee23f-5839-4e18-99a6-65e9b78efa2a",
+        "data": "WHEN\r\n\r\n+ The user navigates to the Gameday mode option on the video player",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app",
+        "result": "THEN\r\n\r\n+ All transport controls are available for the user to access to navigate around the player"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1579",
+    "summary": "Gameday metadata reflects current playhead of the video player",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b02474c5-0507-4454-b9cc-4b478ece1fba",
+        "data": "WHEN\r\n\r\n+ The user navigates to the Gameday mode option on the video player",
+        "action": "GIVEN\r\n\r\n+ The user has launched a game from their tvOS app",
+        "result": "THEN\r\n\r\n+ The user will be able to see the Gameday metadata displayed\r\n\r\nAND\r\n\r\n+ The Gameday metadata will be the same as the playhead copy"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1611",
+    "summary": "Postgame Show Available",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "5b2e5642-0dd8-429d-810a-69436e1aad73",
+        "data": "WHEN\r\n\r\n+ One broadcast has a postgame show available \r\n\r\nOR \r\n\r\n+ Both broadcasts have postgame shows available",
+        "action": "GIVEN\r\n\r\n+ The user is viewing a game tile from the following areas in the app:\r\n\r\n- Games Page\r\n- Broadcast Options in Scoreboard (Live or Archived Video Player)\r\n- Home Page (Hero and carousels)",
+        "result": "THEN\r\n\r\n+ The tile will display a tag or copy that informs the user that there is a postgame show available to view\r\n\r\nAND\r\n\r\n+ Launching the game will play the postgame show from the live point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1610",
+    "summary": "Pregame Show Available",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "53cb691e-a6e6-4cba-ae22-3265018c4cec",
+        "data": "WHEN\r\n\r\n+ One broadcast has a pregame show available \r\n\r\nOR \r\n\r\n+ Both broadcasts have pregame shows available",
+        "action": "GIVEN\r\n\r\n+ The user is viewing a game tile from the following areas in the app:\r\n\r\n- Games Page\r\n- Broadcast Options in Scoreboard (Live or Archived Video Player)\r\n- Home Page (Hero and carousels)",
+        "result": "THEN\r\n\r\n+ The tile will display a tag or copy that informs the user that there is a pregame show available to view\r\n\r\nAND\r\n\r\n+ Launching the game will play the pregame show from the live point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1608",
+    "summary": "Suspended Game State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "7338d0d1-5a77-4136-92a5-30c29e543c48",
+        "data": "WHEN\r\n\r\n+ Observing the game tile on the Home page or Games page",
+        "action": "GIVEN\r\n\r\n+ A live game has been delayed\r\n\r\nOR\r\n\r\n+ A game in pregame state has been delayed",
+        "result": "THEN\r\n\r\n+ The game status will display \"SUSPENDED\" copy and reasoning"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1607",
+    "summary": "Postponed Game State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "2c03c957-686d-4104-a14a-29ba1be56c91",
+        "data": "WHEN\r\n\r\n+ Observing the game tile on the Home page or Games page",
+        "action": "GIVEN\r\n\r\n+ A live game has been delayed\r\n\r\nOR\r\n\r\n+ A game in pregame state has been delayed",
+        "result": "THEN\r\n\r\n+ The game status will display \" POSTPONED \" copy and reasoning"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1606",
+    "summary": "Delayed Game State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "59e04ab2-e3a0-4d82-b163-8879a2d6793d",
+        "data": "WHEN\r\n\r\n+ Observing the game tile on the Home page or Games page",
+        "action": "GIVEN\r\n\r\n+ A live game has been delayed\r\n\r\nOR\r\n\r\n+ A game in pregame state has been delayed",
+        "result": "THEN\r\n\r\n+ The game status will display \" DELAYED \" copy and reasoning"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1605",
+    "summary": "Post-game State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b7ba6830-0da7-4c76-b500-1e90f1d00140",
+        "data": "WHEN\r\n\r\n+ Observing the game tile",
+        "action": "GIVEN\r\n\r\n+ A game is FINAL\r\n\r\nAND\r\n\r\n+ The user is navigating through the Home page or Games page",
+        "result": "THEN\r\n\r\n+ The Team Logos, Tri-code, and records will display, with the home team on the right.\r\n\r\nAND\r\n\r\n+ The final score will be displayed between the two teams\r\n\r\nAND\r\n\r\n+ FINAL copy will be displayed above the:\r\n\r\n- Winning pitcher headshot\r\n- \"W\" and pitcher's last name\r\n- Game stats\r\n\r\nAND\r\n\r\n- Losing pitcher headshot\r\n- \"L\" and pitcher's last name\r\n- Game stats\r\n\r\nAND\r\n\r\n+ The bases and outs will be grey\r\n\r\nAND\r\n\r\n+ If the game was the Free Game of the Day, MVPD, Streaming on a Partner app, the pill will display\r\n\r\nAND\r\n\r\n+ A lock icon will display if the user is NOT entitled\r\n\r\nAND\r\n\r\n+ If the game tile is selected, the broadcast options will display\r\n\r\nAND\r\n\r\n+ The user can launched the condensed game or recap, but the game feeds will be locked\r\n\r\nOR \r\n\r\n+ If entitled, the user is able to successfully launch the Away, Home feeds"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1604",
+    "summary": "Live Game State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e44184a8-8f38-4dd0-b138-630a097d5420",
+        "data": "WHEN \r\n\r\n+ Observing the game tile on the Home page or Games page",
+        "action": "GIVEN\r\n\r\n+ A game is LIVE",
+        "result": "THEN \r\n\r\nThe user will observe:\r\n\r\n- The Away team's logo, tri-code, and record on the left side\r\n- The Home team's logo, tri-code, and record on the right side\r\n- A lock icon if the user is not entitled to the broadcasts\r\n- A LIVE tag next to the game inning\r\n- Pitcher headshot, \"P\", Last Name, and Stats\r\n- Batter headshot, \"AB\", Last Name, and Stats\r\n- Bases and Outs markers\r\n- Occupied Bases and Outs will be displayed in yellow\r\n- Free Game of the Day pill if applicable\r\n- MVPD required pill if applicable\r\n- Partnership pill if applicable"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1603",
+    "summary": "Pre-game State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e3b4d19e-aaeb-462a-8141-9e09615d5822",
+        "data": "WHEN\r\n\r\n+ There is a pregame show available on one or both broadcasts",
+        "action": "GIVEN\r\n\r\n+ The user is viewing a game tile that has broadcast options available on the Home and Games pages",
+        "result": "THEN\r\n\r\nThe user will observe:\r\n\r\n- [TEAM] Pregame Show/s copy while the pregame show is in-progress\r\n- A \"LIVE\" tag once game is in warm-up state (pregame show may still be airing)\r\n- First batter with name, picture, and stats at the start of the game\r\n- Team Logos, Team abbreviations, and records\r\n- A Score of 0-0 \r\n- Gray/Unfilled bases \r\n- Gray/Unfilled outs counter\r\n- Apple TV+ pill if necessary\r\n- MLB.tv Free Game of the Day pill if necessary"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1602",
+    "summary": "Blackout Pill",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "5a0ad8b2-f622-4b37-b9a2-ab19c4125f80",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN \r\n\r\nA logged-in user is in a location where a local team is blacked out\r\n\r\nOR\r\n\r\nThe logged-in user is attempting to view a National game that is blacked out",
+        "result": "THEN\r\n\r\nA blackout icon is displayed on the game tile\r\n\r\nAND\r\n\r\nTapping on the game tile will display the blackout message"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1601",
+    "summary": "MVPD Pill",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "3ff81cf5-85e0-4c8c-865b-485f14af9086",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN\r\n\r\nThe user observes a game tile (Ex: ASG)\r\n\r\nAND\r\n\r\nThe game is only available for users with mvpd auth credentials linked to their account",
+        "result": "THEN\r\n\r\nThe user will see the MVPD Required pill displayed"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1600",
+    "summary": "Lock Icon",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "5a381998-9f7e-4263-a398-378d0c77b2cd",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN \r\n\r\nThe user is not-entitled to one or both feeds available in the feed picker",
+        "result": "THEN \r\n\r\nA lock icon is displayed on the game tile or Hero\r\n\r\nAND\r\n\r\nThe broadcast is disabled and cannot be selected"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1599",
+    "summary": "Runners and Outs",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "7cb93cae-16d3-4d0e-944d-a573376c2f32",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel, and Games page\r\n\r\nAND\r\n\r\nThere are runners on base or outs in the inning",
+        "action": "GIVEN\r\n\r\nA game is Live and in-progress",
+        "result": "THEN\r\n\r\nAny runners on base will display on the infield icon in yellow\r\n\r\nAND\r\n\r\nAny outs recorded will switch the circle icon from grey to white"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1598",
+    "summary": "Preview State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "fae5b7b2-82ef-438f-9ab9-50787ee4cd6f",
+        "data": "WHEN\r\n\r\nThe user views the game tile on the Hero, Games Carousel, or Games Page",
+        "action": "GIVEN\r\n\r\nA game is in the preview state",
+        "result": "THEN\r\n\r\nThe user will see the start time displayed above the projected starting pitchers\r\n\r\nAND\r\n\r\nThe Bases and Outs icons will be greyed out"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1597",
+    "summary": "Inning",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "0572f839-7788-4268-a269-f43587d79bd2",
+        "data": "WHEN \r\n\r\nThe user views the game tile from the Hero, Games Carousel, or Games page",
+        "action": "GIVEN\r\n\r\nA game is in-progress",
+        "result": "THEN\r\n\r\nThe inning will be displayed on the game tile\r\n(Ex: T1 or B2)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1596",
+    "summary": "Pitcher & Batter (Archive)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "31b5bc8b-e655-4b93-8aee-523103380a6c",
+        "data": "WHEN \r\n\r\nThe user views the game tile on the hero, games carousel, or games page",
+        "action": "GIVEN\r\n\r\nA game is final",
+        "result": "THEN\r\n\r\nThe winning pitcher's last name will be located next to \"W\" under \"FINAL\"\r\n\r\nAND\r\n\r\nThe losing pitcher's last name will be located next to \"L\" under the winning pitcher"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1595",
+    "summary": "Pitcher & Batter (Live)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "8a9aed98-d3e2-4049-89f3-9d657d72a90f",
+        "data": "WHEN \r\n\r\nThe user views the game tile on the hero, games carousel, or games page",
+        "action": "GIVEN\r\n\r\nA game is Live",
+        "result": "THEN\r\n\r\nThe pitcher's last name will be displayed next to \"P\"\r\n\r\nAND\r\n\r\nUnder the pitcher will be the current batter's last name displayed next to \"AB\""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1594",
+    "summary": "Live Tag",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6b07b364-43b7-438f-8cf7-ea816fef9626",
+        "data": "WHEN\r\n\r\nViewing the game tile",
+        "action": "GIVEN \r\n\r\nA feed is available for a game that is in-progres",
+        "result": "THEN\r\n\r\nThe \"Live\" tag will be available (Red background, white text)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1593",
+    "summary": "Team Logos - Live",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "de9d50b7-ba60-4ce7-9c82-52e587e93eae",
+        "data": "WHEN\r\n\r\nA game is Live and in-progress",
+        "action": "GIVEN\r\n\r\nThe user is viewing a matchup tile on the Watch or Games page",
+        "result": "THEN\r\n\r\nThe Away team (Logo, Colors, and Team-code) will be displayed on the left\r\n\r\nAND\r\n\r\nThe Home team (Logo, Colors, Team-code) will be located on the right\r\n\r\nAND \r\n\r\nThe score will be in the center (Ex: 0-0, 5-4)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1592",
+    "summary": "Team Logos - Preview",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "d27e17c1-8dc0-4b2b-bda3-8fb36ced471e",
+        "data": "WHEN\r\n\r\n+ A game is in a preview state",
+        "action": "GIVEN\r\n\r\n+ The user is viewing a matchup tile on the Watch or Games page",
+        "result": "THEN\r\n\r\n+ The Away team (Logo, Colors, and Team-code) will be displayed on the left\r\n\r\nAND\r\n\r\n+ The Home team (Logo, Colors, Team-code) will be located on the right\r\n\r\nAND\r\n\r\n+ \"@\" will be in the center"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1666",
+    "summary": "Game Tile & Hero",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6aa5b4e7-6993-484c-8c1a-ec113227f709",
+        "data": "WHEN\r\n\r\n+ The user observes the tile or hero image for an mlb.tv game",
+        "action": "GIVEN\r\n\r\n+ The user is not logged into an account with MLB.tv entitlements",
+        "result": "THEN\r\n\r\n+ A lock icon will display\r\n\r\nAND\r\n\r\n+ The user is unable to launch the game"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1665",
+    "summary": "Switching feeds",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "41d71ba9-f4ed-47b3-a82b-feaf786d9826",
+        "data": null,
+        "action": "GIVEN an entitled user watching an MLBtv feed on tvOS",
+        "result": null
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1664",
+    "summary": "Broadcast Audio Options",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "4008a61a-0e31-43f8-b729-a5edf71bcd3d",
+        "data": "WHEN the user views the list for audio feeds",
+        "action": "GIVEN the user is viewing broadcast options for audio feeds",
+        "result": "THEN the audio feeds will be formatted as \u201cTV/Radio\u201d - Broadcast name - Language (Eg. Logo TV - NBCSP - Spanish\u201d)\r\n\r\nAND if there are more than 2 Audio options available, show them in a grid with 2 per column"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1663",
+    "summary": "Broadcast Video Options",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "189d61b8-45d9-4b18-976b-600f6afdbe19",
+        "data": "WHEN the user views the video options list",
+        "action": "GIVEN the user is viewing broadcast options for video feeds",
+        "result": "THEN the video feed will be formatted as Team logo - Team short name - broadcast name (eg. Logo PHI - NBCSP)\r\n\r\nAND the home feed will be listed first\r\n\r\nAND for national feeds display the broadcaster logo \r\n\r\nAND feeds will be disabled if user is non entitled"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1662",
+    "summary": "Broadcast Options General (Non Entitled)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b60f007f-7366-48cb-b9de-d3203b26ac5d",
+        "data": "WHEN the user is not entitled to a feed",
+        "action": "GIVEN the user is viewing the broadcast options menu for Video/Audio",
+        "result": "THEN the button should show as locked/disabled"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1661",
+    "summary": "Broadcast Options General More",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "afe0293b-59f8-4983-a022-7e94b888d2d6",
+        "data": "WHEN the user selects a new broadcast to view",
+        "action": "GIVEN the user is viewing the broadcast options menu for Video/Audio",
+        "result": "THEN selecting a video or audio feed will immediately switch the playback to that feed and close the Broadcast options panel\r\n\r\nAND selecting a different video feed will also update the available audio options. The first audio option listed (TV feed) is automatically selected.\r\n\r\nAND pressing Menu/Back will return the user to full video screen and closes the menu\r\n\r\nAND"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1660",
+    "summary": "Broadcast Options General",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "22103a57-344e-4dcf-b9a6-b0dcfb223713",
+        "data": "WHEN\r\n\r\n+ The user focuses on the broadcast options in the nav bar",
+        "action": "GIVEN\r\n\r\n+ The user is viewing the broadcast options menu for Video/Audio",
+        "result": "THEN\r\n\r\n+ The broadcast panel opens\r\n\r\nAND\r\n\r\n+ The user can see all available audio/video feeds\r\n\r\nAND\r\n\r\n+ The current feed playing will have a blue select state\r\n \r\nAND\r\n\r\n+ The audio options are only for the current selected video feed\r\n\r\nAND\r\n\r\n+ Selecting a new Audio or Video option will reload the video in the same place and the menu will remain open until the user manually dismisses or auto dismisses after 10 seconds."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1659",
+    "summary": "Game Labels",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b4ae913b-f90d-4f57-8569-cbdc7ae653e1",
+        "data": "WHEN\r\n\r\n+ A free game of the day is available on that date",
+        "action": "GIVEN\r\n\r\n+ The user is observing the game tiles within the carousel on the \"Games\" segment of the video player overlay",
+        "result": "THEN\r\n\r\n+ The \"[MLB Logo] Free\" tag or badge will be displayed above the game tile"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1658",
+    "summary": "Hide Scores On",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "bf2290f0-dc88-45d6-b0a9-fd7e054fa1bd",
+        "data": "WHEN\r\n\r\n+ The user launches a game on a date with more than one matchup available\r\n\r\nAND\r\n\r\n+ The user navigates below the scrubber to display the \"Games\" segment on the video player overlay",
+        "action": "GIVEN\r\n\r\n+ The user has Hide Scores enabled",
+        "result": "THEN\r\n\r\n+ The game tiles within the carousel will not display any scores for other games"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1657",
+    "summary": "Launching Another Game",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "74d4c8f6-2055-4efd-95a6-a939e0b3ceb3",
+        "data": "WHEN\r\n\r\n+ The user navigates below the video scrubber to display the \"Games\" segment on the player overlay\r\n\r\nAND\r\n\r\n+ The user focuses on and launches a game tile in the games carousel available",
+        "action": "GIVEN\r\n\r\n+ The user launches a game from a date with multiple games available",
+        "result": "THEN\r\n\r\n+ The expected game will launch without any issues\r\n\r\nAND\r\n\r\n+ An archived game in FINAL will launch from the beginning\r\n\r\nOR\r\n\r\n+ A live game in progress  will launch from the live point (Unless hide scores is available)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1656",
+    "summary": "Games Carousel",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "763783ee-2698-4a17-affd-54ee4a31c943",
+        "data": "WHEN\r\n\r\n+ The user navigates below the video scrubber to display the \"Games\" segment on the player overlay\r\n\r\nAND\r\n\r\n+ \"Games\" is focused on",
+        "action": "GIVEN\r\n\r\n+ The user launches a game from a date with multiple games available",
+        "result": "THEN\r\n\r\n+ The user will observe all game tiles from that date\r\n\r\nAND\r\n\r\n+ On the game tile will display the away team logo, city tri-code, and run total on the left\r\n\r\nAND\r\n\r\n+ The home team logo, city tri-code, and run total on the right"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1655",
+    "summary": "No Additional Games",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "eba1ba8e-cf2b-47c5-899b-0a34bcfc6253",
+        "data": "WHEN\r\n\r\n+ The user navigates below the video scrubber to display the \"Games\" segment on the player overlay\r\n\r\nAND\r\n\r\n+ \"Games\" is focused on",
+        "action": "GIVEN\r\n\r\n+ The user launches a game from a date that does not have any other games played on it \r\n\r\nExample: World Series Game",
+        "result": "THEN\r\n\r\n+ The user will observe the copy \"No Additional Games Today, Swing Back Later\" displayed."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1654",
+    "summary": "Hide Scores Enabled",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "abb971e0-be3b-42e1-a33e-e86007b6dde5",
+        "data": "WHEN\r\n\r\n+ The user views the linescore under \"Details\" in the video player overlay below the scrubber",
+        "action": "GIVEN\r\n\r\n+ The user has Hide Scores enabled in their app settings\r\n\r\nAND\r\n\r\n+ The user launches a live or archived game",
+        "result": "THEN\r\n\r\n+ The inning markers will only display scores that match the user's progression \r\n\r\nAND\r\n\r\n+ The user cannot utilize the linescore if launching from beginning\r\n\r\nOR\r\n\r\n+ The user can utilize the jump to inning feature or scrubbing back if at the live point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1653",
+    "summary": "Pitching",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "4aad3653-1933-438c-9cb7-3868f663c392",
+        "data": "WHEN\r\n\r\n+ Viewing the \"Pitching\" section to the right of the linescore section",
+        "action": "GIVEN\r\n\r\n+ The user is viewing the linescore section available in the \"Details\" segment of the video player overlay",
+        "result": "THEN\r\n\r\nDisplayed will be:\r\n\r\n+ Pitcher's name (first above last)\r\n+ Pitchers's headshot\r\n+ Pitcher's Pitch Count (EX: 100 over \"PITCHES\")\r\n+ Pitcher's Inning's Pitched (EX: 6.2 over \"IP\")\r\n+ Pitcher's Earned Run Avg. (EX: 2.65 over \"ERA\")"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1652",
+    "summary": "Now Batting",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "9848d2fd-4da2-4817-8679-2548d68506b5",
+        "data": "WHEN\r\n\r\n+ Viewing the \"Now Batting\" section to the right of the linescore section",
+        "action": "GIVEN\r\n\r\n+ The user is viewing the linescore section available in the \"Details\" segment of the video player overlay",
+        "result": "THEN\r\n\r\nDisplayed will be:\r\n\r\n+ Batter's name (first above last)\r\n+ Batter's headshot\r\n+ Batter's At Bats (EX: 2-4 above \"Today\")\r\n+ Batter's Average (EX: .300 above \"AVG\")\r\n+ Batter's On-Base + Slugging (.800 above \"OPS\")"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1651",
+    "summary": "Runs, Hits, Errors",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "ea6afc92-28d1-4669-8934-d3fe5883c1db",
+        "data": "WHEN\r\n\r\n+ Observing the linescore stat columns for both home and away teams",
+        "action": "GIVEN\r\n\r\n+ The user has navigated to the linescore overlay on the video player when swiping down from the scrubber and focusing on \"Details\"",
+        "result": "THEN\r\n\r\n+ The user will see R, H, and E for Runs, Hits, and Errors (Team totals)\r\n\r\nAND\r\n\r\n+ Each stat category will update as expected"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1650",
+    "summary": "Jump to Innings Functionality",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b2742678-cd36-4400-8146-cdb67b081efe",
+        "data": "WHEN\r\n\r\n+ Selecting (or pressing down on the remote) a half-inning from earlier in the game\r\n\r\nOR\r\n\r\n+ Selecting a half-inning later in the game if streaming at an earlier playback point",
+        "action": "GIVEN\r\n\r\n+ The user is focused on a top-half or bottom-half of an inning on the linescore",
+        "result": "THEN\r\n\r\n+ Video playback will resume at the desired point of the game"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1649",
+    "summary": "Less Than 9 Innings",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "52967caa-c6a1-41aa-84d9-ef6da6bb1c0e",
+        "data": "WHEN\r\n\r\n+ Observing the innings markers for a live or archived game\r\n\r\nAND\r\n\r\n+ The game completes before 9 innings (Example: NEU vs BOS 7-Inning game on 2/23/24)",
+        "action": "GIVEN\r\n\r\n+ The user has launched a live or archived game \r\n\r\nAND\r\n\r\n+ Has navigated to the \"Details\" overlay on the video player by swiping down from the scrubber",
+        "result": "THEN\r\n\r\n+ Innings 1-9 should be displayed over the top-half and bottom-half run totals for both teams\r\n\r\nAND\r\n\r\n+ The inning columns after the final out (EX: 8 and 9 in a 7-Inning game) will not display a \"0\" and will remain blank"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1648",
+    "summary": "Extra Innings",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "c49fc397-0b3b-40dc-8f47-b28532d83cfb",
+        "data": "WHEN\r\n\r\n+ Observing the innings markers for a live or archived game\r\n\r\nAND\r\n\r\n+ The game has gone into extra innings",
+        "action": "GIVEN\r\n\r\n+ The user has launched a live or archived game \r\n\r\nAND\r\n\r\n+ Has navigated to the \"Details\" overlay on the video player by swiping down from the scrubber",
+        "result": "THEN\r\n\r\n+ Innings 1-9 should be displayed over the top-half and bottom-half run totals for both teams\r\n\r\nAND\r\n\r\n+ After the 9th inning, a \">\" marker is displayed to inform the user that more innings are available to view and jump to\r\n\r\nAND\r\n\r\n+ If the user has navigated to the 9th inning or later, a \"<\" marker will be displayed at the beginning of the linescore to inform the user that the earlier inning markers are hidden"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1647",
+    "summary": "Innings",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "56065375-a8a1-4db4-8748-f116bbdb9593",
+        "data": "WHEN\r\n\r\n+ Observing the innings markers for a live or archived game",
+        "action": "GIVEN\r\n\r\n+ The user has launched a live or archived game \r\n\r\nAND\r\n\r\n+ Has navigated to the \"Details\" overlay on the video player by swiping down from the scrubber",
+        "result": "THEN\r\n\r\n+ Innings 1-9 should be displayed over the top-half and bottom-half run totals for both teams\r\n\r\nAND\r\n\r\n+ If a run is scored in an inning, the total updates as expected in the correct row for the home or away team"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1646",
+    "summary": "Logos",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "90c43ebd-9d9b-4dfb-b3b2-a7c10ef22677",
+        "data": "WHEN\r\n\r\n+ The user navigates to the \"Details\" overlay on the video player by swiping down from the scrubber",
+        "action": "GIVEN\r\n\r\n+ The user has launched a live or archived game",
+        "result": "THEN\r\n\r\n+ The away team logo will be displayed above the Home team logo\r\n\r\nAND\r\n\r\n+ The correct branding will be displayed\r\n\r\nAND\r\n\r\n+ The logos cannot be focused on"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1645",
+    "summary": "Audio & Playback",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "74cb1af9-ab4c-464c-8dec-12654ad7a44a",
+        "data": "WHEN \r\n\r\n+ The user plays a video from the MLB app",
+        "action": "GIVEN\r\n\r\n+ A user playing audio from an outside app (eg Spotify)",
+        "result": "THEN\r\n\r\n+ The outside audio should stop playback\r\n\r\nAND\r\n\r\n+ The only audio that should be heard is from the video launched from the MLB app"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1644",
+    "summary": "PiP - Exit Button",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "7fa572eb-ef21-4837-b44b-0a70a792ef73",
+        "data": "AND\r\n\r\n+ The user presses the home button on the remote to display the quick action buttons on the PiP mini-player\r\n\r\nAND\r\n\r\n+ The user presses the close option or \"X\"",
+        "action": "GIVEN\r\n\r\n+ The user is utilizing the PiP feature",
+        "result": "THEN\r\n\r\n+ The mini-player will dismiss\r\n\r\nAND\r\n\r\n+ Audio from the content will not be heard"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1643",
+    "summary": "PiP - Move Mini-player location",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "a5858a20-8ab6-477c-83b6-e2a5938d490a",
+        "data": "WHEN \r\n\r\n+ Tapping on the Apple TV home button to display the mini-player options\r\n\r\nAND\r\n\r\n+ The user selects the Move quick-action button on the PiP options",
+        "action": "GIVEN\r\n\r\n+ The user is utilizing the PiP feature",
+        "result": "THEN\r\n\r\n+ The user can move the mini-player to the top-right, top-left, bottom-left, or bottom-right of the MLB app\r\n\r\nAND\r\n\r\n+ Pressing back on the remote will snap the mini-player to that desired location on the screen"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1642",
+    "summary": "Pressing Home button on remote to utilize options",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "1ad12426-de7f-453b-b702-86caebc51d62",
+        "data": "WHEN\r\n\r\n+ The user presses the Home button on their Apple TV remote (Monitor icon on 4K remote)",
+        "action": "GIVEN\r\n\r\n+ The user has content in PiP view",
+        "result": "THEN\r\n\r\n+ The PiP Options quick-action buttons will be displayed\r\n\r\nAND\r\n\r\n+ The user can either Exit, Move the player, or Maximize the mini-player"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1641",
+    "summary": "Return to Full-Screen (With 2nd Content Dismissed)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "24736d5f-217d-4935-afba-849fad7d2a15",
+        "data": "WHEN\r\n\r\n+ The user presses the back button on their remote to navigate back to the Home page \r\n\r\nAND \r\n\r\n+ Presses the Menu button on their Apple TV remote\r\n\r\nAND\r\n\r\n+ Selects the \"Full-screen\" quick-action option",
+        "action": "GIVEN\r\n\r\n+ The user is utilizing the PiP feature with playback\r\n\r\nAND\r\n\r\n+ Launches a second content in full-screen view from the Home page",
+        "result": "THEN\r\n\r\n+ The content playing in PiP mode will return to full-screen"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1640",
+    "summary": "Return to Full-Screen (With 2nd Content Playing)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b3e641b1-7391-46d7-8383-22f039003254",
+        "data": "WHEN\r\n\r\n+ The user presses the Menu button on their Apple TV remote\r\n\r\nAND\r\n\r\n+ Selects the \"Full-screen\" quick-action option",
+        "action": "GIVEN\r\n\r\n+ The user is utilizing the PiP feature with playback\r\n\r\nAND\r\n\r\n+ Launches another content in full-screen view",
+        "result": "THEN\r\n\r\n+ The content playing in PiP mode will return to full-screen\r\n\r\nAND\r\n\r\n+ The secondary video will dismiss"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1639",
+    "summary": "Launch second media content",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "1850f863-b3e0-4e3b-9da6-e85052a8fd74",
+        "data": "WHEN\r\n\r\n+ Launching another video tile on the page (Ensure user is entitled to games, slive, or svod)",
+        "action": "GIVEN\r\n\r\n+ The user has selected the PiP quick action button on the video player\r\n\r\nAND\r\n\r\n+ Navigates to the Home page with the mini-player functioning as expected",
+        "result": "THEN\r\n\r\n+ The second video will play in full-screen with volume enabled\r\n\r\nAND\r\n\r\n+ The initial video in PiP continues to play on mute"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1638",
+    "summary": "Validate playback 90 minutes after game",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "d3e14e22-6384-4a45-8590-46e6e72f683f",
+        "data": "WHEN\r\n\r\n+ The game has switched from Live to archive\r\n\r\nAND\r\n\r\n+ 90 minutes has passed \r\n\r\nAND\r\n\r\n+ The user attempts to launch the game",
+        "action": "GIVEN \r\n\r\n+ The user is blacked out from viewing a live game (Local or national blackout)",
+        "result": "THEN\r\n\r\n+ The game will successfully launch without a blackout message"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1637",
+    "summary": "Hero - Validate Instant Playback",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "c5e5afb2-e749-4e53-ad11-2cf3df737af5",
+        "data": "WHEN\r\n\r\n* The user launches a live or archived game, SVOD, SLive, VOD, or FLive event from the hero tile",
+        "action": "GIVEN\r\n\r\n* The user has navigated to the Watch Now segment in the Watch section",
+        "result": "THEN\r\n\r\n* The video player will auto-launch the home or favorited team's broadcast without a feed picker, and all other mixed content successfully"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1636",
+    "summary": "Launching from AppleTV app",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "beb7b7d6-8e3e-4330-9f23-c5acbbd28275",
+        "data": "WHEN the user launches the same feed (watch live, resume, or beginning) OR a different game",
+        "action": "GIVEN the user is in the AppleTV app after suspending the video player from the MLB app",
+        "result": "THEN the user will be able to confirm playback in the MLB app at the given point selected"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1635",
+    "summary": "Suspended Player",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "76c71eea-d895-4f39-9a77-98597c8fe8c7",
+        "data": "WHEN the user holds down the menu button on the ATV remote\r\nAND the user selects the AppleTV app",
+        "action": "GIVEN the user is viewing a game on the ATV MLB app",
+        "result": "THEN the user will be able to launch the same game from the AppleTV app"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1634",
+    "summary": "Hero Requirements - Hide Spoilers OFF",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "de8a3574-a58d-4dd5-98eb-4734ed034eb2",
+        "data": "WHEN the user launches the broadcast",
+        "action": "GIVEN the user is viewing the HERO (Live Game)\r\nAND the user has watched the game previously\r\nAND Hide Scores feature is disabled",
+        "result": "THEN the feed will resume at the live point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1633",
+    "summary": "Hero Requirements - Hide Spoilers ON",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "164d627a-fc27-4f2c-a84b-54aa15d75a31",
+        "data": "WHEN the user launches the game",
+        "action": "GIVEN the user is viewing the HERO (Live Game)\r\nAND the user has watched the game previously\r\nAND Hide Scores feature is enabled",
+        "result": "THEN the feed will start from the Resume point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1632",
+    "summary": "Resume Point - End of Game/Slate",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "d2bdd62f-7b78-4bd5-9980-09b6c07d1999",
+        "data": "WHEN the user navigates back to the previous page and tries to launch playback again",
+        "action": "GIVEN the user has watched the end of the broadcast to it's fullest",
+        "result": "THEN the \"Resume\" point and feature are no longer available"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1631",
+    "summary": "Resume Point - 90 Days",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "66b146ff-5eed-4ce3-af92-c054fb498145",
+        "data": "WHEN the user does not resume the broadcast for 90 Days",
+        "action": "GIVEN the user stopped watching a broadcast feed\r\nAND the watch point has been bookmarked",
+        "result": "THEN the resume point will expire\r\nAND the game will no longer hold bookmarks."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1630",
+    "summary": "Start from the beginning - NOT WATCHED",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "17e46577-767d-45fa-9069-813ae7c5ff07",
+        "data": "WHEN the user launches an archived feed\r\nAND the user has never watched the broadcast",
+        "action": "GIVEN the user wants to watch an archived game",
+        "result": "THEN the user will always start the broadcast from the beginning."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1629",
+    "summary": "Resume Feature ARCHIVE",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e76afe0f-4505-430b-ae7f-564bbe0d95a7",
+        "data": "WHEN the user selects a video feed from the feed picker\r\nAND the user previously watched the feed",
+        "action": "GIVEN the user wants to watch an archive game",
+        "result": "THEN the user should see options for Resume and Start from the Beginning\r\nAND \"Start from the beginning\" starts the feed from the beginning of the broadcast"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1628",
+    "summary": "Resume Feature LIVE",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "0e76ce9c-129a-4ff0-be36-2be60b26b0b8",
+        "data": "WHEN the user selects a video feed from the feed picker\r\nAND the user has previously watched this feed",
+        "action": "GIVEN the user wants to watch a live game",
+        "result": "THEN the user should see a \"Resume\" option in the next modal\r\nAND the game feed will resume from the point where that user previously left off"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1627",
+    "summary": "Resume Feature",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "94f28dda-5f24-4f24-8bfc-b81708e290be",
+        "data": "WHEN the user launches the game again",
+        "action": "GIVEN the user returns to a game in which they previously watched",
+        "result": "THEN the user will be at the same spot where they left off"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1626",
+    "summary": "Play/Pause",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "f7625080-7cc0-419e-bf73-15a2f0afcde9",
+        "data": "WHEN the user wishes to play/pause the content by tapping on the remote",
+        "action": "GIVEN the user is viewing a VOD or live content",
+        "result": "THEN on pausing, a pause icon will show in the middle of the screen and disappear after a second with the video still paused\r\n\r\nAND on resuming playback, a play button will appear in the middle of the screen then disappear after a second"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1625",
+    "summary": "Jump Forward/Backward",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "fdf326b5-1b0b-4bac-ae35-9513c0bb5a7b",
+        "data": "WHEN the user taps on left/right with a single press",
+        "action": "GIVEN the user is viewing a vod or live content",
+        "result": "THEN a jump 15 seconds UI element will show below the scrubber\r\nAND the flash icon should appear for 1 second."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1624",
+    "summary": "FF/RW",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "158b1694-7023-4e88-b13b-b96b2bf3f064",
+        "data": "WHEN a user presses and holds left/right",
+        "action": "GIVEN the user is viewing a VOD or LIVE content",
+        "result": "THEN the video will FF/RW\r\n\r\nAND releasing and pressing left/right again will increase the speed.\r\n\r\nAND the FF/RW speed will appear below the scrubber and should update as the user increases or decreases the speed.\r\n\r\nAND RW will stop once it reaches the beginning.\r\n\r\nAND if the video is currently in FF and then the user presses left to RW, the FF will slow down by one step and vice versa."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1623",
+    "summary": "Visibility Gestures",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "9a4a706b-e978-47da-bffc-6b56c53c1832",
+        "data": "WHEN\r\n\r\n+ The user does not interact with the remote approx. 5-10 seconds",
+        "action": "GIVEN \r\n\r\n+ The user enters a video \r\n\r\nAND\r\n\r\n+ Video controls are visible",
+        "result": "THEN\r\n\r\n+ The controls will dismiss\r\n\r\nAND\r\n\r\n+ When the user presses back/menu will exit the video and return the user to the previous screen they were on.\r\n\r\nAND\r\n\r\n+ If the are not displayed, the user can tap the trackpad to display the controls."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1621",
+    "summary": "Jump to Live",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "0d87e3fc-d68c-4567-b659-af70d160df4c",
+        "data": "WHEN the user actions the Jump to Live button",
+        "action": "GIVEN the user is viewing a game on the tvOS Video Player\r\nAND the user is behind the live point",
+        "result": "THEN the feed should advance to the live point\r\nAND the Jump to live icon is no longer visible\r\nAND the live indicator is red"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1620",
+    "summary": "Single Press Sensitivity",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "156fada0-e980-4b04-bb6c-026bc9ebb060",
+        "data": "WHEN \r\n\r\n1. The user performs a single press on the remote touch pad",
+        "action": "GIVEN\r\n\r\n1. The user is viewing a game on their tvOS device\r\n\r\nAND\r\n\r\n1. The user performs a single press on the remote touch pad",
+        "result": "THEN \r\n\r\n1. The scrubber is focused\r\n\r\nNOTE: Sensitivity of the single press action is reduced."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1619",
+    "summary": "CC - Other Videos",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "143da0e7-26f5-4c12-864e-72359ff90910",
+        "data": "WHEN the user exits and enters a new video player",
+        "action": "GIVEN a user is utilizing the video player on their tvOS app\r\nAND the user enabled CC on another video",
+        "result": "THEN the CC will still remain enabled"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1618",
+    "summary": "CC - Global Settings",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "f23f6692-9e20-4b86-b5e3-e8273cdec75e",
+        "data": "WHEN the user views content on the video player",
+        "action": "GIVEN a user is utilizing the video player on their tvOS app\r\nAND the user selected CC ON in the global settings",
+        "result": "THEN CC will be turned on"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1617",
+    "summary": "CC",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b12b2087-ebce-400c-84fc-52846687e307",
+        "data": "WHEN the user focuses on the CC button\r\nAND the user selects CC button",
+        "action": "GIVEN a user is utilizing the video player on their tvOS app\r\nAND the user wishes to turn ON/OFF closed captioning",
+        "result": "THEN the user can toggle the CC on/off\r\nAND the button will display \u201cTurn CC On\u201d or \u201cTurn CC Off\u201d when the button is in focus"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1616",
+    "summary": "Archived Game Innings Marker",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "01d433e2-c9d0-4d50-8359-e10e6a566a68",
+        "data": "WHEN the user utilizes the scrubber bar\r\nAND the user views the innings markers",
+        "action": "GIVEN the user is viewing an archived game",
+        "result": "THEN scrubber should render and display inning markers based on time position.\r\n\r\nAND if the game does not have inning markers (spring training) do not show inning markers on scrubber."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1615",
+    "summary": "Live Game Innings Marker",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "8b6b790b-adf4-4eb8-832d-2c7eaa7bbd2d",
+        "data": "WHEN the user utilizes the scrubber\r\nAND the user is viewing the innings markers",
+        "action": "GIVEN the user is viewing a live game",
+        "result": "THEN the scrubber should render and display inning markers based on time position.\r\n\r\nAND the inning markers should dynamically redraw to the correct position given that time is always changing.\r\n\r\nAND after starting to watch a live game, innings markers should appear on scrubber bar as the game progresses and each half-inning is started."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1614",
+    "summary": "Game Info when scrubbing and FF/RW",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "139b02f6-00a5-4daa-a25e-96649995480f",
+        "data": "WHEN the user pauses a game",
+        "action": "GIVEN the user pauses a game, certain UI elements should be displayed while the video is paused and should stay displayed as long as the controls are visible until normal playback speed resumes again.",
+        "result": "THEN a pill above the scrubber appears with the team match up and scores\r\n\r\nAND the inning and outs show below the scrubber.\r\n\r\nAND the elapsed time will show above the Pill\r\n\r\nAND the position of UI elements should track the playhead during FF/RW operations\r\n\r\nAND the data on the UI elements should update to reflect the game state at the playhead as the user scrubs backwards and forwards."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1613",
+    "summary": "Live Scrubber - Pause/Rewind",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "5079d501-62e0-4a54-ad42-bf0f1839f035",
+        "data": "WHEN the user rewinds or pauses the scrubber \r\nAND the user is no longer at the live point",
+        "action": "GIVEN the user is viewing a live event",
+        "result": "THEN the user can visibly see they are not currently at the live point. \r\nAND the live indicator will turn gray to show the user isn\u2019t at live point.\r\nAND the remaining text on the right shows time until live or is empty if live"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1612",
+    "summary": "Live Scrubber",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "bc159eeb-4dd3-480d-9b22-435ead460c04",
+        "data": "WHEN the user is viewing the video player scrubber and utilizing its features",
+        "action": "GIVEN the user is viewing a live event",
+        "result": "THEN at the live point the scrubber bar is completely blue to show a user is at the live point\r\n\r\nAND the end of the scrubber shows \u201cLive\u201d text with red indicator."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1683",
+    "summary": "Unentitled User",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "0317f4b0-e031-425d-a2d0-6cd766e4d43d",
+        "data": "WHEN\r\n\r\n+ Navigating through the Home tab",
+        "action": "GIVEN\r\n\r\n+ The user is signed into an account which is not entitled to launch MLBN linear content\r\n\r\nOR\r\n\r\n+ The user is not signed in (Anonymous Free)",
+        "result": "THEN\r\n\r\n+ The user will not be shown MLBN content in any carousels or Hero"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1682",
+    "summary": "MLBN Only",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "2997f945-9e47-4b40-8661-6e4de91a5391",
+        "data": "WHEN\r\n\r\n+ The user launches MLBN content from the Hero or the Today on MLB.TV carousel",
+        "action": "GIVEN\r\n\r\n+ The user logs into an account with just MLB Network entitlements\r\n\r\nAND\r\n\r\n+ The account is not entitled to MLB.tv or other non-game content (SLive, SVOD)",
+        "result": "THEN\r\n\r\n+ The user will receive successful playback\r\n\r\nAND\r\n\r\n+ The MLBN live stream will play at the live point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1681",
+    "summary": "Background Image (VSM Content)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "cc6a28db-5311-4547-bc7b-59465cc614aa",
+        "data": "WHEN",
+        "action": "GIVEN",
+        "result": "THEN \r\n\r\n+ The background image will be from VSM content\r\n\r\nAND\r\n\r\n+ The background image should NOT be the MLB Network logo\r\n\r\nAND\r\n\r\n+ The backbround image SHOULD be the studio image"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1680",
+    "summary": "Title and Text Field (VSM Content)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "79137eb7-e843-407c-a17c-097fbe73aadc",
+        "data": "WHEN",
+        "action": "GIVEN",
+        "result": "THEN\r\n\r\n+ The fields will display the following copy, \r\n\r\n\"MLBN Presents MLB Tonight\"\r\n\"Join your favorite hosts Harold Reynolds and Fee Chin to recap the best plays of the night!\""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1679",
+    "summary": "MLBN without Entitlements",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "237d4d52-9617-4672-ba14-1ae34201cfcf",
+        "data": "WHEN\r\n\r\n+ Observing the MLBN live stream tile in the \"Today on MLB.tv\" carousel",
+        "action": "GIVEN\r\n\r\n+ The user is logged into an account without the MLBN or MLBTV/MLBN Adobe Pass entitlement\r\n\r\nEX: Unauthorized, Free, Anonymous, and AtBat users.",
+        "result": "THEN\r\n\r\n+ The tile will have a lock icon\r\n\r\nAND\r\n\r\n+ The user is unable to launch the MLBN content"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1678",
+    "summary": "Player Controls",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "907ce305-b808-44cc-894f-9bfa885b8913",
+        "data": "WHEN\r\n\r\n+ Utilizing the player controls",
+        "action": "GIVEN\r\n\r\n+ The user has launched an MLBN live stream",
+        "result": "THEN\r\n\r\n+ The user is able to FF, RW, Play, Pause, and scrub\r\n\r\nAND\r\n\r\n+ The user can enable Closed Captioning and Picture-in-Picture\r\n\r\nAND \r\n\r\n+ Utilize the Jump to Live quick-action if the user scrubbed backwards"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1677",
+    "summary": "Closed Captioning",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "7f6f8d44-4ee9-40c8-92e4-6e861ef1c7c5",
+        "data": "WHEN\r\n\r\n+ Selecting the CC quick-action button",
+        "action": "GIVEN \r\n\r\n+ The user has launched an MLBN live stream",
+        "result": "THEN\r\n\r\n+ The closed captioning feature will be enabled\r\n\r\nAND\r\n\r\n+ CC will be present on the video player\r\n\r\nAND \r\n\r\n+ The user can toggle the CC feature off\r\n\r\nTHEN\r\n\r\n+ CC will no longer be present on the video player"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1676",
+    "summary": "Live Indicator at Live Point",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "8e27ecab-132d-4424-b674-551361e11d22",
+        "data": "WHEN\r\n\r\n+ Observing the scrubber",
+        "action": "GIVEN\r\n\r\n+ The user has launched an MLBN live stream",
+        "result": "THEN\r\n\r\n+ The Video player will begin at the live point\r\n\r\nAND\r\n\r\n+ A Live indicator will be displayed"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1675",
+    "summary": "Duration Not Present",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "feda9aea-45cd-414d-927c-7122cb42552e",
+        "data": "WHEN\r\n\r\n+ Observing the MLBN tile in the carousel",
+        "action": "GIVEN\r\n\r\n+ The MLBN Live Stream is present in the Today on MLB.TV carousel on the Home page",
+        "result": "THEN\r\n\r\n+ The duration of the MLBN live stream will NOT be present"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1674",
+    "summary": "Live Indicator Present",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "f3963634-29dd-4b90-a2de-a89b0f5a4146",
+        "data": "WHEN\r\n\r\n+ Observing the carousel MLBN tile",
+        "action": "GIVEN\r\n\r\n+ The MLBN Live stream is available in the Today carousel",
+        "result": "THEN\r\n\r\n+ A \"LIVE\" indicator will not be present on the thumbnail"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1673",
+    "summary": "Playback from Today on MLB.TV",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "9b152d59-9f7a-446b-a0e0-239dfda1bc3f",
+        "data": "WHEN\r\n\r\n+ The user selects the MLBN option on the home page's \"Today on MLB.TV\" carousel",
+        "action": "GIVEN\r\n\r\n+ The user is signed into an account with the MLBN entitlement",
+        "result": "THEN\r\n\r\n+ The user will receive successful playback \r\n\r\nAND\r\n\r\n+ The MLBN stream will begin playing at the live point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1672",
+    "summary": "Present in Today",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "4c2e98fc-cc8f-4fb1-8c5a-2022ea0ef820",
+        "data": "WHEN\r\n\r\n+ Navigating to the Home page",
+        "action": "GIVEN\r\n\r\n+ The user has logged into an account with an MLBN entitlement\r\n\r\nAND\r\n\r\n+ The user's favorited team is playing live",
+        "result": "THEN\r\n\r\n+ The MLBN Live Stream can be present in the \"Today on MLB.TV\" carousel if the game is in the hero"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1671",
+    "summary": "MNLBN playback controls not actionable",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "94cc6b1f-807d-4a37-8c6a-087fb4df3328",
+        "data": "WHEN the user plays an MLBN live feed",
+        "action": "GIVEN a user entitled to MLBN content",
+        "result": "THEN the playback controls (FF/RW/PLAY/PAUSE) will not be actionable in the player"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1670",
+    "summary": "Duration Not Present",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e7f96a11-b1d6-4fe5-ac54-ca52154f8a66",
+        "data": "WHEN\r\n\r\n+ Observing the hero",
+        "action": "GIVEN\r\n\r\n+ The MLBN Live Stream is present in the hero on the Home page",
+        "result": "THEN\r\n\r\n+ The duration of the MLBN live stream will NOT be present"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1669",
+    "summary": "Live Indicator Present",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "a62b4b31-f721-4404-833b-b5a2d0ef1472",
+        "data": "WHEN\r\n\r\n+ Observing the MLBN hero image",
+        "action": "GIVEN\r\n\r\n+ The MLBN Live stream is available in the hero",
+        "result": "THEN\r\n\r\n+ A \"LIVE\" indicator will not be present in the hero"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1668",
+    "summary": "Playback from Hero",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "24923f1c-37ec-4867-94df-00bf18bd379e",
+        "data": "WHEN\r\n\r\n+ The user selects the \"Watch Live\" option on the home page's hero for the MLBN live stream",
+        "action": "GIVEN\r\n\r\n+ The user is signed into an account with the MLBN entitlement",
+        "result": "THEN\r\n\r\n+ The user will receive successful playback \r\n\r\nAND\r\n\r\n+ The MLBN stream will begin playing at the live point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1667",
+    "summary": "Present in Hero",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "50804d0c-1693-4866-bd5e-3768d675599b",
+        "data": "WHEN\r\n\r\n+ Navigating to the Home page",
+        "action": "GIVEN\r\n\r\n+ The user has logged into an account with an MLBN entitlement",
+        "result": "THEN\r\n\r\n+ The MLBN Live Stream can be present in the Hero"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1728",
+    "summary": "Launching PiP With Active Multiview",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "63ce26aa-7428-47b7-9ba5-4f4cb8bdb048",
+        "data": "WHEN\r\n\r\n1. The user launches PiP on a video player with their multi-view session backgrounded",
+        "action": "GIVEN\r\n\r\n1. The user backgrounds their active multi-view session",
+        "result": "THEN\r\n\r\n1. The existing multi-view session will end completely"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1727",
+    "summary": "Launching Multiview With Active PiP",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "ae8bf6c4-3181-4473-8aba-f50410ef47c6",
+        "data": "WHEN\r\n\r\n1. The user launches another game from the scoreboard to launch the multi-view feature",
+        "action": "GIVEN\r\n\r\n1. The user is viewing a game in PiP mode while navigating the app",
+        "result": "THEN\r\n\r\n1. The player with video and audio playback in PiP will close automatically upon entering multi-view"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1726",
+    "summary": "Removing Failed Video Player",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "c9ec8bc8-4c55-434a-b789-1f5ccbb65f07",
+        "data": "WHEN\r\n\r\n1. A video player on the multi-view screen experiences a playback failure",
+        "action": "GIVEN\r\n\r\n1. The user is utilizing the multi-view feature",
+        "result": "THEN\r\n\r\n1. The standard failed playback modal will display\r\n\r\nAND\r\n\r\n1. Only the video player that experienced the failed playback state will be removed\r\n\r\nAND\r\n\r\n1. All remaining players will remain intact"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1725",
+    "summary": "Selecting Cancel on Modal",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "92d60e74-c2cf-455f-93c6-e4846510c590",
+        "data": "WHEN\r\n\r\n1. The user selects \"Cancel\" on the modal",
+        "action": "GIVEN\r\n\r\n1. The user is utilizing multiview without the scoreboard visible\r\n\r\nAND\r\n\r\n1. The user selects the Menu/Back button on their remote",
+        "result": "THEN\r\n\r\n1. The modal is dismissed from view\r\n\r\nAND\r\n\r\n2. The video player in focus will not change"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1724",
+    "summary": "Returning To Full-Screen",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "91c55bf6-e168-419d-8274-a4b97595d9bb",
+        "data": "WHEN\r\n\r\n1. The user selects \"Okay\" on the exit modal",
+        "action": "GIVEN\r\n\r\n1. The user is utilizing multiview without the scoreboard visible\r\n\r\nAND\r\n\r\n1. The user selects the Menu/Back button on their remote",
+        "result": "THEN\r\n\r\n1. The user will exit the multiview experience and return to a full-screen view.\r\n\r\nAND \r\n\r\n1. The audio-focused video player will return to full-screen with all controls."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1723",
+    "summary": "Selecting Menu/Back on Remote",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "bc040636-6ffa-4d22-89b8-122c4f9eeae4",
+        "data": "WHEN\r\n\r\n1. The user presses the Menu/Back option on the remote",
+        "action": "GIVEN\r\n\r\n1. The user is utilizing multiview without a visible scoreboard.",
+        "result": "THEN \r\n\r\n1. An exit modal with options \"Okay\" and \"Cancel\" are available"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1722",
+    "summary": "Exit Multiview",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "a10c19ef-3ef6-4eae-95a5-1148e28fb5fd",
+        "data": "WHEN\r\n\r\n1. The user selects \"Exit Multiview\"",
+        "action": "GIVEN \r\n\r\n1. The user utilizing multiview only has one video player remaining\r\n\r\nAND\r\n\r\n1. The \"Remove\" overlay on the scoreboard now displays \"Exit Multiview\"",
+        "result": "THEN\r\n\r\n1. The remaining video player will exit multiview\r\n\r\nAND\r\n\r\n1. The video player will completely return to full-screen with full controls."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1721",
+    "summary": "Rearrangement of Game Tiles",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "28286b41-1f78-4292-b88b-7f7df6f24f1b",
+        "data": "WHEN\r\n\r\n1. The player for that completed stream is removed from the multi-view screen automatically",
+        "action": "GIVEN\r\n\r\n1. The user has launched multi-view\r\n\r\nAND\r\n\r\n1. Video playback has ended for a stream",
+        "result": "THEN\r\n\r\n1. The layout configuration will update prior to focus changes"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1720",
+    "summary": "Rearrangement of Game Tiles",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "34be03e7-f973-4d86-bf70-18060243ff1c",
+        "data": null,
+        "action": "GIVEN\r\n\r\n* The user has launched multi-view",
+        "result": ""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1719",
+    "summary": "Audio-Emitting Context Legend",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "d56bd8a5-51b1-4610-a61c-abfd3cd36a66",
+        "data": "WHEN\r\n\r\n1. The user views the Dynamic Context Legend in the top-right of the multiview screen",
+        "action": "GIVEN\r\n\r\n1. The user has entered multiview\r\n\r\nAND\r\n\r\n1. The user is focused on the primary audio-emitting player",
+        "result": "THEN\r\n\r\n1. The user will see the following context items displayed\r\n\r\nGo fullscreen (single-press or play/ pause)\r\nExit multiview (back)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1718",
+    "summary": "Non-Audio-Emitting Context Legend",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "86d05912-88b8-41f4-a05b-de0992a7eb5e",
+        "data": "WHEN\r\n\r\n1. The user views the Dynamic Context Legend in the top-right of the multiview screen",
+        "action": "GIVEN\r\n\r\n1. The user has entered multi-view\r\n\r\nAND\r\n\r\n1. The user has focused on the primary non-audio emitting video player",
+        "result": "THEN\r\n\r\n1. The following items will be displayed in the context legend\r\n\r\n\r\nSwitch audio (single-press)\r\nGo fullscreen (play/ pause)\r\nExit multiview (back)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1717",
+    "summary": "Audio-Emitting Context Legend",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "8e29bb52-7a41-49b6-9d24-986b6950f8f5",
+        "data": "WHEN\r\n\r\n1. The user views the upper-right corner of the video player multi-view screen",
+        "action": "GIVEN\r\n\r\n1. The user has entered multi-view\r\n\r\nAND\r\n\r\n1. The user has focused on the secondary audio emitting video player",
+        "result": "THEN\r\n\r\n1. The following legend items will be displayed:\r\n\r\nswap players (single-press),\r\ngo fullscreen (play/ pause)\r\nexit multiview (back)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1716",
+    "summary": "Non-Audio-Emitting Context Legend",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "9760ce6b-463b-4815-832c-c523476aa36c",
+        "data": "WHEN\r\n\r\n1. The user views the upper-right corner of the video player multiview screen",
+        "action": "GIVEN \r\n\r\n1. The user has entered multiview\r\n\r\nAND\r\n\r\n1. The user has focused on the secondary non-audio emitting video player",
+        "result": "THEN\r\n\r\n1. A dynamic context legend will display, stating that the user can\r\n\r\nswitch audio (single-press)\r\n\r\nswap players (double-press),\r\n\r\ngo fullscreen (play/ pause)\r\n\r\nexit multiview (back)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1715",
+    "summary": "Chrome Multiview Fade",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "cbea8ee6-a871-471f-8144-7e11ca029810",
+        "data": "WHEN\r\n\r\n1. The user taps the Menu/Back button on the remote while focused in the multi-view scoreboard",
+        "action": "GIVEN\r\n\r\n1. \"Chrome\" is defined by an on-screen control that is not related to the video player or scoreboard\r\n\r\nAND\r\n\r\n1. The chrome is visible while the user is focused on the multi-view scoreboard",
+        "result": "THEN\r\n\r\n1. The scoreboard should collapse and fade multi-view chrome"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1714",
+    "summary": "Chrome Timer Reset",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "d7ea177b-5e8c-4db4-8a18-5ca4b7c36f0d",
+        "data": "WHEN\r\n\r\n1. The user interacts with the remote, as well as changing the multi-view player focus",
+        "action": "GIVEN\r\n\r\n1. \"Chrome\" is defined by an on-screen control that is not related to the video player or scoreboard\r\n\r\nAND\r\n\r\n1. The chrome is visible on the multi-view screen",
+        "result": "THEN\r\n\r\n1. The 5-second fadeout timer will reset\r\n\r\nAND\r\n\r\n1. The 5-second fadeout timer will continue to reset until the user stops all interaction"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1713",
+    "summary": "Chrome Not Visible",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "1f319a0f-7736-4372-b9e8-cf16bd3b1478",
+        "data": "WHEN\r\n\r\n1. The user has any interaction with the remote (light trackpad swipe, single-press, double-press, etc.)",
+        "action": "GIVEN\r\n\r\n1. \"Chrome\" is defined by an on-screen control that is not related to the video player or scoreboard\r\n\r\nAND\r\n\r\n1. The chrome is not visible due to the user not utilizing the remote and video controls",
+        "result": "THEN\r\n\r\n1. The Chrome will re-appear on the video player"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1712",
+    "summary": "Chrome Timer",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "71ec9ba5-b97b-4df9-80cd-0841e77ea040",
+        "data": "WHEN\r\n\r\n1. There is 5 seconds of idle time",
+        "action": "GIVEN \r\n\r\n1. \"Chrome\" is defined by an on-screen control that is not related to the video player or scoreboard\r\n\r\nAND\r\n\r\n1. The user who launched multi-view does not interact with the remote while the chrome is visible",
+        "result": "THEN\r\n\r\n1. The Chrome will disappear from the on-screen controls after 5 seconds of no interaction"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1711",
+    "summary": "Closed Captioning Enabled",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "1a9fbc2f-899b-4a74-bdd2-734ecd7d7d02",
+        "data": "WHEN\r\n\r\n1. The user enters the multi-view feature by selecting another game from the Game Scoreboard",
+        "action": "GIVEN\r\n\r\n1. The user has launched an archived or live feed\r\n\r\nAND\r\n\r\n2. The user has enabled Closed Captions",
+        "result": "THEN\r\n\r\n1. Closed Captioning will continue to be displayed on the active broadcast"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1710",
+    "summary": "Video Controls are Disabled",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "193c81b4-4c71-4fd7-b2d8-de8e147a67fd",
+        "data": "WHEN\r\n\r\n1. The user enters the multi-view feature by selecting another game from the Game Scoreboard",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live or archived stream",
+        "result": "THEN\r\n\r\n1. All video control functionality will be disabled\r\n\r\nAND\r\n\r\n1. The user cannot FF/RW/Play/Pause/Quick Actions"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1709",
+    "summary": "EPG Date Follows Selected Game Date Via Config",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "5839d4ad-f651-429b-a5f3-a05615571d89",
+        "data": "WHEN \r\n\r\n1. The user views the Game Scoreboard",
+        "action": "GIVEN \r\n\r\n1. The user has launched a live or archived game from a specific date (Today, Yesterday, Last Week, Last Month)",
+        "result": "THEN\r\n\r\n1. The Game Scoreboard will include tiles of games that were played or are playing on the same EPG date as the initially launched game."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1708",
+    "summary": "Hide-Spoilers Logic for Live and Archive Games",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "9dbdb6da-ec51-4e6d-828b-ca83d48d9a1c",
+        "data": "WHEN \r\n\r\n1. The user launches another live or archived game in multi-view",
+        "action": "GIVEN\r\n\r\n1. The user has Hide Scores enabled\r\n\r\nAND\r\n\r\n2. The user has launched a live or archived game\r\n\r\nAND \r\n\r\n3. The user utilizes the multi-view feature",
+        "result": "THEN\r\n\r\n1. The hide scores logic will be preserved for starting points of selected games"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1707",
+    "summary": "Archive Game Feed auto-select and Resume",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "3abe5a0e-1367-4f19-aa4b-ebb623067fc0",
+        "data": "WHEN \r\n\r\n1. The user selects an archived game from the video player scoreboard\r\n\r\nAND \r\n\r\n1. The user had recently watched the feed and bookmarked their position in playback",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live game\r\n\r\nAND\r\n\r\n1. The user is navigating the games menu scoreboard from the video player",
+        "result": "THEN\r\n\r\n1. Playback will begin at the bookmarked resume point instead of the live or beginning point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1706",
+    "summary": "Archive Game Feed auto-select and Start From Beginning",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "fa8d7096-b54f-4ae3-a72d-a940150fcbc0",
+        "data": "WHEN\r\n\r\n1. The user has selected to launch an archived game from the video player scoreboard",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live game\r\n\r\nAND\r\n\r\n1. The user is navigating the games menu scoreboard from the video player",
+        "result": "THEN\r\n\r\n1. Playback of the auto-selected feed will begin at the beginning point of the stream"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1705",
+    "summary": "Live Game feed auto-select and live point",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "fb4e3f57-a364-4478-b911-35de9c36a117",
+        "data": "WHEN \r\n\r\n1. The user selects a game that is live from the video player scoreboard",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live game\r\n\r\nAND\r\n\r\n1. The user is navigating the games menu scoreboard from the video player",
+        "result": "THEN\r\n\r\n1. The feed will be auto-selected\r\n\r\nAND\r\n\r\n1. The feed will begin playback at the live point"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1704",
+    "summary": "Removing the Add Overlay",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "591c4668-afec-4531-9c5d-137e7291a193",
+        "data": "WHEN\r\n\r\n1. The user is observing the selected game tile in the scoreboard",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live (with more games on that date) or an archived game\r\n\r\nAND\r\n\r\n1. The user is navigating the games menu scoreboard from the video player",
+        "result": "THEN\r\n\r\n1. A \"remove\" overlay option is displayed for the user"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1703",
+    "summary": "Adding Games Navigating The Scoreboard",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "72a87e32-9d66-4748-a51c-ca1e93604ad8",
+        "data": "WHEN\r\n\r\n1. The user single taps on a game tile from the scoreboard view",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live (with more games on that date) or an archived game\r\n\r\nAND\r\n\r\n1. The user is navigating the games menu scoreboard from the video player",
+        "result": "THEN\r\n\r\n1. The selected game will be added to the multi-view\r\n\r\nAND\r\n\r\n2. Up to four games can be added at a time to the multi-view\r\n\r\nAND\r\n\r\n3. If a new game is selected with four video streams already in the multi-view, the last selected video feed will be replaced"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1702",
+    "summary": "Adding Games Down Gesture",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "53c2c7cb-f544-463b-8f6f-595c0c8b09f9",
+        "data": "WHEN\r\n\r\n1. The user gestures down on their Apple TV remote from the primary or secondary broadcast",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live (with more games on that date) or an archived game\r\n\r\nAND\r\n\r\n1. The user is navigating the games menu scoreboard from the video player",
+        "result": "THEN\r\n\r\n1. The games scoreboard will be visible\r\n\r\nAND\r\n\r\n1. The focus will be on the first non-selected game tile"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1701",
+    "summary": "Long Press on Game Tile",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6b18bcfc-3ff8-4a21-9266-facc84c6c3ef",
+        "data": "WHEN \r\n\r\n1. The user long presses on a game tile in the scoreboard for two seconds",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live (with more games on that date) or an archived game\r\n\r\nAND\r\n\r\n1. The user is navigating the games menu scoreboard from the video player",
+        "result": "THEN\r\n\r\n1. That game tile from the scoreboard that is long-pressed will send app into multi-view"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1700",
+    "summary": "Persistent Messages During Scrolling",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "95a77888-5b6a-403a-a37e-2111ff4b65d7",
+        "data": "WHEN \r\n\r\n1. The user is navigating through the games menu on the video player",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live (with more games on that date) or an archived game",
+        "result": "THEN\r\n\r\n1. The user will observe these messages displayed:\r\n\r\nExample: \u201cSingle press to view game\u201d\r\n\r\nExample: \u201cPress and hold to enter Multi-view\u201d"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1699",
+    "summary": "Games Menu in Video Player",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "c9feb812-c394-4e83-a1da-dd8b15eb99c4",
+        "data": "WHEN\r\n\r\n1. The user navigates to the games menu within the video player",
+        "action": "GIVEN\r\n\r\n1. The user has launched a live (with more games on that date) or an archived game",
+        "result": "THEN \r\n\r\n1. The user will observe games played on that date that could be launched into multi-view"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1698",
+    "summary": "Animations During Transition",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "08fe1275-8f72-47e3-9f3b-e1d7ccecc696",
+        "data": "WHEN\r\n\r\n1. The user interacts with the games scoreboard on the screen",
+        "action": "GIVEN\r\n\r\n1. The user is utilizing app's multi-view feature\r\n\r\nAND\r\n\r\n1. The user has brought up the games scoreboard",
+        "result": "THEN\r\n\r\n1. The user will observe animations when transitioning through various states"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1697",
+    "summary": "Collection View Positioning",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "9c87ecb6-6b43-41af-8d98-634651554738",
+        "data": "WHEN \r\n\r\n1. The user observes the collection view with the games scoreboard displayed.",
+        "action": "GIVEN\r\n\r\n1. The user is utilizing app's multi-view feature.\r\n\r\nAND\r\n\r\n1. The user has brought up the games scoreboard.",
+        "result": "THEN\r\n\r\n1. The collection view is moved upwards to make room."
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1696",
+    "summary": "Collection View Scaled Down",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "3cd85b60-ed34-43d0-8d75-9bee3ab5f0b0",
+        "data": "WHEN\r\n\r\n3. The user observes the collection view displayed",
+        "action": "GIVEN\r\n\r\n1. The user is utilizing app's multi-view feature\r\n\r\nAND \r\n\r\n2. The user has brought up the games scoreboard",
+        "result": "THEN\r\n\r\n4. The collection view scales down to make room for the games scoreboard\r\n\r\nAND\r\n\r\n5. The collection view returns to full-scale when the games scoreboard has been dismissed"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1695",
+    "summary": "One Audio Focused",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6a8203b1-fdff-44af-882b-f8b4e9e1b425",
+        "data": "WHEN \r\n\r\n1. THE user is switching audio focus from primary to secondary videos or vice-versa",
+        "action": "GIVEN\r\n\r\n1. The user is viewing games in multi-view",
+        "result": "THEN\r\n\r\n1. Only one video has audio focus at a time"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1694",
+    "summary": "Single Press",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "5879ae37-57c0-40a2-93d3-234fb1ec21a4",
+        "data": "WHEN \r\n\r\n1. The user single-presses the secondary video with no audio focus",
+        "action": "GIVEN \r\n\r\n1. The user is viewing games in multi-view",
+        "result": "THEN\r\n\r\n1. Audio focus will switch to the secondary video"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1693",
+    "summary": "Indicator",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "cd8221fe-16e4-47e4-af8e-0aa61f874e66",
+        "data": "WHEN \r\n\r\n1. A video has audio focus",
+        "action": "GIVEN\r\n\r\n1. The user is viewing games in multi-view",
+        "result": "THEN\r\n\r\n1. An Audio indicator will be displayed on the video feed with audio focus"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1692",
+    "summary": "Return to Multiview Quick Action",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e2efadc7-208b-42f4-9bd8-04567b893378",
+        "data": "WHEN\r\n\r\n1. The user views the quick action buttons on the video player",
+        "action": "GIVEN\r\n\r\n1. The user is utilizing the multi-view feature\r\n\r\nAND\r\n\r\n2. The user has a video player in full-screen view",
+        "result": "THEN\r\n \r\n1. The multi-view quick action button will read \"Return to Multi-view\""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1691",
+    "summary": "Menu/Back Button While Controls are Hidden",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b7698136-49a9-43d5-8d6e-8d28d917672d",
+        "data": "WHEN\r\n\r\n1. The user single presses the Menu/Back button on the remote",
+        "action": "GIVEN\r\n\r\n1. The user is utilizing the multi-view feature\r\n\r\nAND\r\n\r\n1. The player controls are hidden on the player",
+        "result": "THEN\r\n\r\n1. All active video players in multi-view will become visible"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1690",
+    "summary": "Multiview Remains Active",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "3cd47c3f-8824-44e5-9102-5a0e3a0e5493",
+        "data": "WHEN\r\n\r\n1. The user launches the primary player into full-screen view",
+        "action": "GIVEN\r\n\r\n1. The user is viewing games in multi-view",
+        "result": "THEN \r\n\r\n1. Multi-view will remain active in the background"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1689",
+    "summary": "Hidden Controls",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e714989e-bca3-46a5-9548-93ba8646eded",
+        "data": "WHEN \r\n\r\n1. The user observes player controls are hidden\r\n\r\nAND \r\n\r\n1. The user presses the menu option on controller",
+        "action": "GIVEN\r\n\r\n1. The user is viewing games in multi-view\r\n\r\nAND\r\n\r\n1. A video feed is being viewed in full-screen",
+        "result": "THEN\r\n\r\n1. The full-screen view will return to multi-view"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1688",
+    "summary": "Play/Pause",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "320e48e8-26a9-45c2-a263-5e4845351e05",
+        "data": "WHEN\r\n\r\n1. The user presses Play or Pause on either the primary video or the secondary video",
+        "action": "GIVEN\r\n\r\n1. The user is viewing games in multi-view",
+        "result": "THEN\r\n\r\n1. That video feed will gain audio focus\r\n\r\nAND\r\n\r\n1. That video feed will display in full-screen"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1687",
+    "summary": "Double Press",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "87656511-caee-4340-9e21-c8fbc05e9919",
+        "data": "WHEN\r\n\r\n+ The user double presses on the secondary video",
+        "action": "GIVEN\r\n\r\n+ The user is viewing games in multi-view",
+        "result": "THEN\r\n\r\n+ The secondary video will gain audio focus\r\n\r\nAND\r\n\r\n+ The secondary video will move to the primary video player"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1686",
+    "summary": "Full-screen Player Controls",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6f81d114-7fe0-46dd-b94f-327959452b0e",
+        "data": "WHEN \r\n\r\n1. The user has the primary video in full-screen view",
+        "action": "GIVEN\r\n\r\n1. The user is viewing games in multi-view",
+        "result": "THEN \r\n\r\n1. The user will have access to full video player controls on a single game"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1685",
+    "summary": "Single Press",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "0baae5cc-df0f-4726-a63c-4feafe6809af",
+        "data": "WHEN \r\n\r\n1. The user utilizes the single press action on the primary video feed",
+        "action": "GIVEN \r\n\r\n1. The user is viewing games in multi-view",
+        "result": "THEN \r\n\r\n1. The primary video will go into full-screen view \r\n\r\nAND \r\n\r\n1. The Multi-view feature will remain in background"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1684",
+    "summary": "Single Press",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6b63b978-a63e-49df-a452-f0361aa83158",
+        "data": "WHEN \r\n\r\n1. Users select a secondary player via single press\r\n2. The secondary player has audio focus",
+        "action": "GIVEN \r\n\r\n1. Users are utilizing the tvOS multi-view feature",
+        "result": "THEN \r\n\r\n1. The secondary player will now become the primary"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1739",
+    "summary": "Restore Purchase",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "a7f472ec-49a6-4ebc-955e-e3c630e8b8c6",
+        "data": "WHEN\r\n\r\n1. The user selects Restore Purchase on the Welcome page",
+        "action": "GIVEN\r\n\r\n1. The user has freshly installed and launched the MLB app",
+        "result": "THEN\r\n\r\n1. The user will receive a message stating if their subscription has been restored or not\r\n\r\nAND\r\n\r\n1. If restored, the user will be navigated to the create a free MLB account page where they can skip the linking process"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1738",
+    "summary": "Have An MLB Account?",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "115f4e5b-27d9-4cd6-882a-607dc857b665",
+        "data": "WHEN\r\n\r\n1. The user selects the \"Have an MLB Account?\" option on the Welcome page",
+        "action": "GIVEN\r\n\r\n1. The user has freshly installed and launched the MLB app",
+        "result": "THEN\r\n\r\n1. The user will be able to Sign in with their apple device, sign in manually using their remote, or restore their purchase"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1737",
+    "summary": "Get Started",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "699ed541-3e5b-4e4b-a601-cdd2dff8988b",
+        "data": "WHEN\r\n\r\n 1.The user selects the Get Started option from the Welcome page",
+        "action": "GIVEN\r\n\r\n1. The user has freshly installed the MLB app from the app store",
+        "result": "THEN\r\n\r\n1. The user will be sent to the Favorite Team page\r\n\r\nAND\r\n\r\n1. After will be sent to the Create Account page where the user can create a free account, browse subscriptions, explore free content, and Log In"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1736",
+    "summary": "Welcome Page",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "a4c3be83-a839-4f30-b6ee-aaf511428ca4",
+        "data": "WHEN\r\n\r\n1. The user selects an option on the location check prompt\r\n\r\nAND\r\n\r\n1. The user is sent to the Welcome to the MLB app page",
+        "action": "GIVEN\r\n\r\nThe user has freshly installed the MLB app from the app store",
+        "result": "THEN\r\n\r\n1. The user can choose the following options: Get Started, Have an MLB account? and Restore Purchase"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1735",
+    "summary": "Location Check Prompt",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6b2a2a36-a44b-44d5-a4c6-7a3271d6a04c",
+        "data": "WHEN\r\n\r\n+ The user launches the app for the first time\r\n\r\nAND\r\n\r\n+ The user views the MLB location check prompt",
+        "action": "GIVEN\r\n\r\n+ The user has freshly installed the MLB app from the app store",
+        "result": "THEN\r\n\r\n+ The user will be able to select Don't Allow, Allow Once, and Allow While Using App"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1795",
+    "summary": "Home Page Mixed Carousel",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "2bd991e5-8d8f-4a99-8461-5794797d2469",
+        "data": "WHEN \r\n\r\n+ The user navigates to a mixed carousel that has features VOD, SLIVE, SVOD, and FLIVE content",
+        "action": "GIVEN\r\n\r\n+ The user is signed into an entitled MLB-ALL account",
+        "result": "THEN \r\n\r\n+ The user can launch and receive playback for each content type in the mixed carousel"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1794",
+    "summary": "Settings",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "9a70ea39-75a1-4146-8df1-98fe1c64e5bb",
+        "data": "WHEN\r\n\r\n+ The user is viewing the options in the list featured in the Settings page",
+        "action": "GIVEN\r\n\r\n+ The user is navigating the top menu\r\n\r\nAND\r\n\r\n+ The user has selected the Settings option",
+        "result": "THEN\r\n\r\n+ The user can Log In or Log Out\r\n+ The user can change their favorite team\r\n+ The user can enable/disable Hide Spoilers\r\n+ The user can navigate back to Get MLB.TV \r\n+ The user may restore their MLB.tv purchase\r\n+ The user can view the URLs to the app's TOS\r\n+ The user can view the URL for in-game support"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1793",
+    "summary": "Get MLB.TV",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "c84f153a-4568-4f75-8366-6779fc593925",
+        "data": "WHEN\r\n\r\n+ The user navigates through this MLB upsell section",
+        "action": "GIVEN\r\n\r\n+ The user is navigating the top menu\r\n\r\nAND\r\n\r\n+ The user is not logged into an account\r\n\r\nAND\r\n\r\n+ The user has selected the Get MLB.TV option",
+        "result": "THEN\r\n\r\n+ The user will be able to create a free account\r\n\r\nAND\r\n\r\n+ The user has access to browse subscriptions\r\n\r\nAND \r\n+ The user can log into their account\r\n\r\nAND\r\n\r\n+ The user can elect to explore free content and continue using the app as a free user with no active entitlements"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1792",
+    "summary": "Login",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "9c633fbe-fb9a-419d-984c-9d42827573a5",
+        "data": "WHEN\r\n\r\n+ The user views the Sign-In options on this page",
+        "action": "GIVEN\r\n\r\n+ The user is navigating the top menu\r\n\r\nAND\r\n\r\n+ The user is not logged into an account\r\n\r\nAND\r\n\r\n+ The user has selected the Login option",
+        "result": "THEN\r\n\r\n+ The user will be able to sign into their account through the app or by using their Apple Device\r\n\r\nOR\r\n\r\n+ The user has access to restore their purchase"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1791",
+    "summary": "Scoreboard Flip",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 2,
+    "steps": [
+      {
+        "id": "a81b8778-561a-4d5b-ab05-de99956e9433",
+        "data": "WHEN\n\nThe time of day is before 10 AM EST",
+        "action": "GIVEN\n\nThe user views the game scoreboard on the Watch, Scores, Home tabs on the following day",
+        "result": "THEN\n\nThe scoreboard will display games played on the previous day\n\nAND\n\nThe user is able to launch archive playback for games in FINAL"
+      },
+      {
+        "id": "5122f2ed-06eb-4090-9c90-d73d5eea3402",
+        "data": "WHEN\n\nThe time of day is after 10 AM EST",
+        "action": "GIVEN\n\nThe user views the game scoreboard on the Watch, Scores, Home tabs on the following day",
+        "result": "THEN\n\nThe scoreboard will display games played on the current day\n\nAND\n\nThe user is able to launch live games if available\n\nOR\n\nThe user is able to view a No Feeds Available modal for games in preview state"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1788",
+    "summary": "Calendar",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b98191ce-1c7f-4647-8fd7-97921503d691",
+        "data": "WHEN\n\nSelecting the calendar icon on next to the date picker buttons (Below Settings on top-right)",
+        "action": "GIVEN\n\nThe user navigates to the Games page",
+        "result": "THEN\n\nThe calendar view will be displayed with the Month and Year available in the header\n\nAND\n\nA \"Today\" or \"Hoy\" button is available on the top-right of the page\n\nAND\n\nThe user is able to navigate to previous and future months, as well as days in the month\n\nAND\n\nSelecting \"Today\" will bring the user back to the current month > day"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1787",
+    "summary": "Blackout Pill",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "90d8cb19-d7c8-42a4-8d5d-44eca28a4324",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN \r\n\r\nA logged-in user is in a location where a local team is blacked out\r\n\r\nOR\r\n\r\nThe logged-in user is attempting to view a National game that is blacked out",
+        "result": "THEN\r\n\r\nA blackout icon is displayed on the game tile\r\n\r\nAND\r\n\r\nTapping on the game tile will display the blackout message"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1786",
+    "summary": "MVPD Pill",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "ba3b80e5-17df-4f2f-b3a0-ed049e9b2686",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN\r\n\r\nThe user observes a game tile (Ex: ASG)\r\n\r\nAND\r\n\r\nThe game is only available for users with mvpd auth credentials linked to their account",
+        "result": "THEN\r\n\r\nThe user will see the MVPD Required pill displayed"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1785",
+    "summary": "Lock Icon",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "3f7bb1b3-f59d-4a3a-a8de-f08b0bedcb3b",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN \r\n\r\nThe user is not-entitled to one or both feeds available in the feed picker",
+        "result": "THEN \r\n\r\nA lock icon is displayed on the game tile or Hero\r\n\r\nAND\r\n\r\nThe broadcast is disabled and cannot be selected"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1784",
+    "summary": "Runners and Outs",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e7d78e7a-b564-4cf0-9759-37664853dc45",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel, and Games page\r\n\r\nAND\r\n\r\nThere are runners on base or outs in the inning",
+        "action": "GIVEN\r\n\r\nA game is Live and in-progress",
+        "result": "THEN\n\nAny runners on base will display on the infield icon in yellow\n\nAND\n\nAny outs recorded will switch the circle icon from grey to yellow"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1783",
+    "summary": "Preview State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "45d3da55-098f-483c-842a-ba894a416ba7",
+        "data": "WHEN\r\n\r\nThe user views the game tile on the Hero, Games Carousel, or Games Page",
+        "action": "GIVEN\r\n\r\nA game is in the preview state",
+        "result": "THEN\r\n\r\nThe user will see the start time displayed above the projected starting pitchers\r\n\r\nAND\r\n\r\nThe Bases and Outs icons will be greyed out"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1782",
+    "summary": "Inning",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "105c776b-eeee-46df-bf19-792f43eff828",
+        "data": "WHEN \r\n\r\nThe user views the game tile from the Hero, Games Carousel, or Games page",
+        "action": "GIVEN\r\n\r\nA game is in-progress",
+        "result": "THEN\r\n\r\nThe inning will be displayed on the game tile\r\n(Ex: T1 or B2)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1781",
+    "summary": "Pitcher & Batter (Archive)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "27a97358-c0b4-4a08-8351-b2c9884e3b4a",
+        "data": "WHEN \r\n\r\nThe user views the game tile on the hero, games carousel, or games page",
+        "action": "GIVEN\r\n\r\nA game is final",
+        "result": "THEN\r\n\r\nThe winning pitcher's last name will be located next to \"W\" under \"FINAL\"\r\n\r\nAND\r\n\r\nThe losing pitcher's last name will be located next to \"L\" under the winning pitcher"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1780",
+    "summary": "Pitcher & Batter (Live)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "ff7d1aff-8883-42de-83f8-b1514041d801",
+        "data": "WHEN \r\n\r\nThe user views the game tile on the hero, games carousel, or games page",
+        "action": "GIVEN\r\n\r\nA game is Live",
+        "result": "THEN\r\n\r\nThe pitcher's last name will be displayed next to \"P\"\r\n\r\nAND\r\n\r\nUnder the pitcher will be the current batter's last name displayed next to \"AB\""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1779",
+    "summary": "Live Tag",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e6162352-aa69-4855-8bab-c0d7d0baab74",
+        "data": "WHEN\r\n\r\nViewing the game tile",
+        "action": "GIVEN \r\n\r\nA feed is available for a game that is in-progres",
+        "result": "THEN\r\n\r\nThe \"Live\" tag will be available (Red background, white text)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1778",
+    "summary": "Team Logos - Live",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "77a008e9-8a8d-440d-becc-7092bbb61d6c",
+        "data": "WHEN\r\n\r\nA game is Live and in-progress",
+        "action": "GIVEN\r\n\r\nThe user is viewing a matchup tile on the Watch or Games page",
+        "result": "THEN\r\n\r\nThe Away team (Logo, Colors, and Team-code) will be displayed on the left\r\n\r\nAND\r\n\r\nThe Home team (Logo, Colors, Team-code) will be located on the right\r\n\r\nAND \r\n\r\nThe score will be in the center (Ex: 0-0, 5-4)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1777",
+    "summary": "Team Logos - Preview",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "7f0e4947-09a4-474b-9a94-6ca48e548cd9",
+        "data": "WHEN\r\n\r\nA game is in a preview state",
+        "action": "GIVEN\r\n\r\n1. The user is viewing a matchup tile on the Watch or Games page",
+        "result": "THEN\r\n\r\nThe Away team (Logo, Colors, and Team-code) will be displayed on the left\r\n\r\nAND\r\n\r\nThe Home team (Logo, Colors, Team-code) will be located on the right\r\n\r\nAND\r\n\r\n\"@\" will be in the center"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1776",
+    "summary": "Games",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "ff9a5276-5863-4b94-aa0a-b7885e1881ab",
+        "data": "WHEN\r\n\r\n+ The user views the content available to view in the Games section",
+        "action": "GIVEN\r\n\r\n+ The user is navigating the top menu\r\n\r\nAND\r\n\r\n+ The user has selected the Games section",
+        "result": "THEN\r\n\r\n+ Game tiles (Live and Archived) are available to view on days in which games are played\r\n\r\nAND\r\n\r\n+ A Calendar option is available to select in order to change the date on the Games page\r\n\r\nAND\r\n\r\n+ If there are no games being played that day, then \"No Games Scheduled\" copy will be displayed over a background image (Baseball bats for no favorited team)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1775",
+    "summary": "Day without Games",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "7dffad8b-5f35-460a-9374-337f72c35ccc",
+        "data": "WHEN\n\nViewing the Games page",
+        "action": "GIVEN\n\nA date does not have any scheduled games available",
+        "result": "THEN\n\n\"There are no games scheduled\" or \"NO HAY JUEGOS PROGRAMADOS\" will be displayed"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1774",
+    "summary": "Single-Game Day",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "e7272da0-ee74-4570-88d1-812625794444",
+        "data": "WHEN\n\nViewing the Games page on the scheduled day with 1 game",
+        "action": "GIVEN\n\nA date does not have more than 1 game scheduled on that day (World Series)",
+        "result": "THEN\n\nThe game tile will be displayed as expected"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1773",
+    "summary": "Game Tiles",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "95177d50-3856-411f-b57c-d6117d98f4d0",
+        "data": "",
+        "action": "Exploratory Testing Ticket",
+        "result": ""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1772",
+    "summary": "Blackout Pill",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "0faaaf84-3be4-45a8-93a8-99f34a4bd4b1",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN \r\n\r\nA logged-in user is in a location where a local team is blacked out\r\n\r\nOR\r\n\r\nThe logged-in user is attempting to view a National game that is blacked out",
+        "result": "THEN\r\n\r\nA blackout icon is displayed on the game tile\r\n\r\nAND\r\n\r\nTapping on the game tile will display the blackout message"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1771",
+    "summary": "MVPD Pill",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "14f26319-1aa4-48c3-aef4-3b29d950943b",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN\r\n\r\nThe user observes a game tile (Ex: ASG)\r\n\r\nAND\r\n\r\nThe game is only available for users with mvpd auth credentials linked to their account",
+        "result": "THEN\r\n\r\nThe user will see the MVPD Required pill displayed"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1770",
+    "summary": "Lock Icon",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "1d4e74a6-7e10-4fc5-9085-002ec84c267f",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel and Games page",
+        "action": "GIVEN \r\n\r\nThe user is not-entitled to one or both feeds available in the feed picker",
+        "result": "THEN \r\n\r\nA lock icon is displayed on the game tile or Hero\r\n\r\nAND\r\n\r\nThe broadcast is disabled and cannot be selected"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1769",
+    "summary": "Runners and Outs",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "57a9f49a-4624-401f-9ef3-e538b25697e6",
+        "data": "WHEN\r\n\r\nThe user views the game tile from the Hero, Games Carousel, and Games page\r\n\r\nAND\r\n\r\nThere are runners on base or outs in the inning",
+        "action": "GIVEN\r\n\r\nA game is Live and in-progress",
+        "result": "THEN\n\nAny runners on base will display on the infield icon in yellow\n\nAND\n\nAny outs recorded will switch the circle icon from grey to yellow"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1768",
+    "summary": "Preview State",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "48ab6869-c44b-44e5-a8cf-8262a7182aa0",
+        "data": "WHEN\r\n\r\nThe user views the game tile on the Hero, Games Carousel, or Games Page",
+        "action": "GIVEN\r\n\r\nA game is in the preview state",
+        "result": "THEN\r\n\r\nThe user will see the start time displayed above the projected starting pitchers\r\n\r\nAND\r\n\r\nThe Bases and Outs icons will be greyed out"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1767",
+    "summary": "Game Tile Data - Innings",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "d7189534-3a76-4f66-a9b0-c052674f46cb",
+        "data": "WHEN \r\n\r\nThe user views the game tile from the Hero, Games Carousel, or Games page",
+        "action": "GIVEN\r\n\r\nA game is in-progress",
+        "result": "THEN\r\n\r\nThe inning will be displayed on the game tile\r\n(Ex: T1 or B2)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1766",
+    "summary": "Game Tile Data - Pitcher & Batter (Archive)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "70cc6cbc-c393-4ce1-ba17-d845aaf0350c",
+        "data": "WHEN \r\n\r\nThe user views the game tile on the hero, games carousel, or games page",
+        "action": "GIVEN\r\n\r\nA game is final",
+        "result": "THEN\r\n\r\nThe winning pitcher's last name will be located next to \"W\" under \"FINAL\"\r\n\r\nAND\r\n\r\nThe losing pitcher's last name will be located next to \"L\" under the winning pitcher"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1765",
+    "summary": "Game Tile Data - Pitcher & Batter (Live)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "02837d23-acb8-4433-81f6-97ae3c361843",
+        "data": "WHEN \r\n\r\nThe user views the game tile on the hero, games carousel, or games page",
+        "action": "GIVEN\r\n\r\nA game is Live",
+        "result": "THEN\r\n\r\nThe pitcher's last name will be displayed next to \"P\"\r\n\r\nAND\r\n\r\nUnder the pitcher will be the current batter's last name displayed next to \"AB\""
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1764",
+    "summary": "Live Tag",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "1cd57412-ca79-40d4-9673-299af863047f",
+        "data": "WHEN\r\n\r\nViewing the game tile",
+        "action": "GIVEN \r\n\r\nA feed is available for a game that is in-progres",
+        "result": "THEN\r\n\r\nThe \"Live\" tag will be available (Red background, white text)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1763",
+    "summary": "Team Logos - Live",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "606d6489-acff-4d19-b57c-615f16573edc",
+        "data": "WHEN\r\n\r\nA game is Live and in-progress",
+        "action": "GIVEN\r\n\r\nThe user is viewing a matchup tile on the Watch or Games page",
+        "result": "THEN\r\n\r\nThe Away team (Logo, Colors, and Team-code) will be displayed on the left\r\n\r\nAND\r\n\r\nThe Home team (Logo, Colors, Team-code) will be located on the right\r\n\r\nAND \r\n\r\nThe score will be in the center (Ex: 0-0, 5-4)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1762",
+    "summary": "Team Logos - Preview",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "00957fc9-47c9-4bb2-8f06-97ef3a5c72ab",
+        "data": "WHEN\r\n\r\nA game is in a preview state",
+        "action": "GIVEN\r\n\r\n1. The user is viewing a matchup tile on the Watch or Games page",
+        "result": "THEN\r\n\r\nThe Away team (Logo, Colors, and Team-code) will be displayed on the left\r\n\r\nAND\r\n\r\nThe Home team (Logo, Colors, Team-code) will be located on the right\r\n\r\nAND\r\n\r\n\"@\" will be in the center"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1760",
+    "summary": "Day with One Game",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "4916b9e1-5847-45e1-9e0a-25cf1b1ea023",
+        "data": "WHEN\n\nViewing the Games and Home pages",
+        "action": "GIVEN\n\nA date only has one game scheduled (World Series)",
+        "result": "THEN\n\nThe game will be available on the Games page\n\nAND\n\nThe game will be available either in the hero or the lineup carousel on the Home page"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1759",
+    "summary": "Game Tiles",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 3,
+    "steps": [
+      {
+        "id": "022ff218-a9c3-430b-a907-7ac1a787ccf1",
+        "data": "WHEN \n\nObserving the games tiles in preview",
+        "action": "GIVEN \n\nThe user is viewing the Games tab",
+        "result": "THEN\n\nEach game tile displays away team logo, tri-code, and record @ home team logo, tri-code and record\n\nAND\n\nThe time of first pitch displayed above away team\u2019s projected starter and home team\u2019s projected starter\n\nAND\n\nProjected starters available\n\nAND\n\nBases and Out indicators that are greyed out"
+      },
+      {
+        "id": "6abf32c2-53e0-4cd6-84c9-ad9405e5589c",
+        "data": "WHEN \n\nObserving (focusing on) the games tiles in a LIVE state",
+        "action": "GIVEN \n\nThe user is viewing the Games tab",
+        "result": "THEN\n\nEach game tile displays _away team logo, tri-code, and record_ - *score* - _home team logo, tri-code and record_\n\nAND\n\nThe LIVE / En Vivo tag displayed next to the Top or Bottom of the inning the game is in (EX: BOT 4)\n\nAND\n\nCurrent Pitcher and Batter data available\n\nAND\n\nBases and Out indicators may be greyed out or filled in (Yellow)"
+      },
+      {
+        "id": "959c2d60-abbd-4791-9dcc-114838ffd54f",
+        "data": "WHEN \n\nObserving (focusing on) the games tiles in a FINAL state",
+        "action": "GIVEN \n\nThe user is viewing the Games tab",
+        "result": "THEN\n\nEach game tile displays _away team logo, tri-code, and record_ - *score* - _home team logo, tri-code and record_\n\nAND\n\nFINAL copy displayed\n\nAND\n\nWinning Pitcher over Losing pitcher with headshots\n\nAND\n\nBases and Out indicators that are greyed out"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1758",
+    "summary": "FLIVE in Today carousel",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b7c949c7-c2be-420a-8c54-222fa4c94d1f",
+        "data": null,
+        "action": "GIVEN \r\n\r\n+ FLIVE content is published in the Today on MLB.TV carousel",
+        "result": null
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1757",
+    "summary": "SVOD in Today carousel",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "7ee2551b-da69-4c7e-8fbe-7cd0f48d3a4d",
+        "data": "WHEN \r\n\r\n+ A user does NOT have the SUBSCRIBERVOD entitlement\r\n\r\nAND \r\n\r\n+ The user attempts to play back the SVOD content from the Today on MLB.tv carousel",
+        "action": "GIVEN \r\n\r\n+ SVOD content is published in the Today on MLB.TV carousel",
+        "result": null
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1756",
+    "summary": "SLIVE in Today's carousel",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "f25958aa-b56a-4a36-9427-ef3e87d11ecb",
+        "data": null,
+        "action": "GIVEN \r\n\r\n+ SLIVE content is published in the Today on MLB.TV carousel",
+        "result": null
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1755",
+    "summary": "VOD in hero",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "04197057-3763-4b23-ac3a-ada8e972618f",
+        "data": null,
+        "action": "GIVEN SLIVE content is published in the hero",
+        "result": null
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1754",
+    "summary": "FLIVE in hero",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "727c0bfd-251f-4f39-9ff1-fc4b7a0e7802",
+        "data": null,
+        "action": "GIVEN SLIVE content is published in the hero",
+        "result": null
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1753",
+    "summary": "SVOD in hero",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "25dcf866-1f18-4862-8269-605e6aad520d",
+        "data": null,
+        "action": "GIVEN SVOD content is published in the hero",
+        "result": null
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1752",
+    "summary": "SLIVE in hero",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "ec791bd1-3446-46ab-977b-e38b81018669",
+        "data": null,
+        "action": "GIVEN SLIVE content is published in the hero",
+        "result": null
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1751",
+    "summary": "MLBN Content appearance",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "588db910-0b29-492c-93aa-f3a509e20918",
+        "data": "WHEN \r\n\r\n+ Observing the hero or carousel tile for the MLBN stream",
+        "action": "GIVEN\r\n\r\n+ The user is entitled to MLBN content\r\n\r\nAND \r\n\r\n+ MLBN content is available and displayed without a lock icon",
+        "result": "THEN\r\n\r\n+ The user will observe a LIVE badge\r\n\r\nAND\r\n\r\n+ Duration of the MLBN linear stream will not display duration"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1750",
+    "summary": "MLBN unentitled",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "246bc445-69ab-4426-947b-7c0655641c4b",
+        "data": "WHEN\r\n\r\n+ The user lands on the Home page",
+        "action": "GIVEN \r\n\r\n+ A user not entitled to MLBN content",
+        "result": "THEN\r\n\r\n+ MLBN content is not displayed in the hero or Today on MLB.tv carousel\r\n\r\nAND\r\n\r\n+ The user cannot launch the content from a Mixed Content Carousel \r\n\r\nAND \r\n\r\n+ The MLBN linear stream will display a lock icon"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1749",
+    "summary": "MLBN in VOD/SVOD carousel",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "9d32ee65-78da-4bd2-b354-e042b83c4c86",
+        "data": "WHEN\r\n\r\n+ The user selects the MLBN content",
+        "action": "GIVEN\r\n\r\n+ A user entitled to MLBN \r\n\r\nAND \r\n\r\n+ MLBN content is published to a VOD/SVOD carousel",
+        "result": "THEN\r\n\r\n+ The user is able to play back the content"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1748",
+    "summary": "MLBN in Today Carousel",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "10150148-d7d1-4e5e-b63c-32f88fbaef44",
+        "data": "WHEN \r\n\r\n+ The user selects the MLBN content",
+        "action": "GIVEN\r\n\r\n+ A user entitled to MLBN \r\n\r\nAND \r\n\r\n+ MLBN content is published to the Today carousel",
+        "result": "THEN\r\n\r\n+ The user is able to play back the content"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1747",
+    "summary": "MLBN in Hero",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "8b957972-e350-4d7e-ad86-f2f4ec077f51",
+        "data": "WHEN \r\n\r\n+ The user selects the Watch Live button",
+        "action": "GIVEN \r\n\r\n+ A user entitled to MLBN \r\n\r\nAND \r\n\r\n+ MLBN content is published to the hero",
+        "result": "THEN\r\n\r\n+ The user is able to play back the content"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1746",
+    "summary": "Home",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "4ad64b7a-440d-4000-8aa3-549ca8493620",
+        "data": "WHEN\r\n\r\n+ The user views the content available within the Home section of the app",
+        "action": "GIVEN\r\n\r\n+ The user is navigating the top menu\r\n\r\nAND\r\n\r\n+ The user has selected the Home section",
+        "result": "THEN\r\n\r\n+ The user will see a hero image and featured content at the top\r\n\r\nAND\r\n\r\n+ A game tile scoreboard carousel if there are games scheduled\r\n\r\nAND\r\n\r\n# Various SLive, VOD, SVOD, and sometimes FLive content down the app sorted by specified carousels"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1745",
+    "summary": "Featured Carousel",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "467802a8-8206-49c7-bfdd-2ee73d95fb77",
+        "data": "WHEN\r\n\r\n+ The user views the Featured carousel",
+        "action": "GIVEN\r\n\r\n+ The user is navigating through the Home tab",
+        "result": "THEN\r\n\r\n+ Entitled users will be able to launch SVOD and SLive content from the Featured carousel\r\n\r\nAND\r\n\r\n+ Non-entitled users will be able to launch the VOD and FLive content from the featured carousel"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1744",
+    "summary": "VOD Carousel",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "1bf2411a-720c-4a8b-a9a8-ef74aa0680e2",
+        "data": "WHEN\r\n\r\n+ viewing various free, VOD carousels\r\n\r\nEx: Defensive Highlights",
+        "action": "GIVEN\r\n\r\n+ The user is navigating through the Home tab",
+        "result": "THEN\r\n\r\n+ The user will not see a lock icon on the video tile\r\n\r\nAND\r\n\r\n+ The user is able to successfully launch VOD content and receive playback"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1743",
+    "summary": "Today Carousel (SLive Scheduled)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "0cd9dda1-ac0b-45cb-935e-f6100e99f85b",
+        "data": "WHEN\r\n\r\n+ Navigating through the Home tab\r\n\r\nAND\r\n\r\n+ There is an SLIVE stream available\r\n\r\nAND\r\n\r\n+ The SLIVE is not in the hero space",
+        "action": "GIVEN\r\n\r\n+ The user has navigated to the Home page",
+        "result": "THEN\r\n\r\n+ The user is able to play back the SLIVE content in the \"Today\" carousel"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1742",
+    "summary": "Today Carousel (1 Game Scheduled)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "3db3997b-6477-4f30-9fa1-79e9e245279b",
+        "data": "WHEN\r\n\r\n+ Navigating through the Home tab\r\n\r\nAND\r\n\r\n+ There is only one game scheduled for the day",
+        "action": "GIVEN\r\n\r\n+ The user has navigated to the Home tab",
+        "result": "THEN\r\n\r\n+ The Games carousel will be hidden if the only game is located in the Hero\r\n\r\nOR\r\n\r\n+ The Games carousel will be displayed with the one game scheduled if non-game content is available in the hero"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1741",
+    "summary": "Today Carousel (0 Games Scheduled)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "f9114fef-6a26-4556-867f-2515d5d1afa6",
+        "data": "WHEN\r\n\r\n+ Navigating through the Home tab",
+        "action": "GIVEN\r\n\r\n+ The user has navigated to the Home tab",
+        "result": "THEN\r\n\r\n+ The Games carousel, when games are scheduled, will be available for the user to interact with\r\n\r\nAND\r\n\r\n+ The Games carousel will be hidden if no games are scheduled for the day"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1740",
+    "summary": "Watch Now Hero",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "8abe6976-2c7d-4b0b-a41b-85654d1ff7a4",
+        "data": "WHEN\r\n\r\n+ Observing the Home Tab",
+        "action": "GIVEN \r\n\r\n+ The user has navigated to the Home tab",
+        "result": "THEN\r\n\r\n+ The user will observe a Hero background image relevant to the game or show\r\n\r\nAND \r\n\r\n+ Entitled users are able to launch the content and receive playback of a live or archived game\r\n\r\nAND/OR\r\n\r\n+ Non-game content such as SLive, FLive, VOD, and SVOD streams"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-2235",
+    "summary": "Home Page - Validate Scoreboard Flip at 10 AM EST",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "d854e15f-9251-4ea7-91c2-6c85d2c2fe60",
+        "data": "WHEN\n\nThe time of day flips to 10:00 AM EST (7,8, or 9 AM)",
+        "action": "GIVEN\n\nThe user is located in the following time zones (PST, MST, CST, EST)\n\nAND\n\nIs focused on the Home page \n\nAND\n\nObserves the \"Today\u2019s Lineup\" carousel displaying yesterday\u2019s games in final",
+        "result": "THEN\n\nThe scoreboard should flip to games played on the current day\n\nAND\n\nThe page\u2019s contents should update to reflect the date change"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1822",
+    "summary": "Ensure all areas of the app show current day's games",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "caf0b83b-894c-4d53-b5ed-10fe9ce7d5c3",
+        "data": "WHEN the user views the games displayed on:\r\n\r\nHome Tab (with favorite team)\r\nGames Tab",
+        "action": "GIVEN the user has confirmed the scoreboard flip for their timezone",
+        "result": "THEN the games and content displayed match what is displayed on the Home and Games pages when the scoreboard flipped at 10 AM Eastern Standard Time (New York)"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1818",
+    "summary": "JST Scoreboard Flip - At 10 AM EST (NY)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "6ca470cf-08ac-49f8-8745-d34d4a9cc75b",
+        "data": "WHEN the tester views the Games or Home tab",
+        "action": "GIVEN the tester is located in the Japan Standard Time zone\r\n\r\nAND the current time in their location is AT 10 AM EST (New York) - (AT 11 PM JST)",
+        "result": "THEN the user will see the scoreboard on the Games or Home page flip to the current day\r\nAND all scheduled games appear"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1817",
+    "summary": "JST Scoreboard Flip - Before 10 AM EST (NY)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "ea9a3a9d-c83f-40d4-87fc-65844f7150a7",
+        "data": "WHEN the tester views the Games or Home tab",
+        "action": "GIVEN the tester is located in the Japan Standard Time zone\r\n\r\nAND the current time in their location is before 10 AM EST (New York) - (Before 11 PM JST)",
+        "result": "THEN the user will see the scoreboard with completed games from the previous day"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1809",
+    "summary": "GMT Scoreboard Flip - At 10 AM EST (NY)",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "b013efab-0337-4b92-a5c8-8c4941737a30",
+        "data": "WHEN the tester views the Games tab or Home tab",
+        "action": "GIVEN the tester is located in the Greenwich Mean Time zone (London)\r\nAND the current time in their location is AT exactly 10 AM EST (2 PM GMT)",
+        "result": "THEN the user will see the scoreboard on the Games or Home page flip to the current day\r\n\r\nAND all scheduled games appear"
+      }
+    ]
+  },
+  {
+    "key": "MLBMOB-1808",
+    "summary": "GMT Scoreboard Flip - Before 10 AM EST (NY) ",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 1,
+    "steps": [
+      {
+        "id": "7a0ee612-ee49-46ec-96b1-3e47e0676870",
+        "data": "WHEN the user views the Games tab OR Home tab",
+        "action": "GIVEN the tester is located in the Greenwich Mean Time zone (London)\r\nAND the current time in their location is before 10 AM EST (Before 2 PM GMT)",
+        "result": "THEN the games and results displayed will be from the previous day"
+      }
+    ]
+  }
+]

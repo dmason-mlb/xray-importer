@@ -1,0 +1,109 @@
+{
+  "analysis_date": "2025-07-17T13:58:20.841111",
+  "test_execution": "MLBMOB-2799",
+  "test_execution_summary": "Applause tvOS 2025.12.0 Regression - To Use",
+  "summary": {
+    "total_tests": 268,
+    "tests_with_steps": 256,
+    "tests_without_steps": 12,
+    "percentage_missing_steps": 4.5
+  },
+  "tests_missing_steps": [
+    {
+      "key": "MLBMOB-1567",
+      "summary": "Exec Users",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1567"
+    },
+    {
+      "key": "MLBMOB-1566",
+      "summary": "Anon Users",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1566"
+    },
+    {
+      "key": "MLBMOB-1565",
+      "summary": "TV Yearly",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1565"
+    },
+    {
+      "key": "MLBMOB-1564",
+      "summary": "TV Monthly",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1564"
+    },
+    {
+      "key": "MLBMOB-1563",
+      "summary": "Single-Team Users",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1563"
+    },
+    {
+      "key": "MLBMOB-1562",
+      "summary": "Free Users",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1562"
+    },
+    {
+      "key": "MLBMOB-1560",
+      "summary": "Entitled",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1560"
+    },
+    {
+      "key": "MLBMOB-1609",
+      "summary": "All-Star Game",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1609"
+    },
+    {
+      "key": "MLBMOB-1622",
+      "summary": "Picture-In-Picture",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1622"
+    },
+    {
+      "key": "MLBMOB-1790",
+      "summary": "Live Game Launch",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1790"
+    },
+    {
+      "key": "MLBMOB-1789",
+      "summary": "Archive Launch",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1789"
+    },
+    {
+      "key": "MLBMOB-1761",
+      "summary": "Day without Games",
+      "testType": "Manual",
+      "status": "To Do",
+      "labels": [],
+      "jira_link": "https://mlbam.atlassian.net/browse/MLBMOB-1761"
+    }
+  ]
+}

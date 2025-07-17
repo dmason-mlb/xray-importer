@@ -1,0 +1,110 @@
+[
+  {
+    "key": "MLBMOB-1567",
+    "summary": "Exec Users",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1566",
+    "summary": "Anon Users",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1565",
+    "summary": "TV Yearly",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1564",
+    "summary": "TV Monthly",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1563",
+    "summary": "Single-Team Users",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1562",
+    "summary": "Free Users",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1560",
+    "summary": "Entitled",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1609",
+    "summary": "All-Star Game",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1622",
+    "summary": "Picture-In-Picture",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1790",
+    "summary": "Live Game Launch",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1789",
+    "summary": "Archive Launch",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  },
+  {
+    "key": "MLBMOB-1761",
+    "summary": "Day without Games",
+    "status": "To Do",
+    "labels": [],
+    "testType": "Manual",
+    "stepCount": 0,
+    "steps": []
+  }
+]
