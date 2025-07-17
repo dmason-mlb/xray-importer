@@ -27,7 +27,8 @@ headers = {
 }
 
 # Read the markdown file
-markdown_file = Path('sdui-test-creation/05-test-modification-guide.md')
+# NOTE: Documentation moved to consolidated reference in MLB-App/Test/sdui-test-docs
+markdown_file = Path('../MLB-App/Test/sdui-test-docs/01-Xray-GraphQL-Complete-Reference.md')
 if not markdown_file.exists():
     print(f"❌ Error: File {markdown_file} not found")
     exit(1)

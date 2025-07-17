@@ -338,17 +338,20 @@ def create_test(token, project_key, summary, steps):
     landing_page_id = landing_page['id']
     
     # Read content files
-    docs_path = "/Users/douglas.mason/Documents/GitHub/xray-importer/sdui-test-creation"
+    # NOTE: Documentation moved to MLB-App/Test/sdui-test-docs repository
+# Updated consolidated documentation is available at:
+# https://github.com/your-org/MLB-App/tree/main/Test/sdui-test-docs
+docs_path = "/Users/douglas.mason/Documents/GitHub/MLB-App/Test/sdui-test-docs"
     
     # Create child pages
     pages = [
         {
-            "file": "01-authentication.md",
+            "file": "01-Xray-GraphQL-Complete-Reference.md",
             "title": "XRAY API Authentication Guide",
             "convert": True
         },
         {
-            "file": "02-graphql-api-reference.md", 
+            "file": "02-Xray-Test-Automation-Strategy.md", 
             "title": "XRAY GraphQL API Reference",
             "convert": True
         },
