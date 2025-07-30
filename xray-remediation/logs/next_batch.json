@@ -1,0 +1,102 @@
+[
+  {
+    "key": "FRAMED-1416",
+    "labels": [
+      "api",
+      "cross_platform",
+      "high",
+      "jewel_event",
+      "team_page"
+    ]
+  },
+  {
+    "key": "FRAMED-1415",
+    "labels": [
+      "api",
+      "cross_platform",
+      "medium",
+      "team_page"
+    ]
+  },
+  {
+    "key": "FRAMED-1414",
+    "labels": [
+      "api",
+      "cross_platform",
+      "high",
+      "team_page"
+    ]
+  },
+  {
+    "key": "FRAMED-1413",
+    "labels": [
+      "api",
+      "cross_platform",
+      "high",
+      "parametrize",
+      "team_page"
+    ]
+  },
+  {
+    "key": "FRAMED-1412",
+    "labels": [
+      "api",
+      "cross_platform",
+      "low",
+      "team_page"
+    ]
+  },
+  {
+    "key": "FRAMED-1411",
+    "labels": [
+      "api",
+      "cross_platform",
+      "game_state",
+      "high",
+      "integration",
+      "team_page"
+    ]
+  },
+  {
+    "key": "FRAMED-1410",
+    "labels": [
+      "api",
+      "cross_platform",
+      "high",
+      "integration",
+      "jewel_event",
+      "team_page"
+    ]
+  },
+  {
+    "key": "FRAMED-1409",
+    "labels": [
+      "api",
+      "cross_platform",
+      "high",
+      "integration",
+      "live_state",
+      "team_page"
+    ]
+  },
+  {
+    "key": "FRAMED-1408",
+    "labels": [
+      "api",
+      "cross_platform",
+      "high",
+      "integration",
+      "team_page"
+    ]
+  },
+  {
+    "key": "FRAMED-1407",
+    "labels": [
+      "api",
+      "cross_platform",
+      "game_state",
+      "medium",
+      "team_page"
+    ]
+  }
+]

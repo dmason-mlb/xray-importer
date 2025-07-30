@@ -1,0 +1,191 @@
+{
+  "transformation_info": {
+    "source_file": "mlbmob_2799_confluence_test_steps.json",
+    "transformation_date": "2025-07-17T15:30:38.337295",
+    "source_document": {
+      "page_id": "4958552361",
+      "title": "MLBMOB-2799 Test Cases - 11 Selected Tests",
+      "version": 12,
+      "extracted_date": "2025-07-17"
+    }
+  },
+  "test_count": 11,
+  "tests": [
+    {
+      "key": "MLBMOB-1567",
+      "summary": "Exec Users",
+      "issue_id": "1132046",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Login with executive account credentials\n2. Navigate through app sections\n3. Check for special permissions\n4. Verify no ads displayed\n5. Access restricted content\n6. Test all premium features",
+          "result": "1. Executive account recognized\n2. Special privileges active:\n• No advertisements\n• All content unlocked\n• No blackout restrictions\n• Debug menu access (if enabled)\n3. Premium video quality available\n4. Early access to features\n5. Special analytics tags\n6. VIP customer support options\n7. All subscription features enabled",
+          "data": ""
+        }
+      ],
+      "validation_warnings": []
+    },
+    {
+      "key": "MLBMOB-1566",
+      "summary": "Anon Users",
+      "issue_id": "1132045",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Launch app without logging in\n2. Browse as anonymous user\n3. Attempt to access premium content\n4. Check available features\n5. Verify upgrade prompts\n6. Test registration flow",
+          "result": "1. Limited access for anonymous users\n2. Available features:\n• Scores and schedules\n• Free highlights\n• News articles\n• Team pages (basic)\n3. Premium content shows lock icon\n4. Subscription prompts on:\n• Live game access\n• Full archives\n• Premium features\n5. Easy registration/login access\n6. Feature comparison shown\n7. Smooth transition to paid user",
+          "data": ""
+        }
+      ],
+      "validation_warnings": []
+    },
+    {
+      "key": "MLBMOB-1565",
+      "summary": "TV Yearly",
+      "issue_id": "1132044",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Login with yearly MLB.tv subscriber\n2. Check account status display\n3. Verify all features unlocked\n4. Access live and archived games\n5. Check renewal information\n6. Test multi-platform access",
+          "result": "1. Account shows \"Annual Subscriber\"\n2. Full access confirmed:\n• All live games (except blackouts)\n• Complete archives\n• Multi-game view\n• All camera angles\n3. No upgrade prompts shown\n4. Renewal date displayed\n5. Auto-renewal status visible\n6. Works across all devices\n7. Subscriber benefits listed",
+          "data": ""
+        }
+      ],
+      "validation_warnings": [
+        "Step validation: Potentially problematic character '\"' in result"
+      ]
+    },
+    {
+      "key": "MLBMOB-1564",
+      "summary": "TV Monthly",
+      "issue_id": "1132043",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Login with monthly MLB.tv account\n2. Verify subscription status\n3. Check feature access\n4. Look for upgrade options\n5. Verify billing date\n6. Test all premium features",
+          "result": "1. Account shows \"Monthly Subscriber\"\n2. Same features as yearly:\n• Live game access\n• Archives available\n• HD quality streams\n• Stats integration\n3. Monthly billing reminder\n4. Option to upgrade to yearly\n5. Cancellation option visible\n6. Next billing date shown\n7. Pro-rated upgrade available",
+          "data": ""
+        }
+      ],
+      "validation_warnings": [
+        "Step validation: Potentially problematic character '\"' in result"
+      ]
+    },
+    {
+      "key": "MLBMOB-1563",
+      "summary": "Single-Team Users",
+      "issue_id": "1132042",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Login with single-team subscription\n2. Navigate to games section\n3. Verify team-specific access\n4. Try accessing other teams\n5. Check upgrade options\n6. Test blackout behavior",
+          "result": "1. Account shows team-specific plan\n2. Full access to selected team:\n• All team's games (except blackouts)\n• Home and away broadcasts\n• Team archives\n3. Other teams show lock icon\n4. Upgrade prompt to full MLB.tv\n5. Clear messaging about limitations\n6. Team change option (if allowed)\n7. Blackout rules still apply",
+          "data": ""
+        }
+      ],
+      "validation_warnings": []
+    },
+    {
+      "key": "MLBMOB-1562",
+      "summary": "Free Users",
+      "issue_id": "1132041",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Create/login with free account\n2. Browse available content\n3. Check feature limitations\n4. Access free content\n5. Observe upgrade prompts\n6. Test conversion funnel",
+          "result": "1. Free tier clearly indicated\n2. Access limited to:\n• Game highlights\n• Condensed games (delayed)\n• Free Game of the Day\n• Basic news/scores\n3. Premium content locked\n4. Contextual upgrade prompts\n5. Feature comparison available\n6. Easy upgrade path\n7. No intrusive advertising",
+          "data": ""
+        }
+      ],
+      "validation_warnings": []
+    },
+    {
+      "key": "MLBMOB-1560",
+      "summary": "Entitled",
+      "issue_id": "1132039",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Login with fully entitled account\n2. Verify entitlement status\n3. Access all content types\n4. Check for restrictions\n5. Test premium features\n6. Verify cross-platform access",
+          "result": "1. Full entitlement confirmed\n2. Unrestricted access to:\n• All live games\n• Complete archives\n• Premium features\n• Multiple streams\n3. No paywall prompts\n4. Highest quality available\n5. All platforms authorized\n6. VIP support access\n7. Beta features enabled",
+          "data": ""
+        }
+      ],
+      "validation_warnings": []
+    },
+    {
+      "key": "MLBMOB-1622",
+      "summary": "Picture-In-Picture",
+      "issue_id": "1132127",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Start playing any video on tvOS\n2. Press TV/Home button on remote\n3. Navigate to another app\n4. Observe PiP behavior\n5. Interact with PiP window\n6. Return to MLB app",
+          "result": "1. PiP activates when leaving app\n2. Video continues in small window\n3. PiP window features:\n• Draggable to corners\n• Play/pause controls\n• Close button\n4. Audio continues playing\n5. Returning to app restores full screen\n6. No interruption in playback\n7. Works with live and archived content\n8. Respects system PiP settings",
+          "data": ""
+        }
+      ],
+      "validation_warnings": []
+    },
+    {
+      "key": "MLBMOB-1790",
+      "summary": "Live Game Launch",
+      "issue_id": "1132305",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Precondition: During live game hours\n2. Open MLB tvOS app\n3. Navigate to Games/Scores tab\n4. Find any game marked \"LIVE\"\n5. Select the live game\n6. Choose broadcast feed\n7. Monitor stream startup",
+          "result": "1. Live games clearly marked with red indicator\n2. Game selection shows available feeds\n3. Stream starts within 5-10 seconds\n4. Join live (not from beginning)\n5. Live stats sync with video\n6. Smooth playback at selected quality\n7. Audio/video in sync\n8. Can switch between home/away feeds",
+          "data": ""
+        }
+      ],
+      "validation_warnings": [
+        "Step validation: Potentially problematic character '\"' in action"
+      ]
+    },
+    {
+      "key": "MLBMOB-1789",
+      "summary": "Archive Launch",
+      "issue_id": "1132304",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Navigate to Games section on tvOS\n2. Filter or scroll to completed games\n3. Select any \"Final\" game\n4. Choose \"Watch Archive\"\n5. Select preferred broadcast\n6. Start playback",
+          "result": "1. Completed games show \"Final\" status\n2. Archive available after processing (~90 min)\n3. Full game replay options:\n• Full broadcast\n• Condensed game\n• Key moments\n4. Playback controls include:\n• Skip innings\n• Jump to specific time\n• 10-second skip\n5. Quality selection available\n6. Spoiler-free mode option\n7. Smooth streaming performance",
+          "data": ""
+        }
+      ],
+      "validation_warnings": [
+        "Step validation: Potentially problematic character '\"' in action",
+        "Step validation: Potentially problematic character '\"' in result"
+      ]
+    },
+    {
+      "key": "MLBMOB-1761",
+      "summary": "Day without Games",
+      "issue_id": "1132275",
+      "testType": "Manual",
+      "stepCount": 1,
+      "steps": [
+        {
+          "action": "1. Precondition: Test on All-Star break or off-day\n2. Launch tvOS MLB app\n3. Navigate to Games/Scores section\n4. Observe the display\n5. Check for alternative content\n6. Verify user messaging",
+          "result": "1. Clear message: \"No games scheduled today\"\n2. Display shows:\n• Yesterday's final scores\n• Tomorrow's upcoming games\n• Alternative content suggestions\n3. No empty or error states\n4. Featured content promoted:\n• Classic games\n• Highlights compilation\n• MLB Originals\n5. Navigation remains functional\n6. Calendar shows off-day clearly\n7. Proper date navigation works",
+          "data": ""
+        }
+      ],
+      "validation_warnings": [
+        "Step validation: Potentially problematic character '\"' in result"
+      ]
+    }
+  ]
+}

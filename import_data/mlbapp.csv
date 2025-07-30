@@ -890,8 +890,8 @@ target.experienceId:         2
 target.activityId:         589044
 target.activeActivities:   589044",,,"GIVEN a user of the Team Page
 ",2 - Medium Priority,MLBAPP-2044,MLBAPP/Team page,0,,WHEN content of type article is tapped,,,,Master,S579322,Manual,Greg Caron,6/20/2024 4:19 PM
-C34028549,Device changes timezone,Greg Caron,9/6/2024 12:29 PM,,"THEN the games showing and selected game will still be based on current requirements 
-AND will not change 
+C34028549,Device changes timezone,Greg Caron,9/6/2024 12:29 PM,,"THEN the games showing and selected game will still be based on current requirements
+AND will not change
 AND the game dates and times shown will reflect the device timezone",,,GIVEN a user on the Favorite Team Snapshot,2 - Medium Priority,,MLBAPP/Team page,0,,WHEN the device timezone changes,,,,Master,S579322,Manual,Greg Caron,9/6/2024 12:30 PM
 C34028550,When current time is before flip time,Greg Caron,9/6/2024 12:29 PM,,"THEN the previous day's (ET) game will be located on the second date in the date bar
 AND will be selected by default",,,"GIVEN the NYC time is before the set fliptime (default is 10AM ET)

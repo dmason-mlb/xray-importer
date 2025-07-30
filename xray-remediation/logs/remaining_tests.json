@@ -1,0 +1,464 @@
+{
+  "timestamp": "2025-07-18T11:59:03.457929",
+  "completed": [
+    "FRAMED-1425",
+    "FRAMED-1424",
+    "FRAMED-1423",
+    "FRAMED-1422"
+  ],
+  "remaining": [
+    {
+      "key": "FRAMED-1421",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1420",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "localization",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1419",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1418",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1417",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1416",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1415",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1414",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1413",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "parametrize",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1412",
+      "labels": [
+        "api",
+        "cross_platform",
+        "low",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1411",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "integration",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1410",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "integration",
+        "jewel_event",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1409",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "integration",
+        "live_state",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1408",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "integration",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1407",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1406",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "performance",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1405",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1404",
+      "labels": [
+        "api",
+        "cross_platform",
+        "final_state",
+        "game_state",
+        "high",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1403",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "suspended_state",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1402",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1401",
+      "labels": [
+        "api",
+        "cross_platform",
+        "delayed_state",
+        "game_state",
+        "high",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1400",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "live_state",
+        "requires_live_game",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1399",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1398",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "preview_state",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1397",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1396",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1395",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "navigation",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1394",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1393",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "live_state",
+        "requires_live_game",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1392",
+      "labels": [
+        "api",
+        "cross_platform",
+        "localization",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1391",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "localization",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1390",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "localization",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1389",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1388",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "parametrize",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1387",
+      "labels": [
+        "api",
+        "critical",
+        "cross_platform",
+        "regression",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1386",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "live_state",
+        "performance",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1385",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "opening_day",
+        "performance",
+        "postseason",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1384",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "performance",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1383",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "performance",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1382",
+      "labels": [
+        "api",
+        "cross_platform",
+        "international",
+        "jewel_event",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1381",
+      "labels": [
+        "api",
+        "cross_platform",
+        "jewel_event",
+        "medium",
+        "spring_training",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1380",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "team_page",
+        "world_series"
+      ]
+    },
+    {
+      "key": "FRAMED-1379",
+      "labels": [
+        "all_star",
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1378",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "opening_day",
+        "team_page"
+      ]
+    }
+  ],
+  "total_remaining": 44
+}

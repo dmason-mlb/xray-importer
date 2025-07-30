@@ -2995,31 +2995,31 @@ C29114343,Standings - Favorite and Clinch indications,,Greg Caron,8/18/22 12:57,
 
 
 
-",2 - Medium Priority,"DISCO-676, DISCO-691",Home Surface/Standings Module,0,,,"1. WHEN a favorite team is set 
+",2 - Medium Priority,"DISCO-676, DISCO-691",Home Surface/Standings Module,0,,,"1. WHEN a favorite team is set
 
 Expected Result:
- THEN it will be highlighted with a star and a colored background for the row
+THEN it will be highlighted with a star and a colored background for the row
 2. WHEN a team has clinched the wild card
 
 Expected Result:
-THEN a ""w"" will display next to the team that has clinched 
+THEN a ""w"" will display next to the team that has clinched
 AND there should be a footnote denoting what this is
 3. WHEN a team has clinched the division
 
 
 Expected Result:
- THEN I should see a ""y"" next to the team that has clinched 
+THEN I should see a ""y"" next to the team that has clinched
 AND there should be a footnote denoting what this is
 4. WHEN any team has clinched either their division or a playoff spot via wildcard
 
 
 Expected Result:
-THEN footnotes explaining what the ""y"" and ""w"" means are seen","1. THEN it will be highlighted with a star and a colored background for the row
-2. THEN a ""w"" will display next to the team that has clinched 
+THEN footnotes explaining what the ""y"" and ""w"" means are seen","1.THEN it will be highlighted with a star and a colored background for the row
+2. THEN a ""w"" will display next to the team that has clinched
 AND there should be a footnote denoting what this is
-3. THEN I should see a ""y"" next to the team that has clinched 
+3.THEN I should see a ""y"" next to the team that has clinched
 AND there should be a footnote denoting what this is
-4. THEN footnotes explaining what the ""y"" and ""w"" means are seen","1. WHEN a favorite team is set 
+4. THEN footnotes explaining what the ""y"" and ""w"" means are seen","1. WHEN a favorite team is set
 
 2. WHEN a team has clinched the wild card
 
@@ -3684,8 +3684,8 @@ C29844666,Current date on or before date range,,Greg Caron,12/14/22 12:27,,"THEN
 C29844667,Current date on or after date range,,Greg Caron,12/14/22 12:27,,"THEN the ""featured"" game will be the last game of the season
 And will be displayed as the last block of the date bar ",,,"GIVEN a user whose Current date is on or after the beginning of the season (or date range)
 ",2 - Medium Priority,,Home Surface/Team Snapshot Module/Date Bar,1,,WHEN they navigate to the Home page,,,,Home Feed,S497381,Manual,Greg Caron,1/31/24 11:02
-C33043659,Device changes timezone,,Greg Caron,4/4/24 9:46,,"THEN the games showing and selected game will still be based on current requirements 
-AND will not change 
+C33043659,Device changes timezone,,Greg Caron,4/4/24 9:46,,"THEN the games showing and selected game will still be based on current requirements
+AND will not change
 AND the game dates and times shown will reflect the device timezone",3168s,,GIVEN a user on the Favorite Team Snapshot,1 - High Priority,,Home Surface/Team Snapshot Module/Date Bar,1,,WHEN the device timezone changes,,,,Home Feed,S497381,Manual,Greg Caron,10/4/24 16:00
 C29844670,When current time is before flip time,,Greg Caron,12/14/22 12:27,,"THEN the previous day's (ET) game will be located on the second date in the date bar
 AND will be selected by default",,,"GIVEN the NYC time is before the set fliptime (default is 10AM ET)

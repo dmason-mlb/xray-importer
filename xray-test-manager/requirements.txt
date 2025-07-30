@@ -1,0 +1,34 @@
+# XRAY Test Manager Requirements
+# Core dependencies for the test management application
+
+# HTTP requests and API interactions
+requests>=2.31.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Data validation and parsing
+pydantic>=2.0.0
+
+# JSON handling improvements
+orjson>=3.9.0
+
+# Date/time handling
+python-dateutil>=2.8.0
+
+# Logging improvements
+loguru>=0.7.0
+
+# Async support (future enhancement)
+aiohttp>=3.8.0
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+
+# Development dependencies
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.0.0
