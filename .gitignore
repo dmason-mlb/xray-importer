@@ -3,3 +3,4 @@
 import_data/testrail_data.db
 xray-filtering-and-modding/.env
 .env
+__pycache__/
