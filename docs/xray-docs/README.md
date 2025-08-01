@@ -2,203 +2,80 @@
 
 This directory contains the complete documentation for Xray's GraphQL API.
 
+## Complete Reference Guides
 
-## Queries
+The following consolidated reference guides provide comprehensive documentation for each major API area:
 
-- [getFolder](queries/getfolder.md)
-- [getTest](queries/gettest.md)
-- [getTests](queries/gettests.md)
-- [getExpandedTest](queries/getexpandedtest.md)
-- [getExpandedTests](queries/getexpandedtests.md)
+- **[TESTS_COMPLETE_REFERENCE.md](TESTS_COMPLETE_REFERENCE.md)** - All test-related queries, mutations, and objects
+- **[TESTRUN_COMPLETE_REFERENCE.md](TESTRUN_COMPLETE_REFERENCE.md)** - Complete TestRun operations and types
+- **[TESTEXECUTION_COMPLETE_REFERENCE.md](TESTEXECUTION_COMPLETE_REFERENCE.md)** - TestExecution management documentation
+- **[TESTPLANS_COMPLETE_REFERENCE.md](TESTPLANS_COMPLETE_REFERENCE.md)** - TestPlan operations and objects
+- **[TESTSETS_COMPLETE_REFERENCE.md](TESTSETS_COMPLETE_REFERENCE.md)** - TestSet functionality reference
+- **[TESTSTEP_COMPLETE_REFERENCE.md](TESTSTEP_COMPLETE_REFERENCE.md)** - TestStep operations and types
+- **[PRECONDITIONS_COMPLETE_REFERENCE.md](PRECONDITIONS_COMPLETE_REFERENCE.md)** - Precondition management reference
+- **[FOLDERS_COMPLETE_REFERENCE.md](FOLDERS_COMPLETE_REFERENCE.md)** - Folder/Test Repository operations
+- **[DATASETS_COMPLETE_REFERENCE.md](DATASETS_COMPLETE_REFERENCE.md)** - Dataset management documentation
+
+## Individual API Components
+
+### Queries
+
+Coverage and Project Settings:
 - [getCoverableIssue](queries/getcoverableissue.md)
 - [getCoverableIssues](queries/getcoverableissues.md)
-- [getDataset](queries/getdataset.md)
-- [getDatasets](queries/getdatasets.md)
-- [getPrecondition](queries/getprecondition.md)
-- [getPreconditions](queries/getpreconditions.md)
-- [getTestSet](queries/gettestset.md)
-- [getTestSets](queries/gettestsets.md)
-- [getTestPlan](queries/gettestplan.md)
-- [getTestPlans](queries/gettestplans.md)
-- [getTestExecution](queries/gettestexecution.md)
-- [getTestExecutions](queries/gettestexecutions.md)
-- [getTestRun](queries/gettestrun.md)
-- [getTestRunById](queries/gettestrunbyid.md)
-- [getTestRuns](queries/gettestruns.md)
-- [getTestRunsById](queries/gettestrunsbyid.md)
-- [getStepStatus](queries/getstepstatus.md)
+- [getIssueLinkTypes](queries/getissuelinktypes.md)
+- [getProjectSettings](queries/getprojectsettings.md)
 - [getStatus](queries/getstatus.md)
 - [getStatuses](queries/getstatuses.md)
-- [getStepStatuses](queries/getstepstatuses.md)
-- [getProjectSettings](queries/getprojectsettings.md)
-- [getIssueLinkTypes](queries/getissuelinktypes.md)
 
-## Mutations
+### Mutations
 
-- [createFolder](mutations/createfolder.md)
-- [deleteFolder](mutations/deletefolder.md)
-- [renameFolder](mutations/renamefolder.md)
-- [moveFolder](mutations/movefolder.md)
-- [addTestsToFolder](mutations/addteststofolder.md)
-- [addIssuesToFolder](mutations/addissuestofolder.md)
-- [removeTestsFromFolder](mutations/removetestsfromfolder.md)
-- [removeIssuesFromFolder](mutations/removeissuesfromfolder.md)
-- [createTest](mutations/createtest.md)
-- [updateTestType](mutations/updatetesttype.md)
-- [updateUnstructuredTestDefinition](mutations/updateunstructuredtestdefinition.md)
+Remaining standalone mutations:
 - [updateGherkinTestDefinition](mutations/updategherkintestdefinition.md)
-- [deleteTest](mutations/deletetest.md)
-- [addTestStep](mutations/addteststep.md)
-- [updateTestStep](mutations/updateteststep.md)
-- [removeTestStep](mutations/removeteststep.md)
-- [removeAllTestSteps](mutations/removeallteststeps.md)
-- [addPreconditionsToTest](mutations/addpreconditionstotest.md)
-- [removePreconditionsFromTest](mutations/removepreconditionsfromtest.md)
-- [updateTestFolder](mutations/updatetestfolder.md)
-- [updatePreconditionFolder](mutations/updatepreconditionfolder.md)
-- [addTestSetsToTest](mutations/addtestsetstotest.md)
-- [removeTestSetsFromTest](mutations/removetestsetsfromtest.md)
-- [addTestPlansToTest](mutations/addtestplanstotest.md)
-- [removeTestPlansFromTest](mutations/removetestplansfromtest.md)
-- [addTestExecutionsToTest](mutations/addtestexecutionstotest.md)
-- [removeTestExecutionsFromTest](mutations/removetestexecutionsfromtest.md)
-- [createPrecondition](mutations/createprecondition.md)
-- [updatePrecondition](mutations/updateprecondition.md)
-- [deletePrecondition](mutations/deleteprecondition.md)
-- [addTestsToPrecondition](mutations/addteststoprecondition.md)
-- [removeTestsFromPrecondition](mutations/removetestsfromprecondition.md)
-- [createTestSet](mutations/createtestset.md)
-- [deleteTestSet](mutations/deletetestset.md)
-- [addTestsToTestSet](mutations/addteststotestset.md)
-- [removeTestsFromTestSet](mutations/removetestsfromtestset.md)
-- [createTestPlan](mutations/createtestplan.md)
-- [deleteTestPlan](mutations/deletetestplan.md)
-- [addTestsToTestPlan](mutations/addteststotestplan.md)
-- [removeTestsFromTestPlan](mutations/removetestsfromtestplan.md)
-- [addTestExecutionsToTestPlan](mutations/addtestexecutionstotestplan.md)
-- [removeTestExecutionsFromTestPlan](mutations/removetestexecutionsfromtestplan.md)
-- [createTestExecution](mutations/createtestexecution.md)
-- [deleteTestExecution](mutations/deletetestexecution.md)
-- [addTestsToTestExecution](mutations/addteststotestexecution.md)
-- [removeTestsFromTestExecution](mutations/removetestsfromtestexecution.md)
-- [addTestEnvironmentsToTestExecution](mutations/addtestenvironmentstotestexecution.md)
-- [removeTestEnvironmentsFromTestExecution](mutations/removetestenvironmentsfromtestexecution.md)
-- [resetTestRun](mutations/resettestrun.md)
-- [updateTestRunStatus](mutations/updatetestrunstatus.md)
-- [updateTestRunComment](mutations/updatetestruncomment.md)
-- [updateTestRun](mutations/updatetestrun.md)
-- [addDefectsToTestRun](mutations/adddefectstotestrun.md)
-- [removeDefectsFromTestRun](mutations/removedefectsfromtestrun.md)
-- [addEvidenceToTestRun](mutations/addevidencetotestrun.md)
-- [removeEvidenceFromTestRun](mutations/removeevidencefromtestrun.md)
-- [updateTestRunStep](mutations/updatetestrunstep.md)
-- [addEvidenceToTestRunStep](mutations/addevidencetotestrunstep.md)
-- [removeEvidenceFromTestRunStep](mutations/removeevidencefromtestrunstep.md)
-- [addDefectsToTestRunStep](mutations/adddefectstotestrunstep.md)
-- [removeDefectsFromTestRunStep](mutations/removedefectsfromtestrunstep.md)
-- [updateTestRunStepComment](mutations/updatetestrunstepcomment.md)
-- [updateTestRunStepStatus](mutations/updatetestrunstepstatus.md)
-- [updateTestRunExampleStatus](mutations/updatetestrunexamplestatus.md)
 - [updateIterationStatus](mutations/updateiterationstatus.md)
-- [setTestRunTimer](mutations/settestruntimer.md)
 
-## Scalars
+### Objects
 
-- [Boolean](scalars/boolean.md)
-- [Float](scalars/float.md)
-- [Int](scalars/int.md)
-- [JSON](scalars/json.md)
-- [String](scalars/string.md)
+Core Types:
+- [Attachment](objects/attachment.md)
+- [Evidence](objects/evidence.md)
+- [Example](objects/example.md)
+- [Parameter](objects/parameter.md)
+- [Status](objects/status.md)
 
-## Enums
+Coverage Objects:
+- [CoverableIssue](objects/coverableissue.md)
+- [CoverableIssueResults](objects/coverableissueresults.md)
+- [CoverageStatus](objects/coveragestatus.md)
 
-- [__DirectiveLocation](enums/directivelocation.md)
-- [__TypeKind](enums/typekind.md)
-
-## Objects
-
-- [ActionFolderResult](objects/actionfolderresult.md)
+Result Objects:
 - [AddDefectsResult](objects/adddefectsresult.md)
 - [AddEvidenceResult](objects/addevidenceresult.md)
 - [AddPreconditionsResult](objects/addpreconditionsresult.md)
 - [AddTestEnvironmentsResult](objects/addtestenvironmentsresult.md)
-- [AddTestExecutionsResult](objects/addtestexecutionsresult.md)
-- [AddTestPlansResult](objects/addtestplansresult.md)
-- [AddTestSetsResult](objects/addtestsetsresult.md)
 - [AddTestsResult](objects/addtestsresult.md)
-- [Attachment](objects/attachment.md)
-- [Changes](objects/changes.md)
-- [CoverableIssue](objects/coverableissue.md)
-- [CoverableIssueResults](objects/coverableissueresults.md)
-- [CoverageStatus](objects/coveragestatus.md)
 - [CreatePreconditionResult](objects/createpreconditionresult.md)
-- [CreateTestExecutionResult](objects/createtestexecutionresult.md)
-- [CreateTestPlanResult](objects/createtestplanresult.md)
-- [CreateTestResult](objects/createtestresult.md)
-- [CreateTestSetResult](objects/createtestsetresult.md)
-- [CustomStepField](objects/customstepfield.md)
-- [Dataset](objects/dataset.md)
-- [DatasetRow](objects/datasetrow.md)
-- [Evidence](objects/evidence.md)
-- [Example](objects/example.md)
-- [ExpandedStep](objects/expandedstep.md)
-- [ExpandedTest](objects/expandedtest.md)
-- [ExpandedTestResults](objects/expandedtestresults.md)
-- [Folder](objects/folder.md)
-- [FolderResults](objects/folderresults.md)
-- [IssueLinkType](objects/issuelinktype.md)
-- [Parameter](objects/parameter.md)
-- [Precondition](objects/precondition.md)
-- [PreconditionResults](objects/preconditionresults.md)
-- [ProjectSettings](objects/projectsettings.md)
-- [ProjectSettingsTestCoverage](objects/projectsettingstestcoverage.md)
-- [ProjectSettingsTestRunCustomField](objects/projectsettingstestruncustomfield.md)
-- [ProjectSettingsTestRunCustomFields](objects/projectsettingstestruncustomfields.md)
-- [ProjectSettingsTestStepField](objects/projectsettingsteststepfield.md)
-- [ProjectSettingsTestStepSettings](objects/projectsettingsteststepsettings.md)
-- [ProjectSettingsTestType](objects/projectsettingstesttype.md)
 - [RemoveDefectsResult](objects/removedefectsresult.md)
 - [RemoveEvidenceResult](objects/removeevidenceresult.md)
+- [UpdateIterationStatusResult](objects/updateiterationstatusresult.md)
+
+Project Settings:
+- [ProjectSettings](objects/projectsettings.md)
+- [ProjectSettingsTestCoverage](objects/projectsettingstestcoverage.md)
+
+Execution Results:
 - [Result](objects/result.md)
 - [ResultsEmbedding](objects/resultsembedding.md)
 - [ResultsExample](objects/resultsexample.md)
-- [ResultsStep](objects/resultsstep.md)
-- [SimpleFolderResults](objects/simplefolderresults.md)
-- [Status](objects/status.md)
-- [Step](objects/step.md)
-- [StepStatus](objects/stepstatus.md)
-- [Test](objects/test.md)
-- [TestExecution](objects/testexecution.md)
-- [TestExecutionResults](objects/testexecutionresults.md)
-- [TestPlan](objects/testplan.md)
-- [TestPlanResults](objects/testplanresults.md)
-- [TestResults](objects/testresults.md)
-- [TestRun](objects/testrun.md)
-- [TestRunCustomFieldValue](objects/testruncustomfieldvalue.md)
-- [TestRunCustomStepField](objects/testruncustomstepfield.md)
-- [TestRunIteration](objects/testruniteration.md)
-- [TestRunIterationResults](objects/testruniterationresults.md)
-- [TestRunIterationStepResult](objects/testruniterationstepresult.md)
-- [TestRunIterationStepResults](objects/testruniterationstepresults.md)
-- [TestRunParameter](objects/testrunparameter.md)
-- [TestRunPrecondition](objects/testrunprecondition.md)
-- [TestRunPreconditionResults](objects/testrunpreconditionresults.md)
-- [TestRunResults](objects/testrunresults.md)
-- [TestRunStep](objects/testrunstep.md)
-- [TestSet](objects/testset.md)
-- [TestSetResults](objects/testsetresults.md)
-- [TestStatusType](objects/teststatustype.md)
-- [TestType](objects/testtype.md)
-- [TestVersion](objects/testversion.md)
-- [TestVersionResults](objects/testversionresults.md)
-- [UpdateIterationStatusResult](objects/updateiterationstatusresult.md)
-- [UpdateTestRunExampleStatusResult](objects/updatetestrunexamplestatusresult.md)
-- [UpdateTestRunResult](objects/updatetestrunresult.md)
-- [UpdateTestRunStepResult](objects/updatetestrunstepresult.md)
-- [UpdateTestRunStepStatusResult](objects/updatetestrunstepstatusresult.md)
-- [UpdateTestStepResult](objects/updateteststepresult.md)
+
+History and Metadata:
+- [Changes](objects/changes.md)
+- [IssueLinkType](objects/issuelinktype.md)
 - [XrayHistoryEntry](objects/xrayhistoryentry.md)
 - [XrayHistoryResults](objects/xrayhistoryresults.md)
+- [PreconditionResults](objects/preconditionresults.md)
+
+GraphQL Schema Objects:
 - [__Directive](objects/directive.md)
 - [__EnumValue](objects/enumvalue.md)
 - [__Field](objects/field.md)
@@ -206,29 +83,52 @@ This directory contains the complete documentation for Xray's GraphQL API.
 - [__Schema](objects/schema.md)
 - [__Type](objects/type.md)
 
-## Input Objects
+### Input Objects
 
 - [AttachmentDataInput](input_objects/attachmentdatainput.md)
 - [AttachmentInput](input_objects/attachmentinput.md)
 - [AttachmentOperationsInput](input_objects/attachmentoperationsinput.md)
-- [CreateStepInput](input_objects/createstepinput.md)
 - [CustomFieldInput](input_objects/customfieldinput.md)
-- [CustomStepFieldInput](input_objects/customstepfieldinput.md)
-- [FolderSearchInput](input_objects/foldersearchinput.md)
-- [PreconditionFolderSearchInput](input_objects/preconditionfoldersearchinput.md)
-- [TestRunDefectOperationsInput](input_objects/testrundefectoperationsinput.md)
-- [TestRunEvidenceOperationsInput](input_objects/testrunevidenceoperationsinput.md)
 - [TestTypeInput](input_objects/testtypeinput.md)
 - [TestWithVersionInput](input_objects/testwithversioninput.md)
-- [UpdatePreconditionInput](input_objects/updatepreconditioninput.md)
-- [UpdatePreconditionTypeInput](input_objects/updatepreconditiontypeinput.md)
-- [UpdateStepInput](input_objects/updatestepinput.md)
-- [UpdateTestRunStepInput](input_objects/updatetestrunstepinput.md)
 - [UpdateTestTypeInput](input_objects/updatetesttypeinput.md)
 
-## Directives
+### Scalars
 
-- [cost](directives/cost.md)
-- [deprecated](directives/deprecated.md)
-- [include](directives/include.md)
-- [skip](directives/skip.md)
+- [Boolean](scalars/boolean.md)
+- [Float](scalars/float.md)
+- [Int](scalars/int.md)
+- [JSON](scalars/json.md)
+- [String](scalars/string.md)
+
+### Enums
+
+- [__DirectiveLocation](enums/directivelocation.md)
+- [__TypeKind](enums/typekind.md)
+
+## Usage Guide
+
+For most use cases, start with the consolidated reference guides listed at the top of this document. These provide:
+
+1. **Complete API coverage** for each major area (Tests, TestRuns, TestExecutions, etc.)
+2. **All related queries, mutations, and objects** in one place
+3. **GraphQL schema definitions** with examples
+4. **Cross-references** between related operations
+
+The individual component files are preserved for specific lookups and remain part of the complete API documentation.
+
+## API Organization
+
+The Xray GraphQL API is organized around these main entities:
+
+- **Tests** - Test case definitions and management
+- **TestRuns** - Individual test execution instances
+- **TestExecutions** - Test execution cycles/sessions
+- **TestPlans** - Test planning and organization
+- **TestSets** - Logical groupings of tests
+- **TestSteps** - Step definitions within tests
+- **Preconditions** - Prerequisites for test execution
+- **Folders** - Hierarchical organization (Test Repository)
+- **Datasets** - Data-driven testing support
+
+Each consolidated reference guide provides comprehensive documentation for working with these entities.
