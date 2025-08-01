@@ -1,0 +1,3449 @@
+{
+  "matched_tests": [
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Team Selection via Drawer",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android\nTest Data: Test with all 30 teams",
+          "labels": [
+            "team_page",
+            "android",
+            "navigation",
+            "critical",
+            "ios",
+            "functional",
+            "smoke",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Tap on the team selector dropdown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team drawer opens smoothly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All 30 MLB teams are displayed",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Select a different team from the list &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Selected team's page loads with correct content &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team name updates in the header",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "User has the app installed and opened"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-001: Team Selection via Drawer"
+      },
+      "xray_test": {
+        "issueId": "1162652",
+        "jira": {
+          "key": "FRAMED-1632",
+          "summary": "Team Selection via Drawer",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "smoke",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Tap on the team selector dropdown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team drawer opens smoothly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All 30 MLB teams are displayed",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Select a different team from the list &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Selected team's page loads with correct content &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team name updates in the header",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Team Selection with Special Characters",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1005",
+          "labels": [
+            "team_page",
+            "android",
+            "navigation",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Select Arizona Diamondbacks from team selector &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team name displays correctly without cutoff &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Dropdown arrow remains visible",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "App is on Team Page"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-002: Team Selection with Special Characters"
+      },
+      "xray_test": {
+        "issueId": "1162653",
+        "jira": {
+          "key": "FRAMED-1633",
+          "summary": "Team Selection with Special Characters",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "functional",
+            "ios",
+            "manual",
+            "medium",
+            "navigation",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Select Arizona Diamondbacks from team selector &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team name displays correctly without cutoff &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Dropdown arrow remains visible",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "MIG Display During Live Game",
+          "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+          "labels": [
+            "requires_live_game",
+            "game_state",
+            "team_page",
+            "live_state",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to team with live game",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Observe MIG section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Live game card displays current score &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game status shows &quot;LIVE&quot;",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Check game score updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Score updates in real-time",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Verify broadcast information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Broadcast details are visible",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Selected team has a live game"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-003: MIG Display During Live Game"
+      },
+      "xray_test": {
+        "issueId": "1162654",
+        "jira": {
+          "key": "FRAMED-1634",
+          "summary": "MIG Display During Live Game",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "game_state",
+            "high",
+            "ios",
+            "live_state",
+            "manual",
+            "requires_live_game",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to team with live game",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Observe MIG section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Live game card displays current score &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game status shows &quot;LIVE&quot;",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check game score updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Score updates in real-time",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify broadcast information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Broadcast details are visible",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "MIG Calendar Navigation",
+          "description": "Folder: Team Page/Date Bar\nPlatforms: iOS, Android",
+          "labels": [
+            "team_page",
+            "android",
+            "navigation",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "date_bar",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "View MIG section",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Swipe left/right on calendar bar &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Calendar scrolls smoothly",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Tap on different game dates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Selected date highlights &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game card updates to show selected game",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-004: MIG Calendar Navigation"
+      },
+      "xray_test": {
+        "issueId": "1162655",
+        "jira": {
+          "key": "FRAMED-1635",
+          "summary": "MIG Calendar Navigation",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "date_bar",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "View MIG section",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Swipe left/right on calendar bar &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Calendar scrolls smoothly",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Tap on different game dates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Selected date highlights &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game card updates to show selected game",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Home Run Derby Display",
+          "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1200, FRAMED-1222",
+          "labels": [
+            "jewel_event",
+            "all_star",
+            "team_page",
+            "android",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to team page during HRD period",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; HRD displays with &quot;HRD&quot; text and start time &nbsp;&nbsp;&nbsp;&nbsp;&rarr; HRD logo shows when active &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Where to watch details visible",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "HRD is scheduled"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-005: Home Run Derby Display"
+      },
+      "xray_test": {
+        "issueId": "1162656",
+        "jira": {
+          "key": "FRAMED-1636",
+          "summary": "Home Run Derby Display",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "all_star",
+            "android",
+            "functional",
+            "ios",
+            "jewel_event",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to team page during HRD period",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; HRD displays with &quot;HRD&quot; text and start time &nbsp;&nbsp;&nbsp;&nbsp;&rarr; HRD logo shows when active &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Where to watch details visible",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Article Carousel Navigation",
+          "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android",
+          "labels": [
+            "team_page",
+            "android",
+            "navigation",
+            "content_display",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Scroll to Top Stories section",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Swipe through articles &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Carousel scrolls smoothly",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Tap on an article &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Article opens correctly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Images load properly",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-006: Article Carousel Navigation"
+      },
+      "xray_test": {
+        "issueId": "1162657",
+        "jira": {
+          "key": "FRAMED-1637",
+          "summary": "Article Carousel Navigation",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "content_display",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Scroll to Top Stories section",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Swipe through articles &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Carousel scrolls smoothly",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Tap on an article &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Article opens correctly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Images load properly",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Video Content Playback",
+          "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android",
+          "labels": [
+            "team_page",
+            "android",
+            "content_display",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Scroll to video carousel",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Tap on a video &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Video player opens",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify playback controls &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Playback starts (if autoplay enabled) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Controls are accessible",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-007: Video Content Playback"
+      },
+      "xray_test": {
+        "issueId": "1162658",
+        "jira": {
+          "key": "FRAMED-1638",
+          "summary": "Video Content Playback",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "content_display",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Scroll to video carousel",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Tap on a video &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Video player opens",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify playback controls &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Playback starts (if autoplay enabled) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Controls are accessible",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Editorial Module Display",
+          "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-871",
+          "labels": [
+            "team_page",
+            "android",
+            "content_display",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check Top Stories section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Editorial feed displays (iOS) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Carousel displays (Android) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Content is team-specific",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-008: Editorial Module Display"
+      },
+      "xray_test": {
+        "issueId": "1162659",
+        "jira": {
+          "key": "FRAMED-1639",
+          "summary": "Editorial Module Display",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "content_display",
+            "functional",
+            "ios",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check Top Stories section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Editorial feed displays (iOS) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Carousel displays (Android) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Content is team-specific",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Spanish Language Support",
+          "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1107, FRAMED-1117",
+          "labels": [
+            "team_page",
+            "android",
+            "localization",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Open Team Page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check all text elements &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All UI text in Spanish",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Tap on articles &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Articles load in Spanish",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check ticketing links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Links work correctly",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Device language set to Spanish"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-009: Spanish Language Support"
+      },
+      "xray_test": {
+        "issueId": "1162660",
+        "jira": {
+          "key": "FRAMED-1640",
+          "summary": "Spanish Language Support",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "localization",
+            "manual",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Open Team Page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check all text elements &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All UI text in Spanish",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Tap on articles &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Articles load in Spanish",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check ticketing links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Links work correctly",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Japanese Language Support",
+          "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1176",
+          "labels": [
+            "team_page",
+            "android",
+            "localization",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Open Team Page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Verify MIG displays Japanese &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Content displays in Japanese",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Check all sections &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper character rendering &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct API calls with lang=ja",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Device language set to Japanese"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-010: Japanese Language Support"
+      },
+      "xray_test": {
+        "issueId": "1162661",
+        "jira": {
+          "key": "FRAMED-1641",
+          "summary": "Japanese Language Support",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "functional",
+            "ios",
+            "localization",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Open Team Page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify MIG displays Japanese &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Content displays in Japanese",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check all sections &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper character rendering &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct API calls with lang=ja",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Deep Link Navigation",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+          "labels": [
+            "team_page",
+            "android",
+            "navigation",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Close app",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Open team page deep link &nbsp;&nbsp;&nbsp;&nbsp;&rarr; App opens to correct team",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify correct team loads &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All sections load properly",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-011: Deep Link Navigation"
+      },
+      "xray_test": {
+        "issueId": "1162662",
+        "jira": {
+          "key": "FRAMED-1642",
+          "summary": "Deep Link Navigation",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Close app",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Open team page deep link &nbsp;&nbsp;&nbsp;&nbsp;&rarr; App opens to correct team",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify correct team loads &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All sections load properly",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Schedule Navigation",
+          "description": "Folder: Team Page/Product Links\nPlatforms: iOS, Android\nRelated Issues: FRAMED-642",
+          "labels": [
+            "team_page",
+            "android",
+            "navigation",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "product_links",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Scroll to Team Info section",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Tap &quot;2025 Schedule&quot; &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Native schedule view opens",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Tap &quot;2024 Schedule &amp; Results&quot; &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct year displays",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-012: Schedule Navigation"
+      },
+      "xray_test": {
+        "issueId": "1162663",
+        "jira": {
+          "key": "FRAMED-1643",
+          "summary": "Schedule Navigation",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "product_links",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Scroll to Team Info section",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Tap &quot;2025 Schedule&quot; &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Native schedule view opens",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Tap &quot;2024 Schedule &amp; Results&quot; &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct year displays",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Page Load Performance",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+          "labels": [
+            "performance",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "smoke",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Force close app",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Open app and navigate to Team Page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Measure load time &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Page loads within 3 seconds &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No visible lag or stuttering &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Images load progressively",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-013: Page Load Performance"
+      },
+      "xray_test": {
+        "issueId": "1162664",
+        "jira": {
+          "key": "FRAMED-1644",
+          "summary": "Page Load Performance",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "performance",
+            "smoke",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Force close app",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Open app and navigate to Team Page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Measure load time &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Page loads within 3 seconds &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No visible lag or stuttering &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Images load progressively",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Team Switching Performance",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+          "labels": [
+            "performance",
+            "team_page",
+            "android",
+            "navigation",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Switch between 5 different teams &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Each switch completes &lt; 2 seconds",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Monitor performance &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Previous team data clears &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No memory leaks",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-014: Team Switching Performance"
+      },
+      "xray_test": {
+        "issueId": "1162665",
+        "jira": {
+          "key": "FRAMED-1645",
+          "summary": "Team Switching Performance",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "functional",
+            "ios",
+            "manual",
+            "medium",
+            "navigation",
+            "performance",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Switch between 5 different teams &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Each switch completes &lt; 2 seconds",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Monitor performance &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Previous team data clears &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No memory leaks",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Offline Behavior",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+          "labels": [
+            "team_page",
+            "android",
+            "regression",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Enable airplane mode",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Open Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Appropriate error messages",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Try various actions &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Cached content displays if available &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No crashes",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-015: Offline Behavior"
+      },
+      "xray_test": {
+        "issueId": "1162666",
+        "jira": {
+          "key": "FRAMED-1646",
+          "summary": "Offline Behavior",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "regression",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Enable airplane mode",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Open Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Appropriate error messages",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Try various actions &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Cached content displays if available &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No crashes",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Invalid Team Data",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android\nRelated Issues: FRAMED-728",
+          "labels": [
+            "team_page",
+            "android",
+            "regression",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Athletics team page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Page loads without errors &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All modules display correctly",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-016: Invalid Team Data"
+      },
+      "xray_test": {
+        "issueId": "1162669",
+        "jira": {
+          "key": "FRAMED-1647",
+          "summary": "Invalid Team Data",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "functional",
+            "ios",
+            "manual",
+            "medium",
+            "regression",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Athletics team page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Page loads without errors &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All modules display correctly",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Screen Reader Support",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS (VoiceOver), Android (TalkBack)",
+          "labels": [
+            "team_page",
+            "android",
+            "accessibility",
+            "critical",
+            "ios",
+            "functional",
+            "talkback",
+            "high",
+            "voiceover",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Enable screen reader",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Navigate through Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All elements properly labeled",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Test all interactive elements &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Navigation order logical &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Actions announced correctly",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-017: Screen Reader Support"
+      },
+      "xray_test": {
+        "issueId": "1162670",
+        "jira": {
+          "key": "FRAMED-1648",
+          "summary": "Screen Reader Support",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "accessibility",
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "talkback",
+            "team_page",
+            "voiceover"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Enable screen reader",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Navigate through Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All elements properly labeled",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Test all interactive elements &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Navigation order logical &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Actions announced correctly",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Dynamic Type Support",
+          "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android",
+          "labels": [
+            "team_page",
+            "android",
+            "accessibility",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Set device to largest text size",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Open Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Text scales appropriately",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Check all text elements &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No text truncation &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Layout remains functional",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-018: Dynamic Type Support"
+      },
+      "xray_test": {
+        "issueId": "1162671",
+        "jira": {
+          "key": "FRAMED-1649",
+          "summary": "Dynamic Type Support",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "accessibility",
+            "android",
+            "functional",
+            "ios",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Set device to largest text size",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Open Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Text scales appropriately",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check all text elements &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No text truncation &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Layout remains functional",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Feature Parity Check",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+          "labels": [
+            "team_page",
+            "android",
+            "critical",
+            "cross_platform",
+            "functional",
+            "ios",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Open same team on both platforms",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Compare all sections &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Same sections present",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Test same actions &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Similar visual appearance &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Consistent behavior",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-019: Feature Parity Check"
+      },
+      "xray_test": {
+        "issueId": "1162673",
+        "jira": {
+          "key": "FRAMED-1650",
+          "summary": "Feature Parity Check",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "cross_platform",
+            "functional",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Open same team on both platforms",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Compare all sections &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Same sections present",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Test same actions &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Similar visual appearance &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Consistent behavior",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "iPad MIG Layout",
+          "description": "Folder: Team Page/Matchup Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1078",
+          "labels": [
+            "ipad",
+            "team_page",
+            "matchup_display",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Open Team Page on iPad",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG carousel &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Consistent card heights",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify card heights &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper spacing &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No layout issues",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-020: iPad MIG Layout"
+      },
+      "xray_test": {
+        "issueId": "1162674",
+        "jira": {
+          "key": "FRAMED-1651",
+          "summary": "iPad MIG Layout",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "ipad",
+            "manual",
+            "matchup_display",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Open Team Page on iPad",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG carousel &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Consistent card heights",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify card heights &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper spacing &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No layout issues",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Event Tracking",
+          "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
+          "labels": [
+            "team_page",
+            "analytics",
+            "android",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Open Charles Proxy",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Perform various actions &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Page view tracked",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify analytics calls &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Interactions logged &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct parameters sent",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-021: Event Tracking"
+      },
+      "xray_test": {
+        "issueId": "1162675",
+        "jira": {
+          "key": "FRAMED-1652",
+          "summary": "Event Tracking",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "analytics",
+            "android",
+            "functional",
+            "ios",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Open Charles Proxy",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Perform various actions &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Page view tracked",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify analytics calls &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Interactions logged &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct parameters sent",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Opening Day Content Display",
+          "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+          "labels": [
+            "jewel_event",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "opening_day",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page on Opening Day",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG section for special branding &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Opening Day branding displays in MIG",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify content sections for Opening Day content &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special Opening Day content in carousels",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check for special badges or indicators &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Appropriate badges/styling applied &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Links to Opening Day promotions work",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Testing during Opening Day period"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-022: Opening Day Content Display"
+      },
+      "xray_test": {
+        "issueId": "1162676",
+        "jira": {
+          "key": "FRAMED-1653",
+          "summary": "Opening Day Content Display",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "jewel_event",
+            "manual",
+            "opening_day",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page on Opening Day",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG section for special branding &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Opening Day branding displays in MIG",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify content sections for Opening Day content &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special Opening Day content in carousels",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check for special badges or indicators &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Appropriate badges/styling applied &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Links to Opening Day promotions work",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "All-Star Game Team Page Updates",
+          "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+          "labels": [
+            "jewel_event",
+            "all_star",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to any team page during All-Star break",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All-Star Game promotion visible",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify AL/NL All-Star team selections &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team's All-Star selections highlighted",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check for All-Star voting links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Voting links functional (if active) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special All-Star content in carousels",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Testing during All-Star period"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-023: All-Star Game Team Page Updates"
+      },
+      "xray_test": {
+        "issueId": "1162677",
+        "jira": {
+          "key": "FRAMED-1654",
+          "summary": "All-Star Game Team Page Updates",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "all_star",
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "jewel_event",
+            "manual",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to any team page during All-Star break",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG section &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All-Star Game promotion visible",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify AL/NL All-Star team selections &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Team's All-Star selections highlighted",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check for All-Star voting links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Voting links functional (if active) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special All-Star content in carousels",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Postseason Team Page Display",
+          "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+          "labels": [
+            "jewel_event",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "postseason",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to playoff team's page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG for playoff games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Playoff games prominently displayed",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify playoff series information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Series status clearly shown",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check for elimination/advancement updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Next game information accurate &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Playoff-specific content in carousels",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Team qualified for postseason"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-024: Postseason Team Page Display"
+      },
+      "xray_test": {
+        "issueId": "1162678",
+        "jira": {
+          "key": "FRAMED-1655",
+          "summary": "Postseason Team Page Display",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "jewel_event",
+            "manual",
+            "postseason",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to playoff team's page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG for playoff games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Playoff games prominently displayed",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify playoff series information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Series status clearly shown",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check for elimination/advancement updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Next game information accurate &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Playoff-specific content in carousels",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "World Series Team Page",
+          "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+          "labels": [
+            "jewel_event",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "world_series",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to World Series team page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Verify World Series branding &nbsp;&nbsp;&nbsp;&nbsp;&rarr; World Series branding prominent",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Check game information accuracy &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Series status and game info correct",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Test ticket/viewing links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special World Series content featured &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All links functional",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Team in World Series"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-025: World Series Team Page"
+      },
+      "xray_test": {
+        "issueId": "1162679",
+        "jira": {
+          "key": "FRAMED-1656",
+          "summary": "World Series Team Page",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "high",
+            "ios",
+            "jewel_event",
+            "manual",
+            "team_page",
+            "world_series"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to World Series team page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify World Series branding &nbsp;&nbsp;&nbsp;&nbsp;&rarr; World Series branding prominent",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check game information accuracy &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Series status and game info correct",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Test ticket/viewing links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special World Series content featured &nbsp;&nbsp;&nbsp;&nbsp;&rarr; All links functional",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Spring Training Team Page",
+          "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+          "labels": [
+            "jewel_event",
+            "team_page",
+            "spring_training",
+            "android",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page during ST",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG for ST games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; ST badge displays on games",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify split squad handling &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Split squad games clearly marked",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check venue information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct ST venue information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Roster updates reflected",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Spring Training period active"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-026: Spring Training Team Page"
+      },
+      "xray_test": {
+        "issueId": "1162680",
+        "jira": {
+          "key": "FRAMED-1657",
+          "summary": "Spring Training Team Page",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "functional",
+            "ios",
+            "jewel_event",
+            "manual",
+            "medium",
+            "spring_training",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page during ST",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG for ST games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; ST badge displays on games",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify split squad handling &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Split squad games clearly marked",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check venue information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct ST venue information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Roster updates reflected",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "International Series Team Display",
+          "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+          "labels": [
+            "jewel_event",
+            "international",
+            "team_page",
+            "android",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to participating team page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG for international games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; International Series branding visible",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify special event branding &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct venue (London/Tokyo/etc)",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check timezone handling &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper timezone conversion &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special event content featured",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Team playing in International Series"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-027: International Series Team Display"
+      },
+      "xray_test": {
+        "issueId": "1162681",
+        "jira": {
+          "key": "FRAMED-1658",
+          "summary": "International Series Team Display",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "functional",
+            "international",
+            "ios",
+            "jewel_event",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to participating team page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG for international games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; International Series branding visible",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify special event branding &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Correct venue (London/Tokyo/etc)",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check timezone handling &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper timezone conversion &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Special event content featured",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Multiple Jewel Events Display",
+          "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
+          "labels": [
+            "jewel_event",
+            "team_page",
+            "android",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "During All-Star week with HRD",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check Team Page MIG &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Both HRD and ASG display correctly",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify both events shown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Clear differentiation between events",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Test navigation between events &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Navigation works properly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No UI conflicts or overlaps",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Multiple jewel events active"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-028: Multiple Jewel Events Display"
+      },
+      "xray_test": {
+        "issueId": "1162682",
+        "jira": {
+          "key": "FRAMED-1659",
+          "summary": "Multiple Jewel Events Display",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "functional",
+            "ios",
+            "jewel_event",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "During All-Star week with HRD",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check Team Page MIG &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Both HRD and ASG display correctly",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify both events shown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Clear differentiation between events",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Test navigation between events &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Navigation works properly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No UI conflicts or overlaps",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Warmup State Display",
+          "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+          "labels": [
+            "game_state",
+            "preview_state",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page during warmup",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Warmup&quot; status clearly shown",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify countdown timer &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Countdown to first pitch displays",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check product links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No score shown yet &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Appropriate product links available",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Team has game in warmup state"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-029: Warmup State Display"
+      },
+      "xray_test": {
+        "issueId": "1162683",
+        "jira": {
+          "key": "FRAMED-1660",
+          "summary": "Warmup State Display",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "preview_state",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page during warmup",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Warmup&quot; status clearly shown",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify countdown timer &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Countdown to first pitch displays",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check product links &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No score shown yet &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Appropriate product links available",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Rain Delay Handling",
+          "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+          "labels": [
+            "game_state",
+            "delayed_state",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page during delay",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG status display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Delayed&quot; status prominent",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify delay reason shown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Delay reason displayed",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Monitor for updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Current score preserved &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Updates when game resumes",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Game in rain delay"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-030: Rain Delay Handling"
+      },
+      "xray_test": {
+        "issueId": "1162684",
+        "jira": {
+          "key": "FRAMED-1661",
+          "summary": "Rain Delay Handling",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "delayed_state",
+            "functional",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page during delay",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG status display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Delayed&quot; status prominent",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify delay reason shown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Delay reason displayed",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Monitor for updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Current score preserved &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Updates when game resumes",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Suspended Game With Resume Date",
+          "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+          "labels": [
+            "game_state",
+            "team_page",
+            "suspended_state",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check suspended game display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Suspended&quot; status clear",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify resume information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Resume date/time displayed",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check both original and resume dates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Score at suspension shown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Links to both game dates work",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Suspended game with scheduled resume"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-031: Suspended Game With Resume Date"
+      },
+      "xray_test": {
+        "issueId": "1162685",
+        "jira": {
+          "key": "FRAMED-1662",
+          "summary": "Suspended Game With Resume Date",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "suspended_state",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check suspended game display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Suspended&quot; status clear",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify resume information &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Resume date/time displayed",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check both original and resume dates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Score at suspension shown &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Links to both game dates work",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Manager Challenge State",
+          "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+          "labels": [
+            "game_state",
+            "team_page",
+            "live_state",
+            "android",
+            "medium",
+            "ios",
+            "functional",
+            "manual"
+          ],
+          "priority": "Medium",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate during manager challenge",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check MIG display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Challenge indicator visible",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify challenge indicator &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game paused status shown",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Monitor resolution &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Updates after decision &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Seamless return to play",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Live game with active challenge"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-032: Manager Challenge State"
+      },
+      "xray_test": {
+        "issueId": "1162686",
+        "jira": {
+          "key": "FRAMED-1663",
+          "summary": "Manager Challenge State",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "functional",
+            "game_state",
+            "ios",
+            "live_state",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate during manager challenge",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check MIG display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Challenge indicator visible",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify challenge indicator &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game paused status shown",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Monitor resolution &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Updates after decision &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Seamless return to play",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Postponed Game Rescheduling",
+          "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+          "labels": [
+            "game_state",
+            "final_state",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check postponed game display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Postponed&quot; clearly shown",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify postponement reason &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Reason displayed (Rain, etc.)",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check for makeup date &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Makeup date if scheduled &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Ticket exchange info if available",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Recently postponed game"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-033: Postponed Game Rescheduling"
+      },
+      "xray_test": {
+        "issueId": "1162687",
+        "jira": {
+          "key": "FRAMED-1664",
+          "summary": "Postponed Game Rescheduling",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "final_state",
+            "functional",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check postponed game display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Postponed&quot; clearly shown",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify postponement reason &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Reason displayed (Rain, etc.)",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check for makeup date &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Makeup date if scheduled &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Ticket exchange info if available",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Forfeit Game Display",
+          "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+          "labels": [
+            "game_state",
+            "final_state",
+            "team_page",
+            "android",
+            "ios",
+            "functional",
+            "low",
+            "manual"
+          ],
+          "priority": "Low",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check forfeit game display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Forfeit&quot; status displayed",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify official score (9-0) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Official 9-0 score shown",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Check forfeit reason &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Forfeit reason provided &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Historical context available",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Forfeit game (rare)"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-034: Forfeit Game Display"
+      },
+      "xray_test": {
+        "issueId": "1162688",
+        "jira": {
+          "key": "FRAMED-1665",
+          "summary": "Forfeit Game Display",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "final_state",
+            "functional",
+            "game_state",
+            "ios",
+            "low",
+            "manual",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check forfeit game display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; &quot;Forfeit&quot; status displayed",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify official score (9-0) &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Official 9-0 score shown",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check forfeit reason &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Forfeit reason provided &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Historical context available",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Game State Transition Timing",
+          "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+          "labels": [
+            "game_state",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "state_transition",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Monitor preview game approaching start &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Smooth state transitions",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Observe transition to warmup &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No stuck states",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Watch warmup to live transition &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Timely updates (&lt; 30s)",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Monitor final out to final state &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No data inconsistencies",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-035: Game State Transition Timing"
+      },
+      "xray_test": {
+        "issueId": "1162689",
+        "jira": {
+          "key": "FRAMED-1666",
+          "summary": "Game State Transition Timing",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "state_transition",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Monitor preview game approaching start &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Smooth state transitions",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Observe transition to warmup &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No stuck states",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Watch warmup to live transition &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Timely updates (&lt; 30s)",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Monitor final out to final state &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No data inconsistencies",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    },
+    {
+      "json_test": {
+        "testInfo": {
+          "summary": "Double Header Game State Display",
+          "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+          "labels": [
+            "game_state",
+            "team_page",
+            "android",
+            "critical",
+            "ios",
+            "functional",
+            "high",
+            "manual"
+          ],
+          "priority": "High",
+          "testType": "Manual",
+          "steps": [
+            {
+              "index": 1,
+              "action": "Navigate to Team Page",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 2,
+              "action": "Check both games display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Both games clearly separated",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 3,
+              "action": "Verify different states &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game 1/Game 2 indicators",
+              "data": "",
+              "result": ""
+            },
+            {
+              "index": 4,
+              "action": "Test switching between games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Independent state tracking &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper time display for each",
+              "data": "",
+              "result": ""
+            }
+          ],
+          "expectedResults": "Expected results are mapped to each step above",
+          "preconditions": [
+            "Team playing doubleheader"
+          ],
+          "folder": "Test Repository/Team Page/Functional Tests"
+        },
+        "testId": "TC-036: Double Header Game State Display"
+      },
+      "xray_test": {
+        "issueId": "1162651",
+        "jira": {
+          "key": "FRAMED-1631",
+          "summary": "Double Header Game State Display",
+          "priority": {
+            "self": "https://baseball.atlassian.net/rest/api/2/priority/10000",
+            "iconUrl": "https://baseball.atlassian.net/images/border/spacer.gif",
+            "name": "None",
+            "id": "10000"
+          },
+          "labels": [
+            "android",
+            "critical",
+            "functional",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        "testType": {
+          "name": "Manual"
+        },
+        "steps": [
+          {
+            "action": "Navigate to Team Page",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Check both games display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Both games clearly separated",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Verify different states &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Game 1/Game 2 indicators",
+            "result": "",
+            "data": ""
+          },
+          {
+            "action": "Test switching between games &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Independent state tracking &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper time display for each",
+            "result": "",
+            "data": ""
+          }
+        ]
+      }
+    }
+  ],
+  "missing_tests": [
+    {
+      "testInfo": {
+        "summary": "Extra Innings State Display",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "game_state",
+          "team_page",
+          "live_state",
+          "android",
+          "medium",
+          "ios",
+          "functional",
+          "manual"
+        ],
+        "priority": "Medium",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Navigate to Team Page",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Check inning display &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Extra inning number shown",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Verify free runner indicators &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Free runner rule applied",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Monitor score updates &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Proper score tracking &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No display issues with 10+ innings",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [
+          "Game in extra innings"
+        ],
+        "folder": "Test Repository/Team Page/Functional Tests"
+      },
+      "testId": "TC-037: Extra Innings State Display"
+    },
+    {
+      "testInfo": {
+        "summary": "Game State Error Recovery",
+        "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
+        "labels": [
+          "game_state",
+          "team_page",
+          "android",
+          "regression",
+          "critical",
+          "ios",
+          "functional",
+          "high",
+          "manual"
+        ],
+        "priority": "High",
+        "testType": "Manual",
+        "steps": [
+          {
+            "index": 1,
+            "action": "Force app to background during live game",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 2,
+            "action": "Wait 5 minutes",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 3,
+            "action": "Return to Team Page &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Current game state loads",
+            "data": "",
+            "result": ""
+          },
+          {
+            "index": 4,
+            "action": "Verify correct state displays &nbsp;&nbsp;&nbsp;&nbsp;&rarr; No stuck on old state &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Score updates properly &nbsp;&nbsp;&nbsp;&nbsp;&rarr; Smooth recovery process",
+            "data": "",
+            "result": ""
+          }
+        ],
+        "expectedResults": "Expected results are mapped to each step above",
+        "preconditions": [],
+        "folder": "Test Repository/Team Page/Functional Tests"
+      },
+      "testId": "TC-038: Game State Error Recovery"
+    }
+  ],
+  "xray_summaries": [
+    "Game State Transition Timing",
+    "Forfeit Game Display",
+    "Postponed Game Rescheduling",
+    "Manager Challenge State",
+    "Suspended Game With Resume Date",
+    "Rain Delay Handling",
+    "Warmup State Display",
+    "Multiple Jewel Events Display",
+    "International Series Team Display",
+    "Spring Training Team Page",
+    "World Series Team Page",
+    "Postseason Team Page Display",
+    "All-Star Game Team Page Updates",
+    "Opening Day Content Display",
+    "Event Tracking",
+    "iPad MIG Layout",
+    "Feature Parity Check",
+    "Dynamic Type Support",
+    "Screen Reader Support",
+    "Invalid Team Data",
+    "Offline Behavior",
+    "Team Switching Performance",
+    "Page Load Performance",
+    "Schedule Navigation",
+    "Deep Link Navigation",
+    "Japanese Language Support",
+    "Spanish Language Support",
+    "Editorial Module Display",
+    "Video Content Playback",
+    "Article Carousel Navigation",
+    "Home Run Derby Display",
+    "MIG Calendar Navigation",
+    "MIG Display During Live Game",
+    "Team Selection with Special Characters",
+    "Team Selection via Drawer",
+    "Double Header Game State Display"
+  ]
+}

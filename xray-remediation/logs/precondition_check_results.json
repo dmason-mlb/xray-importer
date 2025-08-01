@@ -1,0 +1,66 @@
+{
+  "existing_preconditions": {
+    "User has the app installed and opened": "FRAMED-1575",
+    "App is on Team Page": "FRAMED-1576",
+    "Selected team has a live game": "FRAMED-1577",
+    "HRD is scheduled": "FRAMED-1578",
+    "Device language set to Spanish": "FRAMED-1579",
+    "Device language set to Japanese": "FRAMED-1580",
+    "Testing during Opening Day period": "FRAMED-1581",
+    "Testing during All-Star period": "FRAMED-1582",
+    "Team qualified for postseason": "FRAMED-1583",
+    "Team in World Series": "FRAMED-1584",
+    "Spring Training period active": "FRAMED-1585",
+    "Team playing in International Series": "FRAMED-1586",
+    "Multiple jewel events active": "FRAMED-1587",
+    "Team has game in warmup state": "FRAMED-1588",
+    "Game in rain delay": "FRAMED-1589",
+    "Suspended game with scheduled resume": "FRAMED-1590",
+    "Live game with active challenge": "FRAMED-1591",
+    "Recently postponed game": "FRAMED-1592",
+    "Forfeit game (rare)": "FRAMED-1593",
+    "Team playing doubleheader": "FRAMED-1594",
+    "Game in extra innings": "FRAMED-1595"
+  },
+  "missing_preconditions": [],
+  "all_xray_preconditions": {
+    "Team Page Navigation": {
+      "key": "FRAMED-1377",
+      "issueId": "1158177",
+      "labels": [],
+      "definition": "1. User is on the Team Page\n2. Team page has loaded completely\n3. All initial content is visible"
+    },
+    "MLB App Setup": {
+      "key": "FRAMED-1376",
+      "issueId": "1158175",
+      "labels": [],
+      "definition": "1. MLB app is installed and updated to latest version\n2. User is logged in with valid test account\n3. Device has internet connectivity\n4. Location services enabled if required"
+    },
+    "Precondition for Game States": {
+      "key": "FRAMED-1357",
+      "issueId": "1158142",
+      "labels": [],
+      "definition": "Selected team has a live game"
+    },
+    "Precondition for Jewel Events": {
+      "key": "FRAMED-1358",
+      "issueId": "1158144",
+      "labels": [],
+      "definition": "HRD is scheduled"
+    },
+    "Precondition for Content Display": {
+      "key": "FRAMED-1359",
+      "issueId": "1158146",
+      "labels": [],
+      "definition": "Device language set to Spanish"
+    },
+    "Precondition for Core Navigation": {
+      "key": "FRAMED-1355",
+      "issueId": "1158139",
+      "labels": [],
+      "definition": "User has the app installed and opened"
+    }
+  },
+  "total_found": 6,
+  "total_missing": 21
+}

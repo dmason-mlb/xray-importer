@@ -1,70 +1,38 @@
 {
   "testSuite": {
-    "name": "SDUI Team Page - API Test Cases",
+    "name": "SDUI Team Page - API Test Cases", 
     "confluenceId": "4904878140",
     "confluenceUrl": "https://baseball.atlassian.net//wiki/spaces/~911651470/pages/4904878140",
     "version": 20,
     "testEnvironmentRequirements": {
-      "platforms": [
-        "iOS",
-        "Android"
-      ],
+      "platforms": ["iOS", "Android"],
       "devices": {
-        "iOS": [
-          "iPhone",
-          "iPad"
-        ],
-        "Android": [
-          "Various screen sizes"
-        ]
+        "iOS": ["iPhone", "iPad"],
+        "Android": ["Various screen sizes"]
       },
-      "languageSettings": [
-        "English",
-        "Spanish",
-        "Japanese"
-      ],
-      "networkConditions": [
-        "Various"
-      ],
-      "userTypes": [
-        "Public access - no authentication required"
-      ]
+      "languageSettings": ["English", "Spanish", "Japanese"],
+      "networkConditions": ["Various"],
+      "userTypes": ["Public access - no authentication required"]
     },
     "testCases": [
       {
         "testCaseId": "API-001",
         "title": "Get Team Page - Valid Team",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "critical",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@critical", "@cross-platform"],
         "preconditions": "Valid team ID available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1 with ?teamId=147&lang=en",
-            "expectedResult": [
-              "Status: 200",
-              "Valid JSON structure",
-              "Contains sections array",
-              "Team info present"
-            ]
+            "expectedResult": ["Status: 200", "Valid JSON structure", "Contains sections array", "Team info present"]
           },
           {
             "step": 2,
             "action": "Validate response schema",
-            "expectedResult": [
-              "All required fields present",
-              "Section IDs format correct"
-            ]
+            "expectedResult": ["All required fields present", "Section IDs format correct"]
           }
         ],
         "testData": "teamId=147, lang=en, User-Agent: MLB/25.2.0/android",
@@ -72,39 +40,23 @@
         "jiraKey": null
       },
       {
-        "testCaseId": "API-002",
+        "testCaseId": "API-002", 
         "title": "Get Team Page - All Teams",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "critical",
-          "cross_platform",
-          "regression"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@critical", "@cross-platform", "@regression"],
         "preconditions": "All team IDs valid",
         "testSteps": [
           {
             "step": 1,
             "action": "Test all 30 team IDs (108-159)",
-            "expectedResult": [
-              "All teams return 200",
-              "Valid content for each",
-              "No null responses"
-            ]
+            "expectedResult": ["All teams return 200", "Valid content for each", "No null responses"]
           },
           {
             "step": 2,
             "action": "Special validation for Athletics (133) and Diamondbacks",
-            "expectedResult": [
-              "Athletics migration test passes",
-              "Diamondbacks long name test passes"
-            ]
+            "expectedResult": ["Athletics migration test passes", "Diamondbacks long name test passes"]
           }
         ],
         "testData": "All 30 team IDs (108-159)",
@@ -114,55 +66,31 @@
       {
         "testCaseId": "API-003",
         "title": "Invalid Team ID",
-        "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform"
-        ],
+        "priority": "Medium", 
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform"],
         "preconditions": "Invalid test data available",
         "testSteps": [
           {
             "step": 1,
             "action": "Test with teamId=999",
-            "expectedResult": [
-              "Status: 400 or 404",
-              "Error message present",
-              "No crash/500 error"
-            ]
+            "expectedResult": ["Status: 400 or 404", "Error message present", "No crash/500 error"]
           },
           {
             "step": 2,
             "action": "Test with teamId=0",
-            "expectedResult": [
-              "Status: 400 or 404",
-              "Error message present",
-              "No crash/500 error"
-            ]
+            "expectedResult": ["Status: 400 or 404", "Error message present", "No crash/500 error"]
           },
           {
             "step": 3,
             "action": "Test with teamId=-1",
-            "expectedResult": [
-              "Status: 400 or 404",
-              "Error message present",
-              "No crash/500 error"
-            ]
+            "expectedResult": ["Status: 400 or 404", "Error message present", "No crash/500 error"]
           },
           {
             "step": 4,
             "action": "Test with teamId=abc",
-            "expectedResult": [
-              "Status: 400 or 404",
-              "Error message present",
-              "No crash/500 error"
-            ]
+            "expectedResult": ["Status: 400 or 404", "Error message present", "No crash/500 error"]
           }
         ],
         "testData": "teamId=999, teamId=0, teamId=-1, teamId=abc",
@@ -171,37 +99,22 @@
       },
       {
         "testCaseId": "API-015",
-        "title": "Missing Team ID",
+        "title": "Missing Team ID", 
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform"],
         "preconditions": "API endpoint accessible",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1 without teamId parameter",
-            "expectedResult": [
-              "Status: 400",
-              "Error message present",
-              "Contains expected error keys"
-            ]
+            "expectedResult": ["Status: 400", "Error message present", "Contains expected error keys"]
           },
           {
             "step": 2,
             "action": "Validate error response structure",
-            "expectedResult": [
-              "Response contains httpStatus or message",
-              "Proper error structure"
-            ]
+            "expectedResult": ["Response contains httpStatus or message", "Proper error structure"]
           }
         ],
         "testData": "Direct API call without teamId parameter",
@@ -212,28 +125,15 @@
         "testCaseId": "API-004",
         "title": "English Language",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "localization"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links", 
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@localization"],
         "preconditions": "English language supported",
         "testSteps": [
           {
             "step": 1,
             "action": "Send request with ?teamId=147&lang=en",
-            "expectedResult": [
-              "All text in English",
-              "Date formats: MM/DD",
-              "URLs contain /en/"
-            ]
+            "expectedResult": ["All text in English", "Date formats: MM/DD", "URLs contain /en/"]
           }
         ],
         "testData": "teamId=147, lang=en",
@@ -244,29 +144,15 @@
         "testCaseId": "API-005",
         "title": "Spanish Language",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "localization"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@localization"],
         "preconditions": "Spanish language supported",
         "testSteps": [
           {
             "step": 1,
             "action": "Send request with ?teamId=147&lang=es",
-            "expectedResult": [
-              "UI text in Spanish",
-              "Date formats: DD/MM",
-              "URLs contain /es/",
-              "Articles in Spanish"
-            ]
+            "expectedResult": ["UI text in Spanish", "Date formats: DD/MM", "URLs contain /es/", "Articles in Spanish"]
           }
         ],
         "testData": "teamId=147, lang=es",
@@ -277,28 +163,15 @@
         "testCaseId": "API-006",
         "title": "Japanese Language",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform",
-          "localization"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform", "@localization"],
         "preconditions": "Japanese language supported",
         "testSteps": [
           {
             "step": 1,
             "action": "Send request with ?teamId=147&lang=ja",
-            "expectedResult": [
-              "Text in Japanese",
-              "Proper encoding",
-              "Date formats localized"
-            ]
+            "expectedResult": ["Text in Japanese", "Proper encoding", "Date formats localized"]
           }
         ],
         "testData": "teamId=147, lang=ja",
@@ -309,30 +182,15 @@
         "testCaseId": "API-007",
         "title": "MIG Section - Live Game",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "live_state",
-          "requires_live_game"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@live-state", "@requires-live-game"],
         "preconditions": "Team has live game",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with live team",
-            "expectedResult": [
-              "Game status: \"LIVE\"",
-              "Score present",
-              "Inning info present",
-              "Broadcast data"
-            ]
+            "expectedResult": ["Game status: \"LIVE\"", "Score present", "Inning info present", "Broadcast data"]
           }
         ],
         "testData": "Live team ID, lang=en",
@@ -343,27 +201,15 @@
         "testCaseId": "API-008",
         "title": "MIG Section - No Games",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"], 
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform"],
         "preconditions": "Off-season period",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig during off-season",
-            "expectedResult": [
-              "Empty games array",
-              "No crash",
-              "Appropriate messaging"
-            ]
+            "expectedResult": ["Empty games array", "No crash", "Appropriate messaging"]
           }
         ],
         "testData": "Off-season period",
@@ -373,29 +219,16 @@
       {
         "testCaseId": "API-009",
         "title": "MIG Carousel Section",
-        "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform",
-          "navigation"
-        ],
+        "priority": "Medium", 
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform", "@navigation"],
         "preconditions": "Multiple games available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/migcarousel",
-            "expectedResult": [
-              "Carousel format",
-              "Multiple game cards",
-              "Proper navigation data"
-            ]
+            "expectedResult": ["Carousel format", "Multiple game cards", "Proper navigation data"]
           }
         ],
         "testData": "teamId=147, lang=en",
@@ -404,29 +237,17 @@
       },
       {
         "testCaseId": "API-010",
-        "title": "Hide Scores Feature",
+        "title": "Hide Scores Feature", 
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform"],
         "preconditions": "Hide scores feature available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send request with ?teamId=147&lang=en&hideScores=true",
-            "expectedResult": [
-              "Scores not in response",
-              "Game status visible",
-              "Other data intact"
-            ]
+            "expectedResult": ["Scores not in response", "Game status visible", "Other data intact"]
           }
         ],
         "testData": "teamId=147, lang=en, hideScores=true",
@@ -437,27 +258,15 @@
         "testCaseId": "API-011",
         "title": "Offseason Configuration",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States", 
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform"],
         "preconditions": "Offseason period",
         "testSteps": [
           {
             "step": 1,
             "action": "Test during December-February period",
-            "expectedResult": [
-              "Probable pitchers hidden",
-              "Schedule shows next year",
-              "Appropriate sections"
-            ]
+            "expectedResult": ["Probable pitchers hidden", "Schedule shows next year", "Appropriate sections"]
           }
         ],
         "testData": "December-February period",
@@ -468,26 +277,15 @@
         "testCaseId": "API-012",
         "title": "iOS User Agent",
         "priority": "High",
-        "platforms": [
-          "iOS"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "ios"
-        ],
+        "platforms": ["iOS"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@ios"],
         "preconditions": "iOS app available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send request with User-Agent: MLB/24.24.0/iPhone",
-            "expectedResult": [
-              "Editorial feed returned",
-              "iOS-specific content",
-              "Correct image sizes"
-            ]
+            "expectedResult": ["Editorial feed returned", "iOS-specific content", "Correct image sizes"]
           }
         ],
         "testData": "User-Agent: MLB/24.24.0/iPhone",
@@ -498,25 +296,15 @@
         "testCaseId": "API-013",
         "title": "Android User Agent",
         "priority": "High",
-        "platforms": [
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "android"
-        ],
+        "platforms": ["Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@android"],
         "preconditions": "Android app available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send request with User-Agent: MLB/25.2.0/android",
-            "expectedResult": [
-              "Article carousel returned",
-              "Android-specific content"
-            ]
+            "expectedResult": ["Article carousel returned", "Android-specific content"]
           }
         ],
         "testData": "User-Agent: MLB/25.2.0/android",
@@ -527,25 +315,15 @@
         "testCaseId": "API-014",
         "title": "iPad User Agent",
         "priority": "Medium",
-        "platforms": [
-          "iPad"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "ipad"
-        ],
+        "platforms": ["iPad"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@medium", "@ipad"],
         "preconditions": "iPad app available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send request with User-Agent: MLB/24.24.0/iPad",
-            "expectedResult": [
-              "Editorial with blurbs",
-              "Tablet-optimized layout"
-            ]
+            "expectedResult": ["Editorial with blurbs", "Tablet-optimized layout"]
           }
         ],
         "testData": "User-Agent: MLB/24.24.0/iPad",
@@ -556,40 +334,20 @@
         "testCaseId": "API-GS-001",
         "title": "Preview State (Scheduled)",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "preview_state",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@preview-state", "@game-state"],
         "preconditions": "Scheduled game available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with ?teamId=147&lang=en&includeGameState=true",
-            "expectedResult": [
-              "Game time displayed",
-              "Probable pitchers shown",
-              "No score data",
-              "Preview links active"
-            ]
+            "expectedResult": ["Game time displayed", "Probable pitchers shown", "No score data", "Preview links active"]
           },
           {
             "step": 2,
             "action": "Validate game state",
-            "expectedResult": [
-              "abstractGameCode === \"P\"",
-              "detailedState: \"Scheduled\"",
-              "No live data present",
-              "Countdown timer if < 24h"
-            ]
+            "expectedResult": ["abstractGameCode === \"P\"", "detailedState: \"Scheduled\"", "No live data present", "Countdown timer if < 24h"]
           }
         ],
         "testData": "teamId=147, lang=en, includeGameState=true, Game State: abstractGameCode: \"P\", detailedState: \"Scheduled\"",
@@ -600,38 +358,20 @@
         "testCaseId": "API-GS-002",
         "title": "Warmup State",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@game-state"],
         "preconditions": "Game in warmup state",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with ?teamId=147&lang=en&includeGameState=true",
-            "expectedResult": [
-              "\"Warmup\" status shown",
-              "Starting lineups available",
-              "No score yet",
-              "Live links preparing"
-            ]
+            "expectedResult": ["\"Warmup\" status shown", "Starting lineups available", "No score yet", "Live links preparing"]
           },
           {
             "step": 2,
             "action": "Validate warmup state",
-            "expectedResult": [
-              "Warmup indicators present",
-              "Broadcast info ready",
-              "No play data"
-            ]
+            "expectedResult": ["Warmup indicators present", "Broadcast info ready", "No play data"]
           }
         ],
         "testData": "teamId=147, lang=en, includeGameState=true, Game State: abstractGameCode: \"L\", detailedState: \"Pre-Game\"",
@@ -642,40 +382,20 @@
         "testCaseId": "API-GS-003",
         "title": "Live Game - In Progress",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "live_state",
-          "game_state",
-          "requires_live_game"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@live-state", "@game-state", "@requires-live-game"],
         "preconditions": "Live game in progress",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with ?teamId=147&lang=en&includeGameState=true",
-            "expectedResult": [
-              "Live score updates",
-              "Current inning/outs",
-              "Base states",
-              "Play-by-play available"
-            ]
+            "expectedResult": ["Live score updates", "Current inning/outs", "Base states", "Play-by-play available"]
           },
           {
             "step": 2,
             "action": "Validate live state",
-            "expectedResult": [
-              "Real-time data",
-              "Proper state transitions",
-              "Live media links"
-            ]
+            "expectedResult": ["Real-time data", "Proper state transitions", "Live media links"]
           }
         ],
         "testData": "teamId=147, lang=en, includeGameState=true, Game State: abstractGameCode: \"L\", detailedState: \"In Progress\"",
@@ -686,39 +406,20 @@
         "testCaseId": "API-GS-004",
         "title": "Delayed Game State",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "delayed_state",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@delayed-state", "@game-state"],
         "preconditions": "Game in delayed state",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with ?teamId=147&lang=en&includeGameState=true",
-            "expectedResult": [
-              "\"Delayed\" status prominent",
-              "Reason if available",
-              "Current score frozen",
-              "Delay start time"
-            ]
+            "expectedResult": ["\"Delayed\" status prominent", "Reason if available", "Current score frozen", "Delay start time"]
           },
           {
             "step": 2,
             "action": "Validate delayed state",
-            "expectedResult": [
-              "Clear delay messaging",
-              "Score preserved",
-              "Updates paused"
-            ]
+            "expectedResult": ["Clear delay messaging", "Score preserved", "Updates paused"]
           }
         ],
         "testData": "teamId=147, lang=en, includeGameState=true, Game State: abstractGameCode: \"L\", detailedState: \"Delayed\"",
@@ -729,38 +430,20 @@
         "testCaseId": "API-GS-005",
         "title": "Manager Challenge State",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform", "@game-state"],
         "preconditions": "Manager challenge active",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with ?teamId=147&lang=en&includeGameState=true",
-            "expectedResult": [
-              "Challenge indicator",
-              "Play under review",
-              "Game temporarily paused",
-              "Review details"
-            ]
+            "expectedResult": ["Challenge indicator", "Play under review", "Game temporarily paused", "Review details"]
           },
           {
             "step": 2,
             "action": "Validate challenge state",
-            "expectedResult": [
-              "Special state handling",
-              "Play data preserved",
-              "UI indicators"
-            ]
+            "expectedResult": ["Special state handling", "Play data preserved", "UI indicators"]
           }
         ],
         "testData": "teamId=147, lang=en, includeGameState=true, Game State: abstractGameCode: \"L\", detailedState: \"Manager challenge\"",
@@ -771,39 +454,20 @@
         "testCaseId": "API-GS-006",
         "title": "Suspended Game",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "suspended_state",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@suspended-state", "@game-state"],
         "preconditions": "Game suspended",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with ?teamId=147&lang=en&includeGameState=true",
-            "expectedResult": [
-              "\"Suspended\" status",
-              "Score at suspension",
-              "Resume date if known",
-              "Suspension reason"
-            ]
+            "expectedResult": ["\"Suspended\" status", "Score at suspension", "Resume date if known", "Suspension reason"]
           },
           {
             "step": 2,
             "action": "Validate suspended state",
-            "expectedResult": [
-              "State preserved",
-              "Clear messaging",
-              "Future resume info"
-            ]
+            "expectedResult": ["State preserved", "Clear messaging", "Future resume info"]
           }
         ],
         "testData": "teamId=147, lang=en, includeGameState=true, Game State: abstractGameCode: \"L\", detailedState: \"Suspended\"",
@@ -814,39 +478,20 @@
         "testCaseId": "API-GS-007",
         "title": "Final State",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "final_state",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@final-state", "@game-state"],
         "preconditions": "Completed game available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with ?teamId=147&lang=en&includeGameState=true",
-            "expectedResult": [
-              "Final score displayed",
-              "Winning/losing pitchers",
-              "Game recap available",
-              "Video highlights"
-            ]
+            "expectedResult": ["Final score displayed", "Winning/losing pitchers", "Game recap available", "Video highlights"]
           },
           {
             "step": 2,
             "action": "Validate final state",
-            "expectedResult": [
-              "Complete game data",
-              "All stats finalized",
-              "Wrap content ready"
-            ]
+            "expectedResult": ["Complete game data", "All stats finalized", "Wrap content ready"]
           }
         ],
         "testData": "teamId=147, lang=en, includeGameState=true, Game State: abstractGameCode: \"F\", detailedState: \"Final\"",
@@ -857,38 +502,20 @@
         "testCaseId": "API-GS-008",
         "title": "Postponed Game",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@game-state"],
         "preconditions": "Postponed game available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with ?teamId=147&lang=en&includeGameState=true",
-            "expectedResult": [
-              "\"Postponed\" clearly shown",
-              "Reason displayed",
-              "Makeup date if available",
-              "Ticket info"
-            ]
+            "expectedResult": ["\"Postponed\" clearly shown", "Reason displayed", "Makeup date if available", "Ticket info"]
           },
           {
             "step": 2,
             "action": "Validate postponed state",
-            "expectedResult": [
-              "No score shown",
-              "Postponement details",
-              "Rescheduling info"
-            ]
+            "expectedResult": ["No score shown", "Postponement details", "Rescheduling info"]
           }
         ],
         "testData": "teamId=147, lang=en, includeGameState=true, Game State: abstractGameCode: \"O\", detailedState: \"Postponed\"",
@@ -899,33 +526,18 @@
         "testCaseId": "API-GS-009",
         "title": "Game State Transitions",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "game_state",
-          "performance"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@game-state", "@performance"],
         "preconditions": "Game state transitions available",
         "testSteps": [
           {
             "step": 1,
-            "action": "Monitor state changes from Preview \u2192 Warmup \u2192 Live \u2192 Final",
-            "expectedResult": [
-              "Smooth transitions",
-              "No data loss",
-              "Proper caching",
-              "UI updates correctly"
-            ]
+            "action": "Monitor state changes from Preview → Warmup → Live → Final",
+            "expectedResult": ["Smooth transitions", "No data loss", "Proper caching", "UI updates correctly"]
           }
         ],
-        "testData": "Game state transitions: Preview \u2192 Warmup \u2192 Live \u2192 Final",
+        "testData": "Game state transitions: Preview → Warmup → Live → Final",
         "relatedIssues": [],
         "jiraKey": "FRAMED-1406"
       },
@@ -933,38 +545,20 @@
         "testCaseId": "API-GS-010",
         "title": "Multiple Game States",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform", "@game-state"],
         "preconditions": "Doubleheader games available",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/migcarousel with ?teamId=147&lang=en&includeGameState=true",
-            "expectedResult": [
-              "Game 1: Final",
-              "Game 2: Live",
-              "Proper separation",
-              "Clear labeling"
-            ]
+            "expectedResult": ["Game 1: Final", "Game 2: Live", "Proper separation", "Clear labeling"]
           },
           {
             "step": 2,
             "action": "Validate multiple states",
-            "expectedResult": [
-              "Each game state accurate",
-              "No state mixing",
-              "Proper ordering"
-            ]
+            "expectedResult": ["Each game state accurate", "No state mixing", "Proper ordering"]
           }
         ],
         "testData": "teamId=147, lang=en, includeGameState=true, Doubleheader scenario",
@@ -975,30 +569,15 @@
         "testCaseId": "API-JE-001",
         "title": "Opening Day Team Page Content",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "jewel_event",
-          "opening_day"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@jewel-event", "@opening-day"],
         "preconditions": "Opening Day active",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1 with ?teamId=147&lang=en",
-            "expectedResult": [
-              "Opening Day banner in sections",
-              "Special event content present",
-              "Promotional links active",
-              "Event-specific imagery"
-            ]
+            "expectedResult": ["Opening Day banner in sections", "Special event content present", "Promotional links active", "Event-specific imagery"]
           }
         ],
         "testData": "teamId=147, lang=en, Test Period: Opening Day",
@@ -1009,30 +588,15 @@
         "testCaseId": "API-JE-002",
         "title": "All-Star Game MIG Display",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "jewel_event",
-          "all_star"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@jewel-event", "@all-star"],
         "preconditions": "All-Star Game active",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig with ?teamId=159&lang=en (AL All-Stars)",
-            "expectedResult": [
-              "All-Star game in MIG",
-              "Special event styling",
-              "Correct team IDs (159/160)",
-              "Venue information"
-            ]
+            "expectedResult": ["All-Star game in MIG", "Special event styling", "Correct team IDs (159/160)", "Venue information"]
           }
         ],
         "testData": "teamId=159 (AL All-Stars), lang=en, Test Period: All-Star Week",
@@ -1043,30 +607,15 @@
         "testCaseId": "API-JE-003",
         "title": "Postseason Team Page Sections",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "jewel_event",
-          "postseason"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@jewel-event", "@postseason"],
         "preconditions": "Team qualified for playoffs",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1 with qualified playoff team",
-            "expectedResult": [
-              "Playoff section present",
-              "Series information",
-              "Next game details",
-              "Playoff-specific content"
-            ]
+            "expectedResult": ["Playoff section present", "Series information", "Next game details", "Playoff-specific content"]
           }
         ],
         "testData": "Playoff-qualified team, Test Period: Postseason",
@@ -1077,30 +626,15 @@
         "testCaseId": "API-JE-004",
         "title": "World Series Content",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "jewel_event",
-          "world_series"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@jewel-event", "@world-series"],
         "preconditions": "Team in World Series",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1 with World Series team",
-            "expectedResult": [
-              "World Series branding",
-              "Series status in MIG",
-              "Special sections",
-              "Championship content"
-            ]
+            "expectedResult": ["World Series branding", "Series status in MIG", "Special sections", "Championship content"]
           }
         ],
         "testData": "World Series team, Test Period: World Series",
@@ -1111,30 +645,15 @@
         "testCaseId": "API-JE-005",
         "title": "Spring Training Schedule",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform",
-          "jewel_event",
-          "spring_training"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform", "@jewel-event", "@spring-training"],
         "preconditions": "Spring Training active",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1/mig during Spring Training",
-            "expectedResult": [
-              "ST games in schedule",
-              "Split squad indicators",
-              "ST venue information",
-              "Exhibition game markers"
-            ]
+            "expectedResult": ["ST games in schedule", "Split squad indicators", "ST venue information", "Exhibition game markers"]
           }
         ],
         "testData": "Test Period: Spring Training",
@@ -1145,30 +664,15 @@
         "testCaseId": "API-JE-006",
         "title": "International Series Data",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform",
-          "jewel_event",
-          "international"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform", "@jewel-event", "@international"],
         "preconditions": "International Series active",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1 during International Series",
-            "expectedResult": [
-              "International game markers",
-              "Correct venue (London/Tokyo)",
-              "Local time conversion",
-              "Special event content"
-            ]
+            "expectedResult": ["International game markers", "Correct venue (London/Tokyo)", "Local time conversion", "Special event content"]
           }
         ],
         "testData": "Test Period: International Series",
@@ -1179,30 +683,15 @@
         "testCaseId": "API-JE-007",
         "title": "Multiple Event Handling",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform",
-          "jewel_event",
-          "all_star"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform", "@jewel-event", "@all-star"],
         "preconditions": "Multiple events active",
         "testSteps": [
           {
             "step": 1,
             "action": "Send GET request to /api/teamPage/v1 with HRD + ASG active",
-            "expectedResult": [
-              "Both events in response",
-              "Proper prioritization",
-              "No data conflicts",
-              "Clear event separation"
-            ]
+            "expectedResult": ["Both events in response", "Proper prioritization", "No data conflicts", "Clear event separation"]
           }
         ],
         "testData": "Test Period: All-Star Week, Test Scenario: HRD + ASG active",
@@ -1213,30 +702,15 @@
         "testCaseId": "API-JE-008",
         "title": "Jewel Event Localization",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "jewel_event",
-          "localization"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@jewel-event", "@localization"],
         "preconditions": "Localization supported",
         "testSteps": [
           {
             "step": 1,
             "action": "Test all jewel events with Languages: en, es, ja",
-            "expectedResult": [
-              "Event names localized",
-              "Dates properly formatted",
-              "Content in correct language",
-              "URLs localized"
-            ]
+            "expectedResult": ["Event names localized", "Dates properly formatted", "Content in correct language", "URLs localized"]
           }
         ],
         "testData": "Languages: en, es, ja, Events: All jewel events",
@@ -1247,42 +721,25 @@
         "testCaseId": "API-PERF-001",
         "title": "Response Time - Single Request",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "performance"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@performance"],
         "preconditions": "Performance baseline established",
         "testSteps": [
           {
             "step": 1,
             "action": "Single request per team",
-            "expectedResult": [
-              "P50: < 500ms",
-              "P95: < 1000ms",
-              "P99: < 2000ms"
-            ]
+            "expectedResult": ["P50: < 500ms", "P95: < 1000ms", "P99: < 2000ms"]
           },
           {
             "step": 2,
             "action": "Measure response time",
-            "expectedResult": [
-              "Response time measured"
-            ]
+            "expectedResult": ["Response time measured"]
           },
           {
             "step": 3,
             "action": "Validate against SLA",
-            "expectedResult": [
-              "SLA validation complete"
-            ]
+            "expectedResult": ["SLA validation complete"]
           }
         ],
         "testData": "Performance testing, Acceptance Criteria: P50: < 500ms, P95: < 1000ms, P99: < 2000ms",
@@ -1293,28 +750,15 @@
         "testCaseId": "API-PERF-002",
         "title": "Concurrent Requests",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "performance"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@performance"],
         "preconditions": "Load testing environment available",
         "testSteps": [
           {
             "step": 1,
             "action": "Execute 100 concurrent users with random team selection for 5-minute duration",
-            "expectedResult": [
-              "No 5xx errors",
-              "Response time < 3s",
-              "Success rate > 99%"
-            ]
+            "expectedResult": ["No 5xx errors", "Response time < 3s", "Success rate > 99%"]
           }
         ],
         "testData": "Test Setup: 100 concurrent users, Random team selection, 5-minute duration, Acceptance Criteria: No 5xx errors, Response time < 3s, Success rate > 99%",
@@ -1325,42 +769,25 @@
         "testCaseId": "API-PERF-003",
         "title": "Cache Performance",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform",
-          "performance"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform", "@performance"],
         "preconditions": "Caching enabled",
         "testSteps": [
           {
             "step": 1,
             "action": "First request (cache miss)",
-            "expectedResult": [
-              "Response time measured"
-            ]
+            "expectedResult": ["Response time measured"]
           },
           {
             "step": 2,
             "action": "Second request (cache hit)",
-            "expectedResult": [
-              "Cache hit < 100ms",
-              "Cache headers present",
-              "Consistent data"
-            ]
+            "expectedResult": ["Cache hit < 100ms", "Cache headers present", "Consistent data"]
           },
           {
             "step": 3,
             "action": "Compare response times",
-            "expectedResult": [
-              "Cache performance validated"
-            ]
+            "expectedResult": ["Cache performance validated"]
           }
         ],
         "testData": "Caching test, Expected Results: Cache hit < 100ms, Cache headers present, Consistent data",
@@ -1371,31 +798,15 @@
         "testCaseId": "API-PERF-004",
         "title": "Jewel Event Load Testing",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "performance",
-          "jewel_event",
-          "opening_day",
-          "postseason"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@performance", "@jewel-event", "@opening-day", "@postseason"],
         "preconditions": "High traffic period",
         "testSteps": [
           {
             "step": 1,
             "action": "Execute load profile: 10x normal traffic, Spike testing, Sustained load",
-            "expectedResult": [
-              "No degradation",
-              "<2s response time",
-              "Zero downtime"
-            ]
+            "expectedResult": ["No degradation", "<2s response time", "Zero downtime"]
           }
         ],
         "testData": "Test Period: Opening Day, Postseason, Load Profile: 10x normal traffic, Spike testing, Sustained load, Acceptance Criteria: No degradation, <2s response time, Zero downtime",
@@ -1406,30 +817,15 @@
         "testCaseId": "API-PERF-005",
         "title": "Game State Performance",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "performance",
-          "game_state",
-          "live_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@performance", "@game-state", "@live-state"],
         "preconditions": "Multiple live games available",
         "testSteps": [
           {
             "step": 1,
             "action": "Execute load profile: Rapid state polling, Multiple concurrent games, State transition spikes",
-            "expectedResult": [
-              "<500ms updates",
-              "Accurate state sync",
-              "No missed transitions"
-            ]
+            "expectedResult": ["<500ms updates", "Accurate state sync", "No missed transitions"]
           }
         ],
         "testData": "Test Scenario: Live game state changes, Load Profile: Rapid state polling, Multiple concurrent games, State transition spikes, Acceptance Criteria: <500ms updates, Accurate state sync, No missed transitions",
@@ -1440,27 +836,15 @@
         "testCaseId": "API-INT-001",
         "title": "Upstream Service Integration",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform"],
         "preconditions": "Upstream services available",
         "testSteps": [
           {
             "step": 1,
             "action": "Test integration with Mashup Service, Midfield Service, StatsAPI",
-            "expectedResult": [
-              "Data consistency",
-              "Proper fallbacks",
-              "Error handling"
-            ]
+            "expectedResult": ["Data consistency", "Proper fallbacks", "Error handling"]
           }
         ],
         "testData": "Services Tested: Mashup Service, Midfield Service, StatsAPI",
@@ -1471,42 +855,25 @@
         "testCaseId": "API-INT-002",
         "title": "Data Freshness",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "live_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@live-state"],
         "preconditions": "Live game in progress",
         "testSteps": [
           {
             "step": 1,
             "action": "Check live game data",
-            "expectedResult": [
-              "Initial data captured"
-            ]
+            "expectedResult": ["Initial data captured"]
           },
           {
             "step": 2,
             "action": "Wait 30 seconds",
-            "expectedResult": [
-              "Wait complete"
-            ]
+            "expectedResult": ["Wait complete"]
           },
           {
             "step": 3,
             "action": "Check again",
-            "expectedResult": [
-              "Score updates",
-              "Status changes",
-              "Cache invalidation"
-            ]
+            "expectedResult": ["Score updates", "Status changes", "Cache invalidation"]
           }
         ],
         "testData": "Live game data freshness test",
@@ -1517,28 +884,15 @@
         "testCaseId": "API-INT-003",
         "title": "Jewel Event Data Sources",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "jewel_event"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@jewel-event"],
         "preconditions": "Event data sources available",
         "testSteps": [
           {
             "step": 1,
             "action": "Test integration with Event service, Content service, Schedule service",
-            "expectedResult": [
-              "Event data sync",
-              "Content freshness",
-              "Schedule accuracy"
-            ]
+            "expectedResult": ["Event data sync", "Content freshness", "Schedule accuracy"]
           }
         ],
         "testData": "Data Sources: Event service, Content service, Schedule service",
@@ -1549,28 +903,15 @@
         "testCaseId": "API-INT-004",
         "title": "Game State Data Sources",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@game-state"],
         "preconditions": "Game state data available",
         "testSteps": [
           {
             "step": 1,
             "action": "Test integration with Stats API (primary), Game service, Schedule service",
-            "expectedResult": [
-              "State consistency",
-              "Transition accuracy",
-              "Fallback handling"
-            ]
+            "expectedResult": ["State consistency", "Transition accuracy", "Fallback handling"]
           }
         ],
         "testData": "Data Sources: Stats API (primary), Game service, Schedule service",
@@ -1581,26 +922,15 @@
         "testCaseId": "API-SEC-001",
         "title": "Authentication Not Required",
         "priority": "Low",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "low",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@low", "@cross-platform"],
         "preconditions": "Public endpoint available",
         "testSteps": [
           {
             "step": 1,
             "action": "Access without auth tokens",
-            "expectedResult": [
-              "Public access allowed",
-              "No auth errors"
-            ]
+            "expectedResult": ["Public access allowed", "No auth errors"]
           }
         ],
         "testData": "Test: Access without auth tokens",
@@ -1611,27 +941,15 @@
         "testCaseId": "API-SEC-002",
         "title": "Input Validation",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform"],
         "preconditions": "Security testing environment",
         "testSteps": [
           {
             "step": 1,
             "action": "Test SQL injection attempts, XSS payloads, Buffer overflow",
-            "expectedResult": [
-              "Inputs sanitized",
-              "No execution",
-              "Proper errors"
-            ]
+            "expectedResult": ["Inputs sanitized", "No execution", "Proper errors"]
           }
         ],
         "testData": "Test Cases: SQL injection attempts, XSS payloads, Buffer overflow",
@@ -1642,27 +960,15 @@
         "testCaseId": "API-ERR-001",
         "title": "Upstream Service Down",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform"],
         "preconditions": "Service failure simulation",
         "testSteps": [
           {
             "step": 1,
             "action": "Simulate Mashup service unavailable",
-            "expectedResult": [
-              "Graceful degradation",
-              "Cached data used",
-              "No 500 errors"
-            ]
+            "expectedResult": ["Graceful degradation", "Cached data used", "No 500 errors"]
           }
         ],
         "testData": "Scenario: Mashup service unavailable",
@@ -1673,26 +979,15 @@
         "testCaseId": "API-ERR-002",
         "title": "Malformed Requests",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform"],
         "preconditions": "Malformed request capability",
         "testSteps": [
           {
             "step": 1,
             "action": "Test Invalid JSON, Wrong content-type, Oversized requests",
-            "expectedResult": [
-              "400 Bad Request",
-              "Clear error messages"
-            ]
+            "expectedResult": ["400 Bad Request", "Clear error messages"]
           }
         ],
         "testData": "Test Cases: Invalid JSON, Wrong content-type, Oversized requests",
@@ -1703,28 +998,15 @@
         "testCaseId": "API-ERR-003",
         "title": "Jewel Event Service Failure",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "jewel_event"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@jewel-event"],
         "preconditions": "Event service failure simulation",
         "testSteps": [
           {
             "step": 1,
             "action": "Simulate Event service down during jewel event",
-            "expectedResult": [
-              "Fallback to regular content",
-              "No empty sections",
-              "Cached event data used"
-            ]
+            "expectedResult": ["Fallback to regular content", "No empty sections", "Cached event data used"]
           }
         ],
         "testData": "Scenario: Event service down during jewel event",
@@ -1735,28 +1017,15 @@
         "testCaseId": "API-ERR-004",
         "title": "Game State Service Failure",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@game-state"],
         "preconditions": "Stats API failure simulation",
         "testSteps": [
           {
             "step": 1,
             "action": "Simulate Stats API unavailable",
-            "expectedResult": [
-              "Last known state used",
-              "Clear error indicators",
-              "No data corruption"
-            ]
+            "expectedResult": ["Last known state used", "Clear error indicators", "No data corruption"]
           }
         ],
         "testData": "Scenario: Stats API unavailable",
@@ -1767,60 +1036,34 @@
         "testCaseId": "API-DATA-001",
         "title": "Section ID Format",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform"],
         "preconditions": "Section ID format defined",
         "testSteps": [
           {
             "step": 1,
             "action": "Validate section ID format",
-            "expectedResult": [
-              "No spaces in IDs",
-              "Lowercase only",
-              "Proper prefixes"
-            ]
+            "expectedResult": ["No spaces in IDs", "Lowercase only", "Proper prefixes"]
           }
         ],
         "testData": "Validation Rules: No spaces in IDs, Lowercase only, Proper prefixes, Related Issue: FRAMED-643",
-        "relatedIssues": [
-          "FRAMED-643"
-        ],
+        "relatedIssues": ["FRAMED-643"],
         "jiraKey": "FRAMED-1418"
       },
       {
         "testCaseId": "API-DATA-002",
         "title": "Image URL Validation",
         "priority": "Medium",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "medium",
-          "cross_platform"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@medium", "@cross-platform"],
         "preconditions": "Image URLs available",
         "testSteps": [
           {
             "step": 1,
             "action": "Validate image URLs",
-            "expectedResult": [
-              "HTTPS URLs only",
-              "Valid domains",
-              "Accessible images"
-            ]
+            "expectedResult": ["HTTPS URLs only", "Valid domains", "Accessible images"]
           }
         ],
         "testData": "Validations: HTTPS URLs only, Valid domains, Accessible images",
@@ -1831,28 +1074,15 @@
         "testCaseId": "API-DATA-003",
         "title": "Date/Time Formatting",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "localization"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@localization"],
         "preconditions": "Various timezone data available",
         "testSteps": [
           {
             "step": 1,
             "action": "Test Different timezones, DST transitions, International dates",
-            "expectedResult": [
-              "ISO 8601 format",
-              "Timezone included",
-              "Correct conversions"
-            ]
+            "expectedResult": ["ISO 8601 format", "Timezone included", "Correct conversions"]
           }
         ],
         "testData": "Test Cases: Different timezones, DST transitions, International dates",
@@ -1863,29 +1093,15 @@
         "testCaseId": "API-DATA-004",
         "title": "Jewel Event Metadata",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "jewel_event"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@jewel-event"],
         "preconditions": "Jewel event metadata available",
         "testSteps": [
           {
             "step": 1,
             "action": "Validate jewel event metadata",
-            "expectedResult": [
-              "Event type indicators",
-              "Special badges present",
-              "Promotional URLs valid",
-              "Event dates accurate"
-            ]
+            "expectedResult": ["Event type indicators", "Special badges present", "Promotional URLs valid", "Event dates accurate"]
           }
         ],
         "testData": "Jewel event metadata validation",
@@ -1896,29 +1112,15 @@
         "testCaseId": "API-DATA-005",
         "title": "Game State Metadata",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@game-state"],
         "preconditions": "Game state metadata available",
         "testSteps": [
           {
             "step": 1,
             "action": "Validate game state metadata",
-            "expectedResult": [
-              "State codes accurate",
-              "Transition timestamps",
-              "State history preserved",
-              "Reason codes valid"
-            ]
+            "expectedResult": ["State codes accurate", "Transition timestamps", "State history preserved", "Reason codes valid"]
           }
         ],
         "testData": "Game state metadata validation",
@@ -1929,61 +1131,34 @@
         "testCaseId": "API-REG-001",
         "title": "Fixed Issues Verification",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "regression"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Product Links",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@regression"],
         "preconditions": "Fixed issues documented",
         "testSteps": [
           {
             "step": 1,
             "action": "Test each fixed issue: FRAMED-639: Timezone display, FRAMED-728: Athletics content, FRAMED-1005: Diamondbacks name",
-            "expectedResult": [
-              "All fixed issues verified"
-            ]
+            "expectedResult": ["All fixed issues verified"]
           }
         ],
         "testData": "Issues to Verify: FRAMED-639: Timezone display, FRAMED-728: Athletics content, FRAMED-1005: Diamondbacks name",
-        "relatedIssues": [
-          "FRAMED-639",
-          "FRAMED-728",
-          "FRAMED-1005"
-        ],
+        "relatedIssues": ["FRAMED-639", "FRAMED-728", "FRAMED-1005"],
         "jiraKey": "FRAMED-1423"
       },
       {
         "testCaseId": "API-REG-002",
         "title": "Jewel Event Regression Suite",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "regression",
-          "jewel_event"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Jewel Events",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@regression", "@jewel-event"],
         "preconditions": "Regression test suite available",
         "testSteps": [
           {
             "step": 1,
             "action": "Execute regression suite: All jewel event types, Previous year issues, Edge cases",
-            "expectedResult": [
-              "All regression tests pass"
-            ]
+            "expectedResult": ["All regression tests pass"]
           }
         ],
         "testData": "Test Coverage: All jewel event types, Previous year issues, Edge cases, Execution: Before each jewel event",
@@ -1994,27 +1169,15 @@
         "testCaseId": "API-REG-003",
         "title": "Game State Regression Suite",
         "priority": "High",
-        "platforms": [
-          "iOS",
-          "Android"
-        ],
-        "folderStructure": "Test Repository/Team Page/API Tests",
-        "tags": [
-          "team_page",
-          "api",
-          "high",
-          "cross_platform",
-          "regression",
-          "game_state"
-        ],
+        "platforms": ["iOS", "Android"],
+        "folderStructure": "Team Page/Game States",
+        "tags": ["@team-page", "@api", "@high", "@cross-platform", "@regression", "@game-state"],
         "preconditions": "Game state regression suite available",
         "testSteps": [
           {
             "step": 1,
             "action": "Execute regression suite: All state transitions, Edge case states, State recovery",
-            "expectedResult": [
-              "All regression tests pass"
-            ]
+            "expectedResult": ["All regression tests pass"]
           }
         ],
         "testData": "Test Coverage: All state transitions, Edge case states, State recovery, Execution: Weekly automated runs",

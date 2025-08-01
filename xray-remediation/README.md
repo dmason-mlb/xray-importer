@@ -1,146 +1,129 @@
-# Xray Remediation Project - July 17, 2025
+# Xray Remediation Project
+
+**Last Updated**: July 31, 2025
 
 ## Overview
 
-This directory contains scripts, extracted test data, and documentation for the comprehensive Xray test remediation project in the FRAMED project. The project focuses on extracting test cases from Confluence documentation and creating properly structured test data for Xray import.
+This project extracts test cases from Confluence documentation and manages them in Xray test management system. It includes 93 unique test cases (55 API + 38 functional) with full pytest integration and folder organization.
 
-## Project Status
+## 🚀 Quick Start
 
-**✅ COMPLETED PHASES:**
-- High Priority Security Enhancements
-- Document Formatting Normalization
-- Parameterized Instance Documentation
-- Script Deduplication and Cleanup
-- Comprehensive Code Review
+```bash
+# Set environment variables
+export XRAY_CLIENT_ID="your_client_id"
+export XRAY_CLIENT_SECRET="your_client_secret"
 
-**🔄 COMPLETED:**
-- Documentation Updates
-- Script Reorganization
+# Check project status
+cat PROJECT_STATUS.md
 
-## Current Directory Structure
+# View all tests
+cat TEAM_PAGE_TEST_CATALOG.md
+
+# See implementation details
+cat IMPLEMENTATION_GUIDE.md
+```
+
+## 📋 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [PROJECT_STATUS.md](./PROJECT_STATUS.md) | Current status, metrics, and progress |
+| [TEAM_PAGE_TEST_CATALOG.md](./TEAM_PAGE_TEST_CATALOG.md) | Complete list of all 93 tests |
+| [IMPLEMENTATION_GUIDE.md](./IMPLEMENTATION_GUIDE.md) | Technical procedures and examples |
+| [DOCUMENTATION_MAP.md](./DOCUMENTATION_MAP.md) | Navigation guide for all docs |
+| [CLAUDE.md](./CLAUDE.md) | AI assistant instructions |
+
+## 📁 Directory Structure
 
 ```
 xray-remediation/
-├── README.md                          # This file
-├── CLAUDE.md                         # Claude Code instructions
-├── xray-api/                         # Xray API and assessment scripts
-│   ├── auth_utils.py                 # Centralized Xray authentication
-│   ├── fixed_phase1_assessment.py   # Comprehensive assessment
-│   ├── minimal_assessment.py         # Basic assessment utilities
-│   ├── working_assessment.py         # Working assessment implementation
-│   ├── fetch_framed_data.py          # FRAMED project data fetching
-│   └── explore_projects.py           # Project data exploration
-├── confluence-tools/                 # Confluence extraction and document processing
-│   ├── extract_confluence_api_tests_secure.py  # Secure API extraction (RECOMMENDED)
-│   ├── extract_confluence_api_tests.py         # Original API extraction
-│   ├── extract_confluence_functional_tests_v2.py # Functional extraction
-│   ├── normalize_confluence_document.py        # Document normalization
-│   ├── document_parameterized_instances.py    # Parameterized test docs
-│   └── debug_confluence_page.py               # Generic page debugging
-├── analysis-utilities/               # Analysis, debugging, and utility scripts
-│   ├── analyze_confluence_structure.py        # Structure analysis
-│   ├── comprehensive_test_analysis.py         # Test analysis
-│   ├── deep_parameterized_analysis.py        # Parameterized analysis
-│   ├── security_analysis.py                   # Security assessment
-│   ├── debug_query.py                         # GraphQL query debugging
-│   └── simple_test.py                        # Simple GraphQL testing
-├── test-data/                        # Extracted test cases and generated data
-│   ├── api_tests_xray.json          # 55 API test cases (Xray format)
-│   ├── functional_tests_xray.json   # 38 functional test cases (Xray format)
-│   ├── comprehensive_analysis_report.md      # Analysis report
-│   └── README.md                            # Test data documentation
-├── logs/                             # Execution logs and audit trails
-├── documentation/                    # Generated reports and analysis
-├── backups/                         # Data backups before modifications
-└── validation/                      # Validation reports and test results
+├── 📄 Core Documentation
+│   ├── README.md                    # Project overview (this file)
+│   ├── PROJECT_STATUS.md           # Current status and metrics
+│   ├── TEAM_PAGE_TEST_CATALOG.md   # All 93 tests with details
+│   ├── IMPLEMENTATION_GUIDE.md     # Technical procedures
+│   ├── DOCUMENTATION_MAP.md        # Navigation guide
+│   └── CLAUDE.md                   # AI assistant instructions
+│
+├── 📂 scripts/                     # Working scripts
+│   ├── organize_xray_folders.py    # Folder organization
+│   ├── update_all_pytest_decorators.py # Pytest integration
+│   ├── create_missing_xray_tests.py    # Test creation
+│   └── [other utilities]
+│
+├── 📂 test-data/                   # Test definitions
+│   ├── api_tests_xray.json         # 55 API test cases
+│   └── functional_tests_xray.json  # 38 functional test cases
+│
+├── 📂 xray-api/                    # Xray API utilities
+│   └── auth_utils.py               # Core authentication
+│
+├── 📂 logs/                        # Execution logs
+├── 📂 documentation/archive/       # Historical docs
+└── 📂 [other directories]          # Supporting files
 ```
 
-## Test Data Summary
+## 📊 Project Metrics
 
-**Source**: Confluence documents 4904878140 (API tests) and 4904976484 (functional tests)
-**Total Test Cases**: 55 API + 38 functional = 93 test cases
-**Parameterized Instances**: 11 additional instances (66 total test instances)
-**Format**: Xray JSON import format
-**Status**: ✅ Perfect parity between Confluence docs and extracted JSON
+- **Total Tests**: 93 unique (55 API + 38 functional)
+- **Tests in Xray**: 55 API tests created
+- **Pending Creation**: 38 functional tests
+- **Preconditions**: 23 (all organized)
+- **Pytest Decorators**: 51 applied
+- **Completion**: 95%+ (only functional test creation pending)
 
-## Key Scripts
+## 🔧 Key Operations
 
-### Xray API Scripts (`/xray-api/`)
-- **`auth_utils.py`**: Centralized authentication with token caching
-- **`fixed_phase1_assessment.py`**: Comprehensive project assessment
-- **`fetch_framed_data.py`**: Batch data fetching with pagination
-- **`explore_projects.py`**: Project data exploration
-- **`minimal_assessment.py`**: Basic assessment utilities
-- **`working_assessment.py`**: Working assessment implementation
-
-### Confluence Tools (`/confluence-tools/`)
-- **`extract_confluence_api_tests_secure.py`**: Secure API test extraction with BeautifulSoup (RECOMMENDED)
-- **`extract_confluence_functional_tests_v2.py`**: Table-based functional test extraction
-- **`normalize_confluence_document.py`**: Confluence document formatting normalization
-- **`debug_confluence_page.py`**: Generic page structure analysis
-- **`document_parameterized_instances.py`**: Parameterized test documentation
-
-### Analysis Utilities (`/analysis-utilities/`)
-- **`analyze_confluence_structure.py`**: Structure analysis
-- **`comprehensive_test_analysis.py`**: Test case analysis and validation
-- **`debug_query.py`**: GraphQL query testing and debugging
-- **`security_analysis.py`**: Security assessment
-- **`deep_parameterized_analysis.py`**: Parameterized test analysis
-
-## Recent Improvements
-
-### Security Enhancements
-- Secure extraction using BeautifulSoup instead of regex
-- Input validation and sanitization
-- Comprehensive error handling and logging
-
-### Script Cleanup
-- Removed 7 duplicate scripts
-- Consolidated debug functionality
-- Eliminated code duplication in authentication
-
-### Documentation
-- Parameterized test instances documented
-- Comprehensive analysis reports generated
-- Security assessment completed
-
-## Usage
-
-### Environment Setup
+### Test Management
 ```bash
-# Set required environment variables
-export XRAY_CLIENT_ID="your_client_id"
-export XRAY_CLIENT_SECRET="your_client_secret"
-export CONFLUENCE_DOMAIN="your_domain"
-export CONFLUENCE_EMAIL="your_email"
-export CONFLUENCE_API_TOKEN="your_token"
+# Organize test folders in Xray
+python scripts/organize_xray_folders.py
+
+# Create missing tests in Xray
+python scripts/create_missing_xray_tests.py
+
+# Apply pytest decorators
+python scripts/update_all_pytest_decorators.py
 ```
 
-### Basic Operations
+### Test Extraction
 ```bash
-# Test Xray authentication
-python xray-api/auth_utils.py
-
-# Debug Confluence page structure
-python confluence-tools/debug_confluence_page.py <page_id>
-
-# Extract API tests (secure version)
+# Extract tests from Confluence (if needed)
 python confluence-tools/extract_confluence_api_tests_secure.py
-
-# Extract functional tests
 python confluence-tools/extract_confluence_functional_tests_v2.py
-
-# Run comprehensive assessment
-python xray-api/fixed_phase1_assessment.py
-
-# Analyze page structure
-python analysis-utilities/analyze_confluence_structure.py
 ```
 
-## Key References
+### Analysis & Reporting
+```bash
+# Generate test catalog
+python scripts/generate_test_catalog.py
 
-- **Confluence API Tests**: Document 4904878140 (55 test cases)
-- **Confluence Functional Tests**: Document 4904976484 (38 test cases)
-- **Xray GraphQL API**: https://xray.cloud.getxray.app/api/v2/graphql
-- **Authentication**: Environment variables (see above)
-- **FRAMED Project**: Target Xray project for test import
+# Check folder status
+python scripts/analyze_folder_status.py
+```
+
+## 🔗 Resources
+
+- **Test Sources**: Confluence docs 4904878140 (API) and 4904976484 (functional)
+- **Xray API**: https://xray.cloud.getxray.app/api/v2/graphql
+- **Project**: FRAMED in Xray
+
+## ✅ Completed Work
+
+- Test extraction from Confluence (100% parity)
+- API test creation in Xray
+- Pytest decorator integration
+- Folder organization
+- Precondition associations (95%)
+- Label cleanup (1,055+ tickets)
+- Documentation consolidation
+
+## 📝 Next Steps
+
+1. Create functional tests in Xray using JSON definitions
+2. Validate all test mappings
+3. Execute test runs with Xray reporting
+
+---
+
+*For detailed information, see [DOCUMENTATION_MAP.md](./DOCUMENTATION_MAP.md)*

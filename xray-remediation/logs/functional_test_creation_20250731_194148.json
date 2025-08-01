@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-07-31T19:41:48.561543",
+  "summary": {
+    "total_tests": 38,
+    "created": 1,
+    "errors": 0
+  },
+  "test_mapping": {
+    "TC-001": "FRAMED-1534"
+  },
+  "results": [
+    {
+      "test_id": "TC-001",
+      "jira_key": "FRAMED-1534",
+      "issue_id": "1162333",
+      "status": "created"
+    }
+  ]
+}

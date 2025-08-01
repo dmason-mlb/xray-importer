@@ -1,0 +1,407 @@
+{
+  "timestamp": "2025-07-31T13:20:51.024439",
+  "summary": {
+    "total_api_tests": 15,
+    "total_preconditions": 23,
+    "target_folders": 1,
+    "tests_needing_move": 0
+  },
+  "folder_structure": {
+    "/Team Page/API Tests": [
+      {
+        "key": "FRAMED-1425",
+        "summary": "Comprehensive game state regression testing.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1424",
+        "summary": "Comprehensive jewel event regression testing.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1423",
+        "summary": "Verify previously fixed issues remain resolved.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1422",
+        "summary": "Verify game state metadata completeness.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1421",
+        "summary": "Verify jewel event metadata accuracy.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1420",
+        "summary": "Verify date/time format consistency.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1419",
+        "summary": "Verify image URLs are valid and secure.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1418",
+        "summary": "Verify section ID format compliance.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1417",
+        "summary": "Verify handling when Stats API is unavailable.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1416",
+        "summary": "Verify fallback behavior when event service fails.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1382",
+        "summary": "Verify International Series game handling.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1381",
+        "summary": "Verify Spring Training game display.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1380",
+        "summary": "Verify World Series content and branding.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1379",
+        "summary": "Verify All-Star Game content in MIG section.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      },
+      {
+        "key": "FRAMED-1378",
+        "summary": "Verify Opening Day special content.",
+        "current_folder": "/Team Page/API Tests",
+        "needs_move": false
+      }
+    ]
+  },
+  "api_tests": [
+    {
+      "key": "FRAMED-1425",
+      "summary": "Comprehensive game state regression testing.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "regression",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1424",
+      "summary": "Comprehensive jewel event regression testing.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "regression",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1423",
+      "summary": "Verify previously fixed issues remain resolved.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "regression",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1422",
+      "summary": "Verify game state metadata completeness.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1421",
+      "summary": "Verify jewel event metadata accuracy.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1420",
+      "summary": "Verify date/time format consistency.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "localization",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1419",
+      "summary": "Verify image URLs are valid and secure.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1418",
+      "summary": "Verify section ID format compliance.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "medium",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1417",
+      "summary": "Verify handling when Stats API is unavailable.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "game_state",
+        "high",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1416",
+      "summary": "Verify fallback behavior when event service fails.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1382",
+      "summary": "Verify International Series game handling.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "international",
+        "jewel_event",
+        "medium",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1381",
+      "summary": "Verify Spring Training game display.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "jewel_event",
+        "medium",
+        "spring_training",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1380",
+      "summary": "Verify World Series content and branding.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "team_page",
+        "world_series"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1379",
+      "summary": "Verify All-Star Game content in MIG section.",
+      "labels": [
+        "all_star",
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    },
+    {
+      "key": "FRAMED-1378",
+      "summary": "Verify Opening Day special content.",
+      "labels": [
+        "api",
+        "cross_platform",
+        "high",
+        "jewel_event",
+        "opening_day",
+        "team_page"
+      ],
+      "current_folder": "/Team Page/API Tests"
+    }
+  ],
+  "preconditions": [
+    {
+      "key": "FRAMED-1377",
+      "summary": "Team Page Navigation",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1376",
+      "summary": "MLB App Setup",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1375",
+      "summary": "Precondition for Game States",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1374",
+      "summary": "Precondition for Game States",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1373",
+      "summary": "Precondition for Game States",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1372",
+      "summary": "Precondition for Game States",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1371",
+      "summary": "Precondition for Game States",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1370",
+      "summary": "Precondition for Game States",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1369",
+      "summary": "Precondition for Game States",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1368",
+      "summary": "Precondition for Game States",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1367",
+      "summary": "Precondition for Jewel Events",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1366",
+      "summary": "Precondition for Jewel Events",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1365",
+      "summary": "Precondition for Jewel Events",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1364",
+      "summary": "Precondition for Jewel Events",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1363",
+      "summary": "Precondition for Jewel Events",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1362",
+      "summary": "Precondition for Jewel Events",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1361",
+      "summary": "Precondition for Jewel Events",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1360",
+      "summary": "Precondition for Content Display",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1359",
+      "summary": "Precondition for Content Display",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1358",
+      "summary": "Precondition for Jewel Events",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1357",
+      "summary": "Precondition for Game States",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1356",
+      "summary": "Precondition for Core Navigation",
+      "current_folder": "/Preconditions"
+    },
+    {
+      "key": "FRAMED-1355",
+      "summary": "Precondition for Core Navigation",
+      "current_folder": "/Preconditions"
+    }
+  ]
+}

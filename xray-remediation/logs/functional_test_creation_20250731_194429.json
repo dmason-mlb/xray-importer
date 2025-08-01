@@ -1,0 +1,278 @@
+{
+  "timestamp": "2025-07-31T19:44:29.912051",
+  "summary": {
+    "total_tests": 38,
+    "created": 38,
+    "errors": 0
+  },
+  "test_mapping": {
+    "TC-001": "FRAMED-1536",
+    "TC-002": "FRAMED-1537",
+    "TC-003": "FRAMED-1538",
+    "TC-004": "FRAMED-1539",
+    "TC-005": "FRAMED-1540",
+    "TC-006": "FRAMED-1541",
+    "TC-007": "FRAMED-1542",
+    "TC-008": "FRAMED-1543",
+    "TC-009": "FRAMED-1544",
+    "TC-010": "FRAMED-1545",
+    "TC-011": "FRAMED-1546",
+    "TC-012": "FRAMED-1547",
+    "TC-013": "FRAMED-1548",
+    "TC-014": "FRAMED-1549",
+    "TC-015": "FRAMED-1550",
+    "TC-016": "FRAMED-1551",
+    "TC-017": "FRAMED-1552",
+    "TC-018": "FRAMED-1553",
+    "TC-019": "FRAMED-1554",
+    "TC-020": "FRAMED-1555",
+    "TC-021": "FRAMED-1556",
+    "TC-022": "FRAMED-1557",
+    "TC-023": "FRAMED-1558",
+    "TC-024": "FRAMED-1559",
+    "TC-025": "FRAMED-1560",
+    "TC-026": "FRAMED-1561",
+    "TC-027": "FRAMED-1562",
+    "TC-028": "FRAMED-1563",
+    "TC-029": "FRAMED-1564",
+    "TC-030": "FRAMED-1565",
+    "TC-031": "FRAMED-1566",
+    "TC-032": "FRAMED-1567",
+    "TC-033": "FRAMED-1568",
+    "TC-034": "FRAMED-1569",
+    "TC-035": "FRAMED-1570",
+    "TC-036": "FRAMED-1571",
+    "TC-037": "FRAMED-1572",
+    "TC-038": "FRAMED-1573"
+  },
+  "results": [
+    {
+      "test_id": "TC-001",
+      "jira_key": "FRAMED-1536",
+      "issue_id": "1162335",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-002",
+      "jira_key": "FRAMED-1537",
+      "issue_id": "1162336",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-003",
+      "jira_key": "FRAMED-1538",
+      "issue_id": "1162337",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-004",
+      "jira_key": "FRAMED-1539",
+      "issue_id": "1162338",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-005",
+      "jira_key": "FRAMED-1540",
+      "issue_id": "1162339",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-006",
+      "jira_key": "FRAMED-1541",
+      "issue_id": "1162340",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-007",
+      "jira_key": "FRAMED-1542",
+      "issue_id": "1162341",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-008",
+      "jira_key": "FRAMED-1543",
+      "issue_id": "1162342",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-009",
+      "jira_key": "FRAMED-1544",
+      "issue_id": "1162343",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-010",
+      "jira_key": "FRAMED-1545",
+      "issue_id": "1162344",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-011",
+      "jira_key": "FRAMED-1546",
+      "issue_id": "1162345",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-012",
+      "jira_key": "FRAMED-1547",
+      "issue_id": "1162346",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-013",
+      "jira_key": "FRAMED-1548",
+      "issue_id": "1162347",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-014",
+      "jira_key": "FRAMED-1549",
+      "issue_id": "1162348",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-015",
+      "jira_key": "FRAMED-1550",
+      "issue_id": "1162349",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-016",
+      "jira_key": "FRAMED-1551",
+      "issue_id": "1162350",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-017",
+      "jira_key": "FRAMED-1552",
+      "issue_id": "1162352",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-018",
+      "jira_key": "FRAMED-1553",
+      "issue_id": "1162353",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-019",
+      "jira_key": "FRAMED-1554",
+      "issue_id": "1162354",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-020",
+      "jira_key": "FRAMED-1555",
+      "issue_id": "1162355",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-021",
+      "jira_key": "FRAMED-1556",
+      "issue_id": "1162356",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-022",
+      "jira_key": "FRAMED-1557",
+      "issue_id": "1162357",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-023",
+      "jira_key": "FRAMED-1558",
+      "issue_id": "1162358",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-024",
+      "jira_key": "FRAMED-1559",
+      "issue_id": "1162359",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-025",
+      "jira_key": "FRAMED-1560",
+      "issue_id": "1162360",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-026",
+      "jira_key": "FRAMED-1561",
+      "issue_id": "1162361",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-027",
+      "jira_key": "FRAMED-1562",
+      "issue_id": "1162362",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-028",
+      "jira_key": "FRAMED-1563",
+      "issue_id": "1162363",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-029",
+      "jira_key": "FRAMED-1564",
+      "issue_id": "1162364",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-030",
+      "jira_key": "FRAMED-1565",
+      "issue_id": "1162365",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-031",
+      "jira_key": "FRAMED-1566",
+      "issue_id": "1162366",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-032",
+      "jira_key": "FRAMED-1567",
+      "issue_id": "1162367",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-033",
+      "jira_key": "FRAMED-1568",
+      "issue_id": "1162368",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-034",
+      "jira_key": "FRAMED-1569",
+      "issue_id": "1162369",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-035",
+      "jira_key": "FRAMED-1570",
+      "issue_id": "1162370",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-036",
+      "jira_key": "FRAMED-1571",
+      "issue_id": "1162371",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-037",
+      "jira_key": "FRAMED-1572",
+      "issue_id": "1162372",
+      "status": "created"
+    },
+    {
+      "test_id": "TC-038",
+      "jira_key": "FRAMED-1573",
+      "issue_id": "1162373",
+      "status": "created"
+    }
+  ]
+}

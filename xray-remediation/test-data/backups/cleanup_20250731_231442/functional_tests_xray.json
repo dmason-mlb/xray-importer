@@ -12,17 +12,19 @@
   "tests": [
     {
       "testInfo": {
-        "summary": "Team Selection via Drawer",
+        "summary": "TC-001",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android\nTest Data: Test with all 30 teams",
         "labels": [
-          "team_page",
+          "TC-001: Team Selection via Drawer",
+          "team-page",
           "android",
           "navigation",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "smoke",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -50,24 +52,24 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "User has the app installed and opened"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-001: Team Selection via Drawer",
-      "jiraKey": "FRAMED-1632"
+      "testId": "TC-001: Team Selection via Drawer"
     },
     {
       "testInfo": {
-        "summary": "Team Selection with Special Characters",
+        "summary": "TC-002",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1005",
         "labels": [
-          "team_page",
+          "team-page",
           "android",
           "navigation",
           "medium",
           "ios",
-          "functional_test",
-          "manual"
+          "functional",
+          "team_page",
+          "manual",
+          "TC-002: Team Selection with Special Characters"
         ],
         "priority": "Medium",
         "testType": "Manual",
@@ -82,26 +84,26 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "App is on Team Page"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-002: Team Selection with Special Characters",
-      "jiraKey": "FRAMED-1633"
+      "testId": "TC-002: Team Selection with Special Characters"
     },
     {
       "testInfo": {
-        "summary": "MIG Display During Live Game",
+        "summary": "TC-003",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "requires_live_game",
-          "game_state",
-          "team_page",
-          "live_state",
+          "requires-live-game",
+          "game-state",
+          "team-page",
+          "live-state",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
+          "TC-003: MIG Display During Live Game",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -135,25 +137,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Selected team has a live game"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-003: MIG Display During Live Game",
-      "jiraKey": "FRAMED-1634"
+      "testId": "TC-003: MIG Display During Live Game"
     },
     {
       "testInfo": {
-        "summary": "MIG Calendar Navigation",
+        "summary": "TC-004",
         "description": "Folder: Team Page/Date Bar\nPlatforms: iOS, Android",
         "labels": [
-          "team_page",
+          "team-page",
           "android",
           "navigation",
+          "TC-004: MIG Calendar Navigation",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
-          "date_bar",
+          "team_page",
+          "date-bar",
           "manual"
         ],
         "priority": "High",
@@ -179,24 +181,24 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-004: MIG Calendar Navigation",
-      "jiraKey": "FRAMED-1635"
+      "testId": "TC-004: MIG Calendar Navigation"
     },
     {
       "testInfo": {
-        "summary": "Home Run Derby Display",
+        "summary": "TC-005",
         "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1200, FRAMED-1222",
         "labels": [
-          "jewel_event",
-          "all_star",
-          "team_page",
+          "jewel-event",
+          "all-star",
+          "team-page",
           "android",
+          "TC-005: Home Run Derby Display",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -218,25 +220,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "HRD is scheduled"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-005: Home Run Derby Display",
-      "jiraKey": "FRAMED-1636"
+      "testId": "TC-005: Home Run Derby Display"
     },
     {
       "testInfo": {
-        "summary": "Article Carousel Navigation",
+        "summary": "TC-006",
         "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android",
         "labels": [
-          "team_page",
+          "team-page",
           "android",
+          "TC-006: Article Carousel Navigation",
           "navigation",
-          "content_display",
+          "content-display",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -262,24 +264,24 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-006: Article Carousel Navigation",
-      "jiraKey": "FRAMED-1637"
+      "testId": "TC-006: Article Carousel Navigation"
     },
     {
       "testInfo": {
-        "summary": "Video Content Playback",
+        "summary": "TC-007",
         "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android",
         "labels": [
-          "team_page",
+          "team-page",
+          "TC-007: Video Content Playback",
           "android",
-          "content_display",
+          "content-display",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -305,23 +307,23 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-007: Video Content Playback",
-      "jiraKey": "FRAMED-1638"
+      "testId": "TC-007: Video Content Playback"
     },
     {
       "testInfo": {
-        "summary": "Editorial Module Display",
+        "summary": "TC-008",
         "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-871",
         "labels": [
-          "team_page",
+          "team-page",
           "android",
-          "content_display",
+          "content-display",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "TC-008: Editorial Module Display",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -341,24 +343,24 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-008: Editorial Module Display",
-      "jiraKey": "FRAMED-1639"
+      "testId": "TC-008: Editorial Module Display"
     },
     {
       "testInfo": {
-        "summary": "Spanish Language Support",
+        "summary": "TC-009",
         "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1107, FRAMED-1117",
         "labels": [
-          "team_page",
+          "team-page",
           "android",
           "localization",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "TC-009: Spanish Language Support",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -392,23 +394,23 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Device language set to Spanish"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-009: Spanish Language Support",
-      "jiraKey": "FRAMED-1640"
+      "testId": "TC-009: Spanish Language Support"
     },
     {
       "testInfo": {
-        "summary": "Japanese Language Support",
+        "summary": "TC-010",
         "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1176",
         "labels": [
-          "team_page",
+          "team-page",
+          "TC-010: Japanese Language Support",
           "android",
           "localization",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -436,24 +438,24 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Device language set to Japanese"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-010: Japanese Language Support",
-      "jiraKey": "FRAMED-1641"
+      "testId": "TC-010: Japanese Language Support"
     },
     {
       "testInfo": {
-        "summary": "Deep Link Navigation",
+        "summary": "TC-011",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
         "labels": [
-          "team_page",
+          "team-page",
           "android",
           "navigation",
+          "TC-011: Deep Link Navigation",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -479,25 +481,25 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-011: Deep Link Navigation",
-      "jiraKey": "FRAMED-1642"
+      "testId": "TC-011: Deep Link Navigation"
     },
     {
       "testInfo": {
-        "summary": "Schedule Navigation",
+        "summary": "TC-012",
         "description": "Folder: Team Page/Product Links\nPlatforms: iOS, Android\nRelated Issues: FRAMED-642",
         "labels": [
-          "team_page",
+          "team-page",
           "android",
           "navigation",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
-          "product_links",
+          "TC-012: Schedule Navigation",
+          "team_page",
+          "product-links",
           "manual"
         ],
         "priority": "High",
@@ -523,25 +525,25 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-012: Schedule Navigation",
-      "jiraKey": "FRAMED-1643"
+      "testId": "TC-012: Schedule Navigation"
     },
     {
       "testInfo": {
-        "summary": "Page Load Performance",
+        "summary": "TC-013",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
         "labels": [
+          "TC-013: Page Load Performance",
           "performance",
-          "team_page",
+          "team-page",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "smoke",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -567,24 +569,24 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-013: Page Load Performance",
-      "jiraKey": "FRAMED-1644"
+      "testId": "TC-013: Page Load Performance"
     },
     {
       "testInfo": {
-        "summary": "Team Switching Performance",
+        "summary": "TC-014",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
         "labels": [
           "performance",
-          "team_page",
+          "team-page",
           "android",
           "navigation",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
+          "TC-014: Team Switching Performance",
           "manual"
         ],
         "priority": "Medium",
@@ -604,24 +606,24 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-014: Team Switching Performance",
-      "jiraKey": "FRAMED-1645"
+      "testId": "TC-014: Team Switching Performance"
     },
     {
       "testInfo": {
-        "summary": "Offline Behavior",
+        "summary": "TC-015",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
         "labels": [
-          "team_page",
+          "TC-015: Offline Behavior",
+          "team-page",
           "android",
           "regression",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -647,23 +649,23 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-015: Offline Behavior",
-      "jiraKey": "FRAMED-1646"
+      "testId": "TC-015: Offline Behavior"
     },
     {
       "testInfo": {
-        "summary": "Invalid Team Data",
+        "summary": "TC-016",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android\nRelated Issues: FRAMED-728",
         "labels": [
-          "team_page",
+          "team-page",
           "android",
           "regression",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "TC-016: Invalid Team Data",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -677,26 +679,26 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-016: Invalid Team Data",
-      "jiraKey": "FRAMED-1647"
+      "testId": "TC-016: Invalid Team Data"
     },
     {
       "testInfo": {
-        "summary": "Screen Reader Support",
+        "summary": "TC-017",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS (VoiceOver), Android (TalkBack)",
         "labels": [
-          "team_page",
+          "team-page",
           "android",
           "accessibility",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "talkback",
           "high",
           "voiceover",
+          "team_page",
+          "TC-017: Screen Reader Support",
           "manual"
         ],
         "priority": "High",
@@ -722,23 +724,23 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-017: Screen Reader Support",
-      "jiraKey": "FRAMED-1648"
+      "testId": "TC-017: Screen Reader Support"
     },
     {
       "testInfo": {
-        "summary": "Dynamic Type Support",
+        "summary": "TC-018",
         "description": "Folder: Team Page/Content Display\nPlatforms: iOS, Android",
         "labels": [
-          "team_page",
+          "TC-018: Dynamic Type Support",
+          "team-page",
           "android",
           "accessibility",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -764,24 +766,24 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-018: Dynamic Type Support",
-      "jiraKey": "FRAMED-1649"
+      "testId": "TC-018: Dynamic Type Support"
     },
     {
       "testInfo": {
-        "summary": "Feature Parity Check",
+        "summary": "TC-019",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
         "labels": [
-          "team_page",
+          "TC-019: Feature Parity Check",
+          "team-page",
           "android",
           "critical",
-          "cross_platform",
-          "functional_test",
+          "cross-platform",
+          "functional",
           "ios",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -807,25 +809,25 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-019: Feature Parity Check",
-      "jiraKey": "FRAMED-1650"
+      "testId": "TC-019: Feature Parity Check"
     },
     {
       "testInfo": {
-        "summary": "iPad MIG Layout",
+        "summary": "TC-020",
         "description": "Folder: Team Page/Matchup Display\nPlatforms: iOS, Android\nRelated Issues: FRAMED-1078",
         "labels": [
           "ipad",
-          "team_page",
-          "matchup_display",
+          "team-page",
+          "matchup-display",
           "android",
+          "TC-020: iPad MIG Layout",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -851,23 +853,23 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-020: iPad MIG Layout",
-      "jiraKey": "FRAMED-1651"
+      "testId": "TC-020: iPad MIG Layout"
     },
     {
       "testInfo": {
-        "summary": "Event Tracking",
+        "summary": "TC-021",
         "description": "Folder: Team Page/Core Navigation\nPlatforms: iOS, Android",
         "labels": [
-          "team_page",
+          "team-page",
           "analytics",
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "TC-021: Event Tracking",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -893,25 +895,25 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-021: Event Tracking",
-      "jiraKey": "FRAMED-1652"
+      "testId": "TC-021: Event Tracking"
     },
     {
       "testInfo": {
-        "summary": "Opening Day Content Display",
+        "summary": "TC-022",
         "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
         "labels": [
-          "jewel_event",
-          "team_page",
+          "jewel-event",
+          "TC-022: Opening Day Content Display",
+          "team-page",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
-          "opening_day",
+          "team_page",
+          "opening-day",
           "manual"
         ],
         "priority": "High",
@@ -945,25 +947,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Testing during Opening Day period"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-022: Opening Day Content Display",
-      "jiraKey": "FRAMED-1653"
+      "testId": "TC-022: Opening Day Content Display"
     },
     {
       "testInfo": {
-        "summary": "All-Star Game Team Page Updates",
+        "summary": "TC-023",
         "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
         "labels": [
-          "jewel_event",
-          "all_star",
-          "team_page",
+          "jewel-event",
+          "all-star",
+          "team-page",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
+          "TC-023: All-Star Game Team Page Updates",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -997,24 +999,24 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Testing during All-Star period"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-023: All-Star Game Team Page Updates",
-      "jiraKey": "FRAMED-1654"
+      "testId": "TC-023: All-Star Game Team Page Updates"
     },
     {
       "testInfo": {
-        "summary": "Postseason Team Page Display",
+        "summary": "TC-024",
         "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
         "labels": [
-          "jewel_event",
-          "team_page",
+          "jewel-event",
+          "team-page",
+          "TC-024: Postseason Team Page Display",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "postseason",
           "manual"
         ],
@@ -1049,25 +1051,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Team qualified for postseason"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-024: Postseason Team Page Display",
-      "jiraKey": "FRAMED-1655"
+      "testId": "TC-024: Postseason Team Page Display"
     },
     {
       "testInfo": {
-        "summary": "World Series Team Page",
+        "summary": "TC-025",
         "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
         "labels": [
-          "jewel_event",
-          "team_page",
+          "jewel-event",
+          "TC-025: World Series Team Page",
+          "team-page",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
-          "world_series",
+          "team_page",
+          "world-series",
           "manual"
         ],
         "priority": "High",
@@ -1101,24 +1103,24 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Team in World Series"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-025: World Series Team Page",
-      "jiraKey": "FRAMED-1656"
+      "testId": "TC-025: World Series Team Page"
     },
     {
       "testInfo": {
-        "summary": "Spring Training Team Page",
+        "summary": "TC-026",
         "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
         "labels": [
-          "jewel_event",
-          "team_page",
-          "spring_training",
+          "jewel-event",
+          "team-page",
+          "spring-training",
           "android",
+          "TC-026: Spring Training Team Page",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1152,24 +1154,24 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Spring Training period active"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-026: Spring Training Team Page",
-      "jiraKey": "FRAMED-1657"
+      "testId": "TC-026: Spring Training Team Page"
     },
     {
       "testInfo": {
-        "summary": "International Series Team Display",
+        "summary": "TC-027",
         "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
         "labels": [
-          "jewel_event",
+          "TC-027: International Series Team Display",
+          "jewel-event",
           "international",
-          "team_page",
+          "team-page",
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1203,23 +1205,23 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Team playing in International Series"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-027: International Series Team Display",
-      "jiraKey": "FRAMED-1658"
+      "testId": "TC-027: International Series Team Display"
     },
     {
       "testInfo": {
-        "summary": "Multiple Jewel Events Display",
+        "summary": "TC-028",
         "description": "Folder: Team Page/Jewel Events\nPlatforms: iOS, Android",
         "labels": [
-          "jewel_event",
-          "team_page",
+          "jewel-event",
+          "team-page",
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "TC-028: Multiple Jewel Events Display",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1253,25 +1255,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Multiple jewel events active"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-028: Multiple Jewel Events Display",
-      "jiraKey": "FRAMED-1659"
+      "testId": "TC-028: Multiple Jewel Events Display"
     },
     {
       "testInfo": {
-        "summary": "Warmup State Display",
+        "summary": "TC-029",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "preview_state",
-          "team_page",
+          "TC-029: Warmup State Display",
+          "game-state",
+          "preview-state",
+          "team-page",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1305,25 +1307,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Team has game in warmup state"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-029: Warmup State Display",
-      "jiraKey": "FRAMED-1660"
+      "testId": "TC-029: Warmup State Display"
     },
     {
       "testInfo": {
-        "summary": "Rain Delay Handling",
+        "summary": "TC-030",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "delayed_state",
-          "team_page",
+          "game-state",
+          "delayed-state",
+          "team-page",
+          "TC-030: Rain Delay Handling",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1357,25 +1359,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Game in rain delay"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-030: Rain Delay Handling",
-      "jiraKey": "FRAMED-1661"
+      "testId": "TC-030: Rain Delay Handling"
     },
     {
       "testInfo": {
-        "summary": "Suspended Game With Resume Date",
+        "summary": "TC-031",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "team_page",
-          "suspended_state",
+          "game-state",
+          "TC-031: Suspended Game With Resume Date",
+          "team-page",
+          "suspended-state",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1409,24 +1411,24 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Suspended game with scheduled resume"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-031: Suspended Game With Resume Date",
-      "jiraKey": "FRAMED-1662"
+      "testId": "TC-031: Suspended Game With Resume Date"
     },
     {
       "testInfo": {
-        "summary": "Manager Challenge State",
+        "summary": "TC-032",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "team_page",
-          "live_state",
+          "TC-032: Manager Challenge State",
+          "game-state",
+          "team-page",
+          "live-state",
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1460,25 +1462,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Live game with active challenge"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-032: Manager Challenge State",
-      "jiraKey": "FRAMED-1663"
+      "testId": "TC-032: Manager Challenge State"
     },
     {
       "testInfo": {
-        "summary": "Postponed Game Rescheduling",
+        "summary": "TC-033",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "final_state",
-          "team_page",
+          "game-state",
+          "final-state",
+          "team-page",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "TC-033: Postponed Game Rescheduling",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1512,23 +1514,23 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Recently postponed game"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-033: Postponed Game Rescheduling",
-      "jiraKey": "FRAMED-1664"
+      "testId": "TC-033: Postponed Game Rescheduling"
     },
     {
       "testInfo": {
-        "summary": "Forfeit Game Display",
+        "summary": "TC-034",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "final_state",
-          "team_page",
+          "game-state",
+          "final-state",
+          "team-page",
           "android",
           "ios",
-          "functional_test",
+          "functional",
+          "TC-034: Forfeit Game Display",
+          "team_page",
           "low",
           "manual"
         ],
@@ -1563,25 +1565,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Forfeit game (rare)"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-034: Forfeit Game Display",
-      "jiraKey": "FRAMED-1665"
+      "testId": "TC-034: Forfeit Game Display"
     },
     {
       "testInfo": {
-        "summary": "Game State Transition Timing",
+        "summary": "TC-035",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "team_page",
+          "TC-035: Game State Transition Timing",
+          "game-state",
+          "team-page",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
-          "state_transition",
+          "team_page",
+          "state-transition",
           "manual"
         ],
         "priority": "High",
@@ -1613,24 +1615,24 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-035: Game State Transition Timing",
-      "jiraKey": "FRAMED-1666"
+      "testId": "TC-035: Game State Transition Timing"
     },
     {
       "testInfo": {
-        "summary": "Double Header Game State Display",
+        "summary": "TC-036",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "team_page",
+          "game-state",
+          "team-page",
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
+          "TC-036: Double Header Game State Display",
           "manual"
         ],
         "priority": "High",
@@ -1664,24 +1666,24 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Team playing doubleheader"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-036: Double Header Game State Display",
-      "jiraKey": "FRAMED-1631"
+      "testId": "TC-036: Double Header Game State Display"
     },
     {
       "testInfo": {
-        "summary": "Extra Innings State Display",
+        "summary": "TC-037",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "team_page",
-          "live_state",
+          "game-state",
+          "TC-037: Extra Innings State Display",
+          "team-page",
+          "live-state",
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1715,25 +1717,25 @@
         "expectedResults": "Expected results are mapped to each step above",
         "preconditions": [
           "Game in extra innings"
-        ],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        ]
       },
-      "testId": "TC-037: Extra Innings State Display",
-      "jiraKey": "FRAMED-1668"
+      "testId": "TC-037: Extra Innings State Display"
     },
     {
       "testInfo": {
-        "summary": "Game State Error Recovery",
+        "summary": "TC-038",
         "description": "Folder: Team Page/Game States\nPlatforms: iOS, Android",
         "labels": [
-          "game_state",
-          "team_page",
+          "game-state",
+          "team-page",
           "android",
+          "TC-038: Game State Error Recovery",
           "regression",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1765,11 +1767,9 @@
           }
         ],
         "expectedResults": "Expected results are mapped to each step above",
-        "preconditions": [],
-        "folder": "Test Repository/Team Page/Functional Tests"
+        "preconditions": []
       },
-      "testId": "TC-038: Game State Error Recovery",
-      "jiraKey": "FRAMED-1669"
+      "testId": "TC-038: Game State Error Recovery"
     }
   ]
 }

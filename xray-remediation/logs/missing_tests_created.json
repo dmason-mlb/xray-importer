@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-08-01T14:11:43.581108",
+  "created_tests": [
+    {
+      "summary": "Extra Innings State Display",
+      "key": "FRAMED-1668",
+      "issueId": "1162745"
+    },
+    {
+      "summary": "Game State Error Recovery",
+      "key": "FRAMED-1669",
+      "issueId": "1162746"
+    }
+  ]
+}

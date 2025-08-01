@@ -1,0 +1,220 @@
+{
+  "timestamp": "2025-08-01T14:16:46.447250",
+  "total_tests": 38,
+  "results": [
+    {
+      "key": "FRAMED-1632",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1633",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1634",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1635",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1636",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1637",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1638",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1639",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1640",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1641",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1642",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1643",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1644",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1645",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1646",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1647",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1648",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1649",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1650",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1651",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1652",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1653",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1654",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1655",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1656",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1657",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1658",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1659",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1660",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1661",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1662",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1663",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1664",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1665",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1666",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1631",
+      "status": "error",
+      "error": "400 Client Error: Bad Request for url: https://xray.cloud.getxray.app/api/v2/graphql"
+    },
+    {
+      "key": "FRAMED-1668",
+      "status": "skipped",
+      "labels": [
+        "android",
+        "functional_test",
+        "game_state",
+        "ios",
+        "live_state",
+        "manual",
+        "medium",
+        "team_page"
+      ]
+    },
+    {
+      "key": "FRAMED-1669",
+      "status": "skipped",
+      "labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "game_state",
+        "high",
+        "ios",
+        "manual",
+        "regression",
+        "team_page"
+      ]
+    }
+  ],
+  "summary": {
+    "updated": 0,
+    "skipped": 2,
+    "errors": 36
+  }
+}

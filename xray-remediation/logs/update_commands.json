@@ -1,0 +1,850 @@
+{
+  "timestamp": "2025-08-01T14:26:07.934881",
+  "total_tests": 36,
+  "commands": [
+    {
+      "key": "FRAMED-1632",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "smoke",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1633",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "functional_test",
+            "ios",
+            "manual",
+            "medium",
+            "navigation",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1634",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "game_state",
+            "high",
+            "ios",
+            "live_state",
+            "manual",
+            "requires_live_game",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1635",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "date_bar",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1636",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "all_star",
+            "android",
+            "functional_test",
+            "ios",
+            "jewel_event",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1637",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "content_display",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1638",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "content_display",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1639",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "content_display",
+            "functional_test",
+            "ios",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1640",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "localization",
+            "manual",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1641",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "functional_test",
+            "ios",
+            "localization",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1642",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1643",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "navigation",
+            "product_links",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1644",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "performance",
+            "smoke",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1645",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "functional_test",
+            "ios",
+            "manual",
+            "medium",
+            "navigation",
+            "performance",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1646",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "regression",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1647",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "functional_test",
+            "ios",
+            "manual",
+            "medium",
+            "regression",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1648",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "accessibility",
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "talkback",
+            "team_page",
+            "voiceover"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1649",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "accessibility",
+            "android",
+            "functional_test",
+            "ios",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1650",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "cross_platform",
+            "functional_test",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1651",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "ipad",
+            "manual",
+            "matchup_display",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1652",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "analytics",
+            "android",
+            "functional_test",
+            "ios",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1653",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "jewel_event",
+            "manual",
+            "opening_day",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1654",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "all_star",
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "jewel_event",
+            "manual",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1655",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "jewel_event",
+            "manual",
+            "postseason",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1656",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "high",
+            "ios",
+            "jewel_event",
+            "manual",
+            "team_page",
+            "world_series"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1657",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "functional_test",
+            "ios",
+            "jewel_event",
+            "manual",
+            "medium",
+            "spring_training",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1658",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "functional_test",
+            "international",
+            "ios",
+            "jewel_event",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1659",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "functional_test",
+            "ios",
+            "jewel_event",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1660",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "preview_state",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1661",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "delayed_state",
+            "functional_test",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1662",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "suspended_state",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1663",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "functional_test",
+            "game_state",
+            "ios",
+            "live_state",
+            "manual",
+            "medium",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1664",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "final_state",
+            "functional_test",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1665",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "final_state",
+            "functional_test",
+            "game_state",
+            "ios",
+            "low",
+            "manual",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Low"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1666",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "state_transition",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1631",
+      "updates": [
+        {
+          "type": "labels",
+          "old": [],
+          "new": [
+            "android",
+            "critical",
+            "functional_test",
+            "game_state",
+            "high",
+            "ios",
+            "manual",
+            "team_page"
+          ]
+        },
+        {
+          "type": "priority",
+          "new": "Critical"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "label_updates": 36,
+    "priority_updates": 36
+  }
+}

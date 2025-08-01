@@ -30,11 +30,11 @@ class XrayAPIClient:
     """Xray API Client with authentication and GraphQL support"""
     
     def __init__(self, client_id=None, client_secret=None):
-        self.client_id = client_id or os.environ.get('XRAY_CLIENT_ID')
-        self.client_secret = client_secret or os.environ.get('XRAY_CLIENT_SECRET')
+        self.client_id = client_id or os.environ.get('XRAY_CLIENT_ID') or os.environ.get('XRAY_CLIENT')
+        self.client_secret = client_secret or os.environ.get('XRAY_CLIENT_SECRET') or os.environ.get('XRAY_SECRET')
         
         if not self.client_id or not self.client_secret:
-            raise ValueError("XRAY_CLIENT_ID and XRAY_CLIENT_SECRET must be provided")
+            raise ValueError("XRAY_CLIENT and XRAY_SECRET must be provided")
         
         self.token = None
         self.token_expires = None

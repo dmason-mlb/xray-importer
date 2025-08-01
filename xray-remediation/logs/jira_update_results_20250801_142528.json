@@ -1,0 +1,151 @@
+{
+  "timestamp": "2025-08-01T14:25:10.365888",
+  "total_tests": 36,
+  "updated": [],
+  "errors": [
+    {
+      "key": "FRAMED-1632",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1633",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1634",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1635",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1636",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1637",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1638",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1639",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1640",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1641",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1642",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1643",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1644",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1645",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1646",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1647",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1648",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1649",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1650",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1651",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1652",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1653",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1654",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1655",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1656",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1657",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1658",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1659",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1660",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1661",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1662",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1663",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1664",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1665",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1666",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    },
+    {
+      "key": "FRAMED-1631",
+      "error": "JIRA_EMAIL and JIRA_API_TOKEN environment variables must be set"
+    }
+  ]
+}

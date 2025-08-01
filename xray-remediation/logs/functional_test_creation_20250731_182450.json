@@ -1,0 +1,201 @@
+{
+  "timestamp": "2025-07-31T18:24:50.282448",
+  "summary": {
+    "total_tests": 38,
+    "created": 0,
+    "errors": 38
+  },
+  "test_mapping": {},
+  "results": [
+    {
+      "test_id": "TC-001",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-002",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-003",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-004",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-005",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-006",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-007",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-008",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-009",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-010",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-011",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-012",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-013",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-014",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-015",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-016",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-017",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-018",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-019",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-020",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-021",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-022",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-023",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-024",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-025",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-026",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-027",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-028",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-029",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-030",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-031",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-032",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-033",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-034",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-035",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-036",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-037",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    },
+    {
+      "test_id": "TC-038",
+      "status": "error",
+      "error": "'XrayAPIClient' object has no attribute 'execute_graphql'"
+    }
+  ]
+}

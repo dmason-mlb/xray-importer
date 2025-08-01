@@ -1,0 +1,176 @@
+{
+  "unique_preconditions": [
+    "User has the app installed and opened",
+    "App is on Team Page",
+    "Selected team has a live game",
+    "HRD is scheduled",
+    "Device language set to Spanish",
+    "Device language set to Japanese",
+    "Testing during Opening Day period",
+    "Testing during All-Star period",
+    "Team qualified for postseason",
+    "Team in World Series",
+    "Spring Training period active",
+    "Team playing in International Series",
+    "Multiple jewel events active",
+    "Team has game in warmup state",
+    "Game in rain delay",
+    "Suspended game with scheduled resume",
+    "Live game with active challenge",
+    "Recently postponed game",
+    "Forfeit game (rare)",
+    "Team playing doubleheader",
+    "Game in extra innings"
+  ],
+  "precondition_counts": {
+    "User has the app installed and opened": 1,
+    "App is on Team Page": 1,
+    "Selected team has a live game": 1,
+    "HRD is scheduled": 1,
+    "Device language set to Spanish": 1,
+    "Device language set to Japanese": 1,
+    "Testing during Opening Day period": 1,
+    "Testing during All-Star period": 1,
+    "Team qualified for postseason": 1,
+    "Team in World Series": 1,
+    "Spring Training period active": 1,
+    "Team playing in International Series": 1,
+    "Multiple jewel events active": 1,
+    "Team has game in warmup state": 1,
+    "Game in rain delay": 1,
+    "Suspended game with scheduled resume": 1,
+    "Live game with active challenge": 1,
+    "Recently postponed game": 1,
+    "Forfeit game (rare)": 1,
+    "Team playing doubleheader": 1,
+    "Game in extra innings": 1
+  },
+  "precondition_to_tests": {
+    "User has the app installed and opened": [
+      {
+        "testId": "TC-001: Team Selection via Drawer",
+        "summary": "Team Selection via Drawer"
+      }
+    ],
+    "App is on Team Page": [
+      {
+        "testId": "TC-002: Team Selection with Special Characters",
+        "summary": "Team Selection with Special Characters"
+      }
+    ],
+    "Selected team has a live game": [
+      {
+        "testId": "TC-003: MIG Display During Live Game",
+        "summary": "MIG Display During Live Game"
+      }
+    ],
+    "HRD is scheduled": [
+      {
+        "testId": "TC-005: Home Run Derby Display",
+        "summary": "Home Run Derby Display"
+      }
+    ],
+    "Device language set to Spanish": [
+      {
+        "testId": "TC-009: Spanish Language Support",
+        "summary": "Spanish Language Support"
+      }
+    ],
+    "Device language set to Japanese": [
+      {
+        "testId": "TC-010: Japanese Language Support",
+        "summary": "Japanese Language Support"
+      }
+    ],
+    "Testing during Opening Day period": [
+      {
+        "testId": "TC-022: Opening Day Content Display",
+        "summary": "Opening Day Content Display"
+      }
+    ],
+    "Testing during All-Star period": [
+      {
+        "testId": "TC-023: All-Star Game Team Page Updates",
+        "summary": "All-Star Game Team Page Updates"
+      }
+    ],
+    "Team qualified for postseason": [
+      {
+        "testId": "TC-024: Postseason Team Page Display",
+        "summary": "Postseason Team Page Display"
+      }
+    ],
+    "Team in World Series": [
+      {
+        "testId": "TC-025: World Series Team Page",
+        "summary": "World Series Team Page"
+      }
+    ],
+    "Spring Training period active": [
+      {
+        "testId": "TC-026: Spring Training Team Page",
+        "summary": "Spring Training Team Page"
+      }
+    ],
+    "Team playing in International Series": [
+      {
+        "testId": "TC-027: International Series Team Display",
+        "summary": "International Series Team Display"
+      }
+    ],
+    "Multiple jewel events active": [
+      {
+        "testId": "TC-028: Multiple Jewel Events Display",
+        "summary": "Multiple Jewel Events Display"
+      }
+    ],
+    "Team has game in warmup state": [
+      {
+        "testId": "TC-029: Warmup State Display",
+        "summary": "Warmup State Display"
+      }
+    ],
+    "Game in rain delay": [
+      {
+        "testId": "TC-030: Rain Delay Handling",
+        "summary": "Rain Delay Handling"
+      }
+    ],
+    "Suspended game with scheduled resume": [
+      {
+        "testId": "TC-031: Suspended Game With Resume Date",
+        "summary": "Suspended Game With Resume Date"
+      }
+    ],
+    "Live game with active challenge": [
+      {
+        "testId": "TC-032: Manager Challenge State",
+        "summary": "Manager Challenge State"
+      }
+    ],
+    "Recently postponed game": [
+      {
+        "testId": "TC-033: Postponed Game Rescheduling",
+        "summary": "Postponed Game Rescheduling"
+      }
+    ],
+    "Forfeit game (rare)": [
+      {
+        "testId": "TC-034: Forfeit Game Display",
+        "summary": "Forfeit Game Display"
+      }
+    ],
+    "Team playing doubleheader": [
+      {
+        "testId": "TC-036: Double Header Game State Display",
+        "summary": "Double Header Game State Display"
+      }
+    ],
+    "Game in extra innings": [
+      {
+        "testId": "TC-037: Extra Innings State Display",
+        "summary": "Extra Innings State Display"
+      }
+    ]
+  }
+}

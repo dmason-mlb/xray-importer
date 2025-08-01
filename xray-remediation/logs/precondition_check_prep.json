@@ -1,0 +1,31 @@
+{
+  "unique_preconditions": [
+    "User has the app installed and opened",
+    "App is on Team Page",
+    "Selected team has a live game",
+    "HRD is scheduled",
+    "Device language set to Spanish",
+    "Device language set to Japanese",
+    "Testing during Opening Day period",
+    "Testing during All-Star period",
+    "Team qualified for postseason",
+    "Team in World Series",
+    "Spring Training period active",
+    "Team playing in International Series",
+    "Multiple jewel events active",
+    "Team has game in warmup state",
+    "Game in rain delay",
+    "Suspended game with scheduled resume",
+    "Live game with active challenge",
+    "Recently postponed game",
+    "Forfeit game (rare)",
+    "Team playing doubleheader",
+    "Game in extra innings"
+  ],
+  "jql": "project = FRAMED AND issuetype = Precondition",
+  "fields_needed": [
+    "summary",
+    "key",
+    "labels"
+  ]
+}

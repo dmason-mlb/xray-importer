@@ -1,0 +1,480 @@
+{
+  "timestamp": "20250801_150845",
+  "duplicate_pairs_processed": 21,
+  "test_updates": {
+    "successful": [],
+    "failed": [],
+    "skipped": [
+      {
+        "duplicate": "FRAMED-1575",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1576",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1577",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1578",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1579",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1580",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1581",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1582",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1583",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1584",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1585",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1586",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1587",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1588",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1589",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1590",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1591",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1592",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1593",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1594",
+        "reason": "No tests linked"
+      },
+      {
+        "duplicate": "FRAMED-1595",
+        "reason": "No tests linked"
+      }
+    ]
+  },
+  "precondition_deletions": {
+    "successful": [],
+    "failed": [
+      {
+        "precondition": "FRAMED-1575",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1576",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1577",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1578",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1579",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1580",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1581",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1582",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1583",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1584",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1585",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1586",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1587",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1588",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1589",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1590",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1591",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1592",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1593",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1594",
+        "error": "Unknown error"
+      },
+      {
+        "precondition": "FRAMED-1595",
+        "error": "Unknown error"
+      }
+    ],
+    "skipped": []
+  },
+  "precondition_analysis": {
+    "FRAMED-1575": {
+      "original_key": "FRAMED-1355",
+      "original_id": "1158139",
+      "duplicate_id": "1162594",
+      "duplicate_summary": "User has the app installed and opened",
+      "original_summary": "App installed and opened",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1576": {
+      "original_key": "FRAMED-1356",
+      "original_id": "1158140",
+      "duplicate_id": "1162595",
+      "duplicate_summary": "App is on Team Page",
+      "original_summary": "App on team page",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1577": {
+      "original_key": "FRAMED-1357",
+      "original_id": "1158142",
+      "duplicate_id": "1162596",
+      "duplicate_summary": "Selected team has a live game",
+      "original_summary": "Selected team has live game",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1578": {
+      "original_key": "FRAMED-1358",
+      "original_id": "1158144",
+      "duplicate_id": "1162597",
+      "duplicate_summary": "HRD is scheduled",
+      "original_summary": "Home Run Derby scheduled",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1579": {
+      "original_key": "FRAMED-1359",
+      "original_id": "1158146",
+      "duplicate_id": "1162598",
+      "duplicate_summary": "Device language set to Spanish",
+      "original_summary": "Device language set to Spanish",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1580": {
+      "original_key": "FRAMED-1360",
+      "original_id": "1158147",
+      "duplicate_id": "1162599",
+      "duplicate_summary": "Device language set to Japanese",
+      "original_summary": "Device language set to Japanese",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1581": {
+      "original_key": "FRAMED-1361",
+      "original_id": "1158149",
+      "duplicate_id": "1162600",
+      "duplicate_summary": "Testing during Opening Day period",
+      "original_summary": "Testing during Opening Day period",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1582": {
+      "original_key": "FRAMED-1362",
+      "original_id": "1158151",
+      "duplicate_id": "1162601",
+      "duplicate_summary": "Testing during All-Star period",
+      "original_summary": "Testing during All-Star period",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1583": {
+      "original_key": "FRAMED-1363",
+      "original_id": "1158153",
+      "duplicate_id": "1162602",
+      "duplicate_summary": "Team qualified for postseason",
+      "original_summary": "Team qualified for postseason",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1584": {
+      "original_key": "FRAMED-1364",
+      "original_id": "1158154",
+      "duplicate_id": "1162603",
+      "duplicate_summary": "Team in World Series",
+      "original_summary": "Team in World Series",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1585": {
+      "original_key": "FRAMED-1365",
+      "original_id": "1158156",
+      "duplicate_id": "1162604",
+      "duplicate_summary": "Spring Training period active",
+      "original_summary": "Spring Training period active",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1586": {
+      "original_key": "FRAMED-1366",
+      "original_id": "1158158",
+      "duplicate_id": "1162605",
+      "duplicate_summary": "Team playing in International Series",
+      "original_summary": "Team playing in International Series",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1587": {
+      "original_key": "FRAMED-1367",
+      "original_id": "1158160",
+      "duplicate_id": "1162606",
+      "duplicate_summary": "Multiple jewel events active",
+      "original_summary": "Multiple jewel events active",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1588": {
+      "original_key": "FRAMED-1368",
+      "original_id": "1158162",
+      "duplicate_id": "1162607",
+      "duplicate_summary": "Team has game in warmup state",
+      "original_summary": "Team has game in warmup state",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1589": {
+      "original_key": "FRAMED-1369",
+      "original_id": "1158163",
+      "duplicate_id": "1162608",
+      "duplicate_summary": "Game in rain delay",
+      "original_summary": "Game in rain delay",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1590": {
+      "original_key": "FRAMED-1370",
+      "original_id": "1158165",
+      "duplicate_id": "1162609",
+      "duplicate_summary": "Suspended game with scheduled resume",
+      "original_summary": "Suspended game with scheduled resume",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1591": {
+      "original_key": "FRAMED-1371",
+      "original_id": "1158167",
+      "duplicate_id": "1162610",
+      "duplicate_summary": "Live game with active challenge",
+      "original_summary": "Live game with active challenge",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1592": {
+      "original_key": "FRAMED-1372",
+      "original_id": "1158169",
+      "duplicate_id": "1162611",
+      "duplicate_summary": "Recently postponed game",
+      "original_summary": "Recently postponed game",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1593": {
+      "original_key": "FRAMED-1373",
+      "original_id": "1158170",
+      "duplicate_id": "1162612",
+      "duplicate_summary": "Forfeit game (rare)",
+      "original_summary": "Forfeit game (rare)",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1594": {
+      "original_key": "FRAMED-1374",
+      "original_id": "1158172",
+      "duplicate_id": "1162613",
+      "duplicate_summary": "Team playing doubleheader",
+      "original_summary": "Team playing doubleheader",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    },
+    "FRAMED-1595": {
+      "original_key": "FRAMED-1375",
+      "original_id": "1158174",
+      "duplicate_id": "1162614",
+      "duplicate_summary": "Game in extra innings",
+      "original_summary": "Game in extra innings",
+      "tests_migrated_count": 0,
+      "duplicate_labels": [
+        "automated",
+        "functional",
+        "team-page"
+      ],
+      "original_labels": []
+    }
+  }
+}

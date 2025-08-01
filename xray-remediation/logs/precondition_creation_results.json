@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-08-01T11:26:29.684897",
+  "created_preconditions": {
+    "User has the app installed and opened": {
+      "key": "FRAMED-1575",
+      "issueId": "1162594"
+    },
+    "App is on Team Page": {
+      "key": "FRAMED-1576",
+      "issueId": "1162595"
+    },
+    "Selected team has a live game": {
+      "key": "FRAMED-1577",
+      "issueId": "1162596"
+    },
+    "HRD is scheduled": {
+      "key": "FRAMED-1578",
+      "issueId": "1162597"
+    },
+    "Device language set to Spanish": {
+      "key": "FRAMED-1579",
+      "issueId": "1162598"
+    },
+    "Device language set to Japanese": {
+      "key": "FRAMED-1580",
+      "issueId": "1162599"
+    },
+    "Testing during Opening Day period": {
+      "key": "FRAMED-1581",
+      "issueId": "1162600"
+    },
+    "Testing during All-Star period": {
+      "key": "FRAMED-1582",
+      "issueId": "1162601"
+    },
+    "Team qualified for postseason": {
+      "key": "FRAMED-1583",
+      "issueId": "1162602"
+    },
+    "Team in World Series": {
+      "key": "FRAMED-1584",
+      "issueId": "1162603"
+    },
+    "Spring Training period active": {
+      "key": "FRAMED-1585",
+      "issueId": "1162604"
+    },
+    "Team playing in International Series": {
+      "key": "FRAMED-1586",
+      "issueId": "1162605"
+    },
+    "Multiple jewel events active": {
+      "key": "FRAMED-1587",
+      "issueId": "1162606"
+    },
+    "Team has game in warmup state": {
+      "key": "FRAMED-1588",
+      "issueId": "1162607"
+    },
+    "Game in rain delay": {
+      "key": "FRAMED-1589",
+      "issueId": "1162608"
+    },
+    "Suspended game with scheduled resume": {
+      "key": "FRAMED-1590",
+      "issueId": "1162609"
+    },
+    "Live game with active challenge": {
+      "key": "FRAMED-1591",
+      "issueId": "1162610"
+    },
+    "Recently postponed game": {
+      "key": "FRAMED-1592",
+      "issueId": "1162611"
+    },
+    "Forfeit game (rare)": {
+      "key": "FRAMED-1593",
+      "issueId": "1162612"
+    },
+    "Team playing doubleheader": {
+      "key": "FRAMED-1594",
+      "issueId": "1162613"
+    },
+    "Game in extra innings": {
+      "key": "FRAMED-1595",
+      "issueId": "1162614"
+    }
+  },
+  "errors": [],
+  "summary": {
+    "total_attempted": 21,
+    "successfully_created": 21,
+    "failed": 0
+  }
+}

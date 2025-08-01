@@ -1,0 +1,129 @@
+{
+  "generic_preconditions_to_create": [
+    {
+      "summary": "API Test Environment Ready",
+      "description": "Generic precondition for API tests:\n1. Test environment is properly configured\n2. All required API endpoints are accessible\n3. Valid test data is available\n4. Authentication tokens are configured (if required)\n5. Network connectivity is stable",
+      "covers": [
+        "API endpoint accessible",
+        "Valid test data configured",
+        "Test environment configured",
+        "Security testing environment",
+        "Load testing environment available",
+        "Public endpoint available",
+        "Upstream services available"
+      ]
+    },
+    {
+      "summary": "Game State Test Data Available",
+      "description": "Generic precondition for game state testing:\n1. Various game states are available in test data\n2. Live, completed, postponed, and scheduled games exist\n3. Special game states (rain delay, suspended, etc.) can be simulated\n4. Game state transitions can be tested",
+      "covers": [
+        "Game in delayed state",
+        "Game suspended",
+        "Postponed game available",
+        "Completed game available",
+        "Scheduled game available",
+        "Game in warmup state",
+        "Game state data available",
+        "Game state transitions available",
+        "Multiple games available"
+      ]
+    },
+    {
+      "summary": "Jewel Event Test Environment",
+      "description": "Generic precondition for jewel event testing:\n1. Jewel event test data is configured\n2. Various event types can be simulated (Opening Day, All-Star, Postseason, etc.)\n3. Event metadata is properly configured\n4. Multiple events can be active simultaneously",
+      "covers": [
+        "Opening Day active",
+        "All-Star Game active",
+        "Spring Training active",
+        "Team qualified for playoffs",
+        "Team in World Series",
+        "International Series active",
+        "Multiple events active",
+        "Jewel event metadata available"
+      ]
+    },
+    {
+      "summary": "Localization Test Environment",
+      "description": "Generic precondition for localization testing:\n1. Multiple languages are configured (English, Spanish, Japanese)\n2. Localized content is available for all supported languages\n3. Language switching is properly configured\n4. Timezone data for various regions is available",
+      "covers": [
+        "English language supported",
+        "Spanish language supported",
+        "Japanese language supported",
+        "Localization supported",
+        "Various timezone data available"
+      ]
+    },
+    {
+      "summary": "Mobile App Test Environment",
+      "description": "Generic precondition for mobile app testing:\n1. iOS and Android test apps are available\n2. iPad-specific features are testable\n3. Device orientation can be changed\n4. Analytics tracking is enabled\n5. Performance baselines are established",
+      "covers": [
+        "iOS app available",
+        "Android app available",
+        "iPad app available",
+        "Device orientation unlocked",
+        "Analytics tracking enabled",
+        "Performance baseline established"
+      ]
+    }
+  ],
+  "total_generic": 5,
+  "total_specific_covered": 35,
+  "mapping": {
+    "Valid team ID available": "FRAMED-1355",
+    "User on Team Page": "FRAMED-1356",
+    "Selected team has a live game": "FRAMED-1357",
+    "Live game in progress": "FRAMED-1357",
+    "HRD is scheduled": "FRAMED-1358",
+    "Device language set to Spanish": "FRAMED-1359",
+    "Device language set to Japanese": "FRAMED-1360",
+    "Testing during Opening Day period": "FRAMED-1361",
+    "Testing during All-Star period": "FRAMED-1362",
+    "Team qualified for postseason": "FRAMED-1363",
+    "Team in World Series": "FRAMED-1364",
+    "Spring Training period active": "FRAMED-1365",
+    "Team playing in International Series": "FRAMED-1366",
+    "Multiple jewel events active": "FRAMED-1367",
+    "Team has game in warmup state": "FRAMED-1368",
+    "Game in rain delay": "FRAMED-1369",
+    "Suspended game with scheduled resume": "FRAMED-1370",
+    "Live game with active challenge": "FRAMED-1371",
+    "Recently postponed game": "FRAMED-1372",
+    "Forfeit game (rare)": "FRAMED-1373",
+    "Team playing doubleheader": "FRAMED-1374",
+    "Game in extra innings": "FRAMED-1375",
+    "API endpoint accessible": "GENERIC_API Test Environment",
+    "Valid test data configured": "GENERIC_API Test Environment",
+    "Test environment configured": "GENERIC_API Test Environment",
+    "Security testing environment": "GENERIC_API Test Environment",
+    "Load testing environment available": "GENERIC_API Test Environment",
+    "Public endpoint available": "GENERIC_API Test Environment",
+    "Upstream services available": "GENERIC_API Test Environment",
+    "Game in delayed state": "GENERIC_Game State Test Data",
+    "Game suspended": "GENERIC_Game State Test Data",
+    "Postponed game available": "GENERIC_Game State Test Data",
+    "Completed game available": "GENERIC_Game State Test Data",
+    "Scheduled game available": "GENERIC_Game State Test Data",
+    "Game in warmup state": "GENERIC_Game State Test Data",
+    "Game state data available": "GENERIC_Game State Test Data",
+    "Game state transitions available": "GENERIC_Game State Test Data",
+    "Multiple games available": "GENERIC_Game State Test Data",
+    "Opening Day active": "GENERIC_Jewel Event Test Env",
+    "All-Star Game active": "GENERIC_Jewel Event Test Env",
+    "Spring Training active": "GENERIC_Jewel Event Test Env",
+    "Team qualified for playoffs": "GENERIC_Jewel Event Test Env",
+    "International Series active": "GENERIC_Jewel Event Test Env",
+    "Multiple events active": "GENERIC_Jewel Event Test Env",
+    "Jewel event metadata available": "GENERIC_Jewel Event Test Env",
+    "English language supported": "GENERIC_Localization Test En",
+    "Spanish language supported": "GENERIC_Localization Test En",
+    "Japanese language supported": "GENERIC_Localization Test En",
+    "Localization supported": "GENERIC_Localization Test En",
+    "Various timezone data available": "GENERIC_Localization Test En",
+    "iOS app available": "GENERIC_Mobile App Test Envi",
+    "Android app available": "GENERIC_Mobile App Test Envi",
+    "iPad app available": "GENERIC_Mobile App Test Envi",
+    "Device orientation unlocked": "GENERIC_Mobile App Test Envi",
+    "Analytics tracking enabled": "GENERIC_Mobile App Test Envi",
+    "Performance baseline established": "GENERIC_Mobile App Test Envi"
+  }
+}

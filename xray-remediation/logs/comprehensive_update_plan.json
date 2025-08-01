@@ -1,0 +1,1519 @@
+{
+  "timestamp": "2025-08-01T14:21:52.185895",
+  "total_tests": 38,
+  "updates": [
+    {
+      "key": "FRAMED-1632",
+      "issueId": "1162652",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "navigation",
+        "smoke",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "50a6aef7-ea62-4c44-97af-a26339b0a392",
+          "action": "Navigate to Team Page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "9df25515-cb06-4cef-a8dd-40dda8f996dc",
+          "action": "Tap on the team selector dropdown \u00a0\u00a0\u00a0\u00a0\u2192 Team drawer opens smoothly \u00a0\u00a0\u00a0\u00a0\u2192 All 30 MLB teams are displayed",
+          "result": "Action is performed successfully",
+          "data": ""
+        },
+        {
+          "id": "3cd60f73-6e15-47ff-87b2-a245c3d40d56",
+          "action": "Select a different team from the list \u00a0\u00a0\u00a0\u00a0\u2192 Selected team's page loads with correct content \u00a0\u00a0\u00a0\u00a0\u2192 Team name updates in the header",
+          "result": "Loads successfully",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1633",
+      "issueId": "1162653",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 1 steps"
+      ],
+      "new_labels": [
+        "android",
+        "functional_test",
+        "ios",
+        "manual",
+        "medium",
+        "navigation",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "e30e895c-58b1-44d4-9e3f-ff6f3e344c89",
+          "action": "Select Arizona Diamondbacks from team selector \u00a0\u00a0\u00a0\u00a0\u2192 Team name displays correctly without cutoff \u00a0\u00a0\u00a0\u00a0\u2192 Dropdown arrow remains visible",
+          "result": "Content displays correctly",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1634",
+      "issueId": "1162654",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "game_state",
+        "high",
+        "ios",
+        "live_state",
+        "manual",
+        "requires_live_game",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "8215be0a-03ea-4e3e-985c-acb36a9069ac",
+          "action": "Navigate to team with live game",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "899b9332-0219-41f8-8bdc-b551502c7142",
+          "action": "Observe MIG section \u00a0\u00a0\u00a0\u00a0\u2192 Live game card displays current score \u00a0\u00a0\u00a0\u00a0\u2192 Game status shows \"LIVE\"",
+          "result": "Content displays correctly",
+          "data": ""
+        },
+        {
+          "id": "a8b4c6c7-5ea2-4714-b8fc-4d35f3686f69",
+          "action": "Check game score updates \u00a0\u00a0\u00a0\u00a0\u2192 Score updates in real-time",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "8e97d660-0c99-4c4b-a2b4-f11fa372a3f4",
+          "action": "Verify broadcast information \u00a0\u00a0\u00a0\u00a0\u2192 Broadcast details are visible",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1635",
+      "issueId": "1162655",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "date_bar",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "navigation",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "ff65d71e-7461-470d-8141-e2655d63672e",
+          "action": "View MIG section",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "d270e49a-ba68-4129-94a2-8f8c6c4fa53e",
+          "action": "Swipe left/right on calendar bar \u00a0\u00a0\u00a0\u00a0\u2192 Calendar scrolls smoothly",
+          "result": "Scrolling works smoothly",
+          "data": ""
+        },
+        {
+          "id": "0d930eb5-e465-439f-b0df-809f9e82af67",
+          "action": "Tap on different game dates \u00a0\u00a0\u00a0\u00a0\u2192 Selected date highlights \u00a0\u00a0\u00a0\u00a0\u2192 Game card updates to show selected game",
+          "result": "Action is performed successfully",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1636",
+      "issueId": "1162656",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 2 steps"
+      ],
+      "new_labels": [
+        "all_star",
+        "android",
+        "functional_test",
+        "ios",
+        "jewel_event",
+        "manual",
+        "medium",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "6a39d4f1-c346-4bb4-aa80-d5d6022f9901",
+          "action": "Navigate to team page during HRD period",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "dcd41d9b-32b7-4007-a914-e47cafc9de03",
+          "action": "Check MIG section \u00a0\u00a0\u00a0\u00a0\u2192 HRD displays with \"HRD\" text and start time \u00a0\u00a0\u00a0\u00a0\u2192 HRD logo shows when active \u00a0\u00a0\u00a0\u00a0\u2192 Where to watch details visible",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1637",
+      "issueId": "1162657",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "content_display",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "navigation",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "04bf9d08-39c9-49ef-b83c-304e487a5e70",
+          "action": "Scroll to Top Stories section",
+          "result": "Scrolling works smoothly",
+          "data": ""
+        },
+        {
+          "id": "75e7023f-840e-4276-8940-3bd650b1c15e",
+          "action": "Swipe through articles \u00a0\u00a0\u00a0\u00a0\u2192 Carousel scrolls smoothly",
+          "result": "Scrolling works smoothly",
+          "data": ""
+        },
+        {
+          "id": "18581469-4a38-4fd7-a1f7-7aca6f1b798a",
+          "action": "Tap on an article \u00a0\u00a0\u00a0\u00a0\u2192 Article opens correctly \u00a0\u00a0\u00a0\u00a0\u2192 Images load properly",
+          "result": "Action is performed successfully",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1638",
+      "issueId": "1162658",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "content_display",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "a9fee3a3-db0f-4d29-ab30-5c021c312355",
+          "action": "Scroll to video carousel",
+          "result": "Scrolling works smoothly",
+          "data": ""
+        },
+        {
+          "id": "302fdeb4-527e-4d79-9c70-f3cc67feb2ca",
+          "action": "Tap on a video \u00a0\u00a0\u00a0\u00a0\u2192 Video player opens",
+          "result": "Action is performed successfully",
+          "data": ""
+        },
+        {
+          "id": "e8e9c8c5-0fab-4c12-a848-66623f51caba",
+          "action": "Verify playback controls \u00a0\u00a0\u00a0\u00a0\u2192 Playback starts (if autoplay enabled) \u00a0\u00a0\u00a0\u00a0\u2192 Controls are accessible",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1639",
+      "issueId": "1162659",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 2 steps"
+      ],
+      "new_labels": [
+        "android",
+        "content_display",
+        "functional_test",
+        "ios",
+        "manual",
+        "medium",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "8acf1030-e240-4c29-abd1-51b304410d46",
+          "action": "Navigate to Team Page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "d7608c61-d616-4010-a94c-78a0786b3eb3",
+          "action": "Check Top Stories section \u00a0\u00a0\u00a0\u00a0\u2192 Editorial feed displays (iOS) \u00a0\u00a0\u00a0\u00a0\u2192 Carousel displays (Android) \u00a0\u00a0\u00a0\u00a0\u2192 Content is team-specific",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1640",
+      "issueId": "1162660",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "localization",
+        "manual",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "b7e27aee-4c2d-4d2b-ba81-f34852e6ab24",
+          "action": "Open Team Page",
+          "result": "Opens successfully",
+          "data": ""
+        },
+        {
+          "id": "f143dae1-8bfd-4ca5-9f08-93f4f0230135",
+          "action": "Check all text elements \u00a0\u00a0\u00a0\u00a0\u2192 All UI text in Spanish",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "8749d9a4-8d0d-493c-8686-ec10cf4aff55",
+          "action": "Tap on articles \u00a0\u00a0\u00a0\u00a0\u2192 Articles load in Spanish",
+          "result": "Action is performed successfully",
+          "data": ""
+        },
+        {
+          "id": "d92dd2ce-365e-486a-b301-1e70d888e2ad",
+          "action": "Check ticketing links \u00a0\u00a0\u00a0\u00a0\u2192 Links work correctly",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1641",
+      "issueId": "1162661",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "functional_test",
+        "ios",
+        "localization",
+        "manual",
+        "medium",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "66881581-d647-44e5-b27c-096ecc0ba755",
+          "action": "Open Team Page",
+          "result": "Opens successfully",
+          "data": ""
+        },
+        {
+          "id": "235bd605-3bbc-4316-8bb0-a47741ca5ed0",
+          "action": "Verify MIG displays Japanese \u00a0\u00a0\u00a0\u00a0\u2192 Content displays in Japanese",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "1d82fbbb-8bcf-42a7-b76e-45d579acdcce",
+          "action": "Check all sections \u00a0\u00a0\u00a0\u00a0\u2192 Proper character rendering \u00a0\u00a0\u00a0\u00a0\u2192 Correct API calls with lang=ja",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1642",
+      "issueId": "1162662",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "navigation",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "4cf6623f-ee42-4087-babb-800225e0b0ee",
+          "action": "Close app",
+          "result": "Closes properly",
+          "data": ""
+        },
+        {
+          "id": "492a09fc-c73b-4a77-8e10-8481fbc370be",
+          "action": "Open team page deep link \u00a0\u00a0\u00a0\u00a0\u2192 App opens to correct team",
+          "result": "Opens successfully",
+          "data": ""
+        },
+        {
+          "id": "5fb387ab-afc9-443b-9329-01ba4867a99e",
+          "action": "Verify correct team loads \u00a0\u00a0\u00a0\u00a0\u2192 All sections load properly",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1643",
+      "issueId": "1162663",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "navigation",
+        "product_links",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "59c64d58-2702-4d90-8638-2c1bcdfda9ca",
+          "action": "Scroll to Team Info section",
+          "result": "Scrolling works smoothly",
+          "data": ""
+        },
+        {
+          "id": "8e2e8b8a-0716-46e3-b8f6-428be98ac21d",
+          "action": "Tap \"2025 Schedule\" \u00a0\u00a0\u00a0\u00a0\u2192 Native schedule view opens",
+          "result": "Action is performed successfully",
+          "data": ""
+        },
+        {
+          "id": "7c847856-4df2-4f18-a8e0-c3c4ae36b868",
+          "action": "Tap \"2024 Schedule & Results\" \u00a0\u00a0\u00a0\u00a0\u2192 Correct year displays",
+          "result": "Action is performed successfully",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1644",
+      "issueId": "1162664",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "performance",
+        "smoke",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "31864c82-9400-4cf2-95db-d192946734a3",
+          "action": "Force close app",
+          "result": "Closes properly",
+          "data": ""
+        },
+        {
+          "id": "1f4d8ab2-ac50-42c4-938a-b7aaf405a858",
+          "action": "Open app and navigate to Team Page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "e65ae25e-eba8-4c78-acf3-9e6cf1b2523c",
+          "action": "Measure load time \u00a0\u00a0\u00a0\u00a0\u2192 Page loads within 3 seconds \u00a0\u00a0\u00a0\u00a0\u2192 No visible lag or stuttering \u00a0\u00a0\u00a0\u00a0\u2192 Images load progressively",
+          "result": "Loads successfully",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1645",
+      "issueId": "1162665",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 2 steps"
+      ],
+      "new_labels": [
+        "android",
+        "functional_test",
+        "ios",
+        "manual",
+        "medium",
+        "navigation",
+        "performance",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "99212adf-1771-452e-84b8-419683b2efca",
+          "action": "Switch between 5 different teams \u00a0\u00a0\u00a0\u00a0\u2192 Each switch completes < 2 seconds",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "72718230-a88c-4cd9-85ac-6e8552a5cc6c",
+          "action": "Monitor performance \u00a0\u00a0\u00a0\u00a0\u2192 Previous team data clears \u00a0\u00a0\u00a0\u00a0\u2192 No memory leaks",
+          "result": "Expected behavior occurs",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1646",
+      "issueId": "1162666",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "regression",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "5dfc479c-a700-4a7a-a946-8a4330f1aa57",
+          "action": "Enable airplane mode",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "47a8b8b2-b473-412e-9dd8-ea790f2fc9e4",
+          "action": "Open Team Page \u00a0\u00a0\u00a0\u00a0\u2192 Appropriate error messages",
+          "result": "Opens successfully",
+          "data": ""
+        },
+        {
+          "id": "ba972a56-a8ce-4bd4-b2a1-299fff516d3e",
+          "action": "Try various actions \u00a0\u00a0\u00a0\u00a0\u2192 Cached content displays if available \u00a0\u00a0\u00a0\u00a0\u2192 No crashes",
+          "result": "Content displays correctly",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1647",
+      "issueId": "1162669",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 1 steps"
+      ],
+      "new_labels": [
+        "android",
+        "functional_test",
+        "ios",
+        "manual",
+        "medium",
+        "regression",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "2e2b010c-97c5-4769-8e20-103f7ccf8222",
+          "action": "Navigate to Athletics team page \u00a0\u00a0\u00a0\u00a0\u2192 Page loads without errors \u00a0\u00a0\u00a0\u00a0\u2192 All modules display correctly",
+          "result": "Navigation completes successfully",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1648",
+      "issueId": "1162670",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "accessibility",
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "talkback",
+        "team_page",
+        "voiceover"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "31574bb6-e271-48a5-a0ff-9ac473eebba4",
+          "action": "Enable screen reader",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "d742f4ef-4cc4-4649-b3f7-e66494996539",
+          "action": "Navigate through Team Page \u00a0\u00a0\u00a0\u00a0\u2192 All elements properly labeled",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "6ee5cbaf-a9e2-434b-b2ff-0477de22dda6",
+          "action": "Test all interactive elements \u00a0\u00a0\u00a0\u00a0\u2192 Navigation order logical \u00a0\u00a0\u00a0\u00a0\u2192 Actions announced correctly",
+          "result": "Expected behavior occurs",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1649",
+      "issueId": "1162671",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "accessibility",
+        "android",
+        "functional_test",
+        "ios",
+        "manual",
+        "medium",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "ed005203-b30e-4621-b915-42d58456f38f",
+          "action": "Set device to largest text size",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "001de035-79d5-4a24-9106-72419366a9c1",
+          "action": "Open Team Page \u00a0\u00a0\u00a0\u00a0\u2192 Text scales appropriately",
+          "result": "Opens successfully",
+          "data": ""
+        },
+        {
+          "id": "8c5ff7b4-777e-4550-ae13-e7a19a09e278",
+          "action": "Check all text elements \u00a0\u00a0\u00a0\u00a0\u2192 No text truncation \u00a0\u00a0\u00a0\u00a0\u2192 Layout remains functional",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1650",
+      "issueId": "1162673",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "cross_platform",
+        "functional_test",
+        "high",
+        "ios",
+        "manual",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "0bd3592d-14d5-41f8-b2f2-3dfb5b461f7b",
+          "action": "Open same team on both platforms",
+          "result": "Opens successfully",
+          "data": ""
+        },
+        {
+          "id": "55fd463b-b639-4f3b-b49e-15ff45c898cc",
+          "action": "Compare all sections \u00a0\u00a0\u00a0\u00a0\u2192 Same sections present",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "f1981b8f-b677-42f8-aced-dd82fc4db236",
+          "action": "Test same actions \u00a0\u00a0\u00a0\u00a0\u2192 Similar visual appearance \u00a0\u00a0\u00a0\u00a0\u2192 Consistent behavior",
+          "result": "Expected behavior occurs",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1651",
+      "issueId": "1162674",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "ipad",
+        "manual",
+        "matchup_display",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "95981d70-d612-4c88-849a-29ceab955459",
+          "action": "Open Team Page on iPad",
+          "result": "Opens successfully",
+          "data": ""
+        },
+        {
+          "id": "a16d29e8-dced-46b1-b83e-10c7fa223410",
+          "action": "Check MIG carousel \u00a0\u00a0\u00a0\u00a0\u2192 Consistent card heights",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "e3e69e62-c3be-4c9d-9d83-9b8ca17c3f44",
+          "action": "Verify card heights \u00a0\u00a0\u00a0\u00a0\u2192 Proper spacing \u00a0\u00a0\u00a0\u00a0\u2192 No layout issues",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1652",
+      "issueId": "1162675",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 3 steps"
+      ],
+      "new_labels": [
+        "analytics",
+        "android",
+        "functional_test",
+        "ios",
+        "manual",
+        "medium",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "f676601c-7736-4686-ba7e-8e261d0da8e2",
+          "action": "Open Charles Proxy",
+          "result": "Opens successfully",
+          "data": ""
+        },
+        {
+          "id": "30b9e97c-4ad6-4fe5-9fa8-477bc8cb825b",
+          "action": "Perform various actions \u00a0\u00a0\u00a0\u00a0\u2192 Page view tracked",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "df28dac0-bdbc-43fb-8c40-2d7743961a06",
+          "action": "Verify analytics calls \u00a0\u00a0\u00a0\u00a0\u2192 Interactions logged \u00a0\u00a0\u00a0\u00a0\u2192 Correct parameters sent",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1653",
+      "issueId": "1162676",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "jewel_event",
+        "manual",
+        "opening_day",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "66569f06-7efc-4342-8e5e-e3f03d4f20c3",
+          "action": "Navigate to Team Page on Opening Day",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "7f543557-fbde-4a25-b2ab-9f18b9d78ba4",
+          "action": "Check MIG section for special branding \u00a0\u00a0\u00a0\u00a0\u2192 Opening Day branding displays in MIG",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "c2e27d0a-304c-434f-ba00-3d3d11e1e67c",
+          "action": "Verify content sections for Opening Day content \u00a0\u00a0\u00a0\u00a0\u2192 Special Opening Day content in carousels",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "2efc309b-3282-4812-8791-f23a80cfaea4",
+          "action": "Check for special badges or indicators \u00a0\u00a0\u00a0\u00a0\u2192 Appropriate badges/styling applied \u00a0\u00a0\u00a0\u00a0\u2192 Links to Opening Day promotions work",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1654",
+      "issueId": "1162677",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "all_star",
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "jewel_event",
+        "manual",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "63907f1e-5595-4e4a-b091-5691071af2cb",
+          "action": "Navigate to any team page during All-Star break",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "d5b22048-289f-4351-8d00-a0d8bd79fce8",
+          "action": "Check MIG section \u00a0\u00a0\u00a0\u00a0\u2192 All-Star Game promotion visible",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "95bea178-8fc1-433e-ad10-fa68fc6b54c4",
+          "action": "Verify AL/NL All-Star team selections \u00a0\u00a0\u00a0\u00a0\u2192 Team's All-Star selections highlighted",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "4dc0e70b-1fa3-47c8-9b52-e688e17d1841",
+          "action": "Check for All-Star voting links \u00a0\u00a0\u00a0\u00a0\u2192 Voting links functional (if active) \u00a0\u00a0\u00a0\u00a0\u2192 Special All-Star content in carousels",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1655",
+      "issueId": "1162678",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "jewel_event",
+        "manual",
+        "postseason",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "5d940308-d432-4b87-be11-ef45a28480a7",
+          "action": "Navigate to playoff team's page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "5acc15e8-e57d-4ec3-9a10-d919dacd0bdc",
+          "action": "Check MIG for playoff games \u00a0\u00a0\u00a0\u00a0\u2192 Playoff games prominently displayed",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "e9cb228a-eafe-4cba-b9f6-babdffd38dd4",
+          "action": "Verify playoff series information \u00a0\u00a0\u00a0\u00a0\u2192 Series status clearly shown",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "34a9fc7b-50c2-4f22-b66e-1b1388240051",
+          "action": "Check for elimination/advancement updates \u00a0\u00a0\u00a0\u00a0\u2192 Next game information accurate \u00a0\u00a0\u00a0\u00a0\u2192 Playoff-specific content in carousels",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1656",
+      "issueId": "1162679",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "high",
+        "ios",
+        "jewel_event",
+        "manual",
+        "team_page",
+        "world_series"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "b66b448a-21af-4198-bb69-76470999292d",
+          "action": "Navigate to World Series team page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "6fd39726-516d-461e-89a1-b1e9ab429508",
+          "action": "Verify World Series branding \u00a0\u00a0\u00a0\u00a0\u2192 World Series branding prominent",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "a24389b5-ea44-4f4a-88c4-539c4dd86f6a",
+          "action": "Check game information accuracy \u00a0\u00a0\u00a0\u00a0\u2192 Series status and game info correct",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "9f8c6e81-89fa-4de9-ae5a-bc23bb5f8408",
+          "action": "Test ticket/viewing links \u00a0\u00a0\u00a0\u00a0\u2192 Special World Series content featured \u00a0\u00a0\u00a0\u00a0\u2192 All links functional",
+          "result": "Expected behavior occurs",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1657",
+      "issueId": "1162680",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "functional_test",
+        "ios",
+        "jewel_event",
+        "manual",
+        "medium",
+        "spring_training",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "1a6e5687-bd48-4174-b10d-0ca3c4d24a60",
+          "action": "Navigate to Team Page during ST",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "64aade6a-9602-4100-9982-c8713f658ebd",
+          "action": "Check MIG for ST games \u00a0\u00a0\u00a0\u00a0\u2192 ST badge displays on games",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "52dec7b1-1af6-49ad-ad72-281c2ec06aaf",
+          "action": "Verify split squad handling \u00a0\u00a0\u00a0\u00a0\u2192 Split squad games clearly marked",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "ebfdb009-48dd-413a-8b43-0b8df21eb152",
+          "action": "Check venue information \u00a0\u00a0\u00a0\u00a0\u2192 Correct ST venue information \u00a0\u00a0\u00a0\u00a0\u2192 Roster updates reflected",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1658",
+      "issueId": "1162681",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "functional_test",
+        "international",
+        "ios",
+        "jewel_event",
+        "manual",
+        "medium",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "280f3be4-e5ed-4abf-ac2a-3d197daa49c5",
+          "action": "Navigate to participating team page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "73594a1e-481e-4df0-b909-88d29f3e7222",
+          "action": "Check MIG for international games \u00a0\u00a0\u00a0\u00a0\u2192 International Series branding visible",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "c829c525-a2a4-4d7e-8d10-755bcdcb1a48",
+          "action": "Verify special event branding \u00a0\u00a0\u00a0\u00a0\u2192 Correct venue (London/Tokyo/etc)",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "1ea605c9-caef-4a03-a629-7fa09617b78f",
+          "action": "Check timezone handling \u00a0\u00a0\u00a0\u00a0\u2192 Proper timezone conversion \u00a0\u00a0\u00a0\u00a0\u2192 Special event content featured",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1659",
+      "issueId": "1162682",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "functional_test",
+        "ios",
+        "jewel_event",
+        "manual",
+        "medium",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "ffa7f604-cc8a-4860-9a8e-a22f62063f09",
+          "action": "During All-Star week with HRD",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "0910e7a7-6647-4f50-95e8-6ee4e38b213b",
+          "action": "Check Team Page MIG \u00a0\u00a0\u00a0\u00a0\u2192 Both HRD and ASG display correctly",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "5e452848-da76-47c1-960e-02f658465b50",
+          "action": "Verify both events shown \u00a0\u00a0\u00a0\u00a0\u2192 Clear differentiation between events",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "2b210ac4-a7e5-42ed-8967-3ed717483984",
+          "action": "Test navigation between events \u00a0\u00a0\u00a0\u00a0\u2192 Navigation works properly \u00a0\u00a0\u00a0\u00a0\u2192 No UI conflicts or overlaps",
+          "result": "Expected behavior occurs",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1660",
+      "issueId": "1162683",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "game_state",
+        "high",
+        "ios",
+        "manual",
+        "preview_state",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "5a66bb71-0293-448f-b8f4-2e8cc9253e10",
+          "action": "Navigate to Team Page during warmup",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "a42a3cf3-c432-4a2a-b500-f15361c78060",
+          "action": "Check MIG display \u00a0\u00a0\u00a0\u00a0\u2192 \"Warmup\" status clearly shown",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "4b7dead7-de01-4f76-87f9-37505f61a65c",
+          "action": "Verify countdown timer \u00a0\u00a0\u00a0\u00a0\u2192 Countdown to first pitch displays",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "e1572bd0-71d1-411f-96ea-a58be249a8c8",
+          "action": "Check product links \u00a0\u00a0\u00a0\u00a0\u2192 No score shown yet \u00a0\u00a0\u00a0\u00a0\u2192 Appropriate product links available",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1661",
+      "issueId": "1162684",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "delayed_state",
+        "functional_test",
+        "game_state",
+        "high",
+        "ios",
+        "manual",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "15b8fc4c-9d2a-400c-974b-b48914007f55",
+          "action": "Navigate to Team Page during delay",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "bfda227e-69b9-48c2-8779-79d8feea74ee",
+          "action": "Check MIG status display \u00a0\u00a0\u00a0\u00a0\u2192 \"Delayed\" status prominent",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "04b395a2-4bfe-4a19-9d04-cd00067baf0f",
+          "action": "Verify delay reason shown \u00a0\u00a0\u00a0\u00a0\u2192 Delay reason displayed",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "115871de-18b3-45c9-94b2-86757c99cb5b",
+          "action": "Monitor for updates \u00a0\u00a0\u00a0\u00a0\u2192 Current score preserved \u00a0\u00a0\u00a0\u00a0\u2192 Updates when game resumes",
+          "result": "Expected behavior occurs",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1662",
+      "issueId": "1162685",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "game_state",
+        "high",
+        "ios",
+        "manual",
+        "suspended_state",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "f9385e12-64d6-40a9-b620-bf61be3ed1d4",
+          "action": "Navigate to Team Page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "b8f0cd01-7f1a-4f95-be29-489b3ccef6c0",
+          "action": "Check suspended game display \u00a0\u00a0\u00a0\u00a0\u2192 \"Suspended\" status clear",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "edd9c38b-7187-4ad3-91ff-68fb16effccf",
+          "action": "Verify resume information \u00a0\u00a0\u00a0\u00a0\u2192 Resume date/time displayed",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "9ba9b24a-a6c4-4555-9d1e-d118992bd6a2",
+          "action": "Check both original and resume dates \u00a0\u00a0\u00a0\u00a0\u2192 Score at suspension shown \u00a0\u00a0\u00a0\u00a0\u2192 Links to both game dates work",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1663",
+      "issueId": "1162686",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Medium",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "functional_test",
+        "game_state",
+        "ios",
+        "live_state",
+        "manual",
+        "medium",
+        "team_page"
+      ],
+      "new_priority": "Medium",
+      "cleaned_steps": [
+        {
+          "id": "e3843b29-1916-4eac-a7b9-b39527ea92e7",
+          "action": "Navigate during manager challenge",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "8aaf7ac1-4978-4659-a314-df978229097c",
+          "action": "Check MIG display \u00a0\u00a0\u00a0\u00a0\u2192 Challenge indicator visible",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "20f29fa9-7f8d-441a-8aa9-6e771fdf6c68",
+          "action": "Verify challenge indicator \u00a0\u00a0\u00a0\u00a0\u2192 Game paused status shown",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "5a3eb4a9-4ad0-46ed-86ba-6db9712d7d33",
+          "action": "Monitor resolution \u00a0\u00a0\u00a0\u00a0\u2192 Updates after decision \u00a0\u00a0\u00a0\u00a0\u2192 Seamless return to play",
+          "result": "Expected behavior occurs",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1664",
+      "issueId": "1162687",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "final_state",
+        "functional_test",
+        "game_state",
+        "high",
+        "ios",
+        "manual",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "e38a874b-ad03-4584-ab19-3c79077523b4",
+          "action": "Navigate to Team Page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "661652e3-c745-4033-b61a-655d059575ab",
+          "action": "Check postponed game display \u00a0\u00a0\u00a0\u00a0\u2192 \"Postponed\" clearly shown",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "52232158-38fb-40da-a980-d81671db0373",
+          "action": "Verify postponement reason \u00a0\u00a0\u00a0\u00a0\u2192 Reason displayed (Rain, etc.)",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "38a23fea-6373-4713-bcf8-b7ebd69fd31b",
+          "action": "Check for makeup date \u00a0\u00a0\u00a0\u00a0\u2192 Makeup date if scheduled \u00a0\u00a0\u00a0\u00a0\u2192 Ticket exchange info if available",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1665",
+      "issueId": "1162688",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Low",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "final_state",
+        "functional_test",
+        "game_state",
+        "ios",
+        "low",
+        "manual",
+        "team_page"
+      ],
+      "new_priority": "Low",
+      "cleaned_steps": [
+        {
+          "id": "8e534a59-fd9e-46c5-8591-aac8db1309c7",
+          "action": "Navigate to Team Page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "8b924422-d3cd-484e-ac9c-5dad8b8d1805",
+          "action": "Check forfeit game display \u00a0\u00a0\u00a0\u00a0\u2192 \"Forfeit\" status displayed",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "1d993e77-e4ce-4c5f-a769-24cf76e1afd7",
+          "action": "Verify official score (9-0) \u00a0\u00a0\u00a0\u00a0\u2192 Official 9-0 score shown",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "bb3f9417-c86d-4238-9a9c-a851eac0345a",
+          "action": "Check forfeit reason \u00a0\u00a0\u00a0\u00a0\u2192 Forfeit reason provided \u00a0\u00a0\u00a0\u00a0\u2192 Historical context available",
+          "result": "Verification passes",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1666",
+      "issueId": "1162689",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "game_state",
+        "high",
+        "ios",
+        "manual",
+        "state_transition",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "98f75cf2-7d09-45bc-b356-7a8e38f19d52",
+          "action": "Monitor preview game approaching start \u00a0\u00a0\u00a0\u00a0\u2192 Smooth state transitions",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "5b0ec98f-c270-4eb5-aab1-baf13694bc71",
+          "action": "Observe transition to warmup \u00a0\u00a0\u00a0\u00a0\u2192 No stuck states",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "d6f8c1e8-5793-459a-8e35-b6ceeecee0db",
+          "action": "Watch warmup to live transition \u00a0\u00a0\u00a0\u00a0\u2192 Timely updates (< 30s)",
+          "result": "Expected behavior occurs",
+          "data": ""
+        },
+        {
+          "id": "91ac9a04-f6ed-4c90-94aa-e14a8403ca02",
+          "action": "Monitor final out to final state \u00a0\u00a0\u00a0\u00a0\u2192 No data inconsistencies",
+          "result": "Expected behavior occurs",
+          "data": ""
+        }
+      ]
+    },
+    {
+      "key": "FRAMED-1631",
+      "issueId": "1162651",
+      "updates_needed": [
+        "Update labels: functional \u2192 functional_test",
+        "Update priority: None \u2192 Critical",
+        "Clean up 4 steps"
+      ],
+      "new_labels": [
+        "android",
+        "critical",
+        "functional_test",
+        "game_state",
+        "high",
+        "ios",
+        "manual",
+        "team_page"
+      ],
+      "new_priority": "Critical",
+      "cleaned_steps": [
+        {
+          "id": "41c5dd50-7df0-42bb-a9e7-6c33bdbfce84",
+          "action": "Navigate to Team Page",
+          "result": "Navigation completes successfully",
+          "data": ""
+        },
+        {
+          "id": "f32a9c2b-4881-4252-b46e-08ccaded8701",
+          "action": "Check both games display \u00a0\u00a0\u00a0\u00a0\u2192 Both games clearly separated",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "7e37d35f-382a-4fd2-9c2e-90c7188723de",
+          "action": "Verify different states \u00a0\u00a0\u00a0\u00a0\u2192 Game 1/Game 2 indicators",
+          "result": "Verification passes",
+          "data": ""
+        },
+        {
+          "id": "7ca343ae-50b5-47c3-ad39-6b302b4cf643",
+          "action": "Test switching between games \u00a0\u00a0\u00a0\u00a0\u2192 Independent state tracking \u00a0\u00a0\u00a0\u00a0\u2192 Proper time display for each",
+          "result": "Content displays correctly",
+          "data": ""
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

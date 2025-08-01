@@ -1,0 +1,651 @@
+{
+  "timestamp": "2025-07-31T17:16:16.173442",
+  "summary": {
+    "total_files": 60,
+    "categories": {
+      "historical": 1,
+      "status_reports": 6,
+      "technical_docs": 4,
+      "other": 1,
+      "test_data": 5,
+      "logs_reports": 9,
+      "scripts": 34
+    },
+    "test_summary": {
+      "api_tests": 0,
+      "functional_tests": 38,
+      "total_tests": 85,
+      "files": [
+        {
+          "file": "tests_to_update.json",
+          "test_count": 47
+        },
+        {
+          "file": "remaining_tests.json",
+          "test_count": 0
+        },
+        {
+          "file": "comprehensive_pytest_decorator_update_20250731_001006.json",
+          "test_count": 0
+        },
+        {
+          "file": "functional_tests_xray.json",
+          "test_count": 38
+        },
+        {
+          "file": "api_tests_xray.json",
+          "test_count": 0
+        }
+      ]
+    },
+    "duplicate_count": 3
+  },
+  "inventory": {
+    "historical": [
+      {
+        "path": "documentation/FOLDER_ORGANIZATION_COMPLETE.md",
+        "name": "FOLDER_ORGANIZATION_COMPLETE.md",
+        "size": 2926,
+        "modified": "2025-07-31T13:21:27.858751",
+        "category": "historical",
+        "header": "# Xray Folder Organization Complete\n\n## Date: 2025-07-31\n\n## Summary",
+        "status": "final"
+      }
+    ],
+    "status_reports": [
+      {
+        "path": "documentation/REMEDIATION_STATUS.md",
+        "name": "REMEDIATION_STATUS.md",
+        "size": 2914,
+        "modified": "2025-07-18T11:24:27.732747",
+        "category": "status_reports",
+        "header": "# FRAMED Project Remediation Status\n\nGenerated: 2025-07-18\n\n## Completed Tasks",
+        "status": "final"
+      },
+      {
+        "path": "documentation/REMEDIATION_PROGRESS_20250718.md",
+        "name": "REMEDIATION_PROGRESS_20250718.md",
+        "size": 3233,
+        "modified": "2025-07-18T11:26:56.408339",
+        "category": "status_reports",
+        "header": "# FRAMED Project Xray Remediation Progress\n**Date**: 2025-07-18  \n**Session**: Continuation from previous context-limited conversation\n\n## Overview",
+        "status": "active"
+      },
+      {
+        "path": "documentation/REMEDIATION_STATUS_FINAL.md",
+        "name": "REMEDIATION_STATUS_FINAL.md",
+        "size": 5717,
+        "modified": "2025-07-18T14:18:12.162464",
+        "category": "status_reports",
+        "header": "# FRAMED Project Xray Remediation - Final Status Report\n\n**Date**: 2025-07-18\n**Time**: 3:15 PM",
+        "status": "final"
+      },
+      {
+        "path": "documentation/PHASE1_BASIC_ASSESSMENT_20250716_213912.md",
+        "name": "PHASE1_BASIC_ASSESSMENT_20250716_213912.md",
+        "size": 3481,
+        "modified": "2025-07-16T21:39:12.406491",
+        "category": "status_reports",
+        "header": "# \ud83d\udcca PHASE 1 BASIC ASSESSMENT - WORKING DATA\n\n**Generated**: 2025-07-16 21:39:12  \n**Project**: FRAMED  \n**Status**: \ud83d\udd0d PARTIAL ANALYSIS COMPLETE",
+        "status": "final"
+      },
+      {
+        "path": "documentation/folder_organization_status.md",
+        "name": "folder_organization_status.md",
+        "size": 1327,
+        "modified": "2025-07-18T12:03:00.502445",
+        "category": "status_reports",
+        "header": "# Folder Organization Status\n\n**Date**: 2025-07-18\n**Time**: 12:03 PM",
+        "status": "active"
+      },
+      {
+        "path": "scripts/analyze_folder_status.py",
+        "name": "analyze_folder_status.py",
+        "size": 2995,
+        "modified": "2025-07-18T23:13:44.129221",
+        "category": "status_reports",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nAnalyze which tests need folder organization.\n\"\"\"",
+        "status": "active"
+      }
+    ],
+    "technical_docs": [
+      {
+        "path": "documentation/pytest_xray_automation.md",
+        "name": "pytest_xray_automation.md",
+        "size": 9672,
+        "modified": "2025-07-21T21:13:16.023778",
+        "category": "technical_docs",
+        "header": "# PyTest-Xray Integration for API Test Automation\n\nPyTest can be seamlessly integrated with Xray test management in JIRA to enable automated API test execution and result reporting. This integration supports both Xray Cloud and Server/Data Center deployments, with the **pytest-jira-xray** plugin emerging as the most robust solution for MLB's API test automation needs.\n\n## Methods to execute PyTest tests from Xray",
+        "status": "active"
+      },
+      {
+        "path": "test-data/README.md",
+        "name": "README.md",
+        "size": 5800,
+        "modified": "2025-07-17T14:42:48.596102",
+        "category": "technical_docs",
+        "header": "# Test Data - Extracted Test Cases\n\nThis directory contains extracted test case data from Confluence documentation that will be used for Xray remediation. The extraction and analysis scripts have been reorganized into dedicated directories.\n\n## \ud83d\udcca Test Data Files",
+        "status": "active"
+      },
+      {
+        "path": "README.md",
+        "name": "README.md",
+        "size": 6463,
+        "modified": "2025-07-17T14:42:13.239391",
+        "category": "technical_docs",
+        "header": "# Xray Remediation Project - July 17, 2025\n\n## Overview\n\nThis directory contains scripts, extracted test data, and documentation for the comprehensive Xray test remediation project in the FRAMED project. The project focuses on extracting test cases from Confluence documentation and creating properly structured test data for Xray import.",
+        "status": "final"
+      },
+      {
+        "path": "CLAUDE.md",
+        "name": "CLAUDE.md",
+        "size": 6463,
+        "modified": "2025-07-17T14:18:49.870775",
+        "category": "technical_docs",
+        "header": "# Xray Remediation Project - Claude Code Instructions\n\n## Project Overview\n\nThis project focuses on extracting test cases from Confluence documentation and creating properly structured test data for Xray import. The project has successfully extracted 55 API test cases and 38 functional test cases with perfect parity to the source documentation.",
+        "status": "active"
+      }
+    ],
+    "other": [
+      {
+        "path": "documentation/FRAMED_INVENTORY_SUMMARY.md",
+        "name": "FRAMED_INVENTORY_SUMMARY.md",
+        "size": 1487,
+        "modified": "2025-07-18T11:12:01.781521",
+        "category": "other",
+        "header": "# FRAMED Project Inventory Summary\n\nBased on assessment data from 2025-07-16\n\n## Current State in Xray",
+        "status": "active"
+      }
+    ],
+    "test_data": [
+      {
+        "path": "logs/tests_to_update.json",
+        "name": "tests_to_update.json",
+        "size": 7224,
+        "modified": "2025-07-18T11:58:09.578325",
+        "category": "test_data"
+      },
+      {
+        "path": "logs/remaining_tests.json",
+        "name": "remaining_tests.json",
+        "size": 7857,
+        "modified": "2025-07-18T11:59:03.458191",
+        "category": "test_data"
+      },
+      {
+        "path": "logs/comprehensive_pytest_decorator_update_20250731_001006.json",
+        "name": "comprehensive_pytest_decorator_update_20250731_001006.json",
+        "size": 4846,
+        "modified": "2025-07-31T00:10:06.300827",
+        "category": "test_data"
+      },
+      {
+        "path": "test-data/functional_tests_xray.json",
+        "name": "functional_tests_xray.json",
+        "size": 54021,
+        "modified": "2025-07-17T12:21:54.460593",
+        "category": "test_data"
+      },
+      {
+        "path": "test-data/api_tests_xray.json",
+        "name": "api_tests_xray.json",
+        "size": 47929,
+        "modified": "2025-07-27T23:20:07.730983",
+        "category": "test_data"
+      }
+    ],
+    "logs_reports": [
+      {
+        "path": "logs/label_cleanup_summary.md",
+        "name": "label_cleanup_summary.md",
+        "size": 1974,
+        "modified": "2025-07-18T12:00:20.934753",
+        "category": "logs_reports",
+        "header": "# Label Cleanup Summary\n\n**Date**: 2025-07-18\n**Time**: 12:00 PM",
+        "status": "active"
+      },
+      {
+        "path": "logs/folder_organization_report_20250731_131907.json",
+        "name": "folder_organization_report_20250731_131907.json",
+        "size": 9857,
+        "modified": "2025-07-31T13:19:07.133902",
+        "category": "logs_reports"
+      },
+      {
+        "path": "logs/tickets_to_close.json",
+        "name": "tickets_to_close.json",
+        "size": 635,
+        "modified": "2025-07-23T10:39:04.357986",
+        "category": "logs_reports"
+      },
+      {
+        "path": "logs/folder_organization_report_20250731_132039.json",
+        "name": "folder_organization_report_20250731_132039.json",
+        "size": 10156,
+        "modified": "2025-07-31T13:20:39.784837",
+        "category": "logs_reports"
+      },
+      {
+        "path": "logs/folder_organization_report_20250731_132023.json",
+        "name": "folder_organization_report_20250731_132023.json",
+        "size": 9857,
+        "modified": "2025-07-31T13:20:23.648956",
+        "category": "logs_reports"
+      },
+      {
+        "path": "logs/folder_organization_report_20250731_132051.json",
+        "name": "folder_organization_report_20250731_132051.json",
+        "size": 10420,
+        "modified": "2025-07-31T13:20:51.025598",
+        "category": "logs_reports"
+      },
+      {
+        "path": "logs/data_exploration.json",
+        "name": "data_exploration.json",
+        "size": 10718,
+        "modified": "2025-07-16T21:36:14.818770",
+        "category": "logs_reports"
+      },
+      {
+        "path": "logs/next_batch.json",
+        "name": "next_batch.json",
+        "size": 1472,
+        "modified": "2025-07-18T11:59:58.820501",
+        "category": "logs_reports"
+      },
+      {
+        "path": "test-data/comprehensive_analysis_report.md",
+        "name": "comprehensive_analysis_report.md",
+        "size": 5450,
+        "modified": "2025-07-17T12:52:18.412710",
+        "category": "logs_reports",
+        "header": "# Comprehensive Analysis Report: Confluence API Test Extraction\n\n## Executive Summary\n\nThis report provides a comprehensive analysis of Confluence document 4904878140 and the associated test extraction process. The analysis confirms that the document contains exactly 55 unique test case IDs as extracted, with the \"11 parameterized instances\" referring to test variations within specific test cases rather than separate test entities.",
+        "status": "active"
+      }
+    ],
+    "scripts": [
+      {
+        "path": "scripts/inventory_documentation.py",
+        "name": "inventory_documentation.py",
+        "size": 12073,
+        "modified": "2025-07-31T17:16:10.047191",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nCreate a comprehensive inventory of all documentation files in the xray-remediation project.\nThis script categorizes files and identifies consolidation opportunities.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/create_missing_xray_tests.py",
+        "name": "create_missing_xray_tests.py",
+        "size": 10634,
+        "modified": "2025-07-29T13:45:29.897472",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nCreate the 9 missing Xray tests using GraphQL API with proper precondition associations.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/cleanup_labels_with_jira_api.py",
+        "name": "cleanup_labels_with_jira_api.py",
+        "size": 6222,
+        "modified": "2025-07-18T11:54:17.952664",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nClean up test case ID labels from existing API tests in FRAMED project.\nUses JIRA REST API via MCP tools to update labels.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/complete_label_cleanup.py",
+        "name": "complete_label_cleanup.py",
+        "size": 2577,
+        "modified": "2025-07-18T11:59:53.426899",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nComplete the label cleanup for all remaining tests.\nThis script generates a summary of all tests that need to be updated.\n\"\"\"",
+        "status": "final"
+      },
+      {
+        "path": "scripts/execute_bulk_closure.py",
+        "name": "execute_bulk_closure.py",
+        "size": 3035,
+        "modified": "2025-07-23T10:40:11.298951",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nExecute bulk closure of remaining Xray tickets.\nThis script processes the remaining tickets that need to be closed.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/add_xray_decorators.py",
+        "name": "add_xray_decorators.py",
+        "size": 7786,
+        "modified": "2025-07-27T09:53:49.162222",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nAdd Xray decorators to pytest test files.\nThis script adds @pytest.mark.xray decorators to existing pytest tests.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/execute_label_cleanup.py",
+        "name": "execute_label_cleanup.py",
+        "size": 2567,
+        "modified": "2025-07-18T11:56:52.228235",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nExecute the label cleanup plan using JIRA MCP tools.\nThis script will be run via Claude Code to leverage the MCP tools.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/move_test_to_folder.py",
+        "name": "move_test_to_folder.py",
+        "size": 8645,
+        "modified": "2025-07-31T13:13:15.008808",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nMove a test to a specific folder in the Test Repository using GraphQL API.\nThis script tests moving FRAMED-1294 to /Team Page/API Tests/Error Handling\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/associate_preconditions_batch.py",
+        "name": "associate_preconditions_batch.py",
+        "size": 11058,
+        "modified": "2025-07-18T12:05:41.575257",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nAssociate preconditions with tests - batch version for non-interactive execution.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/bulk_label_update.py",
+        "name": "bulk_label_update.py",
+        "size": 2878,
+        "modified": "2025-07-18T11:58:57.461707",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nBulk update labels for all remaining tests.\nThis script generates commands for updating all tests that need label cleanup.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/batch_update_labels.py",
+        "name": "batch_update_labels.py",
+        "size": 4004,
+        "modified": "2025-07-18T11:57:23.054525",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nBatch update labels for all tests in the cleanup plan.\nThis script processes the tests and generates the JIRA update commands.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/update_all_pytest_decorators.py",
+        "name": "update_all_pytest_decorators.py",
+        "size": 9828,
+        "modified": "2025-07-31T00:10:01.560100",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nUpdate ALL pytest.mark.xray decorators with correct JIRA keys for ALL API tests.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/organize_xray_folders.py",
+        "name": "organize_xray_folders.py",
+        "size": 19500,
+        "modified": "2025-07-31T13:18:48.065080",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nOrganize Xray tests and preconditions into appropriate folders.\nThis script:\n1. Inventories all API tests and checks if their target folders exist",
+        "status": "active"
+      },
+      {
+        "path": "scripts/close_xray_tickets.py",
+        "name": "close_xray_tickets.py",
+        "size": 5574,
+        "modified": "2025-07-23T10:38:05.774883",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nClose Test and Precondition tickets in FRAMED project to remove them from backlog.\nUses MCP JIRA tools to transition tickets to Closed status.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/organize_test_folders_fixed.py",
+        "name": "organize_test_folders_fixed.py",
+        "size": 14433,
+        "modified": "2025-07-18T23:16:26.811653",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nFixed version: Organize tests into proper folder structure in FRAMED project.\nUses correct Xray GraphQL API mutations discovered through introspection.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/build_mapping_from_mcp_data.py",
+        "name": "build_mapping_from_mcp_data.py",
+        "size": 18922,
+        "modified": "2025-07-27T20:22:20.899957",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nBuild complete Test Case ID to JIRA issue key mapping from MCP JIRA data.\nProcess the Xray test data and build complete mappings.\n\"\"\"",
+        "status": "final"
+      },
+      {
+        "path": "scripts/process_all_labels.py",
+        "name": "process_all_labels.py",
+        "size": 1806,
+        "modified": "2025-07-18T11:58:04.233387",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nProcess all label updates from the batch file.\nOutputs the list of tests to update for Claude Code to process.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/cleanup_labels_final.py",
+        "name": "cleanup_labels_final.py",
+        "size": 5679,
+        "modified": "2025-07-18T11:56:16.421412",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nClean up test case ID labels from existing API tests in FRAMED project.\nUses both Xray GraphQL API to fetch tests and JIRA REST API (via MCP) to update labels.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/check_preconditions.py",
+        "name": "check_preconditions.py",
+        "size": 487,
+        "modified": "2025-07-31T13:19:56.661498",
+        "category": "scripts",
+        "header": "import json\n\nwith open('logs/folder_organization_report_20250731_131907.json') as f:\n    data = json.load(f)",
+        "status": "active"
+      },
+      {
+        "path": "scripts/build_complete_test_mapping.py",
+        "name": "build_complete_test_mapping.py",
+        "size": 8521,
+        "modified": "2025-07-27T20:19:51.516834",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nBuild complete Test Case ID to JIRA issue key mapping from live JIRA API queries.\nReplaces hardcoded approach with dynamic JIRA GraphQL queries using pagination.\n\"\"\"",
+        "status": "final"
+      },
+      {
+        "path": "scripts/add_xray_decorators_final.py",
+        "name": "add_xray_decorators_final.py",
+        "size": 8759,
+        "modified": "2025-07-27T19:29:59.770816",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nAdd Xray decorators to pytest test files while keeping @allure.tag decorators.\nMaps Test Case IDs to actual JIRA issue keys.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/test_folder_operations.py",
+        "name": "test_folder_operations.py",
+        "size": 5673,
+        "modified": "2025-07-18T23:06:44.773502",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nTest Xray folder operations to determine correct API usage.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/update_pytest_decorators.py",
+        "name": "update_pytest_decorators.py",
+        "size": 6927,
+        "modified": "2025-07-29T13:47:36.560685",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nUpdate pytest.mark.xray decorators with correct JIRA keys for newly created tests.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/associate_preconditions.py",
+        "name": "associate_preconditions.py",
+        "size": 13777,
+        "modified": "2025-07-18T11:23:30.118674",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nAssociate standalone preconditions with appropriate tests in FRAMED project.\nAnalyzes precondition content and maps to relevant tests.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/extract_test_mapping.py",
+        "name": "extract_test_mapping.py",
+        "size": 1444,
+        "modified": "2025-07-21T21:21:43.226016",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"Extract test ID to JIRA key mapping from FRAMED assessment.\"\"\"\n\nimport json\nimport os",
+        "status": "active"
+      },
+      {
+        "path": "scripts/organize_test_folders.py",
+        "name": "organize_test_folders.py",
+        "size": 13408,
+        "modified": "2025-07-18T12:01:54.650352",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nOrganize tests into proper folder structure in FRAMED project.\nMaps tests to folders based on JSON truth files.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/discover_backlog_tickets.py",
+        "name": "discover_backlog_tickets.py",
+        "size": 2725,
+        "modified": "2025-07-23T10:13:58.837169",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nDiscover all Test and Precondition tickets in FRAMED project backlog.\nUses JIRA MCP tools to query and export results.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/remove_xray_from_backlog.py",
+        "name": "remove_xray_from_backlog.py",
+        "size": 9134,
+        "modified": "2025-07-23T10:16:16.778903",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nRemove Test and Precondition tickets from FRAMED project backlog.\nThis script will transition these tickets to a different status to remove them from the backlog.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/complete_all_label_cleanups.py",
+        "name": "complete_all_label_cleanups.py",
+        "size": 3080,
+        "modified": "2025-07-18T12:18:05.904523",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nComplete all remaining label cleanups using the saved plan.\nThis script reads the cleanup plan and processes all remaining tests.\n\"\"\"",
+        "status": "final"
+      },
+      {
+        "path": "scripts/inventory_framed_tests.py",
+        "name": "inventory_framed_tests.py",
+        "size": 5602,
+        "modified": "2025-07-18T11:11:25.478941",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nComplete inventory of FRAMED project tests and preconditions.\nBased on Phase 1 assessment results.\n\"\"\"",
+        "status": "final"
+      },
+      {
+        "path": "scripts/get_project_id.py",
+        "name": "get_project_id.py",
+        "size": 1177,
+        "modified": "2025-07-18T23:15:10.125948",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nGet numeric project ID for FRAMED project.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "scripts/add_xray_decorators_fixed.py",
+        "name": "add_xray_decorators_fixed.py",
+        "size": 8271,
+        "modified": "2025-07-27T21:56:05.118809",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nFIXED VERSION: Add Xray decorators to pytest test files while keeping @allure.tag decorators.\nMaps Test Case IDs to actual JIRA issue keys.\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "xray-api/fetch_framed_data.py",
+        "name": "fetch_framed_data.py",
+        "size": 5024,
+        "modified": "2025-07-16T21:32:45.550909",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nFetch FRAMED project data directly\nBased on working script logic\n\"\"\"",
+        "status": "active"
+      },
+      {
+        "path": "xray-api/auth_utils.py",
+        "name": "auth_utils.py",
+        "size": 6367,
+        "modified": "2025-07-31T13:12:23.076854",
+        "category": "scripts",
+        "header": "#!/usr/bin/env python3\n\"\"\"\nXray Authentication and GraphQL Utilities\nFor Xray Remediation Project - July 17, 2025\n\"\"\"",
+        "status": "active"
+      }
+    ]
+  },
+  "duplicates": [
+    {
+      "type": "Multiple Status Reports",
+      "files": [
+        "documentation/REMEDIATION_STATUS.md",
+        "documentation/REMEDIATION_PROGRESS_20250718.md",
+        "documentation/REMEDIATION_STATUS_FINAL.md",
+        "documentation/PHASE1_BASIC_ASSESSMENT_20250716_213912.md",
+        "documentation/folder_organization_status.md",
+        "scripts/analyze_folder_status.py"
+      ],
+      "recommendation": "Merge into single PROJECT_STATUS.md"
+    },
+    {
+      "type": "Multiple versions of add_xray_decorators.py",
+      "files": [
+        "scripts/add_xray_decorators.py",
+        "scripts/add_xray_decorators_final.py",
+        "scripts/add_xray_decorators_fixed.py"
+      ],
+      "recommendation": "Keep only the latest/working version"
+    },
+    {
+      "type": "Multiple versions of organize_test_folders.py",
+      "files": [
+        "scripts/organize_test_folders_fixed.py",
+        "scripts/organize_test_folders.py"
+      ],
+      "recommendation": "Keep only the latest/working version"
+    }
+  ],
+  "consolidation_plan": {
+    "new_structure": {
+      "PROJECT_STATUS.md": {
+        "merge_from": [
+          "documentation/REMEDIATION_STATUS.md",
+          "documentation/REMEDIATION_PROGRESS_20250718.md",
+          "documentation/REMEDIATION_STATUS_FINAL.md",
+          "documentation/PHASE1_BASIC_ASSESSMENT_20250716_213912.md",
+          "documentation/folder_organization_status.md",
+          "scripts/analyze_folder_status.py"
+        ],
+        "description": "Consolidated project status and progress"
+      },
+      "TEAM_PAGE_TEST_CATALOG.md": {
+        "generate_from": [
+          "logs/tests_to_update.json",
+          "logs/remaining_tests.json",
+          "logs/comprehensive_pytest_decorator_update_20250731_001006.json",
+          "test-data/functional_tests_xray.json",
+          "test-data/api_tests_xray.json"
+        ],
+        "description": "Complete catalog of all team page tests"
+      },
+      "IMPLEMENTATION_GUIDE.md": {
+        "merge_from": [
+          "README.md",
+          "documentation/pytest_xray_automation.md",
+          "xray-api/auth_utils.py (docstrings)"
+        ],
+        "description": "Technical implementation guide"
+      },
+      "DOCUMENTATION_MAP.md": {
+        "generate": true,
+        "description": "Navigation guide for all documentation"
+      }
+    },
+    "archive": {
+      "files_to_archive": [],
+      "criteria": "Historical status reports, old script versions"
+    },
+    "cleanup": {
+      "duplicate_scripts": [],
+      "obsolete_logs": []
+    }
+  }
+}

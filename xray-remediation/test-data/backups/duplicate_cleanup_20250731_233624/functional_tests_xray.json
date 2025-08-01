@@ -20,9 +20,10 @@
           "navigation",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "smoke",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -53,8 +54,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-001: Team Selection via Drawer",
-      "jiraKey": "FRAMED-1632"
+      "testId": "TC-001: Team Selection via Drawer"
     },
     {
       "testInfo": {
@@ -66,7 +66,8 @@
           "navigation",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -85,8 +86,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-002: Team Selection with Special Characters",
-      "jiraKey": "FRAMED-1633"
+      "testId": "TC-002: Team Selection with Special Characters"
     },
     {
       "testInfo": {
@@ -100,8 +100,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -138,8 +139,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-003: MIG Display During Live Game",
-      "jiraKey": "FRAMED-1634"
+      "testId": "TC-003: MIG Display During Live Game"
     },
     {
       "testInfo": {
@@ -151,8 +151,9 @@
           "navigation",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "date_bar",
           "manual"
         ],
@@ -182,8 +183,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-004: MIG Calendar Navigation",
-      "jiraKey": "FRAMED-1635"
+      "testId": "TC-004: MIG Calendar Navigation"
     },
     {
       "testInfo": {
@@ -196,7 +196,8 @@
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -221,8 +222,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-005: Home Run Derby Display",
-      "jiraKey": "FRAMED-1636"
+      "testId": "TC-005: Home Run Derby Display"
     },
     {
       "testInfo": {
@@ -235,8 +235,9 @@
           "content_display",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -265,8 +266,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-006: Article Carousel Navigation",
-      "jiraKey": "FRAMED-1637"
+      "testId": "TC-006: Article Carousel Navigation"
     },
     {
       "testInfo": {
@@ -278,8 +278,9 @@
           "content_display",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -308,8 +309,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-007: Video Content Playback",
-      "jiraKey": "FRAMED-1638"
+      "testId": "TC-007: Video Content Playback"
     },
     {
       "testInfo": {
@@ -321,7 +321,8 @@
           "content_display",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -344,8 +345,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-008: Editorial Module Display",
-      "jiraKey": "FRAMED-1639"
+      "testId": "TC-008: Editorial Module Display"
     },
     {
       "testInfo": {
@@ -357,8 +357,9 @@
           "localization",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -395,8 +396,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-009: Spanish Language Support",
-      "jiraKey": "FRAMED-1640"
+      "testId": "TC-009: Spanish Language Support"
     },
     {
       "testInfo": {
@@ -408,7 +408,8 @@
           "localization",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -439,8 +440,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-010: Japanese Language Support",
-      "jiraKey": "FRAMED-1641"
+      "testId": "TC-010: Japanese Language Support"
     },
     {
       "testInfo": {
@@ -452,8 +452,9 @@
           "navigation",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -482,8 +483,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-011: Deep Link Navigation",
-      "jiraKey": "FRAMED-1642"
+      "testId": "TC-011: Deep Link Navigation"
     },
     {
       "testInfo": {
@@ -495,8 +495,9 @@
           "navigation",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "product_links",
           "manual"
         ],
@@ -526,8 +527,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-012: Schedule Navigation",
-      "jiraKey": "FRAMED-1643"
+      "testId": "TC-012: Schedule Navigation"
     },
     {
       "testInfo": {
@@ -539,9 +539,10 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "smoke",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -570,8 +571,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-013: Page Load Performance",
-      "jiraKey": "FRAMED-1644"
+      "testId": "TC-013: Page Load Performance"
     },
     {
       "testInfo": {
@@ -584,7 +584,8 @@
           "navigation",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -607,8 +608,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-014: Team Switching Performance",
-      "jiraKey": "FRAMED-1645"
+      "testId": "TC-014: Team Switching Performance"
     },
     {
       "testInfo": {
@@ -620,8 +620,9 @@
           "regression",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -650,8 +651,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-015: Offline Behavior",
-      "jiraKey": "FRAMED-1646"
+      "testId": "TC-015: Offline Behavior"
     },
     {
       "testInfo": {
@@ -663,7 +663,8 @@
           "regression",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -680,8 +681,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-016: Invalid Team Data",
-      "jiraKey": "FRAMED-1647"
+      "testId": "TC-016: Invalid Team Data"
     },
     {
       "testInfo": {
@@ -693,10 +693,11 @@
           "accessibility",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "talkback",
           "high",
           "voiceover",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -725,8 +726,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-017: Screen Reader Support",
-      "jiraKey": "FRAMED-1648"
+      "testId": "TC-017: Screen Reader Support"
     },
     {
       "testInfo": {
@@ -738,7 +738,8 @@
           "accessibility",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -767,8 +768,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-018: Dynamic Type Support",
-      "jiraKey": "FRAMED-1649"
+      "testId": "TC-018: Dynamic Type Support"
     },
     {
       "testInfo": {
@@ -779,9 +779,10 @@
           "android",
           "critical",
           "cross_platform",
-          "functional_test",
+          "functional",
           "ios",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -810,8 +811,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-019: Feature Parity Check",
-      "jiraKey": "FRAMED-1650"
+      "testId": "TC-019: Feature Parity Check"
     },
     {
       "testInfo": {
@@ -824,8 +824,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -854,8 +855,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-020: iPad MIG Layout",
-      "jiraKey": "FRAMED-1651"
+      "testId": "TC-020: iPad MIG Layout"
     },
     {
       "testInfo": {
@@ -867,7 +867,8 @@
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -896,8 +897,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-021: Event Tracking",
-      "jiraKey": "FRAMED-1652"
+      "testId": "TC-021: Event Tracking"
     },
     {
       "testInfo": {
@@ -909,8 +909,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "opening_day",
           "manual"
         ],
@@ -948,8 +949,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-022: Opening Day Content Display",
-      "jiraKey": "FRAMED-1653"
+      "testId": "TC-022: Opening Day Content Display"
     },
     {
       "testInfo": {
@@ -962,8 +962,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1000,8 +1001,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-023: All-Star Game Team Page Updates",
-      "jiraKey": "FRAMED-1654"
+      "testId": "TC-023: All-Star Game Team Page Updates"
     },
     {
       "testInfo": {
@@ -1013,8 +1013,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "postseason",
           "manual"
         ],
@@ -1052,8 +1053,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-024: Postseason Team Page Display",
-      "jiraKey": "FRAMED-1655"
+      "testId": "TC-024: Postseason Team Page Display"
     },
     {
       "testInfo": {
@@ -1065,8 +1065,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "world_series",
           "manual"
         ],
@@ -1104,8 +1105,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-025: World Series Team Page",
-      "jiraKey": "FRAMED-1656"
+      "testId": "TC-025: World Series Team Page"
     },
     {
       "testInfo": {
@@ -1118,7 +1118,8 @@
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1155,8 +1156,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-026: Spring Training Team Page",
-      "jiraKey": "FRAMED-1657"
+      "testId": "TC-026: Spring Training Team Page"
     },
     {
       "testInfo": {
@@ -1169,7 +1169,8 @@
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1206,8 +1207,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-027: International Series Team Display",
-      "jiraKey": "FRAMED-1658"
+      "testId": "TC-027: International Series Team Display"
     },
     {
       "testInfo": {
@@ -1219,7 +1219,8 @@
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1256,8 +1257,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-028: Multiple Jewel Events Display",
-      "jiraKey": "FRAMED-1659"
+      "testId": "TC-028: Multiple Jewel Events Display"
     },
     {
       "testInfo": {
@@ -1270,8 +1270,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1308,8 +1309,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-029: Warmup State Display",
-      "jiraKey": "FRAMED-1660"
+      "testId": "TC-029: Warmup State Display"
     },
     {
       "testInfo": {
@@ -1322,8 +1322,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1360,8 +1361,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-030: Rain Delay Handling",
-      "jiraKey": "FRAMED-1661"
+      "testId": "TC-030: Rain Delay Handling"
     },
     {
       "testInfo": {
@@ -1374,8 +1374,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1412,8 +1413,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-031: Suspended Game With Resume Date",
-      "jiraKey": "FRAMED-1662"
+      "testId": "TC-031: Suspended Game With Resume Date"
     },
     {
       "testInfo": {
@@ -1426,7 +1426,8 @@
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1463,8 +1464,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-032: Manager Challenge State",
-      "jiraKey": "FRAMED-1663"
+      "testId": "TC-032: Manager Challenge State"
     },
     {
       "testInfo": {
@@ -1477,8 +1477,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1515,8 +1516,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-033: Postponed Game Rescheduling",
-      "jiraKey": "FRAMED-1664"
+      "testId": "TC-033: Postponed Game Rescheduling"
     },
     {
       "testInfo": {
@@ -1528,7 +1528,8 @@
           "team_page",
           "android",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "low",
           "manual"
         ],
@@ -1566,8 +1567,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-034: Forfeit Game Display",
-      "jiraKey": "FRAMED-1665"
+      "testId": "TC-034: Forfeit Game Display"
     },
     {
       "testInfo": {
@@ -1579,8 +1579,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "state_transition",
           "manual"
         ],
@@ -1616,8 +1617,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-035: Game State Transition Timing",
-      "jiraKey": "FRAMED-1666"
+      "testId": "TC-035: Game State Transition Timing"
     },
     {
       "testInfo": {
@@ -1629,8 +1629,9 @@
           "android",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1667,8 +1668,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-036: Double Header Game State Display",
-      "jiraKey": "FRAMED-1631"
+      "testId": "TC-036: Double Header Game State Display"
     },
     {
       "testInfo": {
@@ -1681,7 +1681,8 @@
           "android",
           "medium",
           "ios",
-          "functional_test",
+          "functional",
+          "team_page",
           "manual"
         ],
         "priority": "Medium",
@@ -1718,8 +1719,7 @@
         ],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-037: Extra Innings State Display",
-      "jiraKey": "FRAMED-1668"
+      "testId": "TC-037: Extra Innings State Display"
     },
     {
       "testInfo": {
@@ -1732,8 +1732,9 @@
           "regression",
           "critical",
           "ios",
-          "functional_test",
+          "functional",
           "high",
+          "team_page",
           "manual"
         ],
         "priority": "High",
@@ -1768,8 +1769,7 @@
         "preconditions": [],
         "folder": "Test Repository/Team Page/Functional Tests"
       },
-      "testId": "TC-038: Game State Error Recovery",
-      "jiraKey": "FRAMED-1669"
+      "testId": "TC-038: Game State Error Recovery"
     }
   ]
 }

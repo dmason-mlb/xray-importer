@@ -1,0 +1,14 @@
+{
+  "api_tests": {
+    "total_tests": 56,
+    "tests_with_duplicates": 0,
+    "duplicate_tags": {},
+    "worst_offenders": []
+  },
+  "functional_tests": {
+    "total_tests": 38,
+    "tests_with_duplicates": 0,
+    "duplicate_tags": {},
+    "worst_offenders": []
+  }
+}
