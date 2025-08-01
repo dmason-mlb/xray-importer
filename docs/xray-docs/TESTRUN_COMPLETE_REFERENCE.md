@@ -17,6 +17,7 @@ This document consolidates all TestRun-related operations, objects, and types fr
    - [addDefectsToTestRun](#adddefectstotestrun)
    - [removeDefectsFromTestRun](#removedefectsfromtestrun)
    - [addEvidenceToTestRun](#addevidencetotestrun)
+   - [removeEvidenceFromTestRun](#removeevidencefromtestrun)
    - [updateTestRunStep](#updatetestrunstep)
    - [addEvidenceToTestRunStep](#addevidencetotestrunstep)
    - [removeEvidenceFromTestRunStep](#removeevidencefromtestrunstep)
@@ -341,6 +342,25 @@ mutation {
         ]
     ) {
         addedEvidence
+        warnings
+    }
+}
+```
+
+### removeEvidenceFromTestRun
+
+**Category:** Mutations  
+**Source:** https://us.xray.cloud.getxray.app/doc/graphql/removeevidencefromtestrun.doc.html
+
+Removes evidence from a Test Run.
+
+```graphql
+mutation {
+    removeEvidenceFromTestRun(
+        id: "5acc7ab0a3fe1b6fcdc3c737",
+        evidenceFilenames: ["evidence.txt"]
+    ) {
+        removedEvidence
         warnings
     }
 }
