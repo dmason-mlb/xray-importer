@@ -1,163 +1,253 @@
-# Xray Remediation Project - Claude Code Instructions
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
-This project focuses on extracting test cases from Confluence documentation and creating properly structured test data for Xray import. The project has successfully extracted 55 API test cases and 38 functional test cases with perfect parity to the source documentation.
+The Xray Remediation project is a sophisticated test management system that extracts test cases from Confluence documentation, manages them in Xray, and maintains comprehensive test organization. The project handles 93 unique tests (55 API + 38 functional) with complete pytest integration, folder organization, and automated workflows.
 
-## Key Context
+## Core Architecture
 
-### Test Data Sources
-- **API Tests**: Confluence document 4904878140 (55 test cases)
-- **Functional Tests**: Confluence document 4904976484 (38 test cases)
-- **Parameterized Instances**: 11 additional instances across 3 test cases
-- **Total Coverage**: 66 test instances for comprehensive testing
+### Authentication & API Client (`/xray-api/auth_utils.py`)
+- **Primary Entry Point**: Always use `XrayAPIClient` for all Xray operations
+- **Features**: OAuth 2.0 token management, automatic refresh, comprehensive error handling
+- **Pattern**: All scripts should import and use this client - never reimplement authentication
 
-### Project Status
-- ✅ **Completed**: High-priority security enhancements, script deduplication, comprehensive code review
-- 🔄 **In Progress**: Documentation updates, script reorganization
-- 📋 **Pending**: Final script organization, additional Confluence interaction assessment
-
-## Technical Architecture
-
-### Core Components
-
-#### Authentication (`/scripts/auth_utils.py`)
-- **Primary authentication utility** - USE THIS for all Xray API operations
-- Features token caching, automatic refresh, and comprehensive error handling
-- Class: `XrayAPIClient` - centralized API client
-- **CRITICAL**: Other scripts should import this, not reimplement authentication
-
-#### Extraction Tools (`/source-data/`)
-- **`extract_confluence_api_tests_secure.py`** - RECOMMENDED secure extraction
-- **`extract_confluence_functional_tests_v2.py`** - Table-based functional extraction
-- **`normalize_confluence_document.py`** - Document formatting normalization
-- **`debug_confluence_page.py`** - Generic page structure analysis
-
-#### Analysis Scripts (`/source-data/`)
-- **`analyze_confluence_structure.py`** - Deep structural analysis
-- **`comprehensive_test_analysis.py`** - Test case validation
-- **`document_parameterized_instances.py`** - Parameterized test documentation
-- **`security_analysis.py`** - Security assessment
-
-### Environment Variables
-```bash
-# Xray API (required for scripts/ operations)
-XRAY_CLIENT_ID="your_client_id"
-XRAY_CLIENT_SECRET="your_client_secret"
-
-# Confluence API (required for source-data/ operations)
-CONFLUENCE_DOMAIN="your_domain"
-CONFLUENCE_EMAIL="your_email"
-CONFLUENCE_API_TOKEN="your_token"
+### Directory Organization
+```
+xray-remediation/
+├── xray-api/              # Core authentication (use this for all API operations)
+├── scripts/               # Operational scripts for test management
+├── confluence-tools/      # Confluence extraction utilities
+├── analysis-utilities/    # Test analysis and validation tools
+├── test-data/            # JSON test definitions (api_tests_xray.json, functional_tests_xray.json)
+├── logs/                 # Execution logs and reports
+└── documentation/        # Project documentation and archives
 ```
 
-## Code Quality Standards
+## Essential Commands
 
-### Security Requirements
-- **NO credential exposure** in logs or error messages
-- **Input validation** for all external data
-- **BeautifulSoup parsing** preferred over regex for HTML
-- **Timeout protection** against ReDoS attacks
-- **Comprehensive error handling** with graceful degradation
-
-### Architecture Patterns
-- **USE `auth_utils.XrayAPIClient`** for all Xray operations
-- **Avoid code duplication** - centralize common functionality
-- **Use pathlib** for file operations
-- **Environment variables** for configuration
-- **Structured logging** with appropriate levels
-
-### Code Review Findings
-**CRITICAL ISSUES IDENTIFIED**:
-1. **Code Duplication**: Multiple scripts reimplement authentication (HIGH PRIORITY)
-2. **Security Vulnerabilities**: Environment variables accessed without validation
-3. **Architectural Violations**: No centralized error handling
-
-**IMMEDIATE FIXES NEEDED**:
-- Refactor `explore_projects.py`, `fetch_framed_data.py`, `working_assessment.py` to use `auth_utils.XrayAPIClient`
-- Add environment variable validation
-- Implement centralized error handling patterns
-
-## Working with Scripts
-
-### Primary Operations
+### Test Management Operations
 ```bash
-# Test Xray authentication
-python scripts/auth_utils.py
+# Organize tests into folders
+python scripts/organize_xray_folders.py
 
-# Secure API test extraction (RECOMMENDED)
-python source-data/extract_confluence_api_tests_secure.py
+# Create missing tests in Xray
+python scripts/create_missing_xray_tests.py
 
-# Functional test extraction
-python source-data/extract_confluence_functional_tests_v2.py
+# Apply pytest decorators to external test files
+python scripts/update_all_pytest_decorators.py
 
-# Debug page structure
-python source-data/debug_confluence_page.py <page_id>
+# Associate preconditions with tests
+python scripts/associate_preconditions_batch.py
 
-# Normalize document formatting
-python source-data/normalize_confluence_document.py
+# Update test labels via JIRA API
+python scripts/update_labels_via_jira.py
 ```
 
-### Data Flow
-1. **Confluence** → Extraction scripts → **JSON files** → Xray import
-2. **API tests**: 55 test cases with automated test type
-3. **Functional tests**: 38 test cases with manual test type
-4. **Parameterized instances**: 11 additional test variations
+### Analysis & Validation
+```bash
+# Analyze folder organization status
+python scripts/analyze_folder_status.py
 
-## Important Considerations
+# Check precondition associations
+python scripts/check_preconditions_graphql.py
 
-### Current State
-- **Perfect parity** between Confluence docs and extracted JSON
-- **Security enhanced** with BeautifulSoup parsing
-- **Deduplication implemented** to prevent duplicate test cases
-- **Comprehensive analysis** completed with detailed findings
+# Generate comprehensive test catalog
+python scripts/generate_test_catalog.py
 
-### Ongoing Work
-- **Script consolidation** to reduce redundancy
-- **Documentation updates** to reflect current state
-- **Directory reorganization** for better structure
-- **Additional tooling assessment** for Confluence interaction
+# Validate test extraction results
+python analysis-utilities/comprehensive_test_analysis.py
+```
 
-### Key Success Metrics
-- ✅ 55 API test cases extracted (100% parity)
-- ✅ 38 functional test cases extracted (100% parity)
-- ✅ 11 parameterized instances documented
-- ✅ Security vulnerabilities identified and addressed
-- ✅ Code duplication eliminated in extraction scripts
+### Confluence Extraction (if needed)
+```bash
+# Extract API tests (secure version)
+python confluence-tools/extract_confluence_api_tests_secure.py
 
-## Best Practices
+# Extract functional tests
+python confluence-tools/extract_confluence_functional_tests_v2.py
 
-### When Adding New Scripts
-1. **Use `auth_utils.XrayAPIClient`** for Xray operations
-2. **Follow security standards** (input validation, error handling)
-3. **Update documentation** (README.md, CLAUDE.md)
-4. **Add comprehensive docstrings** and comments
-5. **Test with error conditions** and edge cases
+# Debug Confluence page structure
+python confluence-tools/debug_confluence_page.py <page_id>
+```
 
-### When Modifying Existing Scripts
-1. **Check for code duplication** opportunities
-2. **Verify security implications** of changes
-3. **Update tests and documentation** accordingly
-4. **Consider impact on data integrity** and parity
+## High-Level Architecture
 
-### Data Validation
-- **Always verify** Confluence document versions
-- **Check parity** between source and extracted data
-- **Validate JSON structure** before Xray import
-- **Test with small datasets** before full extraction
+### 1. Data Flow Pipeline
+```
+Confluence Docs → Extraction Scripts → JSON Files → Xray Import → Organization Scripts
+    ↓                     ↓                ↓              ↓                ↓
+  HTML Content      BeautifulSoup     Test Objects    GraphQL API    Folder/Label Mgmt
+```
 
-## Troubleshooting
+### 2. Test Organization Hierarchy
+```
+FRAMED Project/
+├── Team Page/
+│   ├── API Tests/         # 55 API test cases
+│   └── Functional Tests/  # 38 functional test cases
+└── Preconditions/         # 23 shared preconditions
+```
 
-### Common Issues
-1. **Authentication failures**: Check environment variables
-2. **Extraction errors**: Verify Confluence document accessibility
-3. **Data inconsistencies**: Use debug scripts to analyze structure
-4. **Performance issues**: Consider batch processing for large datasets
+### 3. Authentication Flow
+- Scripts request token via `XrayAPIClient.get_auth_token()`
+- Client manages OAuth 2.0 flow with Xray Cloud
+- Tokens cached for 1 hour with automatic refresh
+- All API calls use bearer token authentication
 
-### Debug Tools
-- **`debug_confluence_page.py`**: Analyze page structure
-- **`security_analysis.py`**: Check for vulnerabilities
-- **`comprehensive_test_analysis.py`**: Validate extraction results
-- **`auth_utils.py`**: Test Xray connectivity
+### 4. Key Integration Points
+- **External Test Files**: `/MLB-App-Worktrees/framed-api-tests/` - pytest test files
+- **Xray GraphQL API**: `https://xray.cloud.getxray.app/api/v2/graphql`
+- **JIRA REST API**: For label and metadata updates
+- **Confluence API**: For test extraction from documentation
 
-This project demonstrates successful extraction and analysis of test cases from Confluence documentation with comprehensive security and quality assurance measures.
+## Critical Implementation Details
+
+### GraphQL Query Patterns
+```python
+# Standard test query with pagination
+query = """
+query($jql: String!, $limit: Int!) {
+    getTests(jql: $jql, limit: $limit, start: 0) {
+        total
+        results {
+            issueId
+            jira(fields: ["key", "summary", "labels"])
+            folder { name path }
+        }
+    }
+}
+"""
+
+# Always check response['data']['getTests']['total'] for pagination needs
+```
+
+### Batch Processing Requirements
+- **GraphQL Limit**: Max 100 items per query
+- **Folder Operations**: Process in batches of 50
+- **Label Updates**: Use JIRA REST API for bulk operations
+- **Import Operations**: Max 1000 tests per import
+
+### Error Handling Standards
+```python
+# Required pattern for all API operations
+try:
+    response = client.execute_query(query, variables)
+    if 'errors' in response:
+        logger.error(f"GraphQL errors: {response['errors']}")
+        return None
+    return response['data']
+except Exception as e:
+    logger.error(f"API call failed: {e}")
+    # Implement exponential backoff for retries
+```
+
+## Security & Quality Standards
+
+### Mandatory Security Practices
+1. **No Credentials in Code**: All auth via environment variables
+2. **Input Validation**: Sanitize all external inputs before API calls
+3. **HTML Parsing**: Use BeautifulSoup, never regex for HTML
+4. **Error Messages**: Never expose credentials or sensitive data in logs
+5. **Timeout Protection**: Set timeouts on all HTTP requests
+
+### Code Quality Requirements
+1. **Import Pattern**: Always use `from xray_api.auth_utils import XrayAPIClient`
+2. **Logging**: Use structured logging with appropriate levels
+3. **Documentation**: Include docstrings for all functions
+4. **Error Handling**: Graceful degradation for all failures
+5. **Testing**: Validate with small datasets before bulk operations
+
+## Common Workflows
+
+### 1. Complete Test Organization Flow
+```bash
+# 1. Check current status
+python scripts/analyze_folder_status.py
+
+# 2. Organize into folders
+python scripts/organize_xray_folders.py
+
+# 3. Update labels
+python scripts/update_labels_via_jira.py
+
+# 4. Verify organization
+python scripts/generate_test_catalog.py > TEAM_PAGE_TEST_CATALOG.md
+```
+
+### 2. Pytest Integration Flow
+```bash
+# 1. Build test mapping
+python scripts/build_complete_test_mapping.py
+
+# 2. Apply decorators
+python scripts/update_all_pytest_decorators.py
+
+# 3. Verify decorators
+grep -r "@pytest.mark.xray" /path/to/test/files/
+```
+
+### 3. Precondition Management Flow
+```bash
+# 1. Check existing preconditions
+python scripts/check_preconditions_graphql.py
+
+# 2. Associate with tests
+python scripts/associate_preconditions_batch.py
+
+# 3. Verify associations
+python scripts/analyze_preconditions.py
+```
+
+## Known Gotchas & Solutions
+
+### Issue: GraphQL Query Limits
+**Problem**: Queries fail with >100 results  
+**Solution**: Always implement pagination using `start` parameter and check `total`
+
+### Issue: Folder Assignment Failures
+**Problem**: Cannot assign test to non-existent folder  
+**Solution**: Create parent folders first using `create_test_folders.py`
+
+### Issue: Authentication Token Expiry
+**Problem**: 401 errors after ~1 hour  
+**Solution**: XrayAPIClient handles refresh automatically - ensure using latest version
+
+### Issue: Duplicate Test Creation
+**Problem**: Running creation scripts multiple times creates duplicates  
+**Solution**: Always check existing tests first with JQL queries
+
+## Script Categories & Usage
+
+### Core Operations (Use Daily)
+- `organize_xray_folders.py` - Primary folder management
+- `update_all_pytest_decorators.py` - Pytest integration
+- `generate_test_catalog.py` - Documentation generation
+
+### Maintenance Scripts (Use As Needed)
+- `cleanup_duplicate_preconditions_v2.py` - Remove duplicates
+- `cleanup_labels_final.py` - Label standardization
+- `analyze_folder_status.py` - Health checks
+
+### Migration Scripts (One-Time Use)
+- `create_missing_xray_tests.py` - Initial test creation
+- `extract_confluence_*.py` - Initial extraction
+- `upload_tests_to_xray.py` - Bulk import
+
+## Performance Optimization
+
+### API Call Reduction
+- Cache authentication tokens (handled by XrayAPIClient)
+- Batch GraphQL queries where possible
+- Use JQL to filter at source, not in code
+
+### Processing Efficiency
+- Process tests in batches of 50-100
+- Use concurrent.futures for parallel operations
+- Implement progress bars for long operations
+
+### Memory Management
+- Stream large JSON files instead of loading entirely
+- Clear caches between batch operations
+- Use generators for large result sets
